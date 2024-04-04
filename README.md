@@ -2,6 +2,8 @@
 Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 # Aprendizado por Projeto Integrado (API) - Template
 
+https://www.freecodecamp.org/portuguese/news/como-fazer-o-seu-primeiro-pull-request-no-github/
+
 Template para os projetos de API, ensinando na utilização do repositório digital "GitHub". 
 
 Projeto baseado na metodologia ágil SCRUM, procurando desenvolver a Proatividade, Autonomia, Colaboração e Entrega de Resultados dos estudantes envolvidos
