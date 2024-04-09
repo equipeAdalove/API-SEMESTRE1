@@ -7,14 +7,14 @@
         <title> Módulos </title>
         <style>
             table{ border: 1px solid #D6D6D6;
-            background-color: #31363f;
+            background-color: #32363f;
             }
             th{ border: 1px solid white;}
-            body{background: #1a1d22;}
+            body{background: #212832;}
         </style>
     </head>
     </head>
-    <body background-color="#31363f">
+    <body>
         <font color="white">
             <p style="font-size: 25px ;"> Metodologia Ágil <strong> SCRUM</strong><p style="text-align: right; font-size:25px ;"></p>
         <br>
