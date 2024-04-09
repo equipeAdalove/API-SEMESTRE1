@@ -50,7 +50,7 @@
         </Table>
         <br>
         <table>
-        <tr><th width="2000" height="100"><a href="Módulo 2.html"><font color="#D9D9D9"><p> Avançar</p></a></th></tr>
+        <tr><th width="2000" height="100" style="font-size:25px"><a href="Módulo 2.html"><font color="#D9D9D9"><p> Avançar</p></a></th></tr>
         </table>
     </div>
 </body>
