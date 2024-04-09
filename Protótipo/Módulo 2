@@ -7,12 +7,12 @@
         <title> Módulo 2 </title>
         <style>
             table{ border: 1px solid #D6D6D6;
-                background-color: #31363f;
+                background-color: #32363f;
                 margin: 20px;
                 }
             td, th{ border: 1px solid white;
                 }
-            body{background: #1d2025;
+            body{background: #212832;
                 }
             .tentativa{
                     text-align: center;
