@@ -46,11 +46,18 @@
 }
         .div2{
             background-color: #32363f;
-            height: 20pc;
+            height: 30pc;
             padding: 30px 10px; 
             background-color:#32363f; 
             color: #32363f; 
 
+        }
+        .div3{
+        background-color: #32363f;
+            height: 15pc;
+            padding: 30px 10px; 
+            background-color:#32363f; 
+            color: #32363f; 
         }
         </style>
     </head>
@@ -66,9 +73,9 @@
                 </nav>
             </div>
             <div class="div2">
-            <img src="imgmódulo.png" width="300px" height="300" class="img">
+            <img src="imgmódulo.png" width="500px" height="500" class="img">
             <h1 style="font-size: 50px;"><font color="D6D6D6"> MÓDULOS</font></h1>
-            <p height=20pc; style="font-size: 19px;"><font color="D6D6D6"> Comece a aprender!</p>
+            <p height=20pc; style="font-size: 19px; margin-top: 10%;"><font color="D6D6D6"> Comece a aprender!</p>
             </div>
         <br>
         <br>
@@ -104,6 +111,11 @@
         <br>
         <div>
         <p style="color:black"> 1 2 3 4 5 6 7 8 9 10</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="div3">
         </div>
     </body>
 </html>
