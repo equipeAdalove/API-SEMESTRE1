@@ -5,53 +5,56 @@
         <meta charset="viewport" content="widht=device-widht">
         <meta https="X-UA-Compatible" content="ie=edge">
         <title> Módulo 1 </title>
+        <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
         <style>
-            table{ border: 1px solid #D6D6D6;
-                background-color: #32363f;
-                margin: 20px;
-                }
-            td, th{ border: 1px solid white;
-                }
-            body{background: #212832;
-                }
-                .tentativa{
-                    text-align: center;
-                }
-            
+            body{
+                font-family: 'Alatsi';
+            }
+        #menu ul{
+            padding: 0px;
+            margin: 0px;
+            background-color: #32363f;
+            list-style: none;
+        }
+
+        #menu ul li a { 
+            padding: 2px 10px; 
+            display: inline-block; 
+            background-color:#32363f; 
+            color: #32363f; 
+            text-decoration: none; 
+        }
+
+        #menu ul li{
+            display: inline;
+        }    
         </style>
     </head>
     <body>
+         <!-- Cabeçalho -->
         <div>
-        <font color="#D9D9D9">
-            <p style="font-size: 25px ;"> Metodologia Ágil <strong> SCRUM</strong><p style="text-align: right; font-size:25px ;"><a href="Módulos.html"> <font color="#D9D9D9"> Módulos</a> </p>
-        <Table>
-           <tr>
-            <th width="2000px" height="180" style="font-size: 100px;"> Módulo 1</th>
-        </tr>
-        </table>
-        <br>
-        <table>
-           <tr>
-            <th width="250px" height="180"> Capitulo 1</th>
-            <td width="2000" height="180" class="tentativa" rowspan="5"><strong>Introdução</strong></td>
-        </tr>
-           <tr>
-            <th width="250px" height="180"> Capitulo 2</th>
-        </tr>
-           <tr>
-            <th width="250px" height="180"> Capitulo 3</th>
-        </tr>
-           <tr>
-            <th width="250px" height="180"> Capitulo 4</th>
-        </tr>
-        <tr>
-            <th width="250px" height="180"> Capitulo N</th>
-        </tr>
-        </Table>
-        <br>
-        <table>
-        <tr><th width="2000" height="100" style="font-size:25px"><a href="Módulo 2.html"><font color="#D9D9D9"><p> Avançar</p></a></th></tr>
-        </table>
-    </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="páginainicial1.html"><font color="white">Home</font></a></li>
+                    <li><a href="Módulos.html"><font color="white">Módulos</font></a></li>
+                    <li><a href="contato.html"><font color="white">Contatos</font></a></li>
+                    <li><a href="sobre.html"><font color="white">Sobre</font></a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- curso -->
+        <div>
+            <h1> 1. INTRODUÇÃO </h1>
+            <img>
+        </div>
+        <div>
+            <h3> O que é SCRUM?</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras feugiat felis nulla, sit amet malesuada odio porta at. Quisque erat dolor, placerat et odio ac, varius venenatis sem. Ut efficitur quis nibh sit amet pellentesque. Maecenas varius dignissim orci, vitae semper lorem ultrices a. Proin dictum hendrerit eros mattis sollicitudin. Nulla condimentum imperdiet est eget tempor. Pellentesque pharetra enim id felis interdum fringilla. Proin ut semper dui. Cras iaculis molestie congue. In varius orci nisi. Ut ipsum augue, aliquam in accumsan facilisis, facilisis in libero. Duis nec efficitur erat. Praesent id fermentum tortor.
+            </p>
+            <h3> Funções </h3>
+
+        </div>
+         <!-- Rodapé -->
 </body>
 </html>
