@@ -6,6 +6,7 @@
         <meta https="X-UA-Compatible" content="ie=edge">
         <title> Módulos </title>
         <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+        <link rel="shortcut icon" type="imagex/png" href="imgmódulo.ico">
         <style>
             body{
                 margin: 0%;
@@ -31,7 +32,7 @@
         #menu ul li{
             display: inline;
         }    
-        table{ 
+        table { 
             margin: 0 auto;
             margin-bottom: 3pc;
             border: 3px solid #D6D6D6;
@@ -43,7 +44,10 @@
         .img{
             float:right ;
             margin: 0 10px 10px 0;
-}
+            position: absolute;
+            top: 04pc;
+            right: 7pc;
+        }
         .div2{
             background-color: #32363f;
             height: 30pc;
@@ -53,15 +57,24 @@
 
         }
         .div3{
-        background-color: #32363f;
-            height: 15pc;
+            background-color: #32363f;
+            height: 12pc;
             padding: 30px 10px; 
             background-color:#32363f; 
             color: #32363f; 
         }
+        a {
+            background-color:#D6D6D6; 
+            color: #D6D6D6;
+        }
+        .pi {
+            color:black;
+            text-align: center;
+        }
         </style>
     </head>
     <body>
+        <!-- Cabeçalho -->
             <div>
                 <nav id="menu">
                     <ul>
@@ -74,13 +87,14 @@
             </div>
             <div class="div2">
             <img src="imgmódulo.png" width="500px" height="500" class="img">
-            <h1 style="font-size: 50px;"><font color="D6D6D6"> MÓDULOS</font></h1>
-            <p height=20pc; style="font-size: 19px; margin-top: 10%;"><font color="D6D6D6"> Comece a aprender!</p>
+            <h1 style="font-size: 7pc; position: absolute;top: 07pc; left:59px;"><font color="D6D6D6"> MÓDULOS</font></h1>
+            <p height=20pc; style="font-size: 2pc; margin-top: 10%; position: absolute;top: 12pc;left:63px;"><font color="D6D6D6"> Comece a aprender!</p>
             </div>
         <br>
         <br>
         <br>
         <br>
+        <!-- Capítulos -->
         <table>
            <tr>
                 <th width="1400px" height="150" style="text-align:left; font-size: 45px;"><a href="Módulo 1.html"><font color="black"> 1. Introdução</a></th>
@@ -109,13 +123,12 @@
         <br>
         <br>
         <br>
-        <div>
-        <p style="color:black"> 1 2 3 4 5 6 7 8 9 10</p>
-        </div>
         <br>
-        <br>
-        <br>
+        <!-- Rodapé -->
         <div class="div3">
+            <p style="font-size: 2pc;padding: 1px 60px;"><font color="D6D6D6"> Referencias</p>
+            <p style="font-size: 1pc;padding: 1px 60px;top:04pc;"><font color="D6D6D6"> PRODUCT OWNER - ARTIGO </p>
+            <p style="font-size: 10px;padding: 16px 130px; "><font color="D6D6D6"> © Copyright 2024 ADALOVE - Todos os direitos reservados</p>
         </div>
     </body>
 </html>
