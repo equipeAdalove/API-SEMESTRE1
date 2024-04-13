@@ -123,4 +123,40 @@ Portanto, é importante ressaltar que o papel do Scrum Master é fundamental na 
 
 CAPÍTULO 3: EVENTOS E ARTEFATOS
 
-> EVENTOS
+> EVENTOS SCRUM: ESTRUTURANDO O TEMPO E PROMOVENDO A COLABORAÇÃO
+
+1) Sprint: O coração do Scrum
+Todo o progresso em Scrum é feito de maneira iterativa e incremental – ciclos completos de evolução de duração fixa onde ao final temos avanços potencialmente entregáveis do produto. Essas iterações são denominadas Sprints.
+Cada Corrida tem duração de até um mês, o que possibilita feedbacks regulares do Product Owner quanto ao produto em desenvolvimento. Da mesma forma, o Product Owner tem a capacidade de avaliar o que foi produzido e reestruturar o Product Backlog caso seja necessário.
+Uma Corrida consiste da Sprint Planning Meeting, Daily Scrum, o trabalho de evolução, a Avaliação da Corrida e a Retrospectiva da Corrida. Ou seja, uma Corrida é como um recipiente para todos os outros eventos.
+Durante a execução da Corrida não devem ser feitas quaisquer mudanças que impactem a Meta da Corrida. Além disso, o escopo pode ser renegociado entre o Development Team e o Product Owner conforme o conhecimento evolua durante o desenvolvimento, novas tecnologias sejam criadas, etc.
+
+2) Sprint Planning Meeting: Planejando o Trabalho da Sprint
+No início de cada uma das Sprints, o Time Scrum se reúne para planejar o que será feito naquela Sprint. Esta reunião é denominada Sprint Planning Meeting (Sprint Planning Meeting) e tem duração fixa (timeboxed) de até oito horas para uma Sprint de um mês. Para Sprints menores, o tempo é reduzido de forma proporcional.
+A Sprint Planning Meeting é dividida em duas partes, cada uma com duração fixa correspondente à metade da duração total. Cada parte responde às seguintes perguntas:
+O que será entregue no Incremento resultante nesta Sprint?
+Como faremos para entregar o Incremento nesta Sprint?
+
+2.1) Sprint Planning Meeting – 1ª Parte
+Na primeira parte da Sprint Planning Meeting, o Development Team faz uma previsão das funcionalidades que serão desenvolvidas durante a Sprint. O Product Owner apresenta os itens do topo do Product Backlog ao Development Team e o Time Scrum inteiro colabora na definição dos itens. A quantidade de itens selecionados para a Sprint, entretanto, é prerrogativa do Development Team – somente o Development Team é capaz de avaliar o que consegue realizar durante a Sprint.
+Para isso, o Development Team leva em consideração os Incrementos mais recentes, a capacidade projetada do Development Team para a Sprint e a performance de Sprints passadas.
+Uma vez selecionados os itens, o Time Scrum define uma Meta da Sprint. Esta Meta da Sprint serve como um guia para o Development Team sobre o que estará sendo desenvolvido durante a Sprint.
+
+2.2) Sprint Planning Meeting – 2ª Parte
+Na segunda parte da Planning Meeting, o Development Team decide como transformará os itens selecionados em um Incremento durante a Sprint. O Development Team, sendo autogerenciado, se coordena para decompor os itens em unidades de um dia ou menos, o suficiente para os primeiros dias da Sprint. Os itens selecionados mais o plano para o desenvolvimento do Incremento dá origem ao Sprint Backlog. Com o Sprint Backlog criado, o Time Scrum define a Meta da Sprint.
+
+3) Daily SCRUM: Sincronização Diária e Resolução de Impedimentos
+Diariamente, o Time de Desenvolvimento se reúne para uma reunião de no máximo 15 minutos, onde cada membro por vez responde para os outros membros:
+
+- O que realizei desde a última Daily Scrum?
+- Quais são os meus planos até a próxima Daily Scrum?
+- Houve algum obstáculo que me impediu de concluir alguma tarefa?
+
+Esse é o formato padrão de uma Daily Scrum. Como o Time de Desenvolvimento trabalha de maneira colaborativa, a Daily Scrum possibilita que os membros comuniquem-se e sincronizem seu trabalho. E por serem autogerenciados, a reunião não é destinada a relatórios para o Scrum Master, Product Owner ou qualquer outra pessoa - é exclusivamente para o benefício dos membros do time.
+Se surgir algum obstáculo, o Time de Desenvolvimento se auto-organiza para resolvê-lo. No caso de impedimentos que o próprio Time de Desenvolvimento não possa resolver, estes são encaminhados ao Scrum Master para que ele tome as devidas providências.
+As Daily Scrums são parte integrante do ciclo de inspeção e adaptação do Scrum. Ao analisar diariamente o progresso da Sprint, o Time de Desenvolvimento pode corrigir eventuais problemas no processo imediatamente.
+
+4) Sprint Review: Demonstrações e Feedbacks do Produto
+	Ao término da Sprint, realizamos outra cerimônia denominada Sprint Review. Nessa ocasião, podem participar todos aqueles interessados no produto. Embora a demonstração das novas funcionalidades desenvolvidas durante a Sprint seja parte dessa cerimônia, seu objetivo principal é inspecionar o que o Time de Desenvolvimento produziu e coletar opiniões e impressões dos presentes, a fim de adaptar o plano para a próxima Sprint, se necessário. Portanto, o foco desta cerimônia está em aprimorar o produto.
+Durante a Sprint Review, o Product Owner valida ou não a Sprint, conforme a meta acordada com o Time de Desenvolvimento durante a Sprint Planning Meeting. O Time de Desenvolvimento discute sobre a Sprint, destacando o que foi bem-sucedido, os desafios enfrentados e as soluções encontradas, e, após a demonstração, está disponível para responder a quaisquer perguntas dos participantes.
+
