@@ -15,7 +15,7 @@
     <div id="cor">
         <div class="container">
             <div>
-                <a class="nav" href="index.html"> Página inicial </a>
+                <a class="nav" href="Home.html"> Página inicial </a>
             </div>
             <div>
                 <a class="nav" href="Módulos.html"> Módulos </a>
@@ -80,25 +80,26 @@
                 <h4>Dev Team</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quos dignissimos exercitationem incidunt consectetur.</p>
                 <div class="img-back">
-                    <img src="/Imagens/Programming.png">
+                    <img src="Imagens/Programming.png">
                 </div>
             </a>
         </div>
+    </div>
 
-        <div class="ver-mais">
-            <a href=""> Ver Mais </a>
-        </div>
-        <div class="espaco"></div>
-        
+    <div class="ver-mais">
+        <a href=""> Ver Mais </a>
+    </div>
+    <div class="espaco"></div>
+    
 
 <!--Rodape-->
-        <footer>
-            <div class="footer-custom">
-                Referencias
+    <footer>
+        <div class="footer-custom">
+            Referencias
 
-                <h6>© Copyright 2024 ADALOVE - Todos os direitos reservados</h6>
-            </div>
-            </footer>
+            <h6>© Copyright 2024 ADALOVE - Todos os direitos reservados</h6>
+        </div>
+    </footer>
 
-    </body>
-    </html>
+</body>
+</html>
