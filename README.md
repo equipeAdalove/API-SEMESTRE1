@@ -58,16 +58,12 @@ Adicionar video e documentos nessa seção
 
 # Backlog do produto
 
-## Sprint 1. Concepção
+## Sprint 1.
 - [x] Levantamento de requisitos;
 - [x] Identificar os elementos principais;
 - [x] Esboçar o layout;
 - [x] Escolher cores e fontes;
-- [x] Desenvolva o design;
-- [ ] Teste e revise;
-- [ ] Documente instruções de uso;
-- [ ] Criação do vídeo;
-- [ ] Finalize e aprovação.
+- [x] Desenvolver o design.
 
 ## Sprint 2. Desenvolvimento do Projeto
 - [ ] Documento passo a passo;
