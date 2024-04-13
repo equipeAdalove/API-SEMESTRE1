@@ -19,7 +19,7 @@ Os resultados dos projetos devem obedecer ao Aviso Legal disponível no site da 
 
 Sprint | Previsão | Status|
 |------|--------|------|
-|Kick Off | dd/mm/aaaa | concluido|
+|Kick Off | 12/03/2024 | concluido|
 |01 | 14/04/2024 | concluido|
 |02|  dd/mm/aaaa| em progresso |
 |03| dd/mm/aaaa | a fazer|
