@@ -63,7 +63,9 @@ Adicionar video e documentos nessa seção
 - [x] Identificar os elementos principais;
 - [x] Esboçar o layout;
 - [x] Escolher cores e fontes;
-- [x] Desenvolver o design.
+- [x] Desenvolver o design no figma;
+- [x] Iniciar o front-end;
+- [x] Elaborar a base do conteúdo apresentado no site.
 
 ## Sprint 2. Desenvolvimento do Projeto
 - [ ] Documento passo a passo;
