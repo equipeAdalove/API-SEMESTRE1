@@ -10,7 +10,7 @@ Projeto baseado na metodologia ágil SCRUM, procurando desenvolver a Proatividad
 * [Competências desenvolvidas](#competências-desenvolvidas)
 * [Autores](#autores)
 
-# Projeto (API) 
+# Cronograma:
 Projeto pedagógico alicerçado na Metodologia API para ensino-aprendizado focado no desenvolvimento de competências e fundamentada nos pilares de aprendizado com problemas reais (RPBL), validação externa e mentalidade ágil. 
 Uso de estratégias para entender o problema, conceber uma solução viável ao desenvolver e implementar o MVP seguido de sua operação (CDIO). 
 Os resultados dos projetos devem obedecer ao Aviso Legal disponível no site da Fatec SJC com definição das datas do kickoff e das sprints
@@ -25,16 +25,16 @@ Sprint | Previsão | Status|
 |Feira de Soluções|dd/mm/aaaa |a fazer |
 
 
-
-
-
 # Objetivo do Projeto
-Este projeto tem como objetivo ajudar e facilitar na utilização da plataforma GitHub, visando:
-* Centralizar os trabalhos e projetos;
-* Organizar e estruturar as informações;
-* Versionar e controlar as alterações;
-* Facilitar o compartilhamento e feedback;
-* Desenvolver habilidades técnicas.
+Desenvolver um sistema web que indique todos os processos e artefatos da metodologia ágil (Scrum), todos os processos deverão ter conceitos e fundamentos com referências, bem como a
+aplicação com EXEMPLOS PRÁTICOS para a plena compreensão do usuário do sistema.
+Deverá criar um formulário para avaliações parciais e final (com totalização).
+O Sistema deve primordialmente ter foco na disseminação dos processos para que os usuários
+possam replicar todos os passos em futuros desenvolvimentos.
+A prioridade secundária será a compreensão de habilidades (Skills) importantes para um
+profissional de tecnologia da informação.
+Todo o material de conhecimento publicado no sistema deverá ter forma indireta (Conhecimento adquirido e repassado pelos desenvolvedores).
+Bem como toda a documentação de desenvolvimento deverá ser lastreado no GitHub com todos os processos necessários para a fidelização do cliente.
 
 # Funcionalidades e registros (vídeos e apresentações) das sprints
 
