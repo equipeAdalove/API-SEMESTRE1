@@ -110,7 +110,7 @@
         <div>
             <nav id="menu">
                 <ul>
-                    <li><a href="index (1).html"><font color="white">Página Inicial</font></a></li>
+                    <li><a href="Home.html"><font color="white">Página Inicial</font></a></li>
                     <li><a href="Módulos.html"><font color="white">Módulos</font></a></li>
                     <li><a href="contato.html"><font color="white">Contato</font></a></li>
                     <li><a href="sobre.html"><font color="white">Sobre</font></a></li>
@@ -133,12 +133,12 @@
         <!-- Capítulos -->
         <table>
            <tr>
-                <th width="1400px" height="150" style="text-align:left; font-size: 45px;"><a href="Módulo 1.html"> 1. Introdução</a></th>
+                <th width="1400px" height="150" style="text-align:left; font-size: 45px;"><a href="Capitulo 1.html"> 1. Introdução</a></th>
             </tr>
         </table>
         <table>
            <tr>
-                <th width="1400px" height="150" style="text-align:left; font-size: 45px;"><a href="Módulo 2.html"> 2. Sprints</a></th>
+                <th width="1400px" height="150" style="text-align:left; font-size: 45px;"> 2. Sprints</a></th>
             </tr>
         </table>
         <table>
