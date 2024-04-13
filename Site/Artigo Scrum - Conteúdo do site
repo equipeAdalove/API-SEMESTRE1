@@ -168,3 +168,23 @@ A Release Planning Meeting ocorre ao final de uma Sprint, quando o Time de Desen
 A Release Planning Meeting permite que o Time Scrum projete além de uma Sprint, mesmo que com pouca precisão, planejando as entregas para os clientes. No entanto, é importante manter em mente que o período entre as Releases deve ser o mais curto possível. Releases curtas permitem feedbacks mais rápidos e frequentes, evitando o desenvolvimento de funcionalidades desnecessárias ou com comportamento diferente do esperado pelo cliente.
 Todos os membros do Time Scrum participam da Release Planning Meeting. Apesar de parecer inicialmente uma reunião mais voltada para negócios, isso permite que todo o time enxergue o produto da mesma forma, concentrando os esforços na mesma direção. Durante esta reunião, o time inteiro compreende e concorda com o valor de cada item para aquela Release, os riscos e as dependências, permitindo que o Time Scrum tenha uma visão global.
 Não há uma regra específica para a duração ou a frequência da Release Planning Meeting. No entanto, em média, sua duração é de dois dias. Estender a reunião por mais tempo não aumenta a precisão do planejamento, nem é esse o objetivo. Quanto à frequência, é recomendado que o período de uma Release não ultrapasse seis meses. No entanto, o time deve atualizar o planejamento de acordo com o resultado e a estimativa das Sprints a cada Sprint Review e, se necessário, replanejar as Releases antes do previsto.
+
+>> Exemplo de uma agenda para o Release Planning Meeting:
+
+1) Abertura: Revisão do propósito da reunião, estrutura, agenda, etc.
+2) Visão do Produto e Roadmap: Revisão da Visão do Produto para alinhar expectativas.
+3) Status atual do projeto: Apresentação de gráficos e relatórios de status das últimas Sprints.
+4) Meta/tema da Release: Definição da meta para a Release.
+5) Estimativa de velocidade: Estimativa da velocidade para esta Release com base nas Sprints anteriores.
+6) Agenda da Release e número de Sprints: Definição de Milestones e tamanho das Sprints.
+7) Estimativa de itens do Product Backlog: Estimativa de itens do Product Backlog caso não estejam estimados.
+8) Mapeamento de itens nas Sprints do Release: Mapeamento de itens priorizados nas Sprints.
+9) Riscos, dependências e preocupações: Identificação de riscos, dependências e impedimentos.
+10) Comprometimento: Comprometimento com a meta da Release.
+11) Plano de comunicação e logística da Sprint: Definição do plano de comunicação e logística.
+12) Montagem de gráficos: Montagem de Release Burndown e/ou Parking Lot.
+13) Retrospectiva: Avaliação dos pontos positivos e de melhoria desta reunião.
+
+Esta agenda serve apenas como exemplo. Você pode incluir outras práticas, atividades ou técnicas conforme necessário, ou remover algo se considerar desnecessário.
+
+> ARTEFATOS DO SCRUM
