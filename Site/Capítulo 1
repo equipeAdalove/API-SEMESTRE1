@@ -1,0 +1,165 @@
+<!Doctype html>
+<html lang="Pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Capítulo 1 </title>
+        <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="imagex/png" href="/Imagens/imgcapitulos.ico">
+        <style>
+          body{
+                justify-content: space-around;
+                margin: 0%;
+                margin-bottom: 0%;
+                font-family: 'Alatsi',  sans-serif;
+                background-color: #C8C8C8;
+            }
+
+            #menu ul{
+                background-color: #32363f;
+                list-style: none;
+            }
+
+            #menu{ 
+                padding: 52px 25px; 
+                background-color:#32363f; 
+                color: #32363f; 
+                justify-content: space-around;
+            }
+
+            #menu ul li a{ 
+                padding: 30px 10px; 
+                background-color:#32363f; 
+                color: #32363f; 
+                font-family: "Poppins", sans-serif;
+            }
+
+            #menu ul li{
+                left: 31pc;
+                display: inline;
+                padding: 13px
+            } 
+
+            .img{
+                justify-content: space-around;
+                display: flex;
+                float:right ;
+                margin: 0 10px 10px 0;
+                position: absolute;
+                top: 04pc;
+                right: 7pc;
+            }
+
+            .div2{
+                display: flex;
+                width: 91,5pc;
+                display: flex;
+                border-top: 10vh solid #32363F;
+                border-left: 9vh solid #32363F;
+                height: 45vh;    background-color: #32363F;
+                margin-bottom: -94px;
+
+            }
+
+            footer{
+                display: flex;
+                background-color: #32363f;
+                height: 30vh;
+            }
+
+            .footer-custom{
+                margin: auto 9vh;
+                font-family: "Poppins", sans-serif;
+                color: #C8C8C8;
+                background-color: #32363f;
+                height: 18vh;
+                padding: 20px;
+                display: flex;
+                flex-flow: column;
+                justify-content: space-between
+            }
+
+            .divtext{
+                margin-top: -3pc;
+                margin-left: 100px;
+                margin-right: 100px;
+                text-align: justify;
+            }
+            .funcoes{
+                margin-top: 6pc;
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-bottom: 80px;
+                text-align: justify;
+            }
+        </style>
+    </head>
+    <body>
+         <!-- Cabeçalho -->
+         <div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index (1).html"><font color="white">Página Inicial</font></a></li>
+                    <li><a href="Módulos.html"><font color="white">Módulos</font></a></li>
+                    <li><a href="contato.html"><font color="white">Contato</font></a></li>
+                    <li><a href="sobre.html"><font color="white">Sobre</font></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="div2">
+            <img src="/Imagens/imgcapitulos.png" width="500px" height="500" class="img">
+            <h1 style="font-size: 5pc; position: absolute;top: 13pc; left:59px;"><font color="D6D6D6"> 1. INTRODUÇÃO</font></h1>
+        </div>
+        <div class="wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+        </div>
+
+        <!-- curso -->
+
+        <div class="divtext">
+            <h1> O que é SCRUM?</h1>
+
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet, massa non blandit rutrum, felis odio vehicula tellus, ornare finibus ex est sit amet lorem. In ut sollicitudin metus. Curabitur finibus massa non lacus maximus lobortis. Etiam id euismod velit. Nulla fringilla pharetra nisl. Aliquam tristique tristique nibh, non posuere tortor congue nec. Phasellus maximus elit vitae tortor posuere congue. Nam rhoncus ullamcorper ipsum id rhoncus. Integer luctus lorem ac nisl dapibus, at vehicula mauris tempor. Cras commodo lectus metus, vulputate venenatis tortor malesuada eget. Maecenas vel elementum justo, at ultricies ante. Nunc porttitor in velit eu eleifend. Integer mollis felis eu justo malesuada convallis. Vivamus laoreet elit quis arcu tincidunt, a luctus ex aliquet. Proin tempor euismod lacus, eget ultrices nunc aliquam vitae. Nam lobortis metus nec nisi dictum faucibus.
+
+            Praesent non neque sed metus pulvinar iaculis. Fusce non mi consequat ligula efficitur blandit nec nec metus. Nunc sapien orci, luctus eu lectus eu, tempor interdum enim. In pulvinar tristique turpis, quis lobortis nunc iaculis vitae.</p><p>In molestie efficitur euismod. Donec nec congue mi. Etiam luctus quis dui vitae dictum.
+
+            Integer tristique augue at justo tempor, non tempor metus porta. Donec lorem odio, varius in felis non, finibus aliquam felis. In hac habitasse platea dictumst. Ut vitae lorem posuere, eleifend ante ac, tincidunt ligula. Maecenas ut risus vel tellus finibus ornare a eget nisl.</p><p> Aliquam id ligula suscipit, auctor justo quis, euismod massa. Morbi tristique, nulla sit amet tincidunt eleifend, nulla nibh viverra erat, at rutrum erat libero eget odio. Nullam cursus arcu sit amet massa maximus consequat. Sed vehicula dignissim leo, quis mollis elit facilisis ac. Curabitur porta, est non gravida finibus, ligula nulla molestie dolor, quis lacinia augue justo tempus mauris.
+
+            Phasellus egestas tristique urna, eget fermentum arcu euismod sit amet. Nullam tincidunt viverra elit sit amet sagittis. Nunc ut varius tellus. Nulla eget bibendum eros. Cras justo nisl, pharetra quis lobortis ac, sagittis at ante. Praesent enim neque, commodo non ornare id, rhoncus a eros. Nunc ornare eu justo eget semper. Cras congue dolor est. Nulla hendrerit lobortis ante sed pulvinar. Donec tincidunt sem tristique massa feugiat accumsan. Ut pretium pellentesque ipsum, ac eleifend est convallis vel. Proin leo nibh, imperdiet a neque ut, vehicula bibendum nisl. Donec in aliquet diam.
+
+            Duis velit nisl, congue non urna at, vehicula dictum orci. Praesent auctor magna risus, at gravida ex scelerisque eu. Ut id diam porttitor, interdum odio eget, sagittis dolor. In tincidunt, quam id tincidunt dictum, lacus odio aliquam tellus, sed tempor mauris enim id diam. Vestibulum convallis risus neque, vel placerat arcu finibus nec. Quisque non fermentum ante. Praesent vulputate eros nunc, a malesuada turpis aliquet id. Aliquam erat volutpat. Nullam non urna pellentesque ex rhoncus tempor. Aenean vel ante sit amet urna sagittis ullamcorper et eget diam. Fusce in facilisis sapien.
+            </p>
+        </div>
+        <div class="funcoes">
+            <h1> Funções </h1>
+
+            <h4> Scrum Master </h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet, massa non blandit rutrum, felis odio vehicula tellus, ornare finibus ex est sit amet lorem. In ut sollicitudin metus. Curabitur finibus massa non lacus maximus lobortis. Etiam id euismod velit. Nulla fringilla pharetra nisl. Aliquam tristique tristique nibh, non posuere tortor congue nec. Phasellus maximus elit vitae tortor posuere congue. Nam rhoncus ullamcorper ipsum id rhoncus.</p>
+            <br>
+            <p> ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+            
+            <h4> Product Owner </h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet, massa non blandit rutrum, felis odio vehicula tellus, ornare finibus ex est sit amet lorem. In ut sollicitudin metus. Curabitur finibus massa non lacus maximus lobortis. Etiam id euismod velit. Nulla fringilla pharetra nisl. Aliquam tristique tristique nibh, non posuere tortor congue nec. Phasellus maximus elit vitae tortor posuere congue. Nam rhoncus ullamcorper ipsum id rhoncus.</p>
+            <br>
+            <p> ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+            
+            <h4> Dev Team </h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet, massa non blandit rutrum, felis odio vehicula tellus, ornare finibus ex est sit amet lorem. In ut sollicitudin metus. Curabitur finibus massa non lacus maximus lobortis. Etiam id euismod velit. Nulla fringilla pharetra nisl. Aliquam tristique tristique nibh, non posuere tortor congue nec. Phasellus maximus elit vitae tortor posuere congue. Nam rhoncus ullamcorper ipsum id rhoncus.</p>
+            <br>
+            <p> ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+        </div>
+
+         <!-- Rodapé -->
+
+         <footer>
+            <div class="footer-custom">
+                Referencias
+
+                <h6>© Copyright 2024 ADALOVE - Todos os direitos reservados</h6>
+            </div>
+            </footer>
+
+    </body>
+</html>
