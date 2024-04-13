@@ -2,93 +2,128 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <meta charset="viewport" content="widht=device-widht">
-        <meta https="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Módulos </title>
-        <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="shortcut icon" type="imagex/png" href="imgmódulo.ico">
         <style>
             body{
+                justify-content: space-around;
                 margin: 0%;
                 margin-bottom: 0%;
-                font-family: 'Alatsi';
+                font-family: 'Alatsi',  sans-serif;
+                background-color: #C8C8C8;
             }
+
             #menu ul{
-            background-color: #32363f;
-            list-style: none;
-        }
-        #menu{ 
-            padding: 30px 10px; 
-            background-color:#32363f; 
-            color: #32363f; 
-        }
+                background-color: #32363f;
+                list-style: none;
+            }
 
-        #menu ul li a{ 
-            padding: 30px 10px; 
-            background-color:#32363f; 
-            color: #32363f; 
-        }
+            #menu{ 
+                padding: 52px 25px; 
+                background-color:#32363f; 
+                color: #32363f; 
+                justify-content: space-around;
+            }
 
-        #menu ul li{
-            display: inline;
-        }    
-        table { 
+            #menu ul li a{ 
+                padding: 30px 10px; 
+                background-color:#32363f; 
+                color: #32363f; 
+                font-family: "Poppins", sans-serif;
+            }
+
+            #menu ul li{
+                left: 31pc;
+                display: inline;
+                padding: 13px
+            } 
+
+            table { 
             margin: 0 auto;
             margin-bottom: 3pc;
             border: 3px solid #D6D6D6;
             background-color: #D6D6D6;
             border-radius: 5px
-            
-            
-        }
-        .img{
-            float:right ;
-            margin: 0 10px 10px 0;
-            position: absolute;
-            top: 04pc;
-            right: 7pc;
-        }
-        .div2{
-            background-color: #32363f;
-            height: 30pc;
-            padding: 30px 10px; 
-            background-color:#32363f; 
-            color: #32363f; 
+            }
 
-        }
-        .div3{
-            background-color: #32363f;
-            height: 12pc;
-            padding: 30px 10px; 
-            background-color:#32363f; 
-            color: #32363f; 
-        }
-        a {
-            background-color:#D6D6D6; 
-            color: #D6D6D6;
-        }
-        .pi {
-            color:black;
-            text-align: center;
-        }
+            th{
+                color: #35383D;
+                margin-top: 31px;
+            }
+
+            .img{
+                justify-content: space-around;
+                display: flex;
+                float:right ;
+                margin: 0 10px 10px 0;
+                position: absolute;
+                top: 04pc;
+                right: 7pc;
+            }
+
+            .div2{
+                display: flex;
+                width: 91,5pc;
+                display: flex;
+                border-top: 10vh solid #32363F;
+                border-left: 9vh solid #32363F;
+                height: 45vh;    background-color: #32363F;
+                margin-bottom: -94px;
+            }
+
+            footer{
+                display: flex;
+                background-color: #32363f;
+                height: 23vh;
+            }
+
+            .footer-custom{
+                margin: auto 9vh;
+                font-family: "Poppins", sans-serif;
+                color: #C8C8C8;
+                background-color: #32363f;
+                height: 18vh;
+                padding: 20px;
+                display: flex;
+                flex-flow: column;
+                justify-content: space-between
+            }
+
+            a {
+                text-decoration:none;
+                color:#32363F
+            }
+
+            .pi {
+                color:black;
+                text-align: center;
+        
+            }
         </style>
     </head>
     <body>
         <!-- Cabeçalho -->
-            <div>
-                <nav id="menu">
-                    <ul>
-                        <li><a href="páginainicial1.html"><font color="white">Página Inicial</font></a></li>
-                        <li><a href="Módulos.html"><font color="white">Módulos</font></a></li>
-                        <li><a href="contato.html"><font color="white">Contatos</font></a></li>
-                        <li><a href="sobre.html"><font color="white">Sobre</font></a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index (1).html"><font color="white">Página Inicial</font></a></li>
+                    <li><a href="Módulos.html"><font color="white">Módulos</font></a></li>
+                    <li><a href="contato.html"><font color="white">Contato</font></a></li>
+                    <li><a href="sobre.html"><font color="white">Sobre</font></a></li>
+                </ul>
+            </nav>
+        </div>
+        </div>
             <div class="div2">
-            <img src="imgmódulo.png" width="500px" height="500" class="img">
-            <h1 style="font-size: 7pc; position: absolute;top: 07pc; left:59px;"><font color="D6D6D6"> MÓDULOS</font></h1>
-            <p height=20pc; style="font-size: 2pc; margin-top: 10%; position: absolute;top: 12pc;left:63px;"><font color="D6D6D6"> Comece a aprender!</p>
+                <img src="imgmódulo.png" width="500px" height="500" class="img">
+                <h1 style="font-size: 7pc; position: absolute;top: 07pc; left:59px;"><font color="D6D6D6"> MÓDULOS</font></h1>
+                <p height=20pc; style="font-size: 2pc; margin-top: 10%; position: absolute;top: 12pc;left:63px;"><font color="D6D6D6"> Comece a aprender!</p>
+            </div>
+            <div class="wave">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
             </div>
         <br>
         <br>
@@ -97,12 +132,12 @@
         <!-- Capítulos -->
         <table>
            <tr>
-                <th width="1400px" height="150" style="text-align:left; font-size: 45px;"><a href="Módulo 1.html"><font color="black"> 1. Introdução</a></th>
+                <th width="1400px" height="150" style="text-align:left; font-size: 45px;"><a href="Módulo 1.html"> 1. Introdução</a></th>
             </tr>
         </table>
         <table>
            <tr>
-                <th width="1400px" height="150" style="text-align:left; font-size: 45px;"><a href="Módulo 2.html"><font color="black"> 2. Sprints</a></th>
+                <th width="1400px" height="150" style="text-align:left; font-size: 45px;"><a href="Módulo 2.html"> 2. Sprints</a></th>
             </tr>
         </table>
         <table>
@@ -125,10 +160,12 @@
         <br>
         <br>
         <!-- Rodapé -->
-        <div class="div3">
-            <p style="font-size: 2pc;padding: 1px 60px;"><font color="D6D6D6"> Referencias</p>
-            <p style="font-size: 1pc;padding: 1px 60px;top:04pc;"><font color="D6D6D6"> PRODUCT OWNER - ARTIGO </p>
-            <p style="font-size: 10px;padding: 16px 130px; "><font color="D6D6D6"> © Copyright 2024 ADALOVE - Todos os direitos reservados</p>
-        </div>
+        <footer>
+            <div class="footer-custom">
+                Referencias
+
+                <h6>© Copyright 2024 ADALOVE - Todos os direitos reservados</h6>
+            </div>
+            </footer>
     </body>
 </html>
