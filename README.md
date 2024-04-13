@@ -4,25 +4,41 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 Projeto baseado na metodologia ágil SCRUM, procurando desenvolver a Proatividade, Autonomia, Colaboração e Entrega de Resultados dos estudantes envolvidos;
 
 # Índice
-* [Objetivo do Projeto](#objetivo-do-projeto)
-* [Funcionalidades e registros (vídeos e apresentações) das sprints](#funcionalidades-e-registros-(vídeos-e-apresentações)-das-sprints)
-* [Backlog do produto](#Backlog-do-produto)
-* [Competências desenvolvidas](#competências-desenvolvidas)
-* [Autores](#autores)
 
+* Objetivo do Projeto
+* []
+
+
+# Features <!-- omit in toc -->
+
+- [Objetivo do Projeto](#github-stats-card)
+    - [Hiding individual stats](#hiding-individual-stats)
+    - [Backlog do produto](#Backlog-do-produto)
+    - [Showing icons](#showing-icons)
+    - [Themes](#themes)
+    - [Customization](#customization)
+- [Funcionalidades e registros das sprints](#github-extra-pins)
+    - [Usage](#usage)
+    - [Demo](#demo)
+    - 
+- [Competências desenvolvidas](#competências-desenvolvidas)
+
+  * [Autores](#autores)
+  
+  
 # Projeto (API) 
 Projeto pedagógico alicerçado na Metodologia API para ensino-aprendizado focado no desenvolvimento de competências e fundamentada nos pilares de aprendizado com problemas reais (RPBL), validação externa e mentalidade ágil. 
 Uso de estratégias para entender o problema, conceber uma solução viável ao desenvolver e implementar o MVP seguido de sua operação (CDIO). 
 Os resultados dos projetos devem obedecer ao Aviso Legal disponível no site da Fatec SJC com definição das datas do kickoff e das sprints
 
-Sprint | Previsão | Status|
+Sprint | Data | Status |
 |------|--------|------|
-|Kick Off | dd/mm/aaaa | concluido|
-|01 | dd/mm/aaaa | concluido|
-|02|  dd/mm/aaaa| em progresso |
-|03| dd/mm/aaaa | a fazer|
-|04| dd/mm/aaaa |a fazer |
-|Feira de Soluções|dd/mm/aaaa |a fazer |
+|Kick Off |  11/03/2024 a 15/03/2024 | concluido |
+|01 | 25/03/2024 a 14/04/2024 | concluido |
+|02|  15/04/2024 | em progresso |
+|03| 06/05/2024 | a fazer|
+|04| 27/05/2024 | a fazer |
+|Feira de Soluções|27/06/2024 |a fazer |
 
 
 
