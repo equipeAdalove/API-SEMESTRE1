@@ -1,7 +1,10 @@
 Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 ## Aprendizado por Projeto Integrado (API)
-# EQUIPE ADALOVE
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Alatsi&weight=500&size=35&duration=5050&pause=1000&color=A760ED&center=true&vCenter=true&random=false&width=435&lines=Equipe+Adalove)](https://git.io/typing-svg)
+
 Projeto baseado na metodologia ágil SCRUM, procurando desenvolver a Proatividade, Autonomia, Colaboração e Entrega de Resultados dos estudantes envolvidos;
+
 
 # Índice
 * [Objetivo do Projeto](#objetivo-do-projeto)
