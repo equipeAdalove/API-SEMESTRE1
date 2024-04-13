@@ -59,10 +59,10 @@ Adicionar video e documentos nessa seção
 # Backlog do produto
 
 ## Sprint 1. Concepção
-- [x] Defina o propósito do template;
-- [x] Identifique os elementos principais;
-- [x] Esboce o layout;
-- [x] Escolha cores e fontes;
+- [x] Levantamento de requisitos;
+- [x] Identificar os elementos principais;
+- [x] Esboçar o layout;
+- [x] Escolher cores e fontes;
 - [x] Desenvolva o design;
 - [ ] Teste e revise;
 - [ ] Documente instruções de uso;
