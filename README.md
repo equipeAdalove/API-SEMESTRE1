@@ -22,9 +22,9 @@ Sprint | Previsão | Status|
 |Kick Off | 12/03/2024 | concluido|
 |01 | 14/04/2024 | concluido|
 |02|  05/05/2024| em progresso |
-|03| dd/mm/2024 | a fazer|
-|04| dd/mm/2024 |a fazer |
-|Feira de Soluções|dd/mm/2024 |a fazer |
+|03| 26/05/2024 | a fazer|
+|04| 16/06/2024 |a fazer |
+|Feira de Soluções|27/06/2024 |a fazer |
 
 
 # Objetivo do Projeto
