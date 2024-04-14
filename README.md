@@ -31,7 +31,7 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 
 
 ## Apresentação das funcionalidades:
-Demonstraão das funcionalidades na página HTML
+Demonstração das funcionalidades na página HTML:
 
       
 
@@ -40,12 +40,17 @@ https://github.com/equipeAdalove/API-SEMESTRE1/assets/160744095/d22b8d7d-1521-4a
 
 ## Tecnologias Utilizadas
 
-* Jira Software
-* Power BI
-* Microsoft Excel
-* Slack
+<div style="display: inline_block"><br>
+<img align="center" alt="Raphs-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  
+<img align="center" alt="Raphs-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
 
+<img align="center" alt="Raphs-Git" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg">
 
+<img align="center" alt="Raphs-VsCode" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg">
+                    
+<img align="center" alt="Raphs-Figma" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg">
+</div>
 
 # Backlog do produto
 
