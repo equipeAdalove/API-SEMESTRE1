@@ -139,9 +139,3 @@ https://github.com/equipeAdalove/API-SEMESTRE1/assets/160744095/d22b8d7d-1521-4a
 |  Team Member  | Renan Tomasi       |           [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/renan21-tg)          |
 |  Team Member  | Vitor Ribeiro                 |        [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/ribeirovitor04)        |
 
-# MATERIAL DE ESTUDO: GIT
-aula do Jean: https://youtu.be/Vas_8Bwm9JI?si=xWWV85zk0K7QCoXa
-
-instalação e configuração do git no windows 11: https://youtu.be/AdzKzlp66sQ?si=KPMDzuw7G9uX4NX8
-
-pull request: https://www.freecodecamp.org/portuguese/news/como-fazer-o-seu-primeiro-pull-request-no-github/
