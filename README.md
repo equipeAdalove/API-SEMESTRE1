@@ -36,9 +36,6 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 ## Apresentação das funcionalidades:
 Demonstraão das funcionalidades na página HTML
 
-Adicionar video e documentos nessa seção
-
-[![Nome do Vídeo](https://img.youtube.com/vi/pBy1zgt0XPc/0.jpg)](https://www.youtube.com/embed/pBy1zgt0XPc)
 
 ## Tecnologias Utilizadas
 
