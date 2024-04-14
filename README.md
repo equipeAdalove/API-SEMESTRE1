@@ -73,15 +73,7 @@ https://github.com/equipeAdalove/API-SEMESTRE1/assets/160744095/d22b8d7d-1521-4a
 - [ ] Finalização do site.
       
 ## Sprint 4
-- [x] Defina o propósito do template;
-- [x] Identifique os elementos principais;
-- [x] Esboce o layout;
-- [x] Escolha cores e fontes;
-- [x] Desenvolva o design;
-- [ ] Teste e revise;
-- [ ] Documente instruções de uso;
-- [ ] Criação do vídeo;
-- [ ] Finalize e aprovação.
+- [ ] -----------------------------
 
 
 
