@@ -69,15 +69,8 @@ https://github.com/equipeAdalove/API-SEMESTRE1/assets/160744095/d22b8d7d-1521-4a
 - [ ] Aprimoramento do conteudo didático apresentado no site.
       
 ## Sprint 3
-- [x] Defina o propósito do template;
-- [x] Identifique os elementos principais;
-- [x] Esboce o layout;
-- [x] Escolha cores e fontes;
-- [x] Desenvolva o design;
-- [ ] Teste e revise;
-- [ ] Documente instruções de uso;
-- [ ] Criação do vídeo;
-- [ ] Finalize e aprovação.
+- [ ] Correções de possíveis bugs;
+- [ ] Finalização do site.
       
 ## Sprint 4
 - [x] Defina o propósito do template;
