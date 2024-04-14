@@ -21,9 +21,6 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 # Objetivo do Projeto:
 <img src="/assets/img/Objetivo.jpg">
 
-<img src="/assets/img/Apresentação.jpg">
-
-
 # Cliente:
 <img src="/assets/img/Requisito.jpg">
 
