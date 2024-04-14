@@ -65,11 +65,8 @@ https://github.com/equipeAdalove/API-SEMESTRE1/assets/160744095/d22b8d7d-1521-4a
 - [x] Elaborar a base do conteúdo apresentado no site.
 
 ## Sprint 2
-- [ ] Documento passo a passo;
-- [ ] Vídeo passo a passo;
-- [ ] Treinamento com os professores;
-- [ ] Treinamento com os alunos;
-- [ ] Monitoramento e ajustes.
+- [ ] Aprimoramento do HTML/CSS;
+- [ ] Aprimoramento do conteudo didático apresentado no site.
       
 ## Sprint 3
 - [x] Defina o propósito do template;
