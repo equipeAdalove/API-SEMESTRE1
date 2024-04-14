@@ -3,16 +3,15 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 
 <img src="/assets/img/Apresentação.jpg">
 
-
 # Equipe:
 <img src="/assets/img/Scrum Team.jpg">
 
 
 # Índice
 * [Objetivo do Projeto](#objetivo-do-projeto)
-* [Funcionalidades e registros (vídeos e apresentações) das sprints](#funcionalidades-e-registros-(vídeos-e-apresentações)-das-sprints)
+* [Cliente](#cliente)
+* [Funcionalidades e registros (vídeos e apresentações) das sprints](#funcionalidades-e-registros-das-sprints)
 * [Backlog do produto](#Backlog-do-produto)
-* [Competências desenvolvidas](#competências-desenvolvidas)
 * [Autores](#autores)
 
 # Cronograma:
@@ -22,10 +21,17 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 # Objetivo do Projeto:
 <img src="/assets/img/Objetivo.jpg">
 
-# Funcionalidades e registros (vídeos e apresentações) das sprints
+# Cliente:
+<img src="/assets/img/Requisito.jpg">
 
-Apresentação das funcionalidades
-Confira a seguir uma demonstraão das funcionalidades para cada tipo de usuário do sistema:
+# Funcionalidades e registros das sprints:
+
+## Protótipo Figma:
+<img src="/assets/img/Telas.jpg">
+
+
+## Apresentação das funcionalidades:
+Demonstraão das funcionalidades para cada tipo de usuário do sistema:
 
 Adicionar video e documentos nessa seção
 
