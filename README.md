@@ -4,7 +4,7 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 <img src="/assets/img/Apresentação.jpg">
 
 
-# Equipe Team:
+# Equipe:
 <img src="/assets/img/Scrum Team.jpg">
 
 
