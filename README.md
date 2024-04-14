@@ -34,7 +34,7 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 
 
 ## Apresentação das funcionalidades:
-Demonstraão das funcionalidades para cada tipo de usuário do sistema:
+Demonstraão das funcionalidades na página HTML
 
 Adicionar video e documentos nessa seção
 
