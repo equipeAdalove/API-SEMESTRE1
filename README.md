@@ -8,12 +8,13 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 
 
 # Índice
-* [Cronograma](#cronograma)
-* [Objetivo do Projeto](#objetivo-do-projeto)
+* [Cronograma](#Cronograma)
+* [Objetivo do Projeto](#Objetivo-do-Projeto)
 * [Cliente](#cliente)
-* [Funcionalidades e registros (vídeos e apresentações) das sprints](#funcionalidades-e-registros-das-sprints)
+* [Funcionalidades e registros (vídeos e apresentações) das sprints](#Funcionalidades-e-registros-das-sprints)
+* [Tecnologias Utilizadas:](#Tecnologias-Utilizadas)
 * [Backlog do produto](#Backlog-do-produto)
-* [Autores](#autores)
+* [Autores](#Autores)
 
 # Cronograma:
 <img src="/assets/img/Cronograma.jpg">
@@ -37,7 +38,7 @@ Demonstração das funcionalidades na página HTML:
 https://github.com/equipeAdalove/API-SEMESTRE1/assets/160744095/d22b8d7d-1521-4a65-8b7e-e43badbf6485
 
 
-# Tecnologias Utilizadas
+# Tecnologias Utilizadas:
 <img src="/assets/img/Ferramentas.jpg">
 
 
