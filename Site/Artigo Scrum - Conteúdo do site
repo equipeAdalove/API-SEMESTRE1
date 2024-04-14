@@ -206,3 +206,5 @@ CAPÍTULO 4: APÊNDICE
 > Visão: Transmitida pelo P.O, permite que ele transfira o direcionamento do projeto para a equipe e se mostra ótima oportunidade para ela aprender e discutir aspectos importantes do prduto.
 
 > User Stories: Pequenas frases presentes no Product Backlog, afim de resumir e explicar tarefas a serem realizadas que agregam valor ao produto. Devem apresentar os requisitos INVEST> Ideal, negociável, valor, estimável, pequena e testável.
+
+> Estimativa: Aplicada em Story points, é usada para estimar a quantidade de esforço que uma tarefa necessita. decide-se a tarefa com menos esforço ( 1 ) e classifica-se as proximas em comparação a ela.
