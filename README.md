@@ -36,6 +36,10 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 ## Apresentação das funcionalidades:
 Demonstraão das funcionalidades na página HTML
 
+      
+
+https://github.com/equipeAdalove/API-SEMESTRE1/assets/160744095/d22b8d7d-1521-4a65-8b7e-e43badbf6485
+
 
 ## Tecnologias Utilizadas
 
