@@ -8,6 +8,7 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 
 
 # Índice
+* [Cronograma](#cronograma)
 * [Objetivo do Projeto](#objetivo-do-projeto)
 * [Cliente](#cliente)
 * [Funcionalidades e registros (vídeos e apresentações) das sprints](#funcionalidades-e-registros-das-sprints)
