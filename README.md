@@ -1,9 +1,12 @@
 Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 ## Aprendizado por Projeto Integrado (API)
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Poppins&weight=500&size=35&duration=5050&pause=1000&color=A760ED&vCenter=true&random=false&width=435&lines=Equipe+Adalove!)](https://git.io/typing-svg)
+<img src="/assets/img/Apresentação.jpg">
 
-<img src="/assets/img/team.jpeg">
+
+# Equipe Team:
+<img src="/assets/img/Scrum Team.jpg">
+
 
 # Índice
 * [Objetivo do Projeto](#objetivo-do-projeto)
@@ -13,30 +16,11 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 * [Autores](#autores)
 
 # Cronograma:
-Projeto pedagógico alicerçado na Metodologia API para ensino-aprendizado focado no desenvolvimento de competências e fundamentada nos pilares de aprendizado com problemas reais (RPBL), validação externa e mentalidade ágil. 
-Uso de estratégias para entender o problema, conceber uma solução viável ao desenvolver e implementar o MVP seguido de sua operação (CDIO). 
-Os resultados dos projetos devem obedecer ao Aviso Legal disponível no site da Fatec SJC com definição das datas do kickoff e das sprints
-
-Sprint | Previsão | Status|
-|------|--------|------|
-|Kick Off | 12/03/2024 | concluido|
-|01 | 14/04/2024 | concluido|
-|02|  05/05/2024| em progresso |
-|03| 26/05/2024 | a fazer|
-|04| 16/06/2024 |a fazer |
-|Feira de Soluções|27/06/2024 |a fazer |
+<img src="/assets/img/Cronograma.jpg">
 
 
-# Objetivo do Projeto
-Desenvolver um sistema web que indique todos os processos e artefatos da metodologia ágil (Scrum), todos os processos deverão ter conceitos e fundamentos com referências, bem como a
-aplicação com EXEMPLOS PRÁTICOS para a plena compreensão do usuário do sistema.
-Deverá criar um formulário para avaliações parciais e final (com totalização).
-O Sistema deve primordialmente ter foco na disseminação dos processos para que os usuários
-possam replicar todos os passos em futuros desenvolvimentos.
-A prioridade secundária será a compreensão de habilidades (Skills) importantes para um
-profissional de tecnologia da informação.
-Todo o material de conhecimento publicado no sistema deverá ter forma indireta (Conhecimento adquirido e repassado pelos desenvolvedores).
-Bem como toda a documentação de desenvolvimento deverá ser lastreado no GitHub com todos os processos necessários para a fidelização do cliente.
+# Objetivo do Projeto:
+<img src="/assets/img/Objetivo.jpg">
 
 # Funcionalidades e registros (vídeos e apresentações) das sprints
 
