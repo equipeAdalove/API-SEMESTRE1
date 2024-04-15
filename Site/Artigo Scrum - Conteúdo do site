@@ -227,6 +227,15 @@ CAPÍTULO 4: APÊNDICE
 > Estimativa: Aplicada em Story points, é usada para estimar a quantidade de esforço que uma tarefa necessita. decide-se a tarefa com menos esforço ( 1 ) e classifica-se as proximas em comparação a ela.
 
 1) Planning Poker
+No início do Planning Poker, cada membro do time recebe um conjunto de cartas com valores de estimativa (por exemplo, 0, 1, 2, 3, 5, 8, 13, 20, 40 e 100). Esses valores geralmente seguem uma escala baseada na sequência de Fibonacci, embora outras sequências também possam ser usadas.
+Para cada User Story a ser estimada, o Product Owner lê a descrição e esclarece eventuais dúvidas do time. No entanto, é importante notar que, em certo ponto, discussões adicionais não aumentam a precisão da estimativa.
+Após esclarecer todas as dúvidas, cada membro seleciona uma carta representando sua estimativa, sem mostrar aos outros. As cartas só são reveladas simultaneamente, permitindo que todos vejam os valores selecionados ao mesmo tempo.
+Nesse ponto, é comum que as estimativas variem significativamente, o que na verdade é um bom sinal. As diferenças nas estimativas levam a discussões entre os membros do time, o que ajuda a chegar a um consenso mais acurado. Depois das explanações e discussões, todos recolhem suas cartas e estimam novamente, seguindo o mesmo processo.
+
 2) Por que Planning Poker funciona?
+O "Planning Poker" funciona porque aproveita a expertise de diversos membros do time na estimativa. Como esses membros são multidisciplinares, eles estão mais bem qualificados para estimar as histórias do que qualquer outra pessoa.
+Além disso, os diálogos e justificativas durante o "Planning Poker" resultam em estimativas mais precisas, especialmente para itens com maior incerteza. Isso é crucial em projetos com níveis consideráveis de complexidade.
+Estudos também demonstram que a média das estimativas individuais leva a melhores resultados, pois promove discussões em grupo. Essas discussões são a base do "Planning Poker" e levam a um consenso entre os participantes.
+
 3) Sequência de Fibonacci
 4) Velocidade
