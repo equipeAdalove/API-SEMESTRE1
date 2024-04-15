@@ -238,4 +238,9 @@ Além disso, os diálogos e justificativas durante o "Planning Poker" resultam e
 Estudos também demonstram que a média das estimativas individuais leva a melhores resultados, pois promove discussões em grupo. Essas discussões são a base do "Planning Poker" e levam a um consenso entre os participantes.
 
 3) Sequência de Fibonacci
+A sequência de Fibonacci é a escala mais comumente usada na estimativa de User Stories com o "Planning Poker". Isso se deve ao fato de que a sequência de Fibonacci é uma função quadrática, proporcionando diferenças mais significativas desde o início da sequência.
+Embora existam outras sequências quadráticas, a sequência de Fibonacci produz intervalos distintos rapidamente, refletindo a imprecisão de acordo com o tamanho da história. Por exemplo, uma história de tamanho 8 não significa necessariamente que ela é exatamente do tamanho 8, mas sim que seu tamanho está entre 5 e 13.
+
 4) Velocidade
+A velocidade representa a capacidade de um Time de Desenvolvimento em uma Sprint e é sempre medida usando a mesma unidade aplicada na estimativa dos itens.
+Essa velocidade auxilia os Product Owners no planejamento de Releases e os Times de Desenvolvimento no planejamento das Sprints, caso necessário.
