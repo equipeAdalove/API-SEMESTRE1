@@ -199,7 +199,15 @@ Um dos formatos mais comuns para o Sprint Backlog é o Task Board. No Task Board
 O objetivo do Sprint Backlog é tornar o trabalho necessário para alcançar a meta da Sprint visualmente claro para o Time de Desenvolvimento. Portanto, os membros do Time de Desenvolvimento têm permissão para adicionar novas tarefas durante a Sprint, caso descubram que mais trabalho é necessário. Da mesma forma, podem remover tarefas desnecessárias. No entanto, é importante atualizar o Sprint Backlog pelo menos uma vez por dia para garantir que esteja sempre atualizado.
 
 3) Product Increment
+Ao término de cada Sprint, o Time de Desenvolvimento entrega um incremento do produto, resultante do trabalho realizado durante a Sprint. Esse é um dos princípios fundamentais do Scrum e está alinhado com sua abordagem empírica, pois permite que o Product Owner avalie o valor do investimento e identifique novas oportunidades.
+É crucial para o Time de Desenvolvimento compreender que o Incremento deve ser potencialmente entregável - ou seja, o cliente pode optar por implantá-lo imediatamente em produção, se assim desejar. Portanto, o Time de Desenvolvimento deve produzir código de alta qualidade, com o mínimo de defeitos possível. Isso envolve a adoção de práticas de engenharia ágil que garantam a qualidade do código, evitando soluções temporárias e a postergação de correções para o futuro.
+
 4) Definition of Done (DoD)
+O Scrum não prescreve práticas específicas de engenharia de software para o Time de Desenvolvimento. No entanto, recomenda a adoção de práticas ágeis que permitam ao Time de Desenvolvimento garantir a qualidade do trabalho produzido durante a Sprint.
+Com base nas práticas adotadas pelo Time, é estabelecida a definição do que constitui uma funcionalidade "pronta" - incluindo código testado unitariamente, código validado por testes de aceitação, revisões de código, entre outros critérios. No mínimo, a Definition of Done deve incluir o requisito de que a funcionalidade seja "potencialmente entregável".
+Uma funcionalidade só é considerada "pronta" após passar por todas as etapas definidas pelo Time de Desenvolvimento. Todos os membros do Scrum devem compreender o significado de "pronto". Se uma funcionalidade não estiver pronta ao final da Sprint, ela deve retornar ao Product Backlog para ser incluída em uma Sprint futura.
+Conforme o Time de Scrum amadurece, espera-se que a Definition of Done seja expandida para incluir mais critérios de qualidade, visando a melhoria contínua.
+
 5) Burndown Charts
 
 
