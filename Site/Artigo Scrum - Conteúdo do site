@@ -209,9 +209,10 @@ Uma funcionalidade só é considerada "pronta" após passar por todas as etapas 
 Conforme o Time de Scrum amadurece, espera-se que a Definition of Done seja expandida para incluir mais critérios de qualidade, visando a melhoria contínua.
 
 5) Burndown Charts
-
-
-
+No Scrum, o Time de Desenvolvimento é autogerenciado e pode utilizar o Sprint Burndown Chart para facilitar esse autogerenciamento.
+O Sprint Burndown Chart mostra visualmente a evolução diária do trabalho do Time de Desenvolvimento, comparando o trabalho estimado inicialmente durante o Sprint Planning Meeting com a quantidade restante estimada de trabalho. Geralmente, as unidades utilizadas são horas de esforço planejadas em relação ao tempo decorrido. Além de auxiliar o time no autogerenciamento, o Sprint Burndown Chart também permite que o restante da organização acompanhe o progresso da Sprint.
+Enquanto o Sprint Burndown Chart é útil para o autogerenciamento da Sprint pelo Time de Desenvolvimento, o Product Owner pode utilizar outro gráfico para gerenciar o Release: o Release Burndown Chart.
+Por meio do Release Burndown Chart, o Product Owner obtém uma indicação do progresso da Release com base nos dados e estimativas fornecidos pelo Time de Desenvolvimento, ou seja, a quantidade do Product Backlog que será concluída. As unidades utilizadas para o Release Burndown Chart são story points por Sprints.
 
 CAPÍTULO 4: APÊNDICE
 
