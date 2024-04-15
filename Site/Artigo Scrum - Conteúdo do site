@@ -189,7 +189,15 @@ Esta agenda serve apenas como exemplo. Você pode incluir outras práticas, ativ
 
 > ARTEFATOS DO SCRUM
 1) Product Backlog
+O Product Backlog é uma lista priorizada de itens de trabalho, elaborada pelo Time Scrum. No entanto, somente o Product Owner tem autoridade para adicionar, remover ou reordenar os itens. Esses itens são geralmente descritos como User Stories e são ordenados de acordo com a sua importância, definida pelo Product Owner. Normalmente, os itens mais importantes estão no topo da lista e são implementados primeiro. Geralmente, esses itens são os que possuem mais detalhes, enquanto os itens menos importantes podem ser menos refinados e ficam posicionados mais abaixo no Product Backlog.
+Além dos itens de negócios ou funcionais, o Product Backlog também pode incluir itens não funcionais, arquiteturais e de infraestrutura, além de itens que representam riscos a serem mitigados. Durante o desenvolvimento do projeto, é comum que algumas funcionalidades percam importância ou até mesmo sejam descartadas, enquanto novas funcionalidades podem ser adicionadas conforme necessário.
+Um aspecto crucial dos itens do Product Backlog é o seu estado de prontidão para serem trabalhados. Para que um item seja incluído em uma Sprint, ele deve ser suficientemente pequeno para ser concluído dentro de uma única Sprint e deve ter critérios claros de aceitação definidos pelo Product Owner.
+
 2) Sprint Backlog
+O Sprint Backlog é composto pelos itens selecionados para implementação durante a Sprint, juntamente com o plano para transformá-los em um Incremento do produto. Assim, ao final de cada Sprint Planning Meeting, um novo Sprint Backlog é criado. Geralmente, esse plano é composto por tarefas técnicas necessárias para concluir o item e transformá-lo em um Incremento do produto.
+Um dos formatos mais comuns para o Sprint Backlog é o Task Board. No Task Board, os itens do Product Backlog são listados à esquerda, enquanto as tarefas a serem feitas, em andamento e concluídas são organizadas nas colunas "To do", "Doing" e "Done", respectivamente. Opcionalmente, as tarefas podem ser atribuídas a membros específicos do Time de Desenvolvimento.
+O objetivo do Sprint Backlog é tornar o trabalho necessário para alcançar a meta da Sprint visualmente claro para o Time de Desenvolvimento. Portanto, os membros do Time de Desenvolvimento têm permissão para adicionar novas tarefas durante a Sprint, caso descubram que mais trabalho é necessário. Da mesma forma, podem remover tarefas desnecessárias. No entanto, é importante atualizar o Sprint Backlog pelo menos uma vez por dia para garantir que esteja sempre atualizado.
+
 3) Product Increment
 4) Definition of Done (DoD)
 5) Burndown Charts
