@@ -43,6 +43,9 @@ https://github.com/equipeAdalove/API-SEMESTRE1/assets/160744095/d22b8d7d-1521-4a
 
 
 # Backlog do produto
+<img src="/assets/img/sprintI.jpg">
+
+<img src="/assets/img/sprint.jpg">
 
 ## Sprint 1.
 - [x] Levantamento de requisitos;
