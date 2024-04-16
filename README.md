@@ -7,18 +7,17 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 <img src="/assets/img/Scrum Team (2).jpg">
 
 
+
 # Índice
-* [Cronograma](#Cronograma)
-* [Objetivo do Projeto](#Objetivo-do-Projeto)
+* [Objetivo do Projeto](#objetivo-do-projeto)
 * [Cliente](#cliente)
-* [Funcionalidades e registros (vídeos e apresentações) das sprints](#Funcionalidades-e-registros-das-sprints)
-* [Tecnologias Utilizadas:](#Tecnologias-Utilizadas)
-* [Backlog do produto](#Backlog-do-produto)
-* [Autores](#Autores)
-
-# Cronograma:
-<img src="/assets/img/Cronograma.jpg">
-
+* [Cronograma](#cronograma)
+* [Backlog do produto](#backlog-do-produto)
+* [Protótipo - Figma](#prototipo)
+* [Burndown Chart](#burndown)
+* [Tecnologias Utilizadas:](#tecnologias-utilizadas)
+* [Funcionalidades e registros (vídeos e apresentações) das sprints](#funcionalidades-e-registros-das-sprints)
+* [Autores](#autores)
 
 # Objetivo do Projeto:
 <img src="/assets/img/Objetivo.jpg">
@@ -26,23 +25,11 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 # Cliente:
 <img src="/assets/img/Requisito.jpg">
 
-# Funcionalidades e registros das sprints:
 
-## Protótipo Figma:
-<img src="/assets/img/Telas.jpg">
+# Cronograma:
+<img src="/assets/img/Cronograma.jpg">
 
-
-## Apresentação das funcionalidades:
-Demonstração das funcionalidades na página HTML:      
-
-https://github.com/equipeAdalove/API-SEMESTRE1/assets/160744095/d22b8d7d-1521-4a65-8b7e-e43badbf6485
-
-# Burndown Chart:
-<img src="/assets/img/Burndown.jpg">
-
-# Tecnologias Utilizadas:
-<img src="/assets/img/Ferramentas.jpg">
-
+##
 
 # Backlog do produto
 <img src="/assets/img/sprintsI.jpg">
@@ -60,6 +47,30 @@ https://github.com/equipeAdalove/API-SEMESTRE1/assets/160744095/d22b8d7d-1521-4a
 ## Sprint 4
 - [ ] -----------------------------
 
+##
+
+
+# Protótipo Figma:
+<img src="/assets/img/Telas.jpg">
+
+##
+
+
+# Burndown Chart:
+<img src="/assets/img/Burndown.jpg">
+
+##
+
+# Tecnologias Utilizadas:
+<img src="/assets/img/Ferramentas.jpg">
+
+# Funcionalidades e registros das sprints:
+## Apresentação das funcionalidades:
+Demonstração das funcionalidades na página HTML:      
+
+https://github.com/equipeAdalove/API-SEMESTRE1/assets/160744095/d22b8d7d-1521-4a65-8b7e-e43badbf6485
+
+##
 
 <img src="/assets/img/Agradecimento.jpg">
 
