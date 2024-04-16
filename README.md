@@ -37,24 +37,17 @@ Demonstração das funcionalidades na página HTML:
 
 https://github.com/equipeAdalove/API-SEMESTRE1/assets/160744095/d22b8d7d-1521-4a65-8b7e-e43badbf6485
 
+# Burndown Chart:
+<img src="/assets/img/Burndown.jpg">
 
 # Tecnologias Utilizadas:
 <img src="/assets/img/Ferramentas.jpg">
 
 
 # Backlog do produto
-<img src="/assets/img/sprintI.jpg">
+<img src="/assets/img/sprintsI.jpg">
 
-<img src="/assets/img/sprint.jpg">
-
-## Sprint 1.
-- [x] Levantamento de requisitos;
-- [x] Identificar os elementos principais;
-- [x] Esboçar o layout;
-- [x] Escolher cores e fontes;
-- [x] Desenvolver o design no figma;
-- [x] Iniciar o front-end;
-- [x] Elaborar a base do conteúdo apresentado no site.
+<img src="/assets/img/sprints.jpg">
 
 ## Sprint 2
 - [ ] Aprimoramento do HTML/CSS;
