@@ -1,0 +1,142 @@
+/* Home CSS */
+body{
+    margin: 0;
+    font-family: "Alatsi", sans-serif;
+    background-color: #C8C8C8;
+}
+
+.container{
+    background-color: #32363f;
+    width: 70vh;
+    display: flex;
+    justify-content: space-around;
+    border-top: 10vh solid #32363F;
+    border-left: 9vh solid #32363F;
+}
+
+#cor{
+    background-color: #32363f;
+    height: 15vh;
+}
+
+.nav{
+    text-decoration: none;
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+}
+
+.titulo{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    user-select: none;
+    background-color: #32363F;
+    position: relative;
+}
+
+#txt1{
+    color: #c8c8c8;
+    font-size: 50px;
+    margin-bottom: -45px;
+}
+
+#txt2{
+    color: #c8c8c8;
+    font-size: 200px;
+}
+
+.btn2{
+    background-color: #c8c8c8;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    font-size: 28px;    ;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#start{
+    text-decoration: none;
+    color: #32363F;
+    padding: 5px 100px ;
+}
+
+.topicos{
+    font-family: "Poppins", sans-serif;
+    color: #35383D;
+    margin: auto 9vh;
+}
+
+.topicos p{
+    color: #86888B;
+}
+
+.equipe{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 9vh;
+}
+
+.equipe-btn{
+    background-color: #EBECF0;
+    width: 350px;
+    border-radius: 25px;
+    padding: 15px 15px;
+}
+
+.ver-mais{
+    height: 32vh;
+    margin: auto 9vh;
+    display: flex;
+    justify-content: end;
+    padding: 25px 5px;
+}
+
+.ver-mais a{
+    text-decoration: none;
+    color: #35383D;
+    font-size: 22px;
+}
+
+img{
+    display: flex;
+    width: 150px;
+    height: 150px;
+}
+
+.btn3{
+    text-decoration: none;
+    color: #35383D;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.img-back{
+    height: 200px;
+    border-radius: 20px;
+    background-color: #C8C8C8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background-color: #32363f;
+    height: 30vh;
+    }
+
+.footer-custom{
+    margin: auto 9vh;
+    font-family: "Poppins", sans-serif;
+    color: #C8C8C8;
+    background-color: #32363f;
+    height: 18vh;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between
+}

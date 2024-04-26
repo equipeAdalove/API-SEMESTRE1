@@ -1,0 +1,19 @@
+# Arquivos de compilação e caches
+*.pyc
+__pycache__/
+*.pyo
+*.bak
+*.swp
+*.log
+
+# Diretório de ambiente virtual
+venv/
+
+# Arquivos de configuração pessoal
+.idea/
+.vscode/
+.env
+
+# Outros arquivos e diretórios
+.DS_Store
+*/.DS_Store
