@@ -140,3 +140,28 @@ footer{
     flex-flow: column;
     justify-content: space-between
 }
+
+#menu ul{
+    background-color: #32363f;
+    list-style: none;
+}
+
+#menu{ 
+    padding: 52px 25px; 
+    background-color:#32363f; 
+    color: #32363f; 
+    justify-content: space-around;
+}
+
+#menu ul li a{ 
+    padding: 30px 10px; 
+    background-color:#32363f; 
+    color: #32363f; 
+    font-family: "Poppins", sans-serif;
+}
+
+#menu ul li{
+    left: 31pc;
+    display: inline;
+    padding: 13px
+}
