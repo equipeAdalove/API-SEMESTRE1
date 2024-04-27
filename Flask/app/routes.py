@@ -10,7 +10,7 @@ def index():
 def modulos():
     return render_template('modulos.html')
 
-@app.route('/modulo_1')
+@app.route('/mod_1')
 def modulo_1():
     return render_template('mod_1.html')
 
