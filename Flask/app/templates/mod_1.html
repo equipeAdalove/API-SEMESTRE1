@@ -1,12 +1,8 @@
-<!Doctype html>
-<html lang="Pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Capítulo 1 </title>
-        <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" type="imagex/png" href="Imagens/imgcapitulos.ico">
+{% extends 'base.html' %}
+
+{% block title %}Módulos{% endblock %}
+
+{% block styles %}
         <style>
             body{
                 justify-content: space-around;
@@ -94,19 +90,9 @@
                 text-align: justify;
             }
         </style>
-    </head>
-    <body>
-        <!-- Cabeçalho -->
-        <div>
-            <nav id="menu">
-                <ul>
-                    <li><a href="/index"><font color="white">Página Inicial</font></a></li>
-                    <li><a href="/modulos"><font color="white">Módulos</font></a></li>
-                    <li><a href="#"><font color="white">Contato</font></a></li>
-                    <li><a href="#"><font color="white">Sobre</font></a></li>
-                </ul>
-            </nav>
-        </div>
+{% endblock %}
+
+{% block content %}
         <div class="div2">
             <img src="Imagens/imgcapitulos.png" width="500px" height="500" class="img">
             <h1 style="font-size: 5pc; position: absolute;top: 13pc; left:59px;"><font color="D6D6D6"> 1. INTRODUÇÃO</font></h1>
@@ -150,16 +136,4 @@
             <br>
             <p> ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
         </div>
-
-        <!-- Rodapé -->
-
-        <footer>
-            <div class="footer-custom">
-                Referencias
-
-                <h6>© Copyright 2024 ADALOVE - Todos os direitos reservados</h6>
-            </div>
-        </footer>
-
-    </body>
-</html>
+{% endblock %}
