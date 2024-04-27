@@ -94,7 +94,7 @@
 
 {% block content %}
         <div class="div2">
-            <img src="Imagens/imgcapitulos.png" width="500px" height="500" class="img">
+            <img src="{{ url_for('static', filename='img/Mod 1-capa') }}" width="500px" height="500" class="img">
             <h1 style="font-size: 5pc; position: absolute;top: 13pc; left:59px;"><font color="D6D6D6"> 1. INTRODUÇÃO</font></h1>
         </div>
         <div class="wave">
@@ -104,19 +104,14 @@
         <!-- curso -->
 
         <div class="divtext">
-            <h1> O que é SCRUM?</h1>
-
+            <h1> DEFINIÇÕES E ORIGEM DO SCRUM </h1>
+            <h6> Introdução </h6>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet, massa non blandit rutrum, felis odio vehicula tellus, ornare finibus ex est sit amet lorem. In ut sollicitudin metus. Curabitur finibus massa non lacus maximus lobortis. Etiam id euismod velit. Nulla fringilla pharetra nisl. Aliquam tristique tristique nibh, non posuere tortor congue nec. Phasellus maximus elit vitae tortor posuere congue. Nam rhoncus ullamcorper ipsum id rhoncus. Integer luctus lorem ac nisl dapibus, at vehicula mauris tempor. Cras commodo lectus metus, vulputate venenatis tortor malesuada eget. Maecenas vel elementum justo, at ultricies ante. Nunc porttitor in velit eu eleifend. Integer mollis felis eu justo malesuada convallis. Vivamus laoreet elit quis arcu tincidunt, a luctus ex aliquet. Proin tempor euismod lacus, eget ultrices nunc aliquam vitae. Nam lobortis metus nec nisi dictum faucibus.
-
-            Praesent non neque sed metus pulvinar iaculis. Fusce non mi consequat ligula efficitur blandit nec nec metus. Nunc sapien orci, luctus eu lectus eu, tempor interdum enim. In pulvinar tristique turpis, quis lobortis nunc iaculis vitae.</p><p>In molestie efficitur euismod. Donec nec congue mi. Etiam luctus quis dui vitae dictum.
-
-            Integer tristique augue at justo tempor, non tempor metus porta. Donec lorem odio, varius in felis non, finibus aliquam felis. In hac habitasse platea dictumst. Ut vitae lorem posuere, eleifend ante ac, tincidunt ligula. Maecenas ut risus vel tellus finibus ornare a eget nisl.</p><p> Aliquam id ligula suscipit, auctor justo quis, euismod massa. Morbi tristique, nulla sit amet tincidunt eleifend, nulla nibh viverra erat, at rutrum erat libero eget odio. Nullam cursus arcu sit amet massa maximus consequat. Sed vehicula dignissim leo, quis mollis elit facilisis ac. Curabitur porta, est non gravida finibus, ligula nulla molestie dolor, quis lacinia augue justo tempus mauris.
-
-            Phasellus egestas tristique urna, eget fermentum arcu euismod sit amet. Nullam tincidunt viverra elit sit amet sagittis. Nunc ut varius tellus. Nulla eget bibendum eros. Cras justo nisl, pharetra quis lobortis ac, sagittis at ante. Praesent enim neque, commodo non ornare id, rhoncus a eros. Nunc ornare eu justo eget semper. Cras congue dolor est. Nulla hendrerit lobortis ante sed pulvinar. Donec tincidunt sem tristique massa feugiat accumsan. Ut pretium pellentesque ipsum, ac eleifend est convallis vel. Proin leo nibh, imperdiet a neque ut, vehicula bibendum nisl. Donec in aliquet diam.
-
-            Duis velit nisl, congue non urna at, vehicula dictum orci. Praesent auctor magna risus, at gravida ex scelerisque eu. Ut id diam porttitor, interdum odio eget, sagittis dolor. In tincidunt, quam id tincidunt dictum, lacus odio aliquam tellus, sed tempor mauris enim id diam. Vestibulum convallis risus neque, vel placerat arcu finibus nec. Quisque non fermentum ante. Praesent vulputate eros nunc, a malesuada turpis aliquet id. Aliquam erat volutpat. Nullam non urna pellentesque ex rhoncus tempor. Aenean vel ante sit amet urna sagittis ullamcorper et eget diam. Fusce in facilisis sapien.
+                Nos últimos anos, o desenvolvimento de software passou por uma transformação significativa. Em um mercado cada vez mais dinâmico e competitivo, as abordagens tradicionais de gestão de projetos muitas vezes se mostraram inadequadas para lidar com as demandas de clientes e as mudanças frequentes nos requisitos. É nesse contexto que surgem os Métodos Ágeis, uma abordagem flexível e adaptativa que busca maximizar o valor entregue ao cliente através de colaboração, feedback contínuo e entrega incremental.
+                Um dos métodos ágeis mais populares e amplamente adotados é o SCRUM. Criado por Jeff Sutherland e Ken Schwaber no início dos anos 90, o SCRUM oferece uma estrutura simples, mas poderosa, para gerenciar projetos complexos. Baseado em princípios como transparência, inspeção e adaptação, o SCRUM permite que as equipes entreguem software de alta qualidade de forma rápida e eficiente.
+                Neste artigo, vamos explorar em detalhes os fundamentos do SCRUM, desde seus princípios básicos até suas práticas mais avançadas. Ao final desta leitura, você terá uma compreensão sólida do SCRUM e estará preparado para aplicar esses conceitos em seu próprio ambiente de trabalho.
             </p>
+            <img src="{{ url_for('static', filename='img/Mod 1-introdução') }}" width="500px" height="500" class="img">
         </div>
         <div class="funcoes">
             <h1> Funções </h1>
