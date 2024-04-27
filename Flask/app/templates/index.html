@@ -1,52 +1,205 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="Stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='imgs/imgpana.ico') }}">
-</head>
+{% extends 'base.html' %}
 
-<body>
-<!--Navbar-->
-    <div>
-        <nav id="menu">
-            <ul>
-                <li><a href="/index"><font color="white">Página Inicial</font></a></li>
-                <li><a href="/modulos"><font color="white">Módulos</font></a></li>
-                <li><a href="#"><font color="white">Contato</font></a></li>
-                <li><a href="#"><font color="white">Sobre</font></a></li>
-            </ul>
-        </nav>
-    </div>
-<!--Titulo SCRUM-->
+{% block title %}Home{% endblock %}
+
+{% block styles %}
+    <style>
+        body{
+            margin: 0;
+            font-family: "Alatsi", sans-serif;
+            background-color: #C8C8C8;
+        }
+
+        .container{
+            background-color: #32363f;
+            width: 70vh;
+            display: flex;
+            justify-content: space-around;
+            border-top: 10vh solid #32363F;
+            border-left: 9vh solid #32363F;
+        }
+
+        #cor{
+            background-color: #32363f;
+            height: 15vh;
+        }
+
+        .nav{
+            text-decoration: none;
+            color: aliceblue;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .titulo{
+            height: 45vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            user-select: none;
+            background-color: #32363F;
+            position: relative;
+        }
+
+        #txt1{
+            color: #c8c8c8;
+            font-size: 50px;
+            margin-bottom: -45px;
+        }
+
+        #txt2{
+            color: #c8c8c8;
+            font-size: 200px;
+        }
+
+        .btn2{
+            background-color: #c8c8c8;
+            display: flex;
+            height: 50px;
+            align-items: center;
+            font-size: 28px;    ;
+            user-select: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        #start{
+            text-decoration: none;
+            color: #32363F;
+            padding: 5px 100px ;
+        }
+
+        .topicos{
+            font-family: "Poppins", sans-serif;
+            color: #35383D;
+            margin: auto 9vh;
+        }
+
+        .topicos p{
+            color: #86888B;
+        }
+
+        .equipe{
+            display: flex;
+            justify-content: space-between;
+            margin: auto 9vh;
+        }
+
+        .equipe-btn{
+            background-color: #EBECF0;
+            width: 350px;
+            border-radius: 25px;
+            padding: 15px 15px;
+        }
+
+        .ver-mais{
+            height: 32vh;
+            margin: auto 9vh;
+            display: flex;
+            justify-content: end;
+            padding: 25px 5px;
+        }
+
+        .ver-mais a{
+            text-decoration: none;
+            color: #35383D;
+            font-size: 22px;
+        }
+
+        img{
+            display: flex;
+            width: 150px;
+            height: 150px;
+        }
+
+        .btn3{
+            text-decoration: none;
+            color: #35383D;
+            font-family: "Poppins", sans-serif;
+
+        }
+
+        .img-back{
+            height: 200px;
+            border-radius: 20px;
+            background-color: #C8C8C8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer{
+            background-color: #32363f;
+            height: 30vh;
+            }
+
+        .footer-custom{
+            margin: auto 9vh;
+            font-family: "Poppins", sans-serif;
+            color: #C8C8C8;
+            background-color: #32363f;
+            height: 18vh;
+            padding: 20px;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between
+        }
+
+        #menu ul{
+            background-color: #32363f;
+            list-style: none;
+        }
+
+        #menu{ 
+            padding: 52px 25px; 
+            background-color:#32363f; 
+            color: #32363f; 
+            justify-content: space-around;
+        }
+
+        #menu ul li a{ 
+            padding: 30px 10px; 
+            background-color:#32363f; 
+            color: #32363f; 
+            font-family: "Poppins", sans-serif;
+        }
+
+        #menu ul li{
+            left: 31pc;
+            display: inline;
+            padding: 13px
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <!-- Conteúdo da página Home -->
+    <!--Titulo SCRUM-->
     <div class="titulo">
         <div id="txt1">
             METODOLOGIA ÁGIL
         </div>
         <div id="txt2">
-                SCRUM
+            SCRUM
         </div>
         <div class="btn2">
             <a href="#" id="start">COMECE AQUI!</a>
         </div>
     </div>  
 
-<!--Wave-->
+    <!--Wave-->
     <div class="wave">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
     </div>
 
-<!--Topicos em destaque-->
+    <!--Topicos em destaque-->
     <div class="topicos">
         <h1>Tópicos em Destaque:</h1>
         <p>Aqui você encontra os principais conceitos a respeito da metodologia ágil</p>
     </div>
     <br><br>
-<!--Botões equipe-->
+    <!--Botões equipe-->
     <div class="equipe">
         <div class="equipe-btn">
             <a class="btn3" href="">
@@ -83,16 +236,4 @@
         <a href=""> Ver Mais </a>
     </div>
     <div class="espaco"></div>
-    
-
-<!--Rodape-->
-    <footer>
-        <div class="footer-custom">
-            Referencias
-
-            <h6>© Copyright 2024 ADALOVE - Todos os direitos reservados</h6>
-        </div>
-    </footer>
-
-</body>
-</html>
+{% endblock %}
