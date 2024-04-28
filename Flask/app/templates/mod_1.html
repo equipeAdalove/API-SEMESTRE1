@@ -130,6 +130,86 @@
                 background-color: #32363F;
                 padding: 2px 16px;
             }
+            .button {
+                display: inline-block;
+                border-radius: 4px;
+                background-color: #32363F;
+                border: none;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 20px;
+                padding: 20px;
+                width: 200px;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin: 5px;
+                display: block;
+            }
+
+            .button span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+            .button span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: 20px;
+                transition: 0.5s;
+            }
+
+            .button:hover span {
+                padding-right: 25px;
+            }
+
+            .button:hover span:after {
+                opacity: 1;
+                right: 0;
+            }
+            .button2 {
+                display: inline-block;
+                border-radius: 4px;
+                background-color: #32363F;
+                border: none;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 20px;
+                padding: 20px;
+                width: 200px;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin: 5px;
+                display: block;
+            }
+
+            .button2 span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+            .button2 span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }
+
+            .button2:hover span {
+                padding-right: 25px;
+            }
+
+            .button2:hover span:after {
+                opacity: 1;
+                right: 0px;
+            }
         </style>
 {% endblock %}
 
@@ -269,4 +349,13 @@
         <br>
         <br>
         <br>
+        <div class="button">
+            <button class="button" style="vertical-align:middle;"><a href="/modulos"><font color="#C8C8C8"><span> Módulos</span></font></button>
+        </div>
+        <br>
+        <div class="button2">
+                <button class="button" style="vertical-align:middle;"> <a href="/mod_2"><font color="#C8C8C8"><span> Avançar</span></font></button>
+            </div>
+        </div>
+       
 {% endblock %}
