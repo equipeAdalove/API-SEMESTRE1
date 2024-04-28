@@ -95,11 +95,25 @@
             }
             .pp{
                 line-height: 1.5;
-                text-indent: 50px;
+                text-indent: 80px;
+            }
+            .pp2{
+                line-height: 1.5;
+                text-indent: 100px;
             }
             .ppp{
                 line-height: 1.5;
-                text-indent: 50px;
+                text-indent: 120px;
+            }
+            .ppp2{
+                line-height: 1.5;
+                text-indent: 140px;
+            }
+            .imag{
+                width: 45%;
+                height: 45%;
+                margin-left: 350px;
+                margin-right: 350px;
             }
         </style>
 {% endblock %}
@@ -121,10 +135,9 @@
                     <p>Nos últimos anos, o desenvolvimento de software passou por uma transformação significativa. Em um mercado cada vez mais dinâmico e competitivo, as abordagens tradicionais de gestão de projetos muitas vezes se mostraram inadequadas para lidar com as demandas de clientes e as mudanças frequentes nos requisitos. É nesse contexto que surgem os Métodos Ágeis, uma abordagem flexível e adaptativa que busca maximizar o valor entregue ao cliente através de colaboração, feedback contínuo e entrega incremental.</p>
                     <p>Um dos métodos ágeis mais populares e amplamente adotados é o SCRUM. Criado por Jeff Sutherland e Ken Schwaber no início dos anos 90, o SCRUM oferece uma estrutura simples, mas poderosa, para gerenciar projetos complexos. Baseado em princípios como transparência, inspeção e adaptação, o SCRUM permite que as equipes entreguem software de alta qualidade de forma rápida e eficiente.</p>
                     <p>Neste artigo, vamos explorar em detalhes os fundamentos do SCRUM, desde seus princípios básicos até suas práticas mais avançadas. Ao final desta leitura, você terá uma compreensão sólida do SCRUM e estará preparado para aplicar esses conceitos em seu próprio ambiente de trabalho.</p>
-            <img src="{{ url_for('static', filename='/imgs/introduçao1.png') }}" width="500px" height="500">
-        </div>
+            <img src="{{ url_for('static', filename='/imgs/introduçao1.png') }}" class="imag">
         <br>
-        <div class="funcoes">
+        <br>
             <h1> Fundamentos do SCRUM: Adaptabilidade e Valor </h1>
                 <p> O Scrum é uma metodologia ágil de gestão de projetos que traz uma abordagem flexível e adaptável para equipes de desenvolvimento tech. Ao invés de seguir um plano rígido, as equipes trabalham em sprints curtos, onde podem se ajustar rapidamente às mudanças e prioridades do cliente. Essa flexibilidade é essencial em um ambiente onde as necessidades do projeto podem evoluir rapidamente.</p>
                 <p>Além disso, o Scrum promove a entrega contínua de valor ao cliente através de iterações curtas, permitindo que funcionalidades sejam entregues regularmente e ajustadas com base no feedback recebido. Isso mantém o cliente envolvido no processo e garante que o produto final atenda às suas expectativas. </p>
@@ -137,38 +150,38 @@
                 <P>Em vez de seguir um plano rígido, o Scrum permite às equipes se ajustarem e responderem de forma ágil às necessidades e demandas do cliente. </p>
         <br>
             <P class="pp"><strong> 1. Objetivo do Scrum: </strong>,</P> 
-            <p> O Scrum é mais do que apenas um processo - é um framework que capacita as equipes a resolverem problemas complexos e adaptáveis, entregando produtos de forma produtiva e criativa, maximizando seu valor. Embora seja leve e simples de entender em sua essência, sua aplicação eficaz pode ser desafiadora.</p>
+                <p class="pp2"> O Scrum é mais do que apenas um processo - é um framework que capacita as equipes a resolverem problemas complexos e adaptáveis, entregando produtos de forma produtiva e criativa, maximizando seu valor. Embora seja leve e simples de entender em sua essência, sua aplicação eficaz pode ser desafiadora.</p>
         <br>  
             <P class="pp"><strong> 2. Princípios do Scrum: </strong>,</P> 
-                <p> O Scrum é baseado em três pilares fundamentais: transparência, inspeção e adaptação. Estes pilares guiam o relacionamento e interação entre os membros da equipe, bem como a forma como o trabalho é realizado. 
-                    <p> Transparência: todos os aspectos do trabalho devem ser visíveis e compreensíveis para todos os envolvidos.
-                    <p> Inspeção: os artefatos e o progresso do trabalho devem ser inspecionados regularmente para garantir a qualidade e a conformidade com os objetivos.
-                    <p> Adaptação: com base na inspeção, ajustes e melhorias contínuas devem ser feitos para alcançar os melhores resultados.</p>
+                <p class="pp2"> O Scrum é baseado em três pilares fundamentais: transparência, inspeção e adaptação. Estes pilares guiam o relacionamento e interação entre os membros da equipe, bem como a forma como o trabalho é realizado. 
+                    <p class="ppp"><i><strong>Transparência:</strong></i>todos os aspectos do trabalho devem ser visíveis e compreensíveis para todos os envolvidos.
+                    <p class="ppp"><i><strong>Inspeção: </strong></i>os artefatos e o progresso do trabalho devem ser inspecionados regularmente para garantir a qualidade e a conformidade com os objetivos.
+                    <p class="ppp"><i><strong>Adaptação: </strong></i>com base na inspeção, ajustes e melhorias contínuas devem ser feitos para alcançar os melhores resultados.</p>
         <br>    
             <p class="pp"><strong> 3. Aplicação do Scrum: </strong></p>
-                <p> Embora tenha sido originado no desenvolvimento de software, o Scrum é aplicável a uma variedade de projetos, desde que haja complexidade e incerteza. Seu enfoque no controle empírico de processos, ou empirismo, permite que as equipes melhorem continuamente seu trabalho à medida que avançam. Diferente de processos pré definidos, onde cada passo é previsível, o Scrum reconhece a natureza imprevisível dos projetos complexos e abraça a mudança como uma vantagem competitiva.</p>
-                <p>Um exemplo prático de aplicação do Scrum é na gestão de projetos de desenvolvimento de software. Imagine uma equipe de desenvolvedores trabalhando em um projeto complexo. Utilizando o Scrum, o projeto é dividido em sprints, que são períodos de tempo bem definidos, geralmente de duas a quatro semanas. Cada sprint tem um objetivo claro e os desenvolvedores trabalham em conjunto para alcançá-lo. Durante o sprint, são realizadas reuniões diárias de acompanhamento, chamadas de Daily Scrum, onde cada membro da equipe compartilha o que foi feito, o que está planejado e quais são os possíveis obstáculos. Ao final de cada sprint, é feita uma revisão para avaliar o que foi entregue e planejar o próximo sprint. Esse ciclo se repete até que o projeto seja concluído. </p>
+                <p class="pp2"> Embora tenha sido originado no desenvolvimento de software, o Scrum é aplicável a uma variedade de projetos, desde que haja complexidade e incerteza. Seu enfoque no controle empírico de processos, ou empirismo, permite que as equipes melhorem continuamente seu trabalho à medida que avançam. Diferente de processos pré definidos, onde cada passo é previsível, o Scrum reconhece a natureza imprevisível dos projetos complexos e abraça a mudança como uma vantagem competitiva.</p>
+                <p class="pp2">Um exemplo prático de aplicação do Scrum é na gestão de projetos de desenvolvimento de software. Imagine uma equipe de desenvolvedores trabalhando em um projeto complexo. Utilizando o Scrum, o projeto é dividido em sprints, que são períodos de tempo bem definidos, geralmente de duas a quatro semanas. Cada sprint tem um objetivo claro e os desenvolvedores trabalham em conjunto para alcançá-lo. Durante o sprint, são realizadas reuniões diárias de acompanhamento, chamadas de Daily Scrum, onde cada membro da equipe compartilha o que foi feito, o que está planejado e quais são os possíveis obstáculos. Ao final de cada sprint, é feita uma revisão para avaliar o que foi entregue e planejar o próximo sprint. Esse ciclo se repete até que o projeto seja concluído. </p>
        <br>     
             <p class="pp"><strong> 4. Benefícios do Scrum: </strong></p>
-            <p> Os benefícios do Scrum são vastos, incluindo maior colaboração entre os membros da equipe, foco no valor entregue ao cliente, e capacidade de adaptação às mudanças do mercado. Esses aspectos combinados permitem que as equipes entreguem produtos de alta qualidade de forma rápida e eficiente.
+            <p class="pp2"> Os benefícios do Scrum são vastos, incluindo maior colaboração entre os membros da equipe, foco no valor entregue ao cliente, e capacidade de adaptação às mudanças do mercado. Esses aspectos combinados permitem que as equipes entreguem produtos de alta qualidade de forma rápida e eficiente.
                 <p class="ppp"><strong><i> Primeiro benefício do Scrum: Melhor gerenciamento de projetos </i></strong></p>
-                    <p> O Scrum oferece uma abordagem eficiente e eficaz para organizar, planejar e acompanhar as tarefas de um projeto. </p>
-                    <p> A estrutura de times organizada em sprints permite um melhor controle do progresso do projeto e a detecção precoce de problemas.
-                    <p> O papel do Scrum Master facilita a condução do projeto, removendo obstáculos e promovendo a colaboração. </p>
-                    <p> Ferramentas como o Product Backlog e Sprint Backlog proporcionam clareza e planejamento efetivo. </p>
+                    <p class="ppp2"> O Scrum oferece uma abordagem eficiente e eficaz para organizar, planejar e acompanhar as tarefas de um projeto. </p>
+                    <p class="ppp2"> A estrutura de times organizada em sprints permite um melhor controle do progresso do projeto e a detecção precoce de problemas.
+                    <p class="ppp2"> O papel do Scrum Master facilita a condução do projeto, removendo obstáculos e promovendo a colaboração. </p>
+                    <p class="ppp2"> Ferramentas como o Product Backlog e Sprint Backlog proporcionam clareza e planejamento efetivo. </p>
                 <p class="ppp"><strong><i>  Segundo benefício do Scrum: Maior flexibilidade e adaptabilidade </i></strong></p>
-                    <p> O Scrum permite que as equipes respondam rapidamente a mudanças e imprevistos. </p>
-                    <p> Revisões periódicas e retrospectivas permitem ajustes e redefinição de prioridades. </p>
-                    <p> O Product Backlog flexível e as iterações incrementais garantem que o produto final atenda às necessidades em constante evolução do cliente. </p>
-                    <p> A natureza iterativa e incremental do Scrum possibilita uma constante evolução e aprimoramento do produto. </p>
+                    <p class="ppp2"> O Scrum permite que as equipes respondam rapidamente a mudanças e imprevistos. </p>
+                    <p class="ppp2"> Revisões periódicas e retrospectivas permitem ajustes e redefinição de prioridades. </p>
+                    <p class="ppp2"> O Product Backlog flexível e as iterações incrementais garantem que o produto final atenda às necessidades em constante evolução do cliente. </p>
+                    <p class="ppp2"> A natureza iterativa e incremental do Scrum possibilita uma constante evolução e aprimoramento do produto. </p>
                 <p class="ppp"><strong><i>  Terceiro benefício do Scrum: Aumento da produtividade e eficiência no desenvolvimento</i></strong></p>
-                    <p> A divisão do trabalho em sprints evita a procrastinação e permite a entrega de resultados concretos de forma mais rápida. </p>
-                    <p> A autogestão das equipes e a redução de retrabalhos contribuem para a eficiência do processo. </p>
-                    <p> A transparência promovida pelo Scrum e a comunicação constante entre os membros da equipe aumentam a produtividade. </p>
+                    <p class="ppp2"> A divisão do trabalho em sprints evita a procrastinação e permite a entrega de resultados concretos de forma mais rápida. </p>
+                    <p class="ppp2"> A autogestão das equipes e a redução de retrabalhos contribuem para a eficiência do processo. </p>
+                    <p class="ppp2"> A transparência promovida pelo Scrum e a comunicação constante entre os membros da equipe aumentam a produtividade. </p>
                 <p class="ppp"><strong><i>  Quarto benefício do Scrum: Melhor colaboração e comunicação entre equipes </i></strong></p>
-                    <p> A figura do Product Owner facilita a comunicação entre as partes interessadas. </p>
-                    <p> Rituais como as reuniões de planejamento do sprint e as reuniões diárias promovem a colaboração e a comunicação eficaz. </p>
-                    <p> A colaboração multidisciplinar e o ambiente de trabalho colaborativo estimulam a criatividade e fortalecem os laços entre os membros da equipe. </p>
+                    <p class="ppp2"> A figura do Product Owner facilita a comunicação entre as partes interessadas. </p>
+                    <p class="ppp2"> Rituais como as reuniões de planejamento do sprint e as reuniões diárias promovem a colaboração e a comunicação eficaz. </p>
+                    <p class="ppp2"> A colaboração multidisciplinar e o ambiente de trabalho colaborativo estimulam a criatividade e fortalecem os laços entre os membros da equipe. </p>
         <br>   
             <P><strong> Exemplos práticos: </strong></P>
                 <P><strong><i>  Priorização de Backlog: </i></strong></P>
@@ -177,7 +190,7 @@
                     <p>No final de cada sprint, a equipe realiza uma revisão do sprint com os stakeholders para demonstrar o trabalho realizado. Durante essa revisão, os stakeholders têm a oportunidade de fornecer feedback sobre o produto entregue. Se surgirem novas ideias ou requisitos, a equipe pode adaptar o plano para os próximos sprints com base nesse feedback, garantindo que o produto esteja sempre alinhado às necessidades do cliente. </p>
                 <P><strong><i>  Retrospectiva do Sprint: </i></strong></P>
                     <p>Após a revisão do sprint, a equipe realiza uma retrospectiva do sprint para refletir sobre o que funcionou bem, o que não funcionou e como eles podem melhorar no próximo sprint. Se identificarem áreas onde a equipe pode ser mais eficiente ou onde o processo pode ser aprimorado para fornecer mais valor, eles podem adaptar suas práticas e abordagens para o próximo sprint. </P>
-            <img src="{{ url_for('static', filename='/imgs/fundamentos1.png') }}" width="500px" height="500">
+            <img src="{{ url_for('static', filename='/imgs/fundamentos1.png') }}" class="imag">
         <br>
         <br>
             <h1> Valores e princípios do Scrum: Fundamentos para o Sucesso </h1>
@@ -185,8 +198,8 @@
                 <p>  Os princípios do SCRUM são essenciais para o sucesso de projetos ágeis. Através da transparência, inspeção e adaptação, comunicação, autogerenciamento e entrega contínua de valor, as equipes podem melhorar a eficiência, qualidade e satisfação do cliente. Aplicar os princípios do SCRUM exige comprometimento, disciplina e capacitação, mas os resultados obtidos valem o esforço. </p>
         <br>
             <P class="pp"><strong> Manifesto Ágil:</strong></P>   
-                <p> O Manifesto Ágil foi criado em 2001 por um grupo de profissionais e pensadores, incluindo Jeff Sutherland e Ken Schwaber, os criadores do SCRUM. Este manifesto serve como a base dos métodos ágeis, valorizando indivíduos e interações, software em funcionamento, colaboração com o cliente e resposta a mudanças. </p>
-                <p> O Manifesto Ágil é um documento crucial que estabelece os valores e princípios fundamentais da abordagem ágil no desenvolvimento de software. Criado por um grupo de profissionais de TI em 2001, o Manifesto Ágil enfatiza a importância de: </p>
+                <p class="pp2"> O Manifesto Ágil foi criado em 2001 por um grupo de profissionais e pensadores, incluindo Jeff Sutherland e Ken Schwaber, os criadores do SCRUM. Este manifesto serve como a base dos métodos ágeis, valorizando indivíduos e interações, software em funcionamento, colaboração com o cliente e resposta a mudanças. </p>
+                <p class="pp2"> O Manifesto Ágil é um documento crucial que estabelece os valores e princípios fundamentais da abordagem ágil no desenvolvimento de software. Criado por um grupo de profissionais de TI em 2001, o Manifesto Ágil enfatiza a importância de: </p>
                     <p class="ppp"><strong><i>  Indivíduos e interações: </i></strong> Valoriza o potencial humano e destaca a colaboração entre membros da equipe em vez de processos e ferramentas. </p>
                     <p class="ppp"><strong><i>  Software funcionando: </i></strong> Prioriza a entrega de software funcional e de valor para o cliente em intervalos curtos e frequentes. </p>
                     <p class="ppp"><strong><i>  Colaboração com o cliente: </i></strong> Enfatiza a importância da colaboração contínua com o cliente para garantir que o produto final atenda às suas necessidades e expectativas. </p>
@@ -202,11 +215,11 @@
                     <p> Uma equipe ágil está aberta a mudanças nos requisitos do projeto, mesmo durante o desenvolvimento. Eles são capazes de se adaptar rapidamente a novas informações ou prioridades do cliente, ajustando o plano conforme necessário para maximizar o valor entregue. </p>
         <br>    
             <p class="pp"><strong> Princípios Ágeis: </strong> </p>
-                <P> Os Princípios Ágeis complementam o Manifesto Ágil, oferecendo diretrizes específicas para o desenvolvimento de software ágil. Os princípios ágeis são diretrizes que orientam a prática ágil, visando a entrega contínua de valor ao cliente e a adaptação às mudanças. Entre os princípios ágeis, destacam-se: </P>
-                <p class="ppp"><strong><i>  Satisfação do cliente: </i></strong> Priorizar a satisfação do cliente através da entrega contínua e rápida de software funcional. </p>
-                <p class="ppp"><strong><i>  Entrega incremental: </i></strong> Dividir o trabalho em incrementos menores e entregáveis, permitindo feedback rápido e ajustes conforme necessário. </p>
-                <p class="ppp"><strong><i>  Colaboração: </i></strong> Fomentar a colaboração entre membros da equipe, bem como com stakeholders, para garantir alinhamento e entendimento compartilhado dos objetivos do projeto. </p>
-                <p class="ppp"><strong><i>  Adaptação contínua: </i></strong> Estar aberto a mudanças nos requisitos e circunstâncias do projeto, adaptando-se rapidamente para maximizar o valor entregue. </p>
+                <P class="pp2"> Os Princípios Ágeis complementam o Manifesto Ágil, oferecendo diretrizes específicas para o desenvolvimento de software ágil. Os princípios ágeis são diretrizes que orientam a prática ágil, visando a entrega contínua de valor ao cliente e a adaptação às mudanças. Entre os princípios ágeis, destacam-se: </P>
+                    <p class="ppp"><strong><i>  Satisfação do cliente: </i></strong> Priorizar a satisfação do cliente através da entrega contínua e rápida de software funcional. </p>
+                    <p class="ppp"><strong><i>  Entrega incremental: </i></strong> Dividir o trabalho em incrementos menores e entregáveis, permitindo feedback rápido e ajustes conforme necessário. </p>
+                    <p class="ppp"><strong><i>  Colaboração: </i></strong> Fomentar a colaboração entre membros da equipe, bem como com stakeholders, para garantir alinhamento e entendimento compartilhado dos objetivos do projeto. </p>
+                    <p class="ppp"><strong><i>  Adaptação contínua: </i></strong> Estar aberto a mudanças nos requisitos e circunstâncias do projeto, adaptando-se rapidamente para maximizar o valor entregue. </p>
         <br>    
             <p><strong> Exemplo prático: </strong></p>
                 <p><strong><i>  Satisfazer o cliente através da entrega contínua e adiantada de software com valor agregado: </i></strong></p>
@@ -215,13 +228,13 @@
                     <p> Uma equipe ágil reconhece que os requisitos do projeto podem evoluir ao longo do tempo. Eles estão preparados para incorporar mudanças mesmo em estágios avançados de desenvolvimento, desde que isso gere valor adicional para o cliente.  </p>
         <br>   
             <p class="pp"><strong> Valores de Scrum:</strong></p>
-                <p> Além de seguir o Manifesto Ágil e seus Princípios, o SCRUM possui cinco valores fundamentais que guiam o comportamento das equipes. Estes valores são essenciais para promover a colaboração, o trabalho em equipe e a busca pela excelência, são inspirados nos princípios ágeis e no Manifesto Ágil, e constituem a base cultural e comportamental das equipes que adotam o Scrum: </p>
-                    <p class="ppp"><strong><i>  Comprometimento: Os membros da equipe estão comprometidos com os objetivos do projeto e com a entrega de valor ao cliente. </i></strong></p>
-                    <p class="ppp"><strong><i>  Foco: A equipe mantém o foco no trabalho necessário para alcançar os objetivos do sprint e do projeto. </i></strong></p>
-                    <p class="ppp"><strong><i>  Abertura: Há transparência e honestidade em todas as interações, promovendo uma cultura de confiança e colaboração. </i></strong></p>
-                    <p class="ppp"><strong><i>  Respeito: Todos os membros da equipe são respeitados por suas contribuições e perspectivas únicas. </i></strong></p>
-                    <p class="ppp"><strong><i>  Coragem: A equipe tem a coragem de enfrentar desafios, buscar melhorias contínuas e tomar decisões difíceis quando necessário. </i></strong></p>
-                <p> Esses valores e princípios são fundamentais para o sucesso do Scrum, fornecendo uma base sólida para equipes que desejam adotar uma abordagem ágil e alcançar resultados excepcionais no desenvolvimento de produtos. Ao internalizar e praticar esses valores e princípios, as equipes podem criar um ambiente propício à inovação, colaboração e entrega de valor contínuo ao cliente. </p>
-            <img src="{{ url_for('static', filename='/imgs/valores1.png') }}" width="500px" height="500">
+                <p class="pp2"> Além de seguir o Manifesto Ágil e seus Princípios, o SCRUM possui cinco valores fundamentais que guiam o comportamento das equipes. Estes valores são essenciais para promover a colaboração, o trabalho em equipe e a busca pela excelência, são inspirados nos princípios ágeis e no Manifesto Ágil, e constituem a base cultural e comportamental das equipes que adotam o Scrum: </p>
+                    <p class="ppp"><strong><i>  Comprometimento: </i></strong>Os membros da equipe estão comprometidos com os objetivos do projeto e com a entrega de valor ao cliente. </i></strong></p>
+                    <p class="ppp"><strong><i>  Foco: </i></strong>A equipe mantém o foco no trabalho necessário para alcançar os objetivos do sprint e do projeto. </i></strong></p>
+                    <p class="ppp"><strong><i>  Abertura: </i></strong>Há transparência e honestidade em todas as interações, promovendo uma cultura de confiança e colaboração. </i></strong></p>
+                    <p class="ppp"><strong><i>  Respeito: </i></strong>Todos os membros da equipe são respeitados por suas contribuições e perspectivas únicas. </i></strong></p>
+                    <p class="ppp"><strong><i>  Coragem: </i></strong>A equipe tem a coragem de enfrentar desafios, buscar melhorias contínuas e tomar decisões difíceis quando necessário. </i></strong></p>
+                <p class="pp2"> Esses valores e princípios são fundamentais para o sucesso do Scrum, fornecendo uma base sólida para equipes que desejam adotar uma abordagem ágil e alcançar resultados excepcionais no desenvolvimento de produtos. Ao internalizar e praticar esses valores e princípios, as equipes podem criar um ambiente propício à inovação, colaboração e entrega de valor contínuo ao cliente. </p>
+            <img src="{{ url_for('static', filename='/imgs/valores1.png') }}" class="imag">
         </div>
 {% endblock %}
