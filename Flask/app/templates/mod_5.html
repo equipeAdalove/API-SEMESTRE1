@@ -4,7 +4,7 @@
 
 {% block styles %}
         <style>
-            body{
+           body{
                 justify-content: space-around;
                 margin: 0%;
                 margin-bottom: 0%;
@@ -89,6 +89,10 @@
                 margin-bottom: 80px;
                 text-align: justify;
             }
+            .h3{
+                line-height: 1.5;
+                text-indent: 20px;
+            }
             p{
                 line-height: 1.5;
                 text-indent: 50px;
@@ -115,7 +119,7 @@
                 margin-left: 350px;
                 margin-right: 350px;
             }
-            .card {
+            .cardcard {
                 box-shadow: 0 4px 8px 0 #1c1e21;
                 transition: 0.3s;
                 width: 100%;
@@ -123,10 +127,10 @@
                 border-radius: 5px;
             }
 
-            .card:hover {
+            .cardcard:hover {
                 box-shadow: 0 8px 16px 0 #1c1e21;
             }
-            .container {
+            .containercard{
                 background-color: #32363F;
                 padding: 2px 16px;
             }
@@ -138,14 +142,14 @@
                 text-align: center;
                 font-size: 16px;
                 margin: 4px 2px;
-                opacity: 0.6;
+                opacity: 1;
                 transition: 0.3s;
                 display: inline-block;
                 text-decoration: none;
                 cursor: pointer;
             }
 
-            .button:hover {opacity: 1}
+            .button:hover {opacity: 0.8}
 
             .button2 {
                 background-color: #32363F;
@@ -155,14 +159,14 @@
                 text-align: center;
                 font-size: 16px;
                 margin: 4px 2px;
-                opacity: 0.6;
+                opacity: 1;
                 transition: 0.3s;
                 display: inline-block;
                 text-decoration: none;
                 cursor: pointer;
             }
 
-            .button2:hover {opacity: 1}
+            .button2:hover {opacity: 0.8}
 
             .position_btn{
                 display: flex;
@@ -175,7 +179,7 @@
 
 {% block content %}
     <div class="div2">
-        <img src="{{ url_for('static', filename='/imgs/fundamentos1.png') }}" width="500px" height="500" class="img">
+        <img src="{{ url_for('static', filename='/imgs/fundamentos1.png') }}" width="400px" height="400" class="img">
         <h1 style="font-size: 5pc; position: absolute;top: 13pc; left:59px;"><font color="D6D6D6"> 5. ARTEFATOS</font></h1>
     </div>
     <div class="wave">
@@ -186,20 +190,28 @@
 
     <div class="divtext">
         <h1> ARTEFATOS DE SCRUM </h1>
-            <h3> Introdução </h3>
             <p> A metodologia Scrum utiliza diferentes artefatos para fornecer uma visão clara do progresso do projeto e das Sprints. Aqui estão alguns dos principais artefatos utilizados no Scrum: </p>
-            <ul>
-                <li> <strong><i>Product Backlog</i></strong> </li>
-                <li> <strong><i>Sprint Backlog</i></strong> </li>
-                <li> <strong><i>Product Increment</i></strong> </li>
-                <li> <strong><i>Definition of Done (DoD)</i></strong> </li>
-                <li> <strong><i>Burndown Chart</i></strong> </li>
-            </ul>
+            <div class="cardcard">
+                <div class="containercard">
+                <br>
+                <font color="#C8C8C8">
+                <ul>
+                    <li> <strong><i>Product Backlog</i></strong> </li>
+                    <li> <strong><i>Sprint Backlog</i></strong> </li>
+                    <li> <strong><i>Product Increment</i></strong> </li>
+                    <li> <strong><i>Definition of Done (DoD)</i></strong> </li>
+                    <li> <strong><i>Burndown Chart</i></strong> </li>
+                </ul>
+                </div>
+            </font>
+            </div>
+            <br>
             <p> Cada um desses artefatos desempenha um papel importante em diferentes estágios do projeto Scrum, desde a criação e priorização de tarefas no Product Backlog até a entrega de um incremento do produto ao final de cada Sprint. </p>
         <br>
         <br>
         <h1>PRODUCT BACKLOG</h1>
-        <p>O artefato <strong><i>Product backlog</i></strong> apresenta as seguintes características:</p>
+        <p><strong><i>O QUE É UM PRODUCT BACKLOG?</i></strong></p>
+        <p>O Product Backlog no Scrum é como uma lista de desejos para um produto. É uma lista de todas as coisas que queremos fazer para melhorar o produto, como adicionar novas funcionalidades, corrigir problemas ou fazer melhorias. Resumindo o conteúdo em tópicos:</p>
         <ul>
             <li><strong><i>Lista priorizada de itens de trabalho:</i></strong> Esta é uma lista que contém todas as tarefas que precisam ser realizadas para desenvolver ou melhorar um produto. Essas tarefas podem incluir coisas como adicionar novos recursos, corrigir problemas existentes, melhorar a infraestrutura do sistema, entre outras.</li> 
             <li><strong><i>Elaborada pelo Time Scrum, mas somente o Product Owner tem autoridade para gerenciá-la:</i></strong> O Time Scrum, que inclui desenvolvedores, designers, testadores, etc., trabalha em conjunto para criar e priorizar essa lista de tarefas. No entanto, apenas o Product Owner, que é responsável por representar os interesses do cliente ou do usuário final, tem o poder de decidir quais tarefas serão realizadas e em que ordem.</li>
@@ -207,8 +219,13 @@
             <li><strong><i>Itens ordenados de acordo com sua importância, com os mais importantes no topo:</i></strong> As tarefas na lista são organizadas de acordo com sua prioridade, com aquelas consideradas mais importantes ou urgentes no topo da lista. Isso permite que a equipe saiba quais tarefas devem ser abordadas primeiro.</li>
             <li><strong><i>Cada item deve ser suficientemente pequeno e ter critérios claros de aceitação para ser incluído em uma Sprint:</i></strong> Para que uma tarefa seja considerada pronta para ser trabalhada em uma iteração (Sprint) do desenvolvimento, ela precisa ser clara e específica o suficiente, além de ter critérios claros que definam quando ela estará completa e pronta para ser entregue aos usuários. Isso garante que a equipe possa trabalhar de forma eficiente e entender exatamente o que precisa ser feito.</li>
         </ul>
-        <div class="card">
-            <div class="container">
+        <br>
+        <img src="{{ url_for('static', filename='/imgs/productbacklog.png') }}" class="imag" alt="#">    
+        <br>
+        <br>
+        <div class="cardcard">
+            <div class="containercard">
+                <br>
                 <p><font color="#C8C8C8"><strong> Exemplos práticos: </strong></font></p>
                 <p class="ppp"><font color="#C8C8C8">Imagine que você tem um aplicativo de mensagens instantâneas em seu celular. Recentemente, vocês receberam feedback dos usuários de que o aplicativo precisa de algumas melhorias para torná-lo mais eficiente e fácil de usar. Então, vocês decidem priorizar três melhorias principais:</font> </P>
                 <P class="pp"><font color="#C8C8C8"><strong><i> Adicionar suporte para envio de mensagens de voz:</i></strong></font></P>
@@ -240,14 +257,17 @@
         <br>
         <br>
         <h1>SPRINT BACKLOG</h1>
-        <p>O artefato <strong><i>Sprint Backlog</i></strong> apresenta as seguintes características:</p>
+        <p><strong><i>O QUE É UM SPRINT BACKLOG?</i></strong></p>
+        <p>O Sprint Backlog no Scrum é uma lista de tarefas específicas que a equipe de desenvolvimento escolhe para trabalhar durante um período de tempo chamado Sprint. Essas tarefas são retiradas de uma lista maior de coisas a serem feitas chamada Product Backlog. Resumindo o conteúdo em tópicos:</p>
         <ul>
             <li><strong><i>Composto pelos itens selecionados para implementação durante a Sprint, juntamente com o plano para transformá-los em um Incremento do produto:</i></strong> Durante o planejamento da Sprint, a equipe seleciona uma quantidade de itens do Product Backlog que considera viável para trabalhar durante aquela iteração. Esses itens selecionados são movidos para o Sprint Backlog e representam o trabalho que a equipe se compromete a completar até o final da Sprint. O Sprint Backlog também inclui um plano detalhado de como esses itens serão transformados em um Incremento do produto funcional e potencialmente entregável até o final da Sprint.</li>
             <li><strong><i>Geralmente organizado em um Taskboard, onde as tarefas são listadas como "To do", "Doing" e "Done":</i></strong> Um Taskboard é uma ferramenta visual usada pela equipe Scrum para acompanhar o progresso das tarefas durante a Sprint. Nele, as tarefas são divididas em colunas, como "A fazer" (To do), "Fazendo" (Doing) e "Feito" (Done). Cada tarefa é representada por um cartão, e a equipe move esses cartões entre as colunas à medida que progride no trabalho.</li>
             <li><strong><i>Pode ser atualizado durante a Sprint para refletir novas descobertas ou necessidades:</i></strong> Durante a Sprint, a equipe pode encontrar novas informações, obstáculos inesperados ou mudanças nas prioridades que afetam o Product Backlog. Nesses casos, o Product Owner e a equipe podem decidir adicionar, remover ou reordenar itens no backlog para refletir as necessidades atuais do produto. Essa flexibilidade permite que a equipe responda de maneira ágil a mudanças e incertezas durante o desenvolvimento do produto.</li>
         </ul>
-        <div class="card">
-            <div class="container">
+        <img src="{{ url_for('static', filename='/imgs/scrumboard.png') }}" class="imag">
+        <div class="cardcard">
+            <div class="containercard">
+                <br>
                 <p><font color="#C8C8C8"><strong> Exemplos práticos: </strong></font></p>
                 <p class="ppp"><font color="#C8C8C8">Vamos imaginar que uma equipe esteja trabalhando em um projeto de desenvolvimento de um aplicativo de gerenciamento de tarefas. Durante o planejamento da Sprint, eles selecionaram os seguintes itens do Product Backlog para implementação durante a Sprint atual:</font></P>
                 <p><font color="#C8C8C8">
@@ -296,15 +316,21 @@
         <br>
         <br>
         <h1>PRODUCT INCREMENT</h1>
-        <p>O artefato <strong><i>Product Increment</i></strong> apresenta as seguintes características:</p>
+        <p><strong><i>O QUE É PRODUCT INCREMENT?</i></strong></p>
+        <p>No método Scrum é como uma versão atualizada do produto que é entregue a cada período de trabalho chamado Sprint. Ele inclui todas as novas funcionalidades e melhorias que a equipe de desenvolvimento implementou durante essa Sprint, além de tudo o que já foi feito antes. Resumindo o conteúdo em tópicos:</p>
         <ul>
             <li><strong><i>Entrega ao final de cada Sprint pelo Time de Desenvolvimento:</i></strong> Após cada período de trabalho designado (Sprint), o Time de Desenvolvimento entrega uma parte funcional e potencialmente utilizável do produto.</li>
             <li><strong><i>Potencialmente entregável:</i></strong> O incremento entregue ao final da Sprint é potencialmente utilizável e pronto para ser implantado em produção. Embora possa não conter todos os recursos desejados, é seguro e funcional, permitindo progresso incremental.</li>
             <li><strong><i>Requer código de alta qualidade:</i></strong> O incremento é resultado do trabalho realizado durante a Sprint, refletindo esforços para produzir código de alta qualidade. É desenvolvido com o mínimo de defeitos possível, seguindo práticas de desenvolvimento e testes rigorosas.</li>
             <li><strong><i>Resultado do trabalho realizado durante a Sprint:</i></strong> Cada incremento representa o progresso alcançado durante o período de trabalho da Sprint. Reflete a implementação de funcionalidades planejadas e priorizadas pelo Time de Desenvolvimento e Product Owner.</li>
         </ul>
-        <div class="card">
-            <div class="container">
+        <br>
+        <img src="{{ url_for('static', filename='/imgs/increment.png') }}" class="imag" alt="#">
+        <br>
+        <br>
+        <div class="cardcard">
+            <div class="containercard">
+                <br>
                 <p><font color="#C8C8C8"><strong> Exemplos práticos: </strong></font></p> 
                 <p class="ppp"><font color="#C8C8C8">Imagine que você está construindo uma casa.</font></P>
                 <p class="pp"><font color="#C8C8C8"><strong><i>Construção da Casa:</i></strong></font></p>
@@ -363,7 +389,8 @@
         <br>
         <br>
         <h1>DEFINITION OF DONE (DOD)</h1>
-        <p>A Definição de Pronto (DoD) é uma lista de critérios que define quando uma funcionalidade está completa e pronta para ser entregue ao cliente ou usuário final. O artefato <strong><i>Definition of Done (DoD)</i></strong> apresenta as seguintes características:</p>
+        <p><strong><i>O QUE É DEFINITION OF DONE (DOD)?</i></strong></p>
+        <p>A Definição de Pronto (DoD) é uma lista de critérios que define quando uma funcionalidade está completa e pronta para ser entregue ao cliente ou usuário final. Resumindo o conteúdo em tópicos:</p>
         <ul>
             <li><strong><i>CRITÉRIOS DE UMA FUNCIONALIDADE "PRONTA":</i></strong></li>
             <ol>
@@ -382,8 +409,13 @@
                 <li>Além disso, ela pode ser expandida ao longo do tempo para incluir mais critérios de qualidade à medida que a equipe amadurece e aprende com suas experiências. Isso permite que a equipe continue a elevar o padrão de qualidade do produto ao longo do tempo.</li>
             </ol>
         </ul>
-        <div class="card">
-            <div class="container">
+        <br>
+        <img src="{{ url_for('static', filename='/imgs/done.png') }}" class="imag" alt="#">
+        <br>
+        <br>
+        <div class="cardcard">
+            <div class="containercard">
+                <br>
                 <p><font color="#C8C8C8"><strong> Exemplos práticos: </strong></font></p> 
                 <P class="pp"><font color="#C8C8C8"><strong><i>1. Todos os casos de teste devem passar:</i></strong></font></P>
                 <p class="ppp"><font color="#C8C8C8">Imagine que estamos construindo um robô que tem três funções principais: pegar objetos, movê-los para outro lugar e soltá-los lá. Antes de considerarmos o robô pronto, precisamos ter certeza de que ele pode realizar cada uma dessas funções sem problemas. Portanto, todos os testes que criamos para verificar se ele pode pegar, mover e soltar objetos devem ser realizados e bem-sucedidos. Isso garante que o robô funcione como esperado em todas as situações.</font> </P>
@@ -395,5 +427,57 @@
         </div>
         <br>
         <br>
-        
+        <h1>BURNDOWN CHART</h1>  
+        <p><strong><i>O QUE É UM SPRINT BURNDOWN CHART?</i></strong></p>
+        <ul>
+            <li>É um gráfico que mostra visualmente como o trabalho do Time de Desenvolvimento evolui durante uma Sprint (um período de tempo de trabalho).</li>
+        </ul>
+        <p><strong><i>COMO FUNCIONA?</i></strong></p>
+        <ul>
+            <li>Ele compara a quantidade de trabalho que foi estimada inicialmente com a quantidade restante de trabalho ao longo do tempo.</li>
+            <li>Isso significa que você pode ver se a equipe está progredindo conforme o planejado ou se está atrasada em relação ao que foi planejado.</li>
+        </ul>
+        <p><strong><i>COMO AJUDA?</i></strong></p>
+        <ul>
+            <li>Ajuda o Time de Desenvolvimento a se auto-gerenciar, pois eles podem ver claramente o progresso do trabalho e fazer ajustes se necessário para cumprir os objetivos da Sprint.</li>
+            <li>Também permite que a organização acompanhe o progresso da Sprint e faça intervenções se necessário para garantir que o trabalho seja concluído dentro do prazo.</li>
+        </ul>
+        <p><strong><i>USO PELO PRODUCT OWNER:</i></strong></p>
+        <ul>
+            <li>O Product Owner pode usar um tipo específico de Burndown Chart, chamado Release Burndown Chart, para gerenciar o progresso de todo o lançamento do produto (release).</li>
+            <li>Isso é feito com base nas estimativas fornecidas pelo Time de Desenvolvimento, permitindo que o Product Owner acompanhe o progresso geral do projeto e tome decisões informadas sobre o lançamento do produto.</li>
+        </ul>
+        <br>
+        <img src="{{ url_for('static', filename='/imgs/burndown.png') }}" class="imag" alt="#">
+        <br>
+        <br>
+        <div class="cardcard">
+            <div class="containercard">
+                <br>
+                <p><font color="#C8C8C8"><strong> Exemplos práticos: </strong></font></p> 
+                <p class="ppp"><font color="#C8C8C8">Vamos imaginar que uma equipe está desenvolvendo um aplicativo de gerenciamento de tarefas e está atualmente em uma Sprint de duas semanas. Durante o planejamento da Sprint, a equipe estima que precisará concluir 100 pontos de história (unidade de medida de trabalho). Nesse contexto, o Sprint Burndown Chart seria uma representação visual do progresso diário da equipe na conclusão desses 100 pontos de história ao longo das duas semanas da Sprint. Aqui está como poderia ser:</font></P>
+                <p class="ppp"><font color="#C8C8C8">
+                <ul>
+                    <li>No primeiro dia da Sprint, o gráfico mostra uma linha começando em 100 pontos no eixo vertical (quantidade total de trabalho planejada) e no dia 0 no eixo horizontal (tempo).</li>
+                    <li>À medida que a equipe avança no trabalho durante os dias seguintes, a linha do gráfico desce gradualmente, mostrando a quantidade de trabalho que resta para ser concluída.</li>
+                    <li>Se a equipe estiver progredindo conforme o planejado, a linha do gráfico seguirá uma trajetória descendente em direção a zero, indicando que estão no caminho certo para concluir os 100 pontos de história até o final da Sprint.</li>
+                    <li>Se a equipe estiver atrasada, a linha do gráfico pode se nivelar ou até mesmo subir, indicando que eles estão demorando mais do que o esperado para concluir o trabalho.</li>
+                </ul>
+                </font>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="position_btn">
+            <div class="button">
+                <button class="button"><a href="/mod_4"><font color="#C8C8C8"><span> Voltar </span></font></button>
+            </div>
+            <br>
+            <div class="button2">
+                <button class="button"><a href="/mod_6"><font color="#C8C8C8"><span> Avançar </span></font></button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
 {% endblock %}
