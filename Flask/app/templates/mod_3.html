@@ -44,7 +44,7 @@
                 margin: 0 10px 10px 0;
                 position: absolute;
                 top: 04pc;
-                right: 7pc;
+                right: 3pc;
             }
 
             .div2{
@@ -112,6 +112,7 @@
             .imag{
                 width: 45%;
                 height: 45%;
+                margin-top: -10pc;
                 margin-left: 350px;
                 margin-right: 350px;
             }
@@ -170,10 +171,46 @@
 {% block content %}
         <div class="div2">
             <img src="{{ url_for('static', filename='/imgs/capamod3.png') }}" width="500px" height="500" class="img">
-            <h1 style="font-size: 5pc; position: absolute;top: 13pc; left:59px;"><font color="D6D6D6"> 3 Responsabilidades e Papéis</font></h1>
+            <h1 style="font-size: 5pc; position: absolute;top: 13pc; left:59px;"><font color="D6D6D6"> 3. Responsabilidades <br> e Papéis</font></h1>
         </div>
         <div class="wave">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
         </div>
 
+        <!-- curso -->
+
+        <div class="divtext">
+            <h1> Time SCRUM </h1>
+                <h3 class="h3"> Definição </h3>
+                    <p>Em uma equipe Scrum, existem funções específicas, mas não são posições fixas. Isso significa que as pessoas podem desempenhar diferentes papéis em momentos diferentes. Por exemplo, alguém pode ser o 'Product Owner' em um projeto e depois assumir o papel de 'Scrum Master' em outro. As equipes Scrum são autogerenciadas, o que significa que elas decidem como realizar o trabalho sem precisar de supervisão constante. Elas também são versáteis e têm todas as habilidades necessárias para realizar as tarefas, o que significa que não dependem de recursos externos. Esse modelo foi projetado para tornar as equipes mais ágeis, inovadoras e eficientes.</p>
+            <img src="{{ url_for('static', filename='/imgs/mod3timescrum.png') }}" class="imag">
+        <br>
+        <br>
+        <h1> Product Owner (P.O.) </h1>
+            <p> O trabalho do Product Owner é fundamental para garantir o sucesso de um produto. Ele é responsável por várias tarefas importantes:</p>
+        <br>
+            <P class="pp"><strong> 1. Gerenciar o Product Backlog: </strong></P> 
+               <p class="pp2">Isso significa manter uma lista de todas as coisas que precisam ser feitas no produto e garantir que estejam organizadas da maneira mais útil.</p>
+        <br>
+            <P class="pp"><strong> 2. Garantir o ROI (Retorno sobre o Investimento): </strong></P> 
+               <p class="pp2">O Product Owner precisa garantir que as funcionalidades desenvolvidas tragam valor ao produto e, consequentemente, à empresa.</p>
+        <br>
+            <P class="pp"><strong> 3. Definir a visão do produto: </strong></P> 
+               <p class="pp2">É importante que o Product Owner tenha uma compreensão clara de como o produto deve ser e transmita essa visão à equipe.</p>
+        <br>
+            <P class="pp"><strong> 4. Gerenciar Novos Requisitos: </strong></P> 
+               <p class="pp2">À medida que novas ideias surgem, o Product Owner decide se e quando elas devem ser adicionadas ao trabalho a ser feito.</p>
+        <br>
+            <P class="pp"><strong> 5. Determinar a ordem de prioridade: </strong></P> 
+               <p class="pp2">Ele decide qual funcionalidade é mais importante e deve ser implementada primeiro.</p>
+        <br>  
+            <P class="pp"><strong> 6.Supervisionar o plano de lançamentos: </strong></P> 
+               <p class="pp2">O Product Owner acompanha o progresso do desenvolvimento e decide quando novas versões do produto serão lançadas.</p>
+        <br>  
+            <P class="pp"><strong> 7. Aceitar ou Rejeitar o Trabalho Concluído: </strong></P> 
+               <p class="pp2">No final de cada ciclo de trabalho, o Product Owner decide se está de acordo com as expectativas e se pode ser entregue aos usuários finais.</p>
+        <br>  
+            <P class="pp"><strong> 8. Validação das sprints: </strong></P> 
+               <p class="pp2">Somente o Product Owner tem a autoridade para cancelar uma Sprint, embora essa não deva ser uma ação frequente, pois pode afetar negativamente o trabalho da equipe. Isso pode acontecer se os objetivos da entrega não forem mais relevantes devido a mudanças nas condições do mercado ou em outras circunstâncias.</p>
+        <br>       
 {% endblock %}
