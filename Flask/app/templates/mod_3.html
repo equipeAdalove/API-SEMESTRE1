@@ -44,7 +44,7 @@
                 margin: 0 10px 10px 0;
                 position: absolute;
                 top: 04pc;
-                right: 7pc;
+                right: 3pc;
             }
 
             .div2{
@@ -112,6 +112,7 @@
             .imag{
                 width: 45%;
                 height: 45%;
+                margin-top: -10pc;
                 margin-left: 350px;
                 margin-right: 350px;
             }
@@ -169,11 +170,20 @@
 
 {% block content %}
         <div class="div2">
-            <img src="{{ url_for('static', filename='/imgs/capamod3.jpg') }}" width="500px" height="500" class="img">
-            <h1 style="font-size: 5pc; position: absolute;top: 13pc; left:59px;"><font color="D6D6D6"> 3 Responsabilidades e Papéis</font></h1>
+            <img src="{{ url_for('static', filename='/imgs/capamod3.png') }}" width="500px" height="500" class="img">
+            <h1 style="font-size: 5pc; position: absolute;top: 13pc; left:59px;"><font color="D6D6D6"> 3. Responsabilidades <br> e Papéis</font></h1>
         </div>
         <div class="wave">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
         </div>
+
+        <!-- curso -->
+
+        <div class="divtext">
+            <h1> Time SCRUM </h1>
+                <h3 class="h3"> Definição </h3>
+                    <p>Em uma equipe Scrum, existem funções específicas, mas não são posições fixas. Isso significa que as pessoas podem desempenhar diferentes papéis em momentos diferentes. Por exemplo, alguém pode ser o 'Product Owner' em um projeto e depois assumir o papel de 'Scrum Master' em outro. As equipes Scrum são autogerenciadas, o que significa que elas decidem como realizar o trabalho sem precisar de supervisão constante. Elas também são versáteis e têm todas as habilidades necessárias para realizar as tarefas, o que significa que não dependem de recursos externos. Esse modelo foi projetado para tornar as equipes mais ágeis, inovadoras e eficientes.</p>
+            <img src="{{ url_for('static', filename='/imgs/mod3timescrum.png') }}" class="imag">
+        <br>
 
 {% endblock %}
