@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+    <!-- Adicione os links para o Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Adicione o link para o seu arquivo CSS personalizado -->
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 mb-4">Quiz Results</h1>
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Your Score</h5>
+                <p class="card-text">You scored {{ score }} out of {{ total_questions }}.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Answers</h5>
+                <ul class="list-group">
+                    {% for question, answer in results.items() %}
+                        <li class="list-group-item">
+                            <strong>{{ question }}</strong>: {{ answer }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <!-- Botões de Refazer e Avançar -->
+        <div class="mt-4">
+            <a href="{{ url_for('index') }}" class="btn btn-primary mr-2">Refazer</a>
+            <a href="#" class="btn btn-primary">Avançar</a>
+        </div>
+    </div>
+
+    <!-- Adicione os scripts do Bootstrap no final do corpo -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
