@@ -192,16 +192,10 @@ p{
 
 <div class="divtext">
     <h1>O QUE É ESTIMATIVA? </h1>
-    <p>Aplicada em Story Points, é utilizada para estimar a quantidade de tempo e esforço que uma tarefa necessita. </p>
-        <div class="cardcard">
-            <div class="containercard">
-            <p><font color="#C8C8C8">
-            <br>
-            <p>Os Pontos de História/Story Points são unidades de medida usadas para expressar o tamanho geral de uma História do Usuário, ou como são conhecidas, as User Stories. </p>
-            <p>Quando fazemos estimativas com Pontos de História, atribuímos um valor, ou Story Points, a cada item.</p>
-            <p>Primeiramente, decide-se a tarefa com menos esforço (1) e classifica-se as próximas em comparação a ela.</p>
-            <p>Os valores brutos que são atribuídos não são importantes, sendo os valores relativos mais importantes para o processo das estimativas.</p>
-            <br>
+    <p>Aplicada em Story Points, é utilizada para estimar a quantidade de tempo e esforço que uma tarefa necessita. <br>
+    <p>Os Pontos de História/Story Points são unidades de medida usadas para expressar o tamanho geral de uma História do Usuário, ou como são conhecidas, as User Stories. Quando fazemos estimativas com Pontos de História, atribuímos um valor, ou Story Points, a cada item.<br>
+    Primeiramente, decide-se a tarefa com menos esforço (1) e classifica-se as próximas em comparação a ela.<br>
+    Os valores brutos que são atribuídos não são importantes, sendo os valores relativos mais importantes para o processo das estimativas.</p>
             </div>
             </font>
         </div>
@@ -291,165 +285,7 @@ p{
             </font> </P>
         </div>
     </div>
-    <br>
-    <br>
-    <h1>SPRINT BACKLOG</h1>
-    <p><strong><i>O QUE É UM SPRINT BACKLOG?</i></strong></p>
-    <p>O Sprint Backlog no Scrum é uma lista de tarefas específicas que a equipe de desenvolvimento escolhe para trabalhar durante um período de tempo chamado Sprint. Essas tarefas são retiradas de uma lista maior de coisas a serem feitas chamada Product Backlog. Resumindo o conteúdo em tópicos:</p>
-    <ul>
-        <li><strong><i>Composto pelos itens selecionados para implementação durante a Sprint, juntamente com o plano para transformá-los em um Incremento do produto:</i></strong> Durante o planejamento da Sprint, a equipe seleciona uma quantidade de itens do Product Backlog que considera viável para trabalhar durante aquela iteração. Esses itens selecionados são movidos para o Sprint Backlog e representam o trabalho que a equipe se compromete a completar até o final da Sprint. O Sprint Backlog também inclui um plano detalhado de como esses itens serão transformados em um Incremento do produto funcional e potencialmente entregável até o final da Sprint.</li>
-        <li><strong><i>Geralmente organizado em um Taskboard, onde as tarefas são listadas como "To do", "Doing" e "Done":</i></strong> Um Taskboard é uma ferramenta visual usada pela equipe Scrum para acompanhar o progresso das tarefas durante a Sprint. Nele, as tarefas são divididas em colunas, como "A fazer" (To do), "Fazendo" (Doing) e "Feito" (Done). Cada tarefa é representada por um cartão, e a equipe move esses cartões entre as colunas à medida que progride no trabalho.</li>
-        <li><strong><i>Pode ser atualizado durante a Sprint para refletir novas descobertas ou necessidades:</i></strong> Durante a Sprint, a equipe pode encontrar novas informações, obstáculos inesperados ou mudanças nas prioridades que afetam o Product Backlog. Nesses casos, o Product Owner e a equipe podem decidir adicionar, remover ou reordenar itens no backlog para refletir as necessidades atuais do produto. Essa flexibilidade permite que a equipe responda de maneira ágil a mudanças e incertezas durante o desenvolvimento do produto.</li>
-    </ul>
-    <img src="{{ url_for('static', filename='/imgs/scrumboard.png') }}" class="imag">
-    <div class="cardcard">
-        <div class="containercard">
-            <br>
-            <p><font color="#C8C8C8"><strong> Exemplos práticos: </strong></font></p>
-            <p class="ppp"><font color="#C8C8C8">Vamos imaginar que uma equipe esteja trabalhando em um projeto de desenvolvimento de um aplicativo de gerenciamento de tarefas. Durante o planejamento da Sprint, eles selecionaram os seguintes itens do Product Backlog para implementação durante a Sprint atual:</font></P>
-            <p><font color="#C8C8C8">
-            <ol>
-                <li>Criar a função de adicionar novas tarefas.</li>
-                <li>Implementar notificações push para lembretes de tarefas.</li>
-                <li>Integrar o aplicativo com calendários externos para sincronização de eventos.</li>
-            </ol>
-            </font></P>
-            <p class="ppp"><font color="#C8C8C8">Agora, vamos dar uma olhada no Sprint Backlog, que inclui um plano detalhado de como esses itens serão transformados em um Incremento do produto funcional e potencialmente entregável até o final da Sprint:</font></P>
-            <p><font color="#C8C8C8">
-            <ul>
-                <li><strong>TO DO</strong></li>
-                <ol>
-                    <li>Criar telas de adição de novas tarefas.</li>
-                </ol>
-                <li><strong>DOING</strong></li>
-                <ol start="2">
-                    <li>Implementar serviço de notificações push (APIs e configurações)</li>
-                    <ol type="i">
-                        <li>Design da tela</li>
-                        <li>Desenvolvimento</li>
-                        <li>Testes unitários</li>
-                    </ol>
-                </ol>
-                <li><strong>DONE</strong></li>
-                <ol start="3">
-                    <li>Integrar com calendários externos (Google Calendar, etc.)</li>
-                    <ol type="i">
-                        <li>Testes de integração</li>
-                        <li>Implementação de funcionalidades extras (Por exemplo, lembretes).</li>
-                    </ol>
-                </ol>
-            </ul>
-            <p class="ppp"><font color="#C8C8C8">Durante a Sprint, a equipe trabalha em cada item conforme planejado:</font></P>
-            </font></P>
-            <P class="pp"><font color="#C8C8C8"><strong><i>Criar tela de adição de novas tarefas:</i></strong></font></P>
-            <p class="ppp"><font color="#C8C8C8"> A equipe começa desenvolvendo o design da tela, seguido pelo desenvolvimento da funcionalidade de adicionar novas tarefas. Conforme avançam, eles realizam testes unitários para garantir que a funcionalidade esteja funcionando corretamente.</font> </P>
-            <p class="pp"><font color="#C8C8C8"><strong><i>Implementar serviço de notificações push:</i></strong></font></p>
-            <p class="ppp"><font color="#C8C8C8">Enquanto a tela de adição de tarefas está sendo finalizada, parte da equipe começa a trabalhar na implementação do serviço de notificações push. Eles configuram as APIs necessárias e realizam testes para garantir que as notificações sejam entregues corretamente aos usuários.</font> </p>
-            <P class="pp"><font color="#C8C8C8"><strong><i>Integrar com calendários externos:</i></strong></font></P>
-            <p class="ppp"><font color="#C8C8C8">Paralelamente ao desenvolvimento das outras duas funcionalidades, outra parte da equipe trabalha na integração do aplicativo com calendários externos. Eles realizam testes de integração para garantir que os eventos criados no aplicativo também apareçam corretamente nos calendários externos, como o Google Calendar.</font> </p>
-            <p class="ppp"><font color="#C8C8C8">À medida que progridem no trabalho, eles movem os cartões no Taskboard de acordo com o status de cada tarefa, mantendo a visibilidade do progresso de cada item. Se surgirem novas descobertas ou necessidades durante a Sprint, o Sprint Backlog pode ser atualizado para refletir essas mudanças, garantindo que a equipe permaneça ágil e adaptável durante o processo de desenvolvimento.</font> </P>
-        </div>
-    </div>
-    <br>
-    <br>
-    <h1>PRODUCT INCREMENT</h1>
-    <p><strong><i>O QUE É PRODUCT INCREMENT?</i></strong></p>
-    <p>No método Scrum é como uma versão atualizada do produto que é entregue a cada período de trabalho chamado Sprint. Ele inclui todas as novas funcionalidades e melhorias que a equipe de desenvolvimento implementou durante essa Sprint, além de tudo o que já foi feito antes. Resumindo o conteúdo em tópicos:</p>
-    <ul>
-        <li><strong><i>Entrega ao final de cada Sprint pelo Time de Desenvolvimento:</i></strong> Após cada período de trabalho designado (Sprint), o Time de Desenvolvimento entrega uma parte funcional e potencialmente utilizável do produto.</li>
-        <li><strong><i>Potencialmente entregável:</i></strong> O incremento entregue ao final da Sprint é potencialmente utilizável e pronto para ser implantado em produção. Embora possa não conter todos os recursos desejados, é seguro e funcional, permitindo progresso incremental.</li>
-        <li><strong><i>Requer código de alta qualidade:</i></strong> O incremento é resultado do trabalho realizado durante a Sprint, refletindo esforços para produzir código de alta qualidade. É desenvolvido com o mínimo de defeitos possível, seguindo práticas de desenvolvimento e testes rigorosas.</li>
-        <li><strong><i>Resultado do trabalho realizado durante a Sprint:</i></strong> Cada incremento representa o progresso alcançado durante o período de trabalho da Sprint. Reflete a implementação de funcionalidades planejadas e priorizadas pelo Time de Desenvolvimento e Product Owner.</li>
-    </ul>
-    <br>
-    <img src="{{ url_for('static', filename='/imgs/increment.png') }}" class="imag" alt="#">
-    <br>
-    <br>
-    <div class="cardcard">
-        <div class="containercard">
-            <br>
-            <p><font color="#C8C8C8"><strong> Exemplos práticos: </strong></font></p> 
-            <p class="ppp"><font color="#C8C8C8">Imagine que você está construindo uma casa.</font></P>
-            <p class="pp"><font color="#C8C8C8"><strong><i>Construção da Casa:</i></strong></font></p>
-            <p class="ppp"><font color="#C8C8C8">
-            <ul>
-                <li>Cada Sprint é uma etapa no processo de construção da casa.</li>
-            </ul>
-            <p class="pp"><font color="#C8C8C8"><strong><i>Product Increment como Parte da Casa:</i></strong></font></p>
-            </font></p>
-            <p class="ppp"><font color="#C8C8C8">
-            <ul>
-                <li>Ao final de cada Sprint, há um Product Increment, que é como uma parte da casa pronta.</li>
-                <li>Na primeira Sprint, pode ser as paredes; na próxima, o telhado.</li>
-            </ul>
-            </font>
-            <p class="pp"><font color="#C8C8C8"><strong><i>Potencialmente Entregável:</i></strong></font></p>
-            </font></p>
-            <p class="ppp"><font color="#C8C8C8">
-            <ul>
-                <li>O Product Increment é "potencialmente entregável", significando que poderia ser usado de forma segura e funcional, mas a casa ainda não está completa.</li>
-            </ul>
-            </font>
-            <p class="pp"><font color="#C8C8C8"><strong><i>Adição de Novos Elementos a Cada Sprint:</i></strong></font></p>
-            </font></p>
-            <p class="ppp"><font color="#C8C8C8">
-            <ul>
-                <li>A cada Sprint, algo novo é adicionado ao "produto", que é a casa em construção.</li>
-                <li>Cada incremento é uma parte adicional da casa.</li>
-            </ul>
-            </font>
-            <p class="pp"><font color="#C8C8C8"><strong><i>Qualidade Importante:</i></strong></font></p>
-            </font></p>
-            <p class="ppp"><font color="#C8C8C8">
-            <ul>
-                <li>Cada parte, ou incremento, deve ser feita com qualidade.</li>
-                <li>Paredes firmes e bem-feitas; telhado que protege contra a chuva.</li>
-            </ul>
-            </font>
-            <p class="pp"><font color="#C8C8C8"><strong><i>Riscos de Falhas:</i></strong></font></p>
-            </font></p>
-            <p class="ppp"><font color="#C8C8C8">
-            <ul>
-                <li>Falhas na construção podem causar problemas nas etapas seguintes.</li>
-                <li>Paredes mal feitas podem prejudicar o telhado; telhado mal construído pode causar vazamentos.</li>
-            </ul>
-            </font>
-            <p class="pp"><font color="#C8C8C8"><strong><i>Garantia de Qualidade:</i></strong></font></p>
-            </font></p>
-            <p class="ppp"><font color="#C8C8C8">
-                <ul>
-                    <li>O Product Increment é como construir uma casa peça por peça, garantindo que cada parte seja feita com qualidade e pronta para uso, mesmo que a casa completa ainda não esteja pronta.</li>
-                </ul>
-            </font>
-        </div>
-    </div>
-    <br>
-    <br>
-    <h1>DEFINITION OF DONE (DOD)</h1>
-    <p><strong><i>O QUE É DEFINITION OF DONE (DOD)?</i></strong></p>
-    <p>A Definição de Pronto (DoD) é uma lista de critérios que define quando uma funcionalidade está completa e pronta para ser entregue ao cliente ou usuário final. Resumindo o conteúdo em tópicos:</p>
-    <ul>
-        <li><strong><i>CRITÉRIOS DE UMA FUNCIONALIDADE "PRONTA":</i></strong></li>
-        <ol>
-            <li>A funcionalidade deve ter sido testada unitariamente, garantindo que cada componente individual funcione conforme o esperado.</li>
-            <li>Deve passar por testes de aceitação, validando que atende aos requisitos do cliente ou usuário final.</li>
-            <li>Requer revisões de código, garantindo que o código seja de alta qualidade, fácil de entender e siga as práticas e padrões estabelecidos pela equipe.</li>
-        </ol>
-        <li><strong><i>PROCESSO DE VALIDAÇÃO:</i></strong></li>
-        <ol>
-            <li>Uma funcionalidade só é considerada "pronta" após passar por todas as etapas definidas pelo Time de Desenvolvimento.</li>
-            <li>Isso significa que ela deve cumprir todos os critérios estabelecidos na Definição de Pronto antes de ser considerada finalizada.</li>
-        </ol>
-        <li><strong><i>COMPREENSÃO E EVOLUÇÃO:</i></strong></li>
-        <ol>
-            <li>A Definição de Pronto deve ser compreendida por todos os membros do Scrum, garantindo que haja um entendimento comum do que é esperado de uma funcionalidade finalizada.</li>
-            <li>Além disso, ela pode ser expandida ao longo do tempo para incluir mais critérios de qualidade à medida que a equipe amadurece e aprende com suas experiências. Isso permite que a equipe continue a elevar o padrão de qualidade do produto ao longo do tempo.</li>
-        </ol>
-    </ul>
-    <br>
-    <img src="{{ url_for('static', filename='/imgs/done.png') }}" class="imag" alt="#">
-    <br>
-    <br>
+   
     <div class="cardcard">
         <div class="containercard">
             <br>
