@@ -368,86 +368,29 @@
     <div class="cardcard">
         <div class="containercard">
             <br>
-            <p><font color="#C8C8C8"><strong> Exemplos práticos: </strong></font></p> 
-            <P class="pp"><font color="#C8C8C8"><strong><i>1. Todos os casos de teste devem passar:</i></strong></font></P>
-            <p class="ppp"><font color="#C8C8C8">Imagine que estamos construindo um robô que tem três funções principais: pegar objetos, movê-los para outro lugar e soltá-los lá. Antes de considerarmos o robô pronto, precisamos ter certeza de que ele pode realizar cada uma dessas funções sem problemas. Portanto, todos os testes que criamos para verificar se ele pode pegar, mover e soltar objetos devem ser realizados e bem-sucedidos. Isso garante que o robô funcione como esperado em todas as situações.</font> </P>
+            <p><font color="#C8C8C8"><strong> Exemplo prático:</strong></font></p> 
+
+            <p class="ppp"><font color="#C8C8C8"><p class="ppp"><font color="#C8C8C8"> Imagine que uma equipe de desenvolvimento de software utiliza o SCRUM para estimar quantidade de tempo e esforço necessário para implementar novas funcionalidades em um aplicativo. </font></p></strong>
+
+            <p class="pp"><font color="#C8C8C8"><strong><i> Estimativa: </i></strong></font></p>
+            <p class="ppp"><font color="#C8C8C8"> Para cada história de usuário apresentada, a equipe realiza a estimativa do esforço necessário para sua implementação.<br>
+            Eles utilizam a técnica de Planning Poker, na qual cada membro recebe cartas com valores discretos (como 0, 1, 2, 3, 5, 8, 13) e, após uma discussão sobre a complexidade da história e os possíveis riscos, cada membro escolhe uma carta que representa sua estimativa de esforço.
+            </font></p>
+            
+            <p class="pp"><font color="#C8C8C8"><strong><i> Discussão e Consenso:</i></strong></font></p>
+            <p class="ppp"><font color="#C8C8C8">Após todos os membros revelarem suas cartas, a equipe discute as diferenças nas estimativas e compartilha os motivos por trás de suas escolhas.<br>
+            Durante essa discussão, os membros podem explicar os aspectos técnicos que tornam uma história mais complexa do que outra, ou podem identificar riscos que aumentam o esforço necessário para sua implementação. <br>
+            O objetivo é chegar a um consenso sobre a estimativa para cada história de usuário.
+            </font></p>
+            
+            <p class="pp"><font color="#C8C8C8"><strong><i> Registro das Estimativas: </i></strong></font></p>
+            <p class="ppp"><font color="#C8C8C8"> As estimativas finais são registradas no backlog do produto, associadas a cada User Story. Isso permite que a equipe planeje a capacidade do Sprint com base nas estimativas de esforço para as User Stories selecionadas.
+            </font></p>
             <p class="pp"><font color="#C8C8C8"><strong><i>2. O código deve ser revisado por pelo menos dois membros do Time de Desenvolvimento:</i></strong></font></p>
             <p class="ppp"><font color="#C8C8C8">Imagine que o código é como um livro escrito por um autor. Antes de publicar o livro, é uma boa ideia que outras pessoas o leiam e deem sua opinião para garantir que não haja erros ou partes confusas. Da mesma forma, antes de considerarmos o código pronto, pelo menos duas pessoas da equipe devem lê-lo e revisá-lo. Isso nos ajuda a encontrar e corrigir eventuais erros e garantir que o código seja claro e fácil de entender para todos.</font> </p>
             <p class="pp"><font color="#C8C8C8"><strong><i>3. A documentação deve ser atualizada:</i></strong></font></p>
             <p class="ppp"><font color="#C8C8C8">Pense na documentação como um manual de instruções para usar o robô que construímos. Se fizemos algumas melhorias no robô ou adicionamos novas funções, é importante atualizar o manual para que as pessoas saibam como usar essas novidades. Da mesma forma, se fizemos mudanças no aplicativo, precisamos atualizar qualquer documento que explique como usá-lo. Isso garante que as pessoas tenham as informações corretas e atualizadas quando precisarem.</font> </p>
-        </div>
-    </div>
-    <br>
-    <br>
-    <h1>BURNDOWN CHART</h1>  
-    <p><strong><i>O QUE É UM SPRINT BURNDOWN CHART?</i></strong></p>
-    <ul>
-        <li>É um gráfico que mostra visualmente como o trabalho do Time de Desenvolvimento evolui durante uma Sprint (um período de tempo de trabalho).</li>
-    </ul>
-    <p><strong><i>COMO FUNCIONA?</i></strong></p>
-    <ul>
-        <li>Ele compara a quantidade de trabalho que foi estimada inicialmente com a quantidade restante de trabalho ao longo do tempo.</li>
-        <li>Isso significa que você pode ver se a equipe está progredindo conforme o planejado ou se está atrasada em relação ao que foi planejado.</li>
-    </ul>
-    <p><strong><i>COMO AJUDA?</i></strong></p>
-    <ul>
-        <li>Ajuda o Time de Desenvolvimento a se auto-gerenciar, pois eles podem ver claramente o progresso do trabalho e fazer ajustes se necessário para cumprir os objetivos da Sprint.</li>
-        <li>Também permite que a organização acompanhe o progresso da Sprint e faça intervenções se necessário para garantir que o trabalho seja concluído dentro do prazo.</li>
-    </ul>
-    <p><strong><i>USO PELO PRODUCT OWNER:</i></strong></p>
-    <ul>
-        <li>O Product Owner pode usar um tipo específico de Burndown Chart, chamado Release Burndown Chart, para gerenciar o progresso de todo o lançamento do produto (release).</li>
-        <li>Isso é feito com base nas estimativas fornecidas pelo Time de Desenvolvimento, permitindo que o Product Owner acompanhe o progresso geral do projeto e tome decisões informadas sobre o lançamento do produto.</li>
-    </ul>
-    <br>
-    <img src="{{ url_for('static', filename='/imgs/burndown.png') }}" class="imag" alt="#">
-    <br>
-    <br>
-    <div class="cardcard">
-        <div class="containercard">
-            <br>
-            <p><font color="#C8C8C8"><strong> Exemplos práticos: </strong></font></p> 
-            <p class="ppp"><font color="#C8C8C8">Vamos imaginar que uma equipe está desenvolvendo um aplicativo de gerenciamento de tarefas e está atualmente em uma Sprint de duas semanas. Durante o planejamento da Sprint, a equipe estima que precisará concluir 100 pontos de história (unidade de medida de trabalho). Nesse contexto, o Sprint Burndown Chart seria uma representação visual do progresso diário da equipe na conclusão desses 100 pontos de história ao longo das duas semanas da Sprint. Aqui está como poderia ser:</font></P>
-            <p class="ppp"><font color="#C8C8C8">
-            <ul>
-                <li>No primeiro dia da Sprint, o gráfico mostra uma linha começando em 100 pontos no eixo vertical (quantidade total de trabalho planejada) e no dia 0 no eixo horizontal (tempo).</li>
-                <li>À medida que a equipe avança no trabalho durante os dias seguintes, a linha do gráfico desce gradualmente, mostrando a quantidade de trabalho que resta para ser concluída.</li>
-                <li>Se a equipe estiver progredindo conforme o planejado, a linha do gráfico seguirá uma trajetória descendente em direção a zero, indicando que estão no caminho certo para concluir os 100 pontos de história até o final da Sprint.</li>
-                <li>Se a equipe estiver atrasada, a linha do gráfico pode se nivelar ou até mesmo subir, indicando que eles estão demorando mais do que o esperado para concluir o trabalho.</li>
-            </ul>
-            </font>
-        </div>
-    </div>
-    <br>
-    <br>
-    <div class="position_btn">
-        <div class="button">
-            <button class="button"><a href="/mod_4"><font color="#C8C8C8"><span> Voltar </span></font></button>
-        </div>
-        <br>
-
-    </div>
-    <br>
-    <br>
-    <p><font color="#C8C8C8"><strong> Exemplo prático: </strong></font></p> 
-
-    <p class="ppp"><font color="#C8C8C8"> Imagine que uma equipe de desenvolvimento de software utiliza o SCRUM para estimar quantidade de tempo e esforço necessário para implementar novas funcionalidades em um aplicativo. </font></p></strong>
-
-<p class="pp"><font color="#C8C8C8"><strong><i> Estimativa: </i></strong></font></p>
-<p class="ppp"><font color="#C8C8C8"> Para cada história de usuário apresentada, a equipe realiza a estimativa do esforço necessário para sua implementação.<br>
-Eles utilizam a técnica de Planning Poker, na qual cada membro recebe cartas com valores discretos (como 0, 1, 2, 3, 5, 8, 13) e, após uma discussão sobre a complexidade da história e os possíveis riscos, cada membro escolhe uma carta que representa sua estimativa de esforço.
-</font></p>
-
-<p class="pp"><font color="#C8C8C8"><strong><i> Discussão e Consenso:</i></strong></font></P>
-<p class="ppp"><font color="#C8C8C8">Após todos os membros revelarem suas cartas, a equipe discute as diferenças nas estimativas e compartilha os motivos por trás de suas escolhas.<br>
-Durante essa discussão, os membros podem explicar os aspectos técnicos que tornam uma história mais complexa do que outra, ou podem identificar riscos que aumentam o esforço necessário para sua implementação. <br>
-O objetivo é chegar a um consenso sobre a estimativa para cada história de usuário.
-</font></p>
-
-<p class="pp"><font color="#C8C8C8"><strong><i> Registro das Estimativas: </i></strong></font></p>
-<p class="ppp"><font color="#C8C8C8"> As estimativas finais são registradas no backlog do produto, associadas a cada User Story. Isso permite que a equipe planeje a capacidade do Sprint com base nas estimativas de esforço para as User Stories selecionadas.
-</font></p>
-
+  
 <p class="pp"><font color="#C8C8C8"><strong><i> Planejamento da Capacidade do Sprint: </i></strong></font></p>
 <p class="ppp"><font color="#C8C8C8"> As estimativas finais são registradas Com as estimativas de esforço em mãos, a equipe pode calcular quantas User Stories podem ser concluídas dentro da Sprint, levando em consideração a capacidade de trabalho disponível.<br>
 Isso ajuda a equipe a definir metas realistas para o Sprint e a gerenciar as expectativas do Product Owner.
@@ -466,6 +409,10 @@ Isso permite que a equipe avalie a precisão de suas estimativas e faça ajustes
 </div>
 <br>
 
+</div>
+</div>
+<br>
+
     <div class="button">
 <button class="button" style="vertical-align:middle;">
     <a href="/modulos"><font color="#C8C8C8"><span> Módulos</span></font>
@@ -474,7 +421,5 @@ Isso permite que a equipe avalie a precisão de suas estimativas e faça ajustes
 <br>
 </div>
 
-
-    <br>
 {% endblock %}
 
