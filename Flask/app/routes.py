@@ -110,9 +110,92 @@ def modulo_3():
 def modulo_4():
     return render_template('mod_4.html')
 
+ # Módulo 5
+
+questions_5 = [
+    {
+        'id': 1,
+        'question': 'O Product Backlog contém:',
+        'options': ['Somente itens funcionais.', 'Itens priorizados apenas pelo Scrum Master.', 'Itens de negócios, funcionais, não funcionais, arquiteturais e de infraestrutura.', 'Itens sem critérios claros de aceitação.'],
+        'answer': 'Itens de negócios, funcionais, não funcionais, arquiteturais e de infraestrutura.'
+    },
+    {
+        'id': 2,
+        'question': 'Qual é o principal requisito para um Product Increment?',
+        'options': ['Ser completamente perfeito.', 'Ser potencialmente entregável.', 'Ser aprovado pelo Scrum Master.', 'Ser entregue em cada Daily Scrum.'],
+        'answer': 'Ser potencialmente entregável.'
+    },
+    {
+        'id': 3,
+        'question': 'O que é o Sprint Backlog?',
+        'options': ['Uma lista de tarefas organizadas por ordem alfabética.', 'Uma lista de itens selecionados para implementação durante a Sprint.', 'Uma lista de bugs identificados após o final da Sprint.', 'Uma lista de itens priorizados pelo Product Owner.'],
+        'answer': 'Uma lista de itens selecionados para implementação durante a Sprint.'
+    },
+    {
+        'id': 4,
+        'question': ' Qual é a função do Definition of Done (DoD)?',
+        'options': ['Definir os itens que serão incluídos no Sprint Backlog.', 'Determinar quem é responsável por cada tarefa na Sprint.', 'Estabelecer critérios para uma funcionalidade ser considerada "pronta".', 'Gerenciar o Product Increment ao longo do tempo.'],
+        'answer': 'Estabelecer critérios para uma funcionalidade ser considerada "pronta".'
+    },
+    {
+        'id': 5,
+        'question': 'O que o Burndown Chart mostra visualmente?',
+        'options': ['O número total de itens no Product Backlog', 'A quantidade de trabalho concluída a cada dia durante a Sprint.', 'A lista de itens a serem entregues no próximo Sprint.', 'O tempo estimado para cada tarefa no Sprint Backlog.'],
+        'answer': 'A quantidade de trabalho concluída a cada dia durante a Sprint.'
+    },
+    {
+        'id': 6,
+        'question': 'Quem é responsável por gerenciar o Product Backlog?',
+        'options': ['O Scrum Master.', 'O Time de Desenvolvimento.', 'O Product Owner.', 'O Gerente de Projeto.'],
+        'answer': 'O Product Owner.'
+    },
+    {
+        'id': 7,
+        'question': 'Qual é o objetivo principal do Sprint Review?',
+        'options': ['Analisar as métricas de produtividade da equipe.', 'Revisar e adaptar o processo de desenvolvimento.', 'Demonstrar o Product Increment e obter feedback.', '  Priorizar novos itens para o Product Backlog.'],
+        'answer': 'Demonstrar o Product Increment e obter feedback.'
+    },
+    {
+        'id': 8,
+        'question': 'Qual é a analogia mais adequada para descrever o Sprint Backlog?',
+        'options': [' Uma lista de tarefas em um buffet de ideias.', ' Um mapa de tesouro com objetivos para explorar.', 'Um álbum de figurinhas colecionáveis para completar.', 'Uma caixa de ferramentas com os recursos necessários para construir algo incrível.'],
+        'answer': 'Uma caixa de ferramentas com os recursos necessários para construir algo incrível.'
+    },
+    {
+        'id': 9,
+        'question': 'Qual seria uma comparação criativa para ilustrar a função do Burndown Chart?',
+        'options': [' Um cronômetro em uma corrida de revezamento.', 'Um mapa de navegação em uma viagem de exploração.', 'Um termômetro que mede o progresso do projeto.', '  Uma linha do tempo em uma história em quadrinhos.'],
+        'answer': 'Um termômetro que mede o progresso do projeto.'
+    },
+    {
+        'id': 10,
+        'question': 'Qual é o principal objetivo da Sprint Planning para o Scrum Team?',
+        'options': ['Definir metas pessoais para cada membro da equipe.', ' Revisar e ajustar o Product Backlog.', ' Estabelecer uma lista de tarefas para cada membro da equipe.', 'Planejar o trabalho a ser realizado durante a próxima Sprint.'],
+        'answer': 'Planejar o trabalho a ser realizado durante a próxima Sprint.'
+    },
+]
 @app.route('/mod_5')
 def modulo_5():
     return render_template('mod_5.html')
+
+@app.route('/mod_5_quiz')
+def modulo_5_quiz():
+    return render_template('mod_5_quiz.html', questions=questions_5)
+
+@app.route('/submit_quiz_5', methods=['POST'])
+def submit_quiz_5():
+    # Lógica para processar o formulário e verificar as respostas
+    score = 0
+    user_answers = {}
+    for question in questions_5:
+        question_id = str(question['id'])
+        user_answer = request.form.get(question_id)
+        correct_answer = question['answer']
+        if user_answer == correct_answer:
+            score += 1
+        user_answers[question['question']] = user_answer
+    total_questions = len(questions_5)
+    return render_template('mod_5_results.html', score=score, total_questions=total_questions, results=user_answers)
 
 #Módulo 6
 
