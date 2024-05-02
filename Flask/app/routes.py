@@ -116,12 +116,12 @@ def modulo_5():
 
 #Módulo 6
 
-questions_6 = [
+questions_6 = [ #question_<seu módulo>
     {
-        'id': 1,
-        'question': 'Qual é a base da auto-organização no Scrum?',
-        'options': ['Instruções detalhadas', 'Microgerenciamento', 'Confiança mútua e clareza dos objetivos do projeto', 'Autoritarismo', 'Delegação excessiva'],
-        'answer': 'Confiança mútua e clareza dos objetivos do projeto'
+        'id': 1, #id segue padrão para todas
+        'question': 'Qual é a base da auto-organização no Scrum?', #coloque sua pergunta aqui
+        'options': ['Instruções detalhadas', 'Microgerenciamento', 'Confiança mútua e clareza dos objetivos do projeto', 'Autoritarismo', 'Delegação excessiva'], #bote as opções de resposta
+        'answer': 'Confiança mútua e clareza dos objetivos do projeto' #insira a resposta certa 
     },
     {
         'id': 2,
@@ -179,16 +179,16 @@ questions_6 = [
     },
 ]
 
-@app.route('/mod_6')
+@app.route('/mod_6') #seu módulo normal
 def modulo_6():
     return render_template('mod_6.html')
 
-@app.route('/mod_6_quiz')
-def modulo_6_quiz():
-    return render_template('mod_6_quiz.html', questions=questions_6)
+@app.route('/mod_6_quiz')  #altere apenas o número do seu módulo  )
+def modulo_6_quiz():   #altere apenas o número do seu módulo          
+    return render_template('mod_6_quiz.html', questions=questions_6)   #altere apenas o número do seu módulo
 
-@app.route('/submit_quiz_6', methods=['POST'])
-def submit_quiz_6():
+@app.route('/submit_quiz_6', methods=['POST'])  #altere apenas o número do seu módulo
+def submit_quiz_6():  #altere apenas o número do seu módulo
     # Lógica para processar o formulário e verificar as respostas
     score = 0
     user_answers = {}
@@ -200,7 +200,7 @@ def submit_quiz_6():
             score += 1
         user_answers[question['question']] = user_answer
     total_questions = len(questions_6)
-    return render_template('mod_6_results.html', score=score, total_questions=total_questions, results=user_answers)
+    return render_template('mod_6_results.html', score=score, total_questions=total_questions, results=user_answers) #altere apenas o número do seu módulo no (mod_x_results.html)
 
 #Módulo 7
 
