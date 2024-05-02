@@ -83,6 +83,21 @@ def modulo_1():
 def modulo_1_quiz():
     return render_template('mod_1_quiz.html', questions=questions_1)
 
+@app.route('/submit_quiz_1', methods=['POST'])
+def submit_quiz_1():
+    # Lógica para processar o formulário e verificar as respostas
+    score = 0
+    user_answers = {}
+    for question in questions_1:
+        question_id = str(question['id'])
+        user_answer = request.form.get(question_id)
+        correct_answer = question['answer']
+        if user_answer == correct_answer:
+            score += 1
+        user_answers[question['question']] = user_answer
+    total_questions = len(questions_6)
+    return render_template('mod_1_results.html', score=score, total_questions=total_questions, results=user_answers)
+
 @app.route('/mod_2')
 def modulo_2():
     return render_template('mod_2.html')
@@ -172,8 +187,8 @@ def modulo_6():
 def modulo_6_quiz():
     return render_template('mod_6_quiz.html', questions=questions_6)
 
-@app.route('/submit_quiz', methods=['POST'])
-def submit_quiz():
+@app.route('/submit_quiz_6', methods=['POST'])
+def submit_quiz_6():
     # Lógica para processar o formulário e verificar as respostas
     score = 0
     user_answers = {}
