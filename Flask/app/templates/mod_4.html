@@ -1,10 +1,333 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} 
 
 {% block title %}Módulo 4{% endblock %}
 
-{% block styles %}
+{% block styles %} 
+<style>
+    body{
+        justify-content: space-around;
+        margin: 0%;
+        margin-bottom: 0%;
+        font-family: 'Alatsi',  sans-serif;
+        background-color: #C8C8C8;
+    }
 
+    #menu ul{
+        background-color: #32363f;
+        list-style: none;
+    }
+
+    #menu{ 
+        padding: 52px 25px; 
+        background-color:#32363f; 
+        color: #32363f; 
+        justify-content: space-around;
+    }
+
+    #menu ul li a{ 
+        padding: 30px 10px; 
+        background-color:#32363f; 
+        color: #32363f; 
+        font-family: "Poppins", sans-serif;
+    }
+
+    #menu ul li{
+        left: 31pc;
+        display: inline;
+        padding: 13px
+    } 
+
+    .img{
+        justify-content: space-around;
+        display: flex;
+        float:right ;
+        margin: 0 10px 10px 0;
+        position: absolute;
+        top: 04pc;
+        right: 7pc;
+    }
+
+    .div2{
+        display: flex;
+        width: 91,5pc;
+        display: flex;
+        border-top: 10vh solid #32363F;
+        border-left: 9vh solid #32363F;
+        height: 45vh;    background-color: #32363F;
+        margin-bottom: -94px;
+
+    }
+
+    footer{
+        display: flex;
+        background-color: #32363f;
+        height: 30vh;
+    }
+
+    .footer-custom{
+        margin: auto 9vh;
+        font-family: "Poppins", sans-serif;
+        color: #C8C8C8;
+        background-color: #32363f;
+        height: 18vh;
+        padding: 20px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between
+    }
+
+    .divtext{
+        margin-top: -3pc;
+        margin-left: 100px;
+        margin-right: 100px;
+        text-align: justify;
+    }
+    .funcoes{
+        margin-top: 6pc;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 80px;
+        text-align: justify;
+    }
+    .h3{
+        line-height: 1.5;
+        text-indent: 20px;
+    }
+    p{
+        line-height: 1.5;
+        text-indent: 50px;
+    }
+    .pp{
+        line-height: 1.5;
+        text-indent: 80px;
+    }
+    .pp2{
+        line-height: 1.5;
+        text-indent: 100px;
+    }
+    .ppp{
+        line-height: 1.5;
+        text-indent: 120px;
+    }
+    .ppp2{
+        line-height: 1.5;
+        text-indent: 140px;
+    }
+    .imag{
+        width: 45%;
+        height: 45%;
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+    .cardcard {
+        box-shadow: 0 4px 8px 0 #1c1e21;
+        transition: 0.3s;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .cardcard:hover {
+        box-shadow: 0 8px 16px 0 #1c1e21;
+    }
+    .containercard{
+        background-color: #32363F;
+        padding: 2px 16px;
+    }
+    .button {
+        background-color: #32363F;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 1;
+        transition: 0.3s;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .button:hover {opacity: 0.8}
+
+    .button2 {
+        background-color: #32363F;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        opacity: 1;
+        transition: 0.3s;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .button2:hover {opacity: 0.8}
+
+    .position_btn{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    
+</style>
 {% endblock %}
 
 {% block content %}
+<div class="div2">
+    <img src="{{ url_for('static', filename='/imgs/imgcapa1.png') }}" width="400px" height="400" class="img">
+    <h1 style="font-size: 5pc; position: absolute;top: 13pc; left:59px;"><font color="D6D6D6"> 4. EVENTOS SCRUM: <br> Estruturando o Tempo  e <br> Promovendo a Colaboração</font></h1>
+</div>
+<div class="wave">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+</div>
+
+<!-- curso -->
+
+<div class="divtext">
+    <h1> SPRINT: O CORAÇÃO DO SCRUM</h1>
+        <p><strong><i>O QUE É UMA SPRINT?</i></strong></p>
+        <p>O Scrum é uma metodologia ágil amplamente usada no desenvolvimento de software, destacando-se pela rapidez e eficiência na entrega de resultados de alta qualidade. No coração do Scrum estão as Sprints, que são períodos de tempo fixos nos quais a equipe se dedica a produzir uma parte específica do produto. </p>
+        <p>Durante uma Sprint, a equipe segue um conjunto de etapas cruciais para garantir o progresso eficaz do trabalho:</p>
+        <ol>
+            <li><i><strong>Planejamento da Sprint :</strong></i> Nesta reunião, chamada de Sprint Planning Meeting, a equipe e o Product Owner definem o que será realizado durante a Sprint. Isso inclui identificar as tarefas a serem realizadas e estimar quanto tempo levará para concluí-las.</li>
+            <li><i><strong>Reuniões Diárias:</strong></i> As Daily Scrums são reuniões curtas e diárias onde a equipe compartilha o que foi feito desde a última reunião, o que será feito até a próxima e quaisquer obstáculos que estejam enfrentando. Isso mantém todos atualizados e ajuda a identificar e resolver problemas rapidamente.</li>
+            <li><i><strong>Trabalho de Desenvolvimento :</strong></i> Durante a Sprint, a equipe se concentra na execução das tarefas planejadas. Isso envolve o desenvolvimento de software, testes e qualquer outra atividade necessária para concluir as funcionalidades planejadas para a Sprint.</li>
+            <li><i><strong>Avaliação da Sprint:</strong></i> Ao final da Sprint, a equipe revisa o trabalho realizado e verifica se atendeu aos critérios de aceitação definidos durante o planejamento. Isso inclui demonstrar o trabalho concluído ao Product Owner para revisão e feedback.</li>
+            <li><i><strong>Retrospectiva da Sprint :</strong></i> Após a avaliação, a equipe realiza uma retrospectiva para analisar o que funcionou bem durante a Sprint, o que pode ser melhorado e quais ações podem ser tomadas para tornar as próximas Sprints mais eficientes.</li>
+        </ol>
+        <p>Durante uma Sprint, não são permitidas mudanças que possam afetar o objetivo da Sprint, garantindo assim que a equipe possa se concentrar no trabalho planejado. No entanto, o produto final pode ser renegociado entre o Development Team e o Product Owner à medida que novas informações surgem ou requisitos mudam ao longo do tempo. Essa flexibilidade permite que o produto evolua de acordo com as necessidades do cliente e as mudanças no ambiente de desenvolvimento.</p>
+        <div class="cardcard">
+            <div class="containercard">
+                <br>    
+                <p><font color="#C8C8C8"><strong> Exemplos práticos: </strong></font></p> 
+                <p><font color="#C8C8C8">Um exemplo simples e didático sobre o conceito de sprint é usando uma metáfora de uma corrida de revezamento:</font>
+                <p class="ppp"><font color="#C8C8C8">Imagine que o projeto é uma corrida de revezamento. Em vez de cada corredor percorrer toda a distância, cada membro da equipe corre uma parte da distância antes de passar o bastão para o próximo corredor. Da mesma forma, em uma Sprint de desenvolvimento de software, a equipe se dedica a trabalhar em uma parte específica do projeto durante um período de tempo fixo, geralmente de uma a quatro semanas. Durante esse tempo, os membros da equipe se concentram em completar as tarefas atribuídas para alcançar um objetivo definido, antes de passar para a próxima parte do projeto.</font> </P>
+            </div>
+        </div>
+<br>
+<br>
+    <h1> SPRINT PLANNING MEETING: PLANEJANDO O TRABALHO DA SPRINT</h1>
+        <p><strong><i>O QUE É UMA SPRINT PLANNING MEETING?</i></strong></p>
+        <p>Podemos resumir didaticamente a Sprint Planning Meeting em duas partes: </p>
+        <ol>
+            <li>O QUE VAMOS ENTREGAR?</li>
+            <p>Nesta fase, o foco está em determinar quais funcionalidades serão desenvolvidas durante a Sprint. Os passos principais incluem:</p>
+            <ol>
+                <li><i><strong>Apresentação do Product Backlog :</strong></i> O Product Owner apresenta os itens prioritários do Product Backlog ao Time Scrum, representando as necessidades e expectativas do cliente.</li>
+                <li><i><strong>Discussão e colaboração :</strong></i> Toda a equipe Scrum, incluindo o Development Team e o Product Owner, discute os itens do Product Backlog para garantir um claro entendimento dos requisitos e objetivos do projeto.</li>
+                <li><i><strong>Seleção dos itens para a Sprint :</strong></i>  Com base em sua capacidade e experiência, o Development Team seleciona os itens do Product Backlog que serão trabalhados durante a Sprint, considerando complexidade, prioridade e histórico de Sprints anteriores.</li>
+                <li><i><strong>Definição da meta da Sprint :</strong></i> A equipe define uma meta clara e compartilhada para o que será alcançado durante a Sprint, servindo como um guia para manter o foco comum.</li>
+            </ol>
+        </ol>
+        <ol>
+            <li>COMO VAMOS ENTREGAR?</li>
+            <p>Nesta fase, o foco é determinar como os itens selecionados serão transformados em um Incremento durante a Sprint. Os passos principais incluem: </p>
+            <ol>
+                <li><i><strong>Decomposição dos itens :</strong></i>  O Development Team divide os itens selecionados em trabalhos menores que podem ser completados em curtos períodos de tempo, facilitando o acompanhamento do progresso e a gestão das atividades.</li>
+                <li><i><strong>Criação do Sprint Backlog:</strong></i> É criada uma lista detalhada de todas as tarefas necessárias para completar os itens selecionados, incluindo estimativas de tempo e ordem de realização das tarefas.</li>
+                <li><i><strong>Reafirmação da meta da Sprint:</strong></i> Garantindo que todos os membros estejam alinhados com o objetivo final e compartilhado da Sprint, para manter o foco e a duração durante o período de trabalho.</li>
+            </ol>
+        </ol>
+        <p>Essas duas partes da Sprint Planning Meeting são fundamentais para garantir que a equipe Scrum esteja alinhada com os objetivos do projeto e tenha um plano claro para alcançar esses objetivos durante a Sprint.</p>
+        <div class="cardcard">
+            <div class="containercard">
+                <br>
+                <p><font color="#C8C8C8"><strong>Exemplo prático :</strong></font></p> 
+                <p class="ppp"><font color="#C8C8C8"> Uma equipe Scrum está desenvolvendo um aplicativo de lista de tarefas. Vamos dividir o exemplo em duas partes, correspondendo às duas partes da Sprint Planning Meeting:</font></P>
+                <P class="pp"><font color="#C8C8C8"><strong><i>O QUE VAMOS ENTREGAR?</i></strong></font></P>
+                <p class="ppp"><font color="#C8C8C8"> Imagine que a equipe Scrum se reúne para planejar a próxima Sprint. O Product Owner apresenta os seguintes itens prioritários do Product Backlog:</font></p>
+                <p class="ppp"><font color="#C8C8C8">
+                <ol>
+                    <li>Adicionar funcionalidade de notificação de lembrete de tarefas.</li>
+                    <li>Implementar a capacidade de categorizar tarefas como 'trabalho', 'pessoal' ou 'estudo'.</li>
+                    <li>Melhorar a interface do usuário da lista de tarefas para torná-la mais intuitiva.</li>
+                </ol>
+                </font></p>
+                <p class="ppp"><font color="#C8C8C8"> Após uma discussão, a equipe concorda que esses são os itens mais importantes para os usuários do aplicativo neste momento.</font></p>
+                
+                <p class="pp"><font color="#C8C8C8"><strong><i>COMO VAMOS ENTREGAR?</i></strong></font></p>
+                <p class="ppp"><font color="#C8C8C8"> A equipe agora precisa determinar como transformar os itens selecionados em um Incremento durante a Sprint:</font></p>
+                <p class="ppp"><font color="#C8C8C8">
+                    <ol>
+                        <li>Eles dividem a funcionalidade de notificação de lembrete em tarefas menores, como "Implementar a lógica de notificação" e "Desenvolver a interface do usuário para configurar lembretes".</li>
+                        <li>Criam um Sprint Backlog detalhado, incluindo todas as tarefas necessárias para completar os itens selecionados, como design, codificação, testes e integração.</li>
+                        <li>Reafirmam a meta da Sprint, lembrando-se de que o objetivo principal é melhorar a usabilidade do aplicativo para aumentar a produtividade dos usuários.</li>
+                    </ol>
+                </font></p>
+                <p class="ppp"><font color="#C8C8C8">Ao final da Sprint Planning Meeting, a equipe está alinhada com os objetivos da Sprint e tem um plano claro de como alcançá-los. Durante a Sprint, eles trabalharão no desenvolvimento desses itens, acompanhando seu progresso diariamente e ajustando conforme necessário para garantir que a meta da Sprint seja alcançada.</font></p>
+            </div>
+        </div>
+<br>
+    <h1>DAILY SCRUM: SINCRONIZAÇÃO DIÁRIA E RESOLUÇÃO DE IMPEDIMENTOS</h1>
+        <p><strong><i>O QUE É UMA DAILY SCRUM?</i></strong></p>
+        <p>A Daily Scrum é uma reunião diária do Time de Desenvolvimento no Scrum, projetada para ser rápida e focada, com duração máxima de 15 minutos. Durante essa reunião, cada membro responde a três perguntas:</p>
+        <ol>
+            <li><i><strong>O que realizei desde a última Daily Scrum?</strong></i>
+            <p>Os membros compartilham brevemente o trabalho concluído desde a última reunião, destacando as tarefas finalizadas ou progresso significativo em direção aos objetivos da Sprint.</p></li>
+            <li><i><strong>Quais são os meus planos até a próxima Daily Scrum?</strong></i>
+            <p>Os membros explicam o que planejam fazer até a próxima reunião, destacando as tarefas que pretendem abordar e os objetivos que desejam alcançar durante o período seguinte.</p></li>
+            <li><i><strong>Houve algum obstáculo que me impediu de concluir alguma tarefa?</strong></i>
+            <p>Se algum membro encontrou obstáculos ou bloqueios que afetaram seu progresso, eles compartilham esses desafios com a equipe. Isso pode incluir questões técnicas, dependências de outras equipes ou qualquer outra coisa que esteja dificultando o avanço do trabalho.</p></li>
+        </ol>
+        <p>É importante ressaltar que a Daily Scrum é uma oportunidade para o Time de Desenvolvimento se comunicar e sincronizar seu trabalho de forma colaborativa. Como são autogerenciados, os membros são responsáveis por resolver obstáculos que possam surgir durante o processo. Se um obstáculo estiver além da capacidade da equipe resolver, o Scrum Master pode ser envolvido para ajudar a remover esses impedimentos.</p>
+        <p>Além disso, as Daily Scrums desempenham um papel crucial no ciclo de inspeção e adaptação do Scrum. Ao analisar diariamente o progresso da Sprint e identificar quaisquer problemas ou desafios, o Time de Desenvolvimento pode tomar medidas imediatas para corrigi-los, garantindo que a Sprint permaneça no caminho certo para alcançar seus objetivos.</p>
+        <div class="cardcard">
+            <div class="containercard">
+                <br>
+                <p><font color="#C8C8C8"><strong>Exemplo prático :</strong></font></p> 
+                <p class="ppp"><font color="#C8C8C8">Imagine que você é parte de um Time de Desenvolvimento Scrum trabalhando neste aplicativo. Vocês têm uma Daily Scrum todos os dias pela manhã para se manterem sincronizados e resolver quaisquer obstáculos que possam surgir.</font></P>
+                <P class="pp"><font color="#C8C8C8"><strong><i>EXEMPLO DE DAILY SCRUM :</i></strong></font></P>
+                <p class="pp"><font color="#C8C8C8"><i><strong>Equipe:</strong></i></font></p>
+                <p class="ppp"><font color="#C8C8C8">
+                <ul>
+                    <li>Ana (Desenvolvedora)</li>
+                    <li>João (Desenvolvedor)</li>
+                    <li>Maria (Desenvolvedora)</li>
+                    <li>Pedro (Scrum Master)</li>
+                </ul>
+                </font></p>
+                <p class="pp"><font color="#C8C8C8"> <i><strong>Dia 1 :</strong></i></font></p>
+                <p class="ppp"><font color="#C8C8C8">
+                <ol>
+                    <li><i><strong>Ana :</strong></i> Desde a última Daily Scrum, terminei de implementar a função de adicionar tarefas à lista. Pretendo começar a trabalhar na função de editar tarefas até a próxima Daily Scrum.</li>
+                    <li><i><strong>João :</strong></i>  Eu terminei de corrigir alguns bugs menores na interface do usuário. Meu plano para a próxima Daily Scrum é continuar trabalhando na melhoria da experiência do usuário ao marcar tarefas como concluídas.</li>
+                    <li><i><strong>Maria :</strong></i>  Consegui integrar uma biblioteca de notificações push ao aplicativo. Para a próxima Daily Scrum, vou começar a trabalhar na funcionalidade de agrupamento de tarefas por categoria.</li>
+                    <li><i><strong>Pedro (Scrum Master) :</strong></i> Não houve nenhum impedimento relatado hoje. Lembre-se de que estou aqui para ajudar se surgirem obstáculos que não possam ser resolvidos pela equipe.</li>
+                </ol>
+                </font></p>
+                <p class="pp"><font color="#C8C8C8"><i><strong>Dia 2 :</strong></i></font></p>
+                <p class="ppp"><font color="#C8C8C8">
+                <ol>
+                    <li><i><strong>Ana :</strong></i> Consegui adicionar a função de edição de tarefas à lista. Agora estou trabalhando na correção de um problema de desempenho ao exibir muitas tarefas na tela.</li>
+                    <li><i><strong>João :</strong></i> Terminei de melhorar a experiência do usuário ao marcar tarefas como concluídas. Meu próximo passo é realizar testes de usabilidade para garantir que tudo funcione conforme o esperado.</li>
+                    <li><i><strong>Maria :</strong></i>  Comecei a trabalhar na funcionalidade de agrupamento de tarefas por categoria. Encontrei um obstáculo ao tentar integrar essa função com a interface do usuário existente. Vou precisar da ajuda da equipe para resolver isso.</li>
+                    <li><i><strong>Pedro (Scrum Master) :</strong></i>  Maria, vamos agendar uma reunião após a Daily Scrum para discutir o obstáculo que você encontrou. Enquanto isso, o resto da equipe pode continuar avançando em suas tarefas.</li>
+                </ol>
+                </font></p>
+                <p class="ppp"><font color="#C8C8C8">Neste exemplo, a Daily Scrum permite que a equipe se mantenha sincronizada sobre o progresso das tarefas e identifique rapidamente qualquer impedimento que possa surgir. Ao comunicar seus planos e obstáculos diariamente, a equipe pode colaborar efetivamente para resolver problemas e manter o projeto avançando.</font>
+            </div>
+        </div>
+<br>
+</div>
+<br>
+<br>
+<br>
+<div class="position_btn">
+    <div class="button">
+        <button class="button"><a href="/modulos"><font color="#C8C8C8"><span> Voltar</span></font></button>
+    </div>
+    <br>
+    <div class="button2">
+        <button class="button"><a href="/mod_2"><font color="#C8C8C8"><span> Avançar</span></font></button>
+    </div>
+</div>
+<br>
+<br>
+<br>
+
 {% endblock %}

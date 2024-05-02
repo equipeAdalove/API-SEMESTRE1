@@ -1,40 +1,231 @@
+{% extends 'base.html' %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Módulo 6</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <h1 class="mt-5 mb-4">Quiz</h1>
-        <form action="{{ url_for('submit_quiz') }}" method="POST">
-            {% for question in questions %}
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ question['question'] }}</h5>
-                        <ul class="list-group">
-                            {% for option in question['options'] %}
-                                <li class="list-group-item">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="{{ option }}" name="{{ question['id'] }}" value="{{ option }}" class="custom-control-input">
-                                        <label class="custom-control-label" for="{{ option }}">{{ option }}</label>
-                                    </div>
-                                </li>
-                            {% endfor %}
-                        </ul>
+{% block title %}Módulo 6{% endblock %}
+
+{% block styles %}
+        <style>
+            body{
+                justify-content: space-around;
+                margin: 0%;
+                margin-bottom: 0%;
+                font-family: 'Alatsi',  sans-serif;
+                background-color: #C8C8C8;
+            }
+
+            #menu ul{
+                background-color: #32363f;
+                list-style: none;
+            }
+
+            #menu{ 
+                padding: 52px 25px; 
+                background-color:#32363f; 
+                color: #32363f; 
+                justify-content: space-around;
+            }
+
+            #menu ul li a{ 
+                padding: 30px 10px; 
+                background-color:#32363f; 
+                color: #32363f; 
+                font-family: "Poppins", sans-serif;
+            }
+
+            #menu ul li{
+                left: 31pc;
+                display: inline;
+                padding: 13px
+            } 
+
+            .img{
+                justify-content: space-around;
+                display: flex;
+                float:right ;
+                margin: 0 10px 10px 0;
+                position: absolute;
+                top: 04pc;
+                right: 7pc;
+            }
+
+            .div2{
+                display: flex;
+                width: 91,5pc;
+                display: flex;
+                border-top: 10vh solid #32363F;
+                border-left: 9vh solid #32363F;
+                height: 45vh;    background-color: #32363F;
+                margin-bottom: -94px;
+
+            }
+
+            footer{
+                display: flex;
+                background-color: #32363f;
+                height: 30vh;
+            }
+
+            .footer-custom{
+                margin: auto 9vh;
+                font-family: "Poppins", sans-serif;
+                color: #C8C8C8;
+                background-color: #32363f;
+                height: 18vh;
+                padding: 20px;
+                display: flex;
+                flex-flow: column;
+                justify-content: space-between
+            }
+
+            .divtext{
+                margin-top: -3pc;
+                margin-left: 100px;
+                margin-right: 100px;
+                text-align: justify;
+            }
+            .funcoes{
+                margin-top: 6pc;
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-bottom: 80px;
+                text-align: justify;
+            }
+            p{
+                line-height: 1.5;
+                text-indent: 50px;
+            }
+            .pp{
+                line-height: 1.5;
+                text-indent: 80px;
+            }
+            .pp2{
+                line-height: 1.5;
+                text-indent: 100px;
+            }
+            .ppp{
+                line-height: 1.5;
+                text-indent: 120px;
+            }
+            .ppp2{
+                line-height: 1.5;
+                text-indent: 140px;
+            }
+            .imag{
+                width: 45%;
+                height: 45%;
+                margin-left: 450px;
+                margin-right: 350px;
+            }
+            .cardcard {
+                box-shadow: 0 4px 8px 0 #1c1e21;
+                transition: 0.3s;
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+            }
+
+            .cardcard:hover {
+                box-shadow: 0 8px 16px 0 #1c1e21;
+            }
+            .containercard {
+                background-color: #32363F;
+                padding: 2px 16px;
+            }
+            .button {
+                background-color: #32363F;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-align: center;
+                font-size: 16px;
+                margin: 4px 2px;
+                opacity: 1;
+                transition: 0.3s;
+                display: inline-block;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .button:hover {opacity: 0.8}
+
+            .button2 {
+                background-color: #32363f;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-align: center;
+                font-size: 16px;
+                margin: 4px 2px;
+                opacity: 1;
+                transition: 0.3s;
+                display: inline-block;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .button2:hover {opacity: 0.8}
+
+            .position_btn{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+            }
+
+            .title{
+                margin: auto 45%;
+            }
+
+            .btnsub{
+                background-color:#32363F;
+                border: none;
+                margin: auto 45%;
+                margin-bottom: 12px;
+            }
+
+            .btnsub:hover{
+                background-color: #5a5d64;
+            }
+            
+        </style>
+{% endblock %}
+
+{% block content %}
+        <div class="div2">
+            <img src="{{ url_for('static', filename='/imgs/capa_mod7.png') }}" width="500px" height="500" class="img">
+            <h1 style="font-size: 5pc; position: absolute;top: 13pc; left:59px;"><font color="D6D6D6"> QUIZ MÓDULO 6</font></h1>
+            <h1 style="font-size: 3pc; position: absolute;top: 22pc; left:59px;"><font color="D6D6D6"> Teste seus conhecimentos!</font></h1>
+        </div>
+        <div class="wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+        </div>
+
+        <!-- Quiz -->
+
+        <div class="container">
+            <h1 class="mt-5 mb-4 title">Quiz</h1>
+            <form action="{{ url_for('submit_quiz') }}" method="POST">
+                {% for question in questions %}
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ question['question'] }}</h5>
+                            <ul class="list-group">
+                                {% for option in question['options'] %}
+                                    <li class="list-group-item">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="{{ option }}" name="{{ question['id'] }}" value="{{ option }}" class="custom-control-input">
+                                            <label class="custom-control-label" for="{{ option }}">{{ option }}</label>
+                                        </div>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            {% endfor %}
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
-
-    <!-- Adicione os scripts do Bootstrap no final do corpo -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+                {% endfor %}
+                <button type="submit" class="btn btn-primary btnsub">Submit</button>
+            </form>
+        </div>
+    
+        <!-- Adicione os scripts do Bootstrap no final do corpo -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+{% endblock %}
