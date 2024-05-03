@@ -290,3 +290,22 @@ def submit_quiz_6():  #altere apenas o número do seu módulo
 @app.route('/mod_7')
 def modulo_7():
     return render_template('mod_7.html')
+
+@app.route('/mod_7_quiz')  #altere apenas o número do seu módulo  )
+def modulo_7_quiz():   #altere apenas o número do seu módulo          
+    return render_template('mod_7_quiz.html', questions=questions_6)   #altere apenas o número do seu módulo
+
+@app.route('/submit_quiz_7', methods=['POST'])  #altere apenas o número do seu módulo
+def submit_quiz_7():  #altere apenas o número do seu módulo
+    # Lógica para processar o formulário e verificar as respostas
+    score = 0
+    user_answers = {}
+    for question in questions_7:
+        question_id = str(question['id'])
+        user_answer = request.form.get(question_id)
+        correct_answer = question['answer']
+        if user_answer == correct_answer:
+            score += 1
+        user_answers[question['question']] = user_answer
+    total_questions = len(questions_6)
+    return render_template('mod_7_results.html', score=score, total_questions=total_questions, results=user_answers) #altere apenas o número do seu módulo no (mod_x_results.html)
