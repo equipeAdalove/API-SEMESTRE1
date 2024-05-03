@@ -10,6 +10,10 @@ def index():
 def modulos():
     return render_template('modulos.html')
 
+@app.route('/testes')
+def testes():
+    return render_template('testes.html')
+
 #Módulo 1
 
 questions_1 = [
