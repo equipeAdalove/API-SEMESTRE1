@@ -362,7 +362,7 @@ def modulo_7():
 
 @app.route('/mod_7_quiz')  #altere apenas o número do seu módulo  )
 def modulo_7_quiz():   #altere apenas o número do seu módulo          
-    return render_template('mod_7_quiz.html', questions=questions_6)   #altere apenas o número do seu módulo
+    return render_template('mod_7_quiz.html', questions=questions_7)   #altere apenas o número do seu módulo
 
 @app.route('/submit_quiz_7', methods=['POST'])  #altere apenas o número do seu módulo
 def submit_quiz_7():  #altere apenas o número do seu módulo
