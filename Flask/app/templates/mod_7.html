@@ -138,13 +138,15 @@ p{
 .btn.btn-lg.btn-dark{
     background-color:#32363F;
 }
+.btn.btn-lg.btn-dark:hover{
+    background-color: #464c5c;
+}
 .d-grid.gap-2.d-md-flex{
     justify-content: space-between;
 }
 .btn.my-5{
     font-size: larger;
 }
-
 </style>
 {% endblock %}
 
@@ -160,127 +162,127 @@ p{
 
 <!-- Curso -->
     <div class="divtext">
-    <h3 class="h3">O QUE É ESTIMATIVA? </h3>
-    <p>Aplicada em Story Points, é utilizada para estimar a quantidade de tempo e esforço que uma tarefa necessita. Os Pontos de História/Story Points são unidades de medida usadas para expressar o tamanho geral de uma História do Usuário, ou como são conhecidas, as User Stories. Quando fazemos estimativas com Pontos de História, atribuímos um valor, ou Story Points, a cada item.</p>
-    <p>Primeiramente, decide-se a tarefa com menos esforço (1) e classifica-se as próximas em comparação a ela.<br>
-    Os valores brutos que são atribuídos não são importantes, sendo os valores relativos mais importantes para o processo das estimativas.</p>
-           <br>
+        <h3 class="h3">O QUE É ESTIMATIVA? </h3>
+        <p>Aplicada em Story Points, é utilizada para estimar a quantidade de tempo e esforço que uma tarefa necessita. Os Pontos de História/Story Points são unidades de medida usadas para expressar o tamanho geral de uma História do Usuário, ou como são conhecidas, as User Stories. Quando fazemos estimativas com Pontos de História, atribuímos um valor, ou Story Points, a cada item.</p>
+        <p>Primeiramente, decide-se a tarefa com menos esforço (1) e classifica-se as próximas em comparação a ela.<br>
+        Os valores brutos que são atribuídos não são importantes, sendo os valores relativos mais importantes para o processo das estimativas.</p>
+        <br>
 
-    <img src="{{ url_for('static', filename='/imgs/Estimativa7.png')}}" class="imag"> </p>
+        <img src="{{ url_for('static', filename='/imgs/Estimativa7.png')}}" class="imag"> </p>
 
-    <br>
+        <br>
 
-    <h1>Com isso, como estimar usando Story Points(Pontos de História)? </h1>
+        <h1>Com isso, como estimar usando Story Points(Pontos de História)? </h1>
 
-    <p> Vamos agora a três passos que devem ser seguidos para estimar usando Pontos de História:</p>
-    <p><strong><i> 1. Escolher uma escala: </i></strong></p>
-    <p> Diferentemente de projetos tradicionais, em que a estimativa é transformada em horas ou dias, uma equipe Scrum desenvolve sua própria escala de medida. No próximo tópico, serão apresentados mais detalhes a respeito da escala tradicionalmente utilizada em projetos Scrum.</p>
-    <p><strong><i> 2. Escolha itens de referência: </i></strong></p>
-    <p>O Scrum permite que as equipes respondam rapidamente a mudanças e imprevistos. Depois que a escala de medida foi definida, escolhem-se um ou mais itens de referências para se criarem os pontos da escala. </p>
-    <p>Depois que a escala de medida foi definida, escolhem-se um ou mais itens de referências para se criarem os pontos da escala. <br>
-    É recomendável que se escolha o menor item da lista, pois facilita a estimativa de esforço dos seguintes itens e, com isso, você começa a criar uma unidade de medida de desenvolvimento. </p>
+        <p> Vamos agora a três passos que devem ser seguidos para estimar usando Pontos de História:</p>
+        <p><strong><i> 1. Escolher uma escala: </i></strong></p>
+        <p> Diferentemente de projetos tradicionais, em que a estimativa é transformada em horas ou dias, uma equipe Scrum desenvolve sua própria escala de medida. No próximo tópico, serão apresentados mais detalhes a respeito da escala tradicionalmente utilizada em projetos Scrum.</p>
+        <p><strong><i> 2. Escolha itens de referência: </i></strong></p>
+        <p>O Scrum permite que as equipes respondam rapidamente a mudanças e imprevistos. Depois que a escala de medida foi definida, escolhem-se um ou mais itens de referências para se criarem os pontos da escala. </p>
+        <p>Depois que a escala de medida foi definida, escolhem-se um ou mais itens de referências para se criarem os pontos da escala. <br>
+        É recomendável que se escolha o menor item da lista, pois facilita a estimativa de esforço dos seguintes itens e, com isso, você começa a criar uma unidade de medida de desenvolvimento. </p>
 
-    <p><strong><i> 3. Estime itens do Product Backlog:</i></strong></p>
-    <p>Uma vez criada a referência, começa-se a realizar a estimativa dos itens do topo do Product Backlog.<br>
-    Sendo o processo em que a equipe de desenvolvimento define a grandeza de cada item da lista, a partir do item de referência.</p>
-    
-    <h1>Planning Poker</h1>
-    <br>
-    <img src="{{ url_for('static', filename='/imgs/PlanningPoker7.png') }}" width="400px" height="400" class="imag">
-    <br>
-    <p>Um dos métodos de estimativa mais populares é o Planning Poker, que consiste em um jogo colaborativo em que os membros do time atribuem um valor de Story Points a cada item do backlog, baseando-se em critérios como o tamanho, a dificuldade, o risco e a incerteza da tarefa.</p>
-    <p>O Planning Poker estimula a discussão e o consenso entre os participantes, além de evitar influências externas ou viéses individuais.</p>
-    <p>No início do Planning Poker, cada membro do time recebe um conjunto de cartas com valores de estimativa (por exemplo, 0, 1, 2, 3, 5, 8, 13, 20, 40 e 100). Esses valores geralmente seguem uma escala baseada na sequência de Fibonacci, embora outras sequências também possam ser usadas.</p>
-   
-    <p>Para cada User Story a ser estimada, o Product Owner lê a descrição e esclarece eventuais dúvidas do time. Entretanto, é importante notar que, em certo ponto, discussões adicionais não aumentam a precisão da estimativa.</p>
-    <p>Nesse ponto, é comum que as estimativas variem significativamente, o que na verdade é um bom sinal. As diferenças nas estimativas levam a discussões entre os membros do time, o que ajuda a chegar a um consenso mais acurado. Depois das explanações e discussões, todos recolhem suas cartas e estimam novamente, seguindo o mesmo processo.</p>
-<br>
-    <h1>Por que o “Planning Poker” funciona?</h1>
-    <p>O "Planning Poker" funciona porque aproveita a expertise de diversos membros do time na estimativa. Como esses membros são multidisciplinares, eles estão mais bem qualificados para estimar as histórias do que qualquer outra pessoa.<br>
-    Além disso, os diálogos e justificativas durante o "Planning Poker" resultam em estimativas mais precisas, especialmente para itens com maior incerteza. <br>
-    Isso é crucial em projetos com níveis consideráveis de complexidade.</p> 
-    <p> Estudos também demonstram que a média das estimativas individuais leva a melhores resultados, pois promove discussões em grupo. Essas discussões são a base do "Planning Poker" e levam a um consenso entre os participantes.</p>
-
-<br>
-
-    <h1>Sequência de Fibonacci</h1>
-    <p>A sequência de Fibonacci é a escala mais comumente usada na estimativa de User Stories com o "Planning Poker". Isso se deve ao fato de que a sequência de Fibonacci é uma função quadrática, proporcionando diferenças mais significativas desde o início da sequência.</p>
-    <p>Embora existam outras sequências quadráticas, a sequência de Fibonacci produz intervalos distintos rapidamente, refletindo a imprecisão de acordo com o tamanho da história.<br>
-    Por exemplo, uma história de tamanho 8 não significa necessariamente que ela é exatamente do tamanho 8, mas sim que seu tamanho está entre 5 e 13.</p>
-
-    <br>
-
-    <h1>Velocidade</h1>
-    <p> A velocidade representa a capacidade de um Time de Desenvolvimento em uma Sprint e é sempre medida usando a mesma unidade aplicada na estimativa dos itens.
-    Essa velocidade auxilia os Product Owners no planejamento de Releases e os Times de Desenvolvimento no planejamento das Sprints, caso necessário.</p>
-    <ul>
-        <li><strong><i>Lista priorizada de itens de trabalho:</i></strong> Esta é uma lista que contém todas as tarefas que precisam ser realizadas para desenvolver ou melhorar um produto. Essas tarefas podem incluir coisas como adicionar novos recursos, corrigir problemas existentes, melhorar a infraestrutura do sistema, entre outras.</li> 
-        <li><strong><i>Elaborada pelo Time Scrum, mas somente o Product Owner tem autoridade para gerenciá-la:</i></strong> O Time Scrum, que inclui desenvolvedores, designers, testadores, etc., trabalha em conjunto para criar e priorizar essa lista de tarefas. No entanto, apenas o Product Owner, que é responsável por representar os interesses do cliente ou do usuário final, tem o poder de decidir quais tarefas serão realizadas e em que ordem.</li>
-        <li><strong><i>Contém itens de negócios, funcionais, não funcionais, arquiteturais e de infraestrutura, além de itens que representam riscos:</i></strong> Essa lista não se limita apenas a novos recursos ou funcionalidades visíveis para o usuário. Ela também inclui tarefas relacionadas à parte técnica do sistema, como melhorias na arquitetura do software, atualizações de infraestrutura de servidores, garantia de segurança, etc. Além disso, podem ser incluídos itens relacionados a questões de negócios, como a necessidade de atender a regulamentações específicas ou reduzir riscos de segurança.</li>
-        <li><strong><i>Itens ordenados de acordo com sua importância, com os mais importantes no topo:</i></strong> As tarefas na lista são organizadas de acordo com sua prioridade, com aquelas consideradas mais importantes ou urgentes no topo da lista. Isso permite que a equipe saiba quais tarefas devem ser abordadas primeiro.</li>
-        <li><strong><i>Cada item deve ser suficientemente pequeno e ter critérios claros de aceitação para ser incluído em uma Sprint:</i></strong> Para que uma tarefa seja considerada pronta para ser trabalhada em uma iteração (Sprint) do desenvolvimento, ela precisa ser clara e específica o suficiente, além de ter critérios claros que definam quando ela estará completa e pronta para ser entregue aos usuários. Isso garante que a equipe possa trabalhar de forma eficiente e entender exatamente o que precisa ser feito.</li>
-    </ul> 
-    <br>
-    <br>
-    <div class="cardcard">
-        <div class="containercard">
-            <br>
-            <p><font color="#C8C8C8"><strong> Exemplo prático: </strong></font></p>
-            <p class="ppp"><font color="#C8C8C8"> Imagine que uma equipe de desenvolvimento de software utiliza o SCRUM para estimar quantidade de tempo e esforço necessário para implementar novas funcionalidades em um aplicativo. </font> </p>
-
-            <p class="pp"><font color="#C8C8C8"><strong><i>1. Sprint Planning:</i></strong></font></p>
-            <p class="ppp"><font color="#C8C8C8">
-            <ul>
-            <li>Antes de iniciar o Sprint, a equipe realiza uma reunião de Sprint Planning.<br>
-            Durante essa reunião, o Product Owner apresenta as User Stories selecionadas do backlog para o próximo Sprint.</li>
-            </ul></font> </p>
-
-            <p class="pp"><font color="#C8C8C8"><strong><i>2. Estimativa:</i></strong></font></p>
-            <p class="ppp"><font color="#C8C8C8">
-            <ul>
-            <li>Para cada história de usuário apresentada, a equipe realiza a estimativa do esforço necessário para sua implementação.<br>
-            Eles utilizam a técnica de Planning Poker, na qual cada membro recebe cartas com valores discretos (como 0, 1, 2, 3, 5, 8, 13) e, após uma discussão sobre a complexidade da história e os possíveis riscos, cada membro escolhe uma carta que representa sua estimativa de esforço.</li>
-            </ul>
-            </font> </p>
-            <p class="pp"><font color="#C8C8C8"><strong><i>3. Discussão e Consenso:</i></strong></font></P>
-            <p class="ppp"><font color="#C8C8C8">
-            <ul>
-            <li>Após todos os membros revelarem suas cartas, a equipe discute as diferenças nas estimativas e compartilha os motivos por trás de suas escolhas.<br>
-            Durante essa discussão, os membros podem explicar os aspectos técnicos que tornam uma história mais complexa do que outra, ou podem identificar riscos que aumentam o esforço necessário para sua implementação. <br>
-            O objetivo é chegar a um consenso sobre a estimativa para cada história de usuário.</li>
-            </ul>
-            </font> </p>
-
-        <p class="pp"><font color="#C8C8C8"><strong><i>4. Registro das Estimativas:</i></strong></font></P>
-        <p class="ppp"><font color="#C8C8C8">
-        <ul>
-        <li>As estimativas finais são registradas no backlog do produto, associadas a cada User Story.<br>
-        Isso permite que a equipe planeje a capacidade do Sprint com base nas estimativas de esforço para as User Stories selecionadas.</li>
-        </ul>
-        </font> </p>
-
-        <p class="pp"><font color="#C8C8C8"><strong><i>5. Planejamento da Capacidade do Sprint:</i></strong></font></p>
-            <p class="ppp"><font color="#C8C8C8">
-            <ul>
-            <li>Com as estimativas de esforço em mãos, a equipe pode calcular quantas User Stories podem ser concluídas dentro da Sprint, levando em consideração a capacidade de trabalho disponível. <br>
-            Isso ajuda a equipe a definir metas realistas para o Sprint e a gerenciar as expectativas do Product Owner.</li>
-            </ul>
-            
-       <p class="pp"><font color="#C8C8C8"><strong><i>6. Desenvolvimento:</i></strong></font></p>
-            <p class="ppp"><font color="#C8C8C8">
-            <ul>
-            <li>Durante o Sprint, os desenvolvedores trabalham nas User Stories atribuídas, utilizando as estimativas de esforço como referência para o tempo necessário para concluir cada tarefa.</li>
-            </ul>
-                        
-       <p class="pp"><font color="#C8C8C8"><strong><i>7. Avaliação da Precisão das Estimativas:</i></strong></font></p>
-            <p class="ppp"><font color="#C8C8C8">
-            <ul>
-            <li>Ao final do Sprint, durante a Retrospectiva do Sprint, a equipe pode revisar as estimativas feitas para as User Stories concluídas e compará-las com o tempo real gasto em sua implementação.<br>
-            Isso permite que a equipe avalie a precisão de suas estimativas e faça ajustes para melhorar a precisão das estimativas futuras. <br>
-            O objetivo é chegar a um consenso sobre a estimativa para cada história de usuário</li>
-            </ul>
+        <p><strong><i> 3. Estime itens do Product Backlog:</i></strong></p>
+        <p>Uma vez criada a referência, começa-se a realizar a estimativa dos itens do topo do Product Backlog.<br>
+        Sendo o processo em que a equipe de desenvolvimento define a grandeza de cada item da lista, a partir do item de referência.</p>
         
-        </div>
+        <h1>Planning Poker</h1>
+        <br>
+        <img src="{{ url_for('static', filename='/imgs/PlanningPoker7.png') }}" width="400px" height="400" class="imag">
+        <br>
+        <p>Um dos métodos de estimativa mais populares é o Planning Poker, que consiste em um jogo colaborativo em que os membros do time atribuem um valor de Story Points a cada item do backlog, baseando-se em critérios como o tamanho, a dificuldade, o risco e a incerteza da tarefa.</p>
+        <p>O Planning Poker estimula a discussão e o consenso entre os participantes, além de evitar influências externas ou viéses individuais.</p>
+        <p>No início do Planning Poker, cada membro do time recebe um conjunto de cartas com valores de estimativa (por exemplo, 0, 1, 2, 3, 5, 8, 13, 20, 40 e 100). Esses valores geralmente seguem uma escala baseada na sequência de Fibonacci, embora outras sequências também possam ser usadas.</p>
+    
+        <p>Para cada User Story a ser estimada, o Product Owner lê a descrição e esclarece eventuais dúvidas do time. Entretanto, é importante notar que, em certo ponto, discussões adicionais não aumentam a precisão da estimativa.</p>
+        <p>Nesse ponto, é comum que as estimativas variem significativamente, o que na verdade é um bom sinal. As diferenças nas estimativas levam a discussões entre os membros do time, o que ajuda a chegar a um consenso mais acurado. Depois das explanações e discussões, todos recolhem suas cartas e estimam novamente, seguindo o mesmo processo.</p>
+        <br>
+            <h1>Por que o “Planning Poker” funciona?</h1>
+            <p>O "Planning Poker" funciona porque aproveita a expertise de diversos membros do time na estimativa. Como esses membros são multidisciplinares, eles estão mais bem qualificados para estimar as histórias do que qualquer outra pessoa.<br>
+            Além disso, os diálogos e justificativas durante o "Planning Poker" resultam em estimativas mais precisas, especialmente para itens com maior incerteza. <br>
+            Isso é crucial em projetos com níveis consideráveis de complexidade.</p> 
+            <p> Estudos também demonstram que a média das estimativas individuais leva a melhores resultados, pois promove discussões em grupo. Essas discussões são a base do "Planning Poker" e levam a um consenso entre os participantes.</p>
+
+        <br>
+
+            <h1>Sequência de Fibonacci</h1>
+            <p>A sequência de Fibonacci é a escala mais comumente usada na estimativa de User Stories com o "Planning Poker". Isso se deve ao fato de que a sequência de Fibonacci é uma função quadrática, proporcionando diferenças mais significativas desde o início da sequência.</p>
+            <p>Embora existam outras sequências quadráticas, a sequência de Fibonacci produz intervalos distintos rapidamente, refletindo a imprecisão de acordo com o tamanho da história.<br>
+            Por exemplo, uma história de tamanho 8 não significa necessariamente que ela é exatamente do tamanho 8, mas sim que seu tamanho está entre 5 e 13.</p>
+
+            <br>
+
+            <h1>Velocidade</h1>
+            <p> A velocidade representa a capacidade de um Time de Desenvolvimento em uma Sprint e é sempre medida usando a mesma unidade aplicada na estimativa dos itens.
+            Essa velocidade auxilia os Product Owners no planejamento de Releases e os Times de Desenvolvimento no planejamento das Sprints, caso necessário.</p>
+        <ul>
+            <li><strong><i>Lista priorizada de itens de trabalho:</i></strong> Esta é uma lista que contém todas as tarefas que precisam ser realizadas para desenvolver ou melhorar um produto. Essas tarefas podem incluir coisas como adicionar novos recursos, corrigir problemas existentes, melhorar a infraestrutura do sistema, entre outras.</li> 
+            <li><strong><i>Elaborada pelo Time Scrum, mas somente o Product Owner tem autoridade para gerenciá-la:</i></strong> O Time Scrum, que inclui desenvolvedores, designers, testadores, etc., trabalha em conjunto para criar e priorizar essa lista de tarefas. No entanto, apenas o Product Owner, que é responsável por representar os interesses do cliente ou do usuário final, tem o poder de decidir quais tarefas serão realizadas e em que ordem.</li>
+            <li><strong><i>Contém itens de negócios, funcionais, não funcionais, arquiteturais e de infraestrutura, além de itens que representam riscos:</i></strong> Essa lista não se limita apenas a novos recursos ou funcionalidades visíveis para o usuário. Ela também inclui tarefas relacionadas à parte técnica do sistema, como melhorias na arquitetura do software, atualizações de infraestrutura de servidores, garantia de segurança, etc. Além disso, podem ser incluídos itens relacionados a questões de negócios, como a necessidade de atender a regulamentações específicas ou reduzir riscos de segurança.</li>
+            <li><strong><i>Itens ordenados de acordo com sua importância, com os mais importantes no topo:</i></strong> As tarefas na lista são organizadas de acordo com sua prioridade, com aquelas consideradas mais importantes ou urgentes no topo da lista. Isso permite que a equipe saiba quais tarefas devem ser abordadas primeiro.</li>
+            <li><strong><i>Cada item deve ser suficientemente pequeno e ter critérios claros de aceitação para ser incluído em uma Sprint:</i></strong> Para que uma tarefa seja considerada pronta para ser trabalhada em uma iteração (Sprint) do desenvolvimento, ela precisa ser clara e específica o suficiente, além de ter critérios claros que definam quando ela estará completa e pronta para ser entregue aos usuários. Isso garante que a equipe possa trabalhar de forma eficiente e entender exatamente o que precisa ser feito.</li>
+        </ul> 
+        <br>
+        <br>
+        <div class="cardcard">
+            <div class="containercard">
+                <br>
+                <p><font color="#C8C8C8"><strong> Exemplo prático: </strong></font></p>
+                <p class="ppp"><font color="#C8C8C8"> Imagine que uma equipe de desenvolvimento de software utiliza o SCRUM para estimar quantidade de tempo e esforço necessário para implementar novas funcionalidades em um aplicativo. </font> </p>
+
+                <p class="pp"><font color="#C8C8C8"><strong><i>1. Sprint Planning:</i></strong></font></p>
+                <p class="ppp"><font color="#C8C8C8">
+                <ul>
+                <li>Antes de iniciar o Sprint, a equipe realiza uma reunião de Sprint Planning.<br>
+                Durante essa reunião, o Product Owner apresenta as User Stories selecionadas do backlog para o próximo Sprint.</li>
+                </ul></font> </p>
+
+                <p class="pp"><font color="#C8C8C8"><strong><i>2. Estimativa:</i></strong></font></p>
+                <p class="ppp"><font color="#C8C8C8">
+                <ul>
+                <li>Para cada história de usuário apresentada, a equipe realiza a estimativa do esforço necessário para sua implementação.<br>
+                Eles utilizam a técnica de Planning Poker, na qual cada membro recebe cartas com valores discretos (como 0, 1, 2, 3, 5, 8, 13) e, após uma discussão sobre a complexidade da história e os possíveis riscos, cada membro escolhe uma carta que representa sua estimativa de esforço.</li>
+                </ul>
+                </font> </p>
+                <p class="pp"><font color="#C8C8C8"><strong><i>3. Discussão e Consenso:</i></strong></font></P>
+                <p class="ppp"><font color="#C8C8C8">
+                <ul>
+                <li>Após todos os membros revelarem suas cartas, a equipe discute as diferenças nas estimativas e compartilha os motivos por trás de suas escolhas.<br>
+                Durante essa discussão, os membros podem explicar os aspectos técnicos que tornam uma história mais complexa do que outra, ou podem identificar riscos que aumentam o esforço necessário para sua implementação. <br>
+                O objetivo é chegar a um consenso sobre a estimativa para cada história de usuário.</li>
+                </ul>
+                </font> </p>
+
+            <p class="pp"><font color="#C8C8C8"><strong><i>4. Registro das Estimativas:</i></strong></font></P>
+            <p class="ppp"><font color="#C8C8C8">
+            <ul>
+            <li>As estimativas finais são registradas no backlog do produto, associadas a cada User Story.<br>
+            Isso permite que a equipe planeje a capacidade do Sprint com base nas estimativas de esforço para as User Stories selecionadas.</li>
+            </ul>
+            </font> </p>
+
+            <p class="pp"><font color="#C8C8C8"><strong><i>5. Planejamento da Capacidade do Sprint:</i></strong></font></p>
+                <p class="ppp"><font color="#C8C8C8">
+                <ul>
+                <li>Com as estimativas de esforço em mãos, a equipe pode calcular quantas User Stories podem ser concluídas dentro da Sprint, levando em consideração a capacidade de trabalho disponível. <br>
+                Isso ajuda a equipe a definir metas realistas para o Sprint e a gerenciar as expectativas do Product Owner.</li>
+                </ul>
+                
+        <p class="pp"><font color="#C8C8C8"><strong><i>6. Desenvolvimento:</i></strong></font></p>
+                <p class="ppp"><font color="#C8C8C8">
+                <ul>
+                <li>Durante o Sprint, os desenvolvedores trabalham nas User Stories atribuídas, utilizando as estimativas de esforço como referência para o tempo necessário para concluir cada tarefa.</li>
+                </ul>
+                            
+        <p class="pp"><font color="#C8C8C8"><strong><i>7. Avaliação da Precisão das Estimativas:</i></strong></font></p>
+                <p class="ppp"><font color="#C8C8C8">
+                <ul>
+                <li>Ao final do Sprint, durante a Retrospectiva do Sprint, a equipe pode revisar as estimativas feitas para as User Stories concluídas e compará-las com o tempo real gasto em sua implementação.<br>
+                Isso permite que a equipe avalie a precisão de suas estimativas e faça ajustes para melhorar a precisão das estimativas futuras. <br>
+                O objetivo é chegar a um consenso sobre a estimativa para cada história de usuário</li>
+                </ul>
+            
+            </div>
     </div>
     <br>
     <br>
