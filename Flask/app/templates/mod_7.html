@@ -135,47 +135,16 @@ p{
     background-color: #32363F;
     padding: 2px 16px;
 }
-.button {
-    background-color: #32363F;
-    border: none;
-    border-radius: 10px 20px;
-    color: white;
-    padding: 15px 15px;
-    text-align: center;
-    font-size: 20px;
-    margin: 4px 2px;
-    opacity: 1;
-    transition: 0.3s;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
+.btn.btn-lg.btn-dark{
+    background-color:#32363F;
+}
+.d-grid.gap-2.d-md-flex{
+    justify-content: space-between;
+}
+.btn.my-5{
+    font-size: larger;
 }
 
-.button:hover {opacity: 0.8}
-
-.button2 {
-    background-color: #32363F;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    opacity: 1;
-    transition: 0.3s;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.button2:hover {opacity: 0.8}
-
-.position_btn{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-}
-            
 </style>
 {% endblock %}
 
@@ -313,32 +282,23 @@ p{
         
         </div>
     </div>
-          <br>
-        <div class="position_btn">
-            <div class="button">
-                <button class="button"><a href="/mod_6"><font color="#C8C8C8"><span> Voltar </span></font></button>
-            </div>
-            <br>
-            <div class="button3">
-                <button class="button"><a href="/mod_7_quiz"><font color="#C8C8C8"><span> TESTE SEU APRENDIZADO! </span></font></button>
+    <br>
+    <br>
+    <hr class="text-dark">
+    <br>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <a class="btn btn-lg btn-dark" href="/mod_7_quiz">Teste seu conhecimento</a>
+        </div>
+        <br>
+        <br>
+        <div>
+            <div class="d-grid gap-2 d-md-flex">
+                <a class="btn my-5" href="/mod_6"><i><strong>← Módulo anterior<strong></i></a>
+                <a class="btn my-5" href="/modulos"><i><strong>Módulos →</strong></i></a>
             </div>
         </div>
         <br>
 </div>
 </div>
-<br>
-
-</div>
-</div>
-<br>
-
-    <div class="button">
-<button class="button" style="vertical-align:middle;">
-    <a href="/modulos"><font color="#C8C8C8"><span> Módulos</span></font>
-    </button>
-    </div>
-<br>
-</div>
-
 {% endblock %}
 
