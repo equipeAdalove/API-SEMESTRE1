@@ -134,46 +134,15 @@
                 background-color: #32363F;
                 padding: 2px 16px;
             }
-            .button {
-                background-color: #32363F;
-                border: none;
-                color: white;
-                padding: 16px 32px;
-                text-align: center;
-                font-size: 16px;
-                margin: 4px 2px;
-                opacity: 1;
-                transition: 0.3s;
-                display: inline-block;
-                text-decoration: none;
-                cursor: pointer;
+            .btn.btn-lg.btn-dark{
+                background-color:#32363F;
             }
-
-            .button:hover {opacity: 0.8}
-
-            .button2 {
-                background-color: #32363F;
-                border: none;
-                color: white;
-                padding: 16px 32px;
-                text-align: center;
-                font-size: 16px;
-                margin: 4px 2px;
-                opacity: 1;
-                transition: 0.3s;
-                display: inline-block;
-                text-decoration: none;
-                cursor: pointer;
+            .d-grid.gap-2.d-md-flex{
+                justify-content: space-between;
             }
-
-            .button2:hover {opacity: 0.8}
-
-            .position_btn{
-                display: flex;
-                justify-content:center;
-                align-items: center;
+            .btn.my-5{
+                font-size: larger;
             }
-            
         </style>
 {% endblock %}
 
@@ -309,24 +278,20 @@
                 <p class="pp2"> Esses valores e princípios são fundamentais para o sucesso do Scrum, fornecendo uma base sólida para equipes que desejam adotar uma abordagem ágil e alcançar resultados excepcionais no desenvolvimento de produtos. Ao internalizar e praticar esses valores e princípios, as equipes podem criar um ambiente propício à inovação, colaboração e entrega de valor contínuo ao cliente. </p>
             <img src="{{ url_for('static', filename='/imgs/valores1.png') }}" class="imag">
             <br>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div class="position_btn">
-            <div class="button">
-                <button class="button"><a href="/modulos"><font color="#C8C8C8"><span> Voltar</span></font></button>
-            </div>
             <br>
-            <div class="button2">
-                <button class="button"><a href="/mod_2"><font color="#C8C8C8"><span> Avançar</span></font></button>
-            </div>
-            <div class="button3">
-                <button class="button"><a href="/mod_1_quiz"><font color="#C8C8C8"><span> Teste</span></font></button>
-            </div>
+        <hr>
+        <br>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <a class="btn btn-lg btn-dark" href="/mod_5_quiz">Teste seu conhecimento</a>
         </div>
         <br>
         <br>
-        <br>
+        <div>
+            <div class="d-grid gap-2 d-md-flex">
+                <a class="btn my-5" href="/modulos"><i><strong>← Módulos<strong></i></a>
+                <a class="btn my-5" href="/mod_2"><i><strong>Próximo módulo →</strong></i></a>
+            </div>
+        </div>
+        </div>
 
 {% endblock %}
