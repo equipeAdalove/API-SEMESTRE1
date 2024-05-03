@@ -14,7 +14,6 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 * [Cronograma](#cronograma)
 * [Backlog do produto](#backlog-do-produto)
 * [Protótipo - Figma](#prototipo)
-* [Burndown Chart](#burndown)
 * [Tecnologias Utilizadas:](#tecnologias-utilizadas)
 * [Funcionalidades e registros (vídeos e apresentações) das sprints](#funcionalidades-e-registros-das-sprints)
 * [Autores](#autores)
@@ -52,12 +51,6 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 
 # Protótipo Figma:
 <img src="/assets/img/Telas.jpg">
-
-##
-
-
-# Burndown Chart:
-<img src="/assets/img/Burndown.jpg">
 
 ##
 
