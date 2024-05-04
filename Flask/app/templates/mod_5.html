@@ -154,7 +154,7 @@
 
 {% block content %}
     <div class="div2">
-        <img src="{{ url_for('static', filename='/imgs/fundamentos1.png') }}" width="400px" height="400" class="img">
+        <img src="{{ url_for('static', filename='/imgs/scrummod5.png') }}" width="600px" height="400" class="img">
         <h1 style="font-size: 5pc; position: absolute;top: 13pc; left:59px;"><font color="D6D6D6"> 5. ARTEFATOS</font></h1>
     </div>
     <div class="wave">
@@ -188,11 +188,16 @@
         <p><strong><i>O QUE É UM PRODUCT BACKLOG?</i></strong></p>
         <p>O Product Backlog no Scrum é como uma lista de desejos para um produto. É uma lista de todas as coisas que queremos fazer para melhorar o produto, como adicionar novas funcionalidades, corrigir problemas ou fazer melhorias. Resumindo o conteúdo em tópicos:</p>
         <ul>
-            <li><strong><i>Lista priorizada de itens de trabalho:</i></strong> Esta é uma lista que contém todas as tarefas que precisam ser realizadas para desenvolver ou melhorar um produto. Essas tarefas podem incluir coisas como adicionar novos recursos, corrigir problemas existentes, melhorar a infraestrutura do sistema, entre outras.</li> 
-            <li><strong><i>Elaborada pelo Time Scrum, mas somente o Product Owner tem autoridade para gerenciá-la:</i></strong> O Time Scrum, que inclui desenvolvedores, designers, testadores, etc., trabalha em conjunto para criar e priorizar essa lista de tarefas. No entanto, apenas o Product Owner, que é responsável por representar os interesses do cliente ou do usuário final, tem o poder de decidir quais tarefas serão realizadas e em que ordem.</li>
-            <li><strong><i>Contém itens de negócios, funcionais, não funcionais, arquiteturais e de infraestrutura, além de itens que representam riscos:</i></strong> Essa lista não se limita apenas a novos recursos ou funcionalidades visíveis para o usuário. Ela também inclui tarefas relacionadas à parte técnica do sistema, como melhorias na arquitetura do software, atualizações de infraestrutura de servidores, garantia de segurança, etc. Além disso, podem ser incluídos itens relacionados a questões de negócios, como a necessidade de atender a regulamentações específicas ou reduzir riscos de segurança.</li>
-            <li><strong><i>Itens ordenados de acordo com sua importância, com os mais importantes no topo:</i></strong> As tarefas na lista são organizadas de acordo com sua prioridade, com aquelas consideradas mais importantes ou urgentes no topo da lista. Isso permite que a equipe saiba quais tarefas devem ser abordadas primeiro.</li>
-            <li><strong><i>Cada item deve ser suficientemente pequeno e ter critérios claros de aceitação para ser incluído em uma Sprint:</i></strong> Para que uma tarefa seja considerada pronta para ser trabalhada em uma iteração (Sprint) do desenvolvimento, ela precisa ser clara e específica o suficiente, além de ter critérios claros que definam quando ela estará completa e pronta para ser entregue aos usuários. Isso garante que a equipe possa trabalhar de forma eficiente e entender exatamente o que precisa ser feito.</li>
+            <li><strong><i>Lista priorizada de itens de trabalho:</i></strong></li>
+            <p>Esta é uma lista que contém todas as tarefas que precisam ser realizadas para desenvolver ou melhorar um produto. Essas tarefas podem incluir coisas como adicionar novos recursos, corrigir problemas existentes, melhorar a infraestrutura do sistema, entre outras.</p> 
+            <li><strong><i>Elaborada pelo Time Scrum, mas somente o Product Owner tem autoridade para gerenciá-la:</i></strong></li>
+            <p>O Time Scrum, que inclui desenvolvedores, designers, testadores, etc., trabalha em conjunto para criar e priorizar essa lista de tarefas. No entanto, apenas o Product Owner, que é responsável por representar os interesses do cliente ou do usuário final, tem o poder de decidir quais tarefas serão realizadas e em que ordem.</p>
+            <li><strong><i>Contém itens de negócios, funcionais, não funcionais, arquiteturais e de infraestrutura, além de itens que representam riscos:</i></strong></li>
+            <p>Essa lista não se limita apenas a novos recursos ou funcionalidades visíveis para o usuário. Ela também inclui tarefas relacionadas à parte técnica do sistema, como melhorias na arquitetura do software, atualizações de infraestrutura de servidores, garantia de segurança, etc. Além disso, podem ser incluídos itens relacionados a questões de negócios, como a necessidade de atender a regulamentações específicas ou reduzir riscos de segurança.</p>
+            <li><strong><i>Itens ordenados de acordo com sua importância, com os mais importantes no topo:</i></strong></li>
+            <p>As tarefas na lista são organizadas de acordo com sua prioridade, com aquelas consideradas mais importantes ou urgentes no topo da lista. Isso permite que a equipe saiba quais tarefas devem ser abordadas primeiro.</p>
+            <li><strong><i>Cada item deve ser suficientemente pequeno e ter critérios claros de aceitação para ser incluído em uma Sprint:</i></strong></li>
+            <p>Para que uma tarefa seja considerada pronta para ser trabalhada em uma iteração (Sprint) do desenvolvimento, ela precisa ser clara e específica o suficiente, além de ter critérios claros que definam quando ela estará completa e pronta para ser entregue aos usuários. Isso garante que a equipe possa trabalhar de forma eficiente e entender exatamente o que precisa ser feito.</p>
         </ul>
         <br>
         <img src="{{ url_for('static', filename='/imgs/productbacklog.png') }}" class="imag" alt="#">    
@@ -235,9 +240,12 @@
         <p><strong><i>O QUE É UM SPRINT BACKLOG?</i></strong></p>
         <p>O Sprint Backlog no Scrum é uma lista de tarefas específicas que a equipe de desenvolvimento escolhe para trabalhar durante um período de tempo chamado Sprint. Essas tarefas são retiradas de uma lista maior de coisas a serem feitas chamada Product Backlog. Resumindo o conteúdo em tópicos:</p>
         <ul>
-            <li><strong><i>Composto pelos itens selecionados para implementação durante a Sprint, juntamente com o plano para transformá-los em um Incremento do produto:</i></strong> Durante o planejamento da Sprint, a equipe seleciona uma quantidade de itens do Product Backlog que considera viável para trabalhar durante aquela iteração. Esses itens selecionados são movidos para o Sprint Backlog e representam o trabalho que a equipe se compromete a completar até o final da Sprint. O Sprint Backlog também inclui um plano detalhado de como esses itens serão transformados em um Incremento do produto funcional e potencialmente entregável até o final da Sprint.</li>
-            <li><strong><i>Geralmente organizado em um Taskboard, onde as tarefas são listadas como "To do", "Doing" e "Done":</i></strong> Um Taskboard é uma ferramenta visual usada pela equipe Scrum para acompanhar o progresso das tarefas durante a Sprint. Nele, as tarefas são divididas em colunas, como "A fazer" (To do), "Fazendo" (Doing) e "Feito" (Done). Cada tarefa é representada por um cartão, e a equipe move esses cartões entre as colunas à medida que progride no trabalho.</li>
-            <li><strong><i>Pode ser atualizado durante a Sprint para refletir novas descobertas ou necessidades:</i></strong> Durante a Sprint, a equipe pode encontrar novas informações, obstáculos inesperados ou mudanças nas prioridades que afetam o Product Backlog. Nesses casos, o Product Owner e a equipe podem decidir adicionar, remover ou reordenar itens no backlog para refletir as necessidades atuais do produto. Essa flexibilidade permite que a equipe responda de maneira ágil a mudanças e incertezas durante o desenvolvimento do produto.</li>
+            <li><strong><i>Composto pelos itens selecionados para implementação durante a Sprint, juntamente com o plano para transformá-los em um Incremento do produto:</i></strong></li>
+            <p>Durante o planejamento da Sprint, a equipe seleciona uma quantidade de itens do Product Backlog que considera viável para trabalhar durante aquela iteração. Esses itens selecionados são movidos para o Sprint Backlog e representam o trabalho que a equipe se compromete a completar até o final da Sprint. O Sprint Backlog também inclui um plano detalhado de como esses itens serão transformados em um Incremento do produto funcional e potencialmente entregável até o final da Sprint.</p>
+            <li><strong><i>Geralmente organizado em um Taskboard, onde as tarefas são listadas como "To do", "Doing" e "Done":</i></strong></li>
+            <p>Um Taskboard é uma ferramenta visual usada pela equipe Scrum para acompanhar o progresso das tarefas durante a Sprint. Nele, as tarefas são divididas em colunas, como "A fazer" (To do), "Fazendo" (Doing) e "Feito" (Done). Cada tarefa é representada por um cartão, e a equipe move esses cartões entre as colunas à medida que progride no trabalho.</p>
+            <li><strong><i>Pode ser atualizado durante a Sprint para refletir novas descobertas ou necessidades:</i></strong></li>
+            <p>Durante a Sprint, a equipe pode encontrar novas informações, obstáculos inesperados ou mudanças nas prioridades que afetam o Product Backlog. Nesses casos, o Product Owner e a equipe podem decidir adicionar, remover ou reordenar itens no backlog para refletir as necessidades atuais do produto. Essa flexibilidade permite que a equipe responda de maneira ágil a mudanças e incertezas durante o desenvolvimento do produto.</p>
         </ul>
         <img src="{{ url_for('static', filename='/imgs/scrumboard.png') }}" class="imag">
         <div class="cardcard">
@@ -294,10 +302,14 @@
         <p><strong><i>O QUE É PRODUCT INCREMENT?</i></strong></p>
         <p>No método Scrum é como uma versão atualizada do produto que é entregue a cada período de trabalho chamado Sprint. Ele inclui todas as novas funcionalidades e melhorias que a equipe de desenvolvimento implementou durante essa Sprint, além de tudo o que já foi feito antes. Resumindo o conteúdo em tópicos:</p>
         <ul>
-            <li><strong><i>Entrega ao final de cada Sprint pelo Time de Desenvolvimento:</i></strong> Após cada período de trabalho designado (Sprint), o Time de Desenvolvimento entrega uma parte funcional e potencialmente utilizável do produto.</li>
-            <li><strong><i>Potencialmente entregável:</i></strong> O incremento entregue ao final da Sprint é potencialmente utilizável e pronto para ser implantado em produção. Embora possa não conter todos os recursos desejados, é seguro e funcional, permitindo progresso incremental.</li>
-            <li><strong><i>Requer código de alta qualidade:</i></strong> O incremento é resultado do trabalho realizado durante a Sprint, refletindo esforços para produzir código de alta qualidade. É desenvolvido com o mínimo de defeitos possível, seguindo práticas de desenvolvimento e testes rigorosas.</li>
-            <li><strong><i>Resultado do trabalho realizado durante a Sprint:</i></strong> Cada incremento representa o progresso alcançado durante o período de trabalho da Sprint. Reflete a implementação de funcionalidades planejadas e priorizadas pelo Time de Desenvolvimento e Product Owner.</li>
+            <li><strong><i>Entrega ao final de cada Sprint pelo Time de Desenvolvimento:</i></strong></li>
+            <p>Após cada período de trabalho designado (Sprint), o Time de Desenvolvimento entrega uma parte funcional e potencialmente utilizável do produto.</p>
+            <li><strong><i>Potencialmente entregável:</i></strong></li>
+            <p>O incremento entregue ao final da Sprint é potencialmente utilizável e pronto para ser implantado em produção. Embora possa não conter todos os recursos desejados, é seguro e funcional, permitindo progresso incremental.</p>
+            <li><strong><i>Requer código de alta qualidade:</i></strong></li>
+            <p>O incremento é resultado do trabalho realizado durante a Sprint, refletindo esforços para produzir código de alta qualidade. É desenvolvido com o mínimo de defeitos possível, seguindo práticas de desenvolvimento e testes rigorosas.</p>
+            <li><strong><i>Resultado do trabalho realizado durante a Sprint:</i></strong></li>
+            <p>Cada incremento representa o progresso alcançado durante o período de trabalho da Sprint. Reflete a implementação de funcionalidades planejadas e priorizadas pelo Time de Desenvolvimento e Product Owner.</p>
         </ul>
         <br>
         <img src="{{ url_for('static', filename='/imgs/increment.png') }}" class="imag" alt="#">

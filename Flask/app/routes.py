@@ -19,61 +19,61 @@ def testes():
 questions_1 = [
     {
         'id': 1,
-        'question': 'Qual é a principal transformação que o desenvolvimento de software passou nos últimos anos?',
+        'question': '1) Qual é a principal transformação que o desenvolvimento de software passou nos últimos anos?',
         'options': ['Aumento da rigidez nas abordagens de gestão de projetos.', 'Maior foco na entrega incremental.', 'Redução da competitividade no mercado.', 'A adoção de métodos ágeis.'],
         'answer': 'A adoção de métodos ágeis.'
     },
     {
         'id': 2,
-        'question': 'Quais são os três pilares fundamentais do Scrum?',
+        'question': '2) Quais são os três pilares fundamentais do Scrum?',
         'options': [' Planejamento, execução, controle', 'Transparência, inspeção, adaptação', 'Documentação, revisão, entrega', 'Individualidade, inovação, adaptação'],
         'answer': 'Transparência, inspeção, adaptação'
     },
     {
         'id': 3,
-        'question': 'Onde o Scrum pode ser aplicado?',
+        'question': '3) Onde o Scrum pode ser aplicado?',
         'options': ['Apenas em projetos de desenvolvimento de software', 'Apenas em projetos com requisitos estáveis e definidos', 'A uma variedade de projetos, desde que haja complexidade e incerteza', 'Apenas em empresas de grande porte'],
         'answer': 'A uma variedade de projetos, desde que haja complexidade e incerteza'
     },
     {
         'id': 4,
-        'question': 'Qual é um dos benefícios do Scrum em termos de gerenciamento de projetos?',
+        'question': '4) Qual é um dos benefícios do Scrum em termos de gerenciamento de projetos?',
         'options': ['Maior rigidez no controle do progresso do projeto', 'Redução da colaboração entre os membros da equipe', ' Detecção precoce de problemas', 'Menor foco no valor entregue ao cliente'],
         'answer': 'Detecção precoce de problemas'
     },
     {
         'id': 5,
-        'question': 'Quem são os criadores do SCRUM?',
+        'question': '5) Quem são os criadores do SCRUM?',
         'options': ['Steve Jobs e Bill Gates.', 'Jeff Sutherland e Ken Schwaber.', 'Tim Berners-Lee e Linus Torvalds.', 'Larry Page e Sergey Brin.'],
         'answer': 'Jeff Sutherland e Ken Schwaber.'
     },
     {
         'id': 6,
-        'question': 'O que é enfatizado pelo Manifesto Ágil?',
+        'question': '6) O que é enfatizado pelo Manifesto Ágil?',
         'options': ['Indivíduos e interações, software em funcionamento, colaboração com o cliente e resposta a mudanças', 'Processos e ferramentas, documentação abrangente, negociação de contratos, seguir um plano', 'Entrega de produtos finais sem interações com o cliente', 'Priorização de documentação sobre indivíduos e interações'],
         'answer': 'Indivíduos e interações, software em funcionamento, colaboração com o cliente e resposta a mudanças'
     },
     {
         'id': 7,
-        'question': 'Quais são alguns exemplos práticos de valores do Scrum?',
+        'question': '7) Quais são alguns exemplos práticos de valores do Scrum?',
         'options': ['Controle e estagnação', 'Rigidez e documentação abrangente', 'Foco e respeito', ' Falta de colaboração e coragem'],
         'answer': 'Foco e respeito'
     },
     {
         'id': 8,
-        'question': 'O que os princípios ágeis enfatizam?',
+        'question': '8) O que os princípios ágeis enfatizam?',
         'options': ['Satisfação do desenvolvedor', 'Satisfação do cliente, entrega incremental, colaboração e adaptação contínua', 'Foco na documentação e nos processos', 'Resistência à mudança'],
         'answer': 'Satisfação do cliente, entrega incremental, colaboração e adaptação contínua'
     },
     {
         'id': 9,
-        'question': 'O que é essencial para promover a colaboração, o trabalho em equipe e a busca pela excelência no Scrum?',
+        'question': '9) O que é essencial para promover a colaboração, o trabalho em equipe e a busca pela excelência no Scrum?',
         'options': ['Rigidez e falta de adaptação', ' Resistência à mudança', 'Valores e princípios do Scrum', ' Controle centralizado'],
         'answer': ' WValores e princípios do Scrum'
     },
     {
         'id': 10,
-        'question': 'O que são Métodos Ágeis?',
+        'question': '10) O que são Métodos Ágeis?',
         'options': ['Abordagens inflexíveis e rígidas.', 'Estratégias para reduzir a colaboração da equipe.', 'Uma abordagem flexível e adaptativa para maximizar o valor entregue ao cliente.', ' Práticas para evitar feedback contínuo.'],
         'answer': 'Uma abordagem flexível e adaptativa para maximizar o valor entregue ao cliente.'
     },
@@ -110,9 +110,93 @@ def modulo_2():
 def modulo_3():
     return render_template('mod_3.html')
 
+# Módulo 4
+
+questions_4 = [
+    {
+        'id': 1,
+        'question': '1) Qual é a função principal da Sprint Planning Meeting?',
+        'options': ['Rever o progresso da Sprint.', 'Planejar as entregas em produção.', 'Planejar o trabalho a ser realizado durante a Sprint.', 'Coletar feedbacks do produto.'],
+        'answer': 'Planejar o trabalho a ser realizado durante a Sprint.'
+    },
+    {
+        'id': 2,
+        'question': '2) Como é dividida a Sprint Planning Meeting em suas duas partes e quais são as perguntas que cada parte responde?',
+        'options': ['Uma parte: Planejar o trabalho da Sprint; Segunda parte: Avaliar o progresso da Sprint.', 'Uma parte: O que será entregue?; Segunda parte: Como vamos entregar?', 'Uma parte: Estimar o tempo; Segunda parte: Coletar feedbacks do cliente.', 'Uma parte: Discutir problemas; Segunda parte: Resolver impedimentos.'],
+        'answer': 'Uma parte: O que será entregue?; Segunda parte: Como vamos entregar?'
+    },
+    {
+        'id': 3,
+        'question': '3) Qual é o propósito da Daily Scrum e como ela beneficia o Time de Desenvolvimento?',
+        'options': ['Reportar para o Scrum Master.', 'Sincronizar o trabalho e resolver impedimentos.', 'Revisar o progresso da Sprint.', 'Discutir questões técnicas.'],
+        'answer': ' Sincronizar o trabalho e resolver impedimentos.'
+    },
+    {
+        'id': 4,
+        'question': '4) Quais são as três perguntas padrão que cada membro responde durante a Daily Scrum?',
+        'options': ['O que fiz desde a última reunião, o que farei até a próxima e qual o meu cargo?', 'O que realizei desde a última Daily Scrum, quais são os meus planos até a próxima e houve algum obstáculo?', 'Quem impediu o meu progresso, o que realizei e o que planejo fazer?', 'O que realizei desde a última reunião, quem está com problemas e quem realizou mais tarefas?'],
+        'answer': 'O que realizei desde a última Daily Scrum, quais são os meus planos até a próxima e houve algum obstáculo?'
+    },
+    {
+        'id': 5,
+        'question': '5) Quais são os objetivos da Sprint Review e quem participa dessa cerimônia?',
+        'options': ['Rever o progresso da Sprint; Apenas o Scrum Master.', 'Inspecionar o produto e coletar feedbacks; Todos interessados no produto.', 'Resolver impedimentos; Apenas o Product Owner.', 'Definir a meta da Sprint; Apenas o Development Team.'],
+        'answer': 'Inspecionar o produto e coletar feedbacks; Todos interessados no produto.'
+    },
+    {
+        'id': 6,
+        'question': '6) Qual é a importância da Sprint Retrospective e o que geralmente é discutido durante essa reunião?',
+        'options': ['Identificar problemas e discutir sobre o próximo sprint; Técnicas de programação.', 'Rever o progresso da Sprint e discutir problemas pessoais; Avaliar o mercado.', 'Reflexão e melhoria contínua do processo; Interação entre os membros do time e práticas utilizadas.', 'Decidir os próximos passos do projeto; Revisão de documentos.'],
+        'answer': 'Reflexão e melhoria contínua do processo; Interação entre os membros do time e práticas utilizadas.'
+    },
+    {
+        'id': 7,
+        'question': '7) O que é uma Release Planning Meeting e quando ela ocorre?',
+        'options': ['Uma reunião para revisar o progresso da Sprint; No início de cada Sprint.', 'Uma reunião para planejar as entregas em produção; Ao final de uma Sprint.', 'Uma reunião para resolver impedimentos; Diariamente.', 'Uma reunião para revisar o Product Backlog; Mensalmente.'],
+        'answer': 'Uma reunião para planejar as entregas em produção; Ao final de uma Sprint.'
+    },
+    {
+        'id': 8,
+        'question': '8) Por que é importante manter o período entre as Releases o mais curto possível?',
+        'options': ['Para evitar reuniões longas.', 'Para aumentar a precisão do planejamento.', 'Para obter feedbacks mais rápidos e frequentes.', 'Para reduzir a participação dos membros do Time Scrum.'],
+        'answer': 'Para obter feedbacks mais rápidos e frequentes.'
+    },
+    {
+        'id': 9,
+        'question': '9) Quais são os principais tópicos que podem ser incluídos em uma agenda para uma Release Planning Meeting?',
+        'options': ['Revisão do propósito da reunião e estrutura; Discussão de problemas pessoais.', 'Apresentação de gráficos de status das últimas Sprints; Decisões sobre tecnologias a serem utilizadas.', 'Definição da meta para a Release; Montagem de gráficos de Release Burndown.', 'Discussão sobre o roadmap do produto; Revisão dos documentos legais.'],
+        'answer': 'efinição da meta para a Release; Montagem de gráficos de Release Burndown.'
+    },
+    {
+        'id': 10,
+        'question': '10) Durante a Sprint Planning Meeting, quem apresenta os itens prioritários do Product Backlog ao Time Scrum?',
+        'options': ['Scrum Master.', 'Product Owner.', 'Todos os membros do Time Scrum.', 'Development Team.'],
+        'answer': 'Product Owner.'
+    },
+]
+
 @app.route('/mod_4')
 def modulo_4():
     return render_template('mod_4.html')
+
+@app.route('/mod_4_quiz')  #altere apenas o número do seu módulo  )
+def modulo_4_quiz():   #altere apenas o número do seu módulo          
+    return render_template('mod_4_quiz.html', questions=questions_6)   #altere apenas o número do seu módulo
+
+@app.route('/submit_quiz_4', methods=['POST'])  #altere apenas o número do seu módulo
+def submit_quiz_4():  #altere apenas o número do seu módulo
+    # Lógica para processar o formulário e verificar as respostas
+    score = 0
+    user_answers = {}
+    for question in questions_6:
+        question_id = str(question['id'])
+        user_answer = request.form.get(question_id)
+        correct_answer = question['answer']
+        if user_answer == correct_answer:
+            score += 1
+        user_answers[question['question']] = user_answer
+    total_questions = len(questions_6)
+    return render_template('mod_4_results.html', score=score, total_questions=total_questions, results=user_answers)
 
  # Módulo 5
 
@@ -206,61 +290,61 @@ def submit_quiz_5():
 questions_6 = [ #question_<seu módulo>
     {
         'id': 1, #id segue padrão para todas
-        'question': 'Qual é a base da auto-organização no Scrum?', #coloque sua pergunta aqui
+        'question': '1) Qual é a base da auto-organização no Scrum?', #coloque sua pergunta aqui
         'options': ['Instruções detalhadas', 'Microgerenciamento', 'Confiança mútua e clareza dos objetivos do projeto', 'Autoritarismo', 'Delegação excessiva'], #bote as opções de resposta
         'answer': 'Confiança mútua e clareza dos objetivos do projeto' #insira a resposta certa 
     },
     {
         'id': 2,
-        'question': 'O que a auto-organização promove nas equipes ágeis?',
+        'question': '2) O que a auto-organização promove nas equipes ágeis?',
         'options': ['Conformidade', 'Individualismo', 'Colaboração', 'Resistência à mudança', 'Competição'],
         'answer': 'Colaboração'
     },
     {
         'id': 3,
-        'question': 'Qual é uma das responsabilidades do Scrum Master?',
+        'question': '3) Qual é uma das responsabilidades do Scrum Master?',
         'options': ['Promover o engajamento', 'Ditar as tarefas da equipe', 'Resolver todos os conflitos', 'Focar apenas nos resultados', 'Delegação excessiva'],
         'answer': 'Promover o engajamento'
     },
     {
         'id': 4,
-        'question': 'O que são User Stories em metodologias ágeis?',
+        'question': '4) O que são User Stories em metodologias ágeis?',
         'options': ['Grandes descrições de funcionalidades', 'Requisitos escritos apenas pelo Product Owner', ' Histórias irrelevantes', 'Documentos detalhados e rígidos', 'Pequenas descrições de funcionalidades'],
         'answer': 'Pequenas descrições de funcionalidades'
     },
     {
         'id': 5,
-        'question': 'Qual é um dos benefícios da auto-organização?',
+        'question': '5) Qual é um dos benefícios da auto-organização?',
         'options': ['Microgerenciamento eficiente', 'Colaboração ativa', 'Resistência à mudança', 'Conformidade absoluta', ' Falta de autonomia'],
         'answer': 'Promover o engajamento'
     },
     {
         'id': 6,
-        'question': 'Qual é uma das funções do Scrum Master como facilitador?',
+        'question': '6) Qual é uma das funções do Scrum Master como facilitador?',
         'options': ['Aumentar os conflitos na equipe', 'Minimizar a comunicação entre os membros', 'Ignorar as necessidades dos stakeholders', 'Otimizar os processos de trabalho', 'Incentivar a competição entre os membros'],
         'answer': 'Otimizar os processos de trabalho'
     },
     {
         'id': 7,
-        'question': 'O que é a visão do produto em metodologias ágeis?',
+        'question': '7) O que é a visão do produto em metodologias ágeis?',
         'options': ['Uma declaração clara dos métodos de desenvolvimento', 'Um documento rígido com requisitos detalhados', 'Uma declaração dos objetivos e valores do produto', ' Uma descrição dos recursos do produto', 'Um plano de projeto estático'],
         'answer': 'Uma declaração dos objetivos e valores do produto'
     },
     {
         'id': 8,
-        'question': 'Qual é a importância dos critérios de aceitação em User Stories?',
+        'question': '8) Qual é a importância dos critérios de aceitação em User Stories?',
         'options': ['Determinar o tamanho da história', 'Garantir que a história seja implementada', 'Avaliar o desempenho do Scrum Master', 'Controlar o escopo do projeto', 'Promover a inovação na equipe'],
         'answer': 'Garantir que a história seja implementada'
     },
     {
         'id': 9,
-        'question': 'Qual é um dos elementos principais de uma User Story?',
+        'question': '9) Qual é um dos elementos principais de uma User Story?',
         'options': ['Código-fonte', ' Estrutura de dados', 'Diagrama de Gantt', ' Lista de tarefas', ' Who, What, Why'],
         'answer': ' Who, What, Why'
     },
     {
         'id': 10,
-        'question': 'Qual é o papel do Product Owner em relação à visão do produto?',
+        'question': '10) Qual é o papel do Product Owner em relação à visão do produto?',
         'options': ['Criar a visão do produto sozinho', 'Desenvolver a visão do produto durante a Sprint Planning', 'Transmitir a visão do produto para a equipe', ' Ignorar a visão do produto após sua criação', 'Promover a competição entre os membros da equipe'],
         'answer': 'Transmitir a visão do produto para a equipe'
     },
