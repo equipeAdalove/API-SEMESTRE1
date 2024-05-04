@@ -190,8 +190,8 @@
 
 {% block content %}
         <div class="div2">
-            <img src="{{ url_for('static', filename='/imgs/Test_Mod7.png') }}" width="400px" height="400" class="img">
-            <h1 style="font-size: 5pc; position: absolute;top: 13pc; left:59px;"><font color="D6D6D6"> QUIZ MÓDULO 1</font></h1>
+            <img src="{{ url_for('static', filename='/imgs/Test-Mod7.png') }}" width="400px" height="400" class="img">
+            <h1 style="font-size: 5pc; position: absolute;top: 13pc; left:59px;"><font color="D6D6D6"> QUIZ MÓDULO 7</font></h1>
             <h1 style="font-size: 3pc; position: absolute;top: 22pc; left:59px;"><font color="D6D6D6"> Teste seus conhecimentos!</font></h1>
         </div>
         <div class="wave">
@@ -201,7 +201,6 @@
         <!-- Quiz -->
 
         <div class="container">
-            <h1 class="mt-5 mb-4 title">Quiz</h1>
             <form action="{{ url_for('submit_quiz_1') }}" method="POST">
                 {% for question in questions %}
                     <div class="card mb-4">
