@@ -376,66 +376,66 @@ def submit_quiz_6():  #altere apenas o número do seu módulo
 
 #Módulo 7
 
-questions_1 = [
+questions_7 = [
     {
         'id': 1,
-        'question': '1) Qual é a principal transformação que o desenvolvimento de software passou nos últimos anos?',
-        'options': ['Aumento da rigidez nas abordagens de gestão de projetos.', 'Maior foco na entrega incremental.', 'Redução da competitividade no mercado.', 'A adoção de métodos ágeis.'],
-        'answer': 'A adoção de métodos ágeis.'
+        'question': '1) Qual é o principal objetivo do Planning Poker no SCRUM?',
+        'options': ['Determinar quem são os membros mais rápidos da equipe.', 'Estabelecer um consenso sobre o esforço necessário para as tarefas.','Aumentar a competição entre os membros da equipe.', 'Acelerar o processo de desenvolvimento de software.','Identificar os membros da equipe que precisam de treinamento adicional.'],
+        'answer': 'Estabelecer um consenso sobre o esforço necessário para as tarefas.'
     },
     {
         'id': 2,
-        'question': '2) Quais são os três pilares fundamentais do Scrum?',
-        'options': [' Planejamento, execução, controle', 'Transparência, inspeção, adaptação', 'Documentação, revisão, entrega', 'Individualidade, inovação, adaptação'],
-        'answer': 'Transparência, inspeção, adaptação'
+        'question': '2) O que os membros da equipe de desenvolvimento fazem durante uma sessão de Planning Poker?',
+        'options': ['Estimam o esforço necessário para as tarefas.', 'Supervisionam o processo de estimativa.', 'Fornecem feedback sobre o progresso do projeto.', 'Decidem quais tarefas devem ser priorizadas.','Definem os requisitos das tarefas a serem estimadas.'],
+        'answer': 'Estimam o esforço necessário para as tarefas.'
     },
     {
         'id': 3,
-        'question': '3) Onde o Scrum pode ser aplicado?',
-        'options': ['Apenas em projetos de desenvolvimento de software', 'Apenas em projetos com requisitos estáveis e definidos', 'A uma variedade de projetos, desde que haja complexidade e incerteza', 'Apenas em empresas de grande porte'],
-        'answer': 'A uma variedade de projetos, desde que haja complexidade e incerteza'
+        'question': '3) O que um número baixo em uma rodada de Planning Poker sugere sobre a tarefa em questão?',
+        'options': ['Que a tarefa será rápida e fácil de concluir.', 'Que a tarefa pode ser complexa e necessitará de mais análise.', 'Que a tarefa não está claramente definida e precisa de mais informações.', 'Que a tarefa é crítica para o sucesso do projeto.','Que a tarefa pode ser adiada para uma iteração futura.'],
+        'answer': 'Que a tarefa pode ser complexa e necessitará de mais análise.'
     },
     {
         'id': 4,
-        'question': '4) Qual é um dos benefícios do Scrum em termos de gerenciamento de projetos?',
-        'options': ['Maior rigidez no controle do progresso do projeto', 'Redução da colaboração entre os membros da equipe', ' Detecção precoce de problemas', 'Menor foco no valor entregue ao cliente'],
-        'answer': 'Detecção precoce de problemas'
+        'question': '4)  Qual é a vantagem de utilizar a técnica de Planning Poker para estimativas? ',
+        'options': ['Maior precisão nas estimativas e engajamento da equipe.', 'Redução da colaboração entre os membros da equipe', 'Redução do tempo de desenvolvimento e aumento do custo.', 'Aumento da competição entre os membros da equipe.','Diminuição da comunicação entre os membros da equipe.','Aumento da incerteza sobre o progresso do projeto.'],
+        'answer': 'Maior precisão nas estimativas e engajamento da equipe.'
     },
     {
         'id': 5,
-        'question': '5) Quem são os criadores do SCRUM?',
-        'options': ['Steve Jobs e Bill Gates.', 'Jeff Sutherland e Ken Schwaber.', 'Tim Berners-Lee e Linus Torvalds.', 'Larry Page e Sergey Brin.'],
-        'answer': 'Jeff Sutherland e Ken Schwaber.'
+        'question': '5) O que é importante fazer após uma rodada de Planning Poker para alcançar um consenso na equipe?',
+        'options': ['Descartar as estimativas mais baixas e mais altas.', 'Selecionar a média das estimativas fornecidas.', 'Atribuir a tarefa ao membro da equipe com a estimativa mais alta.', 'Ignorar todas as estimativas e decidir arbitrariamente o esforço necessário.','Realizar outra rodada de votação até que haja um consenso unânime.'],
+        'answer': 'Selecionar a média das estimativas fornecidas.'
     },
     {
         'id': 6,
-        'question': '6) O que é enfatizado pelo Manifesto Ágil?',
-        'options': ['Indivíduos e interações, software em funcionamento, colaboração com o cliente e resposta a mudanças', 'Processos e ferramentas, documentação abrangente, negociação de contratos, seguir um plano', 'Entrega de produtos finais sem interações com o cliente', 'Priorização de documentação sobre indivíduos e interações'],
-        'answer': 'Indivíduos e interações, software em funcionamento, colaboração com o cliente e resposta a mudanças'
+        'question': '6) Qual é a principal vantagem de usar cartas com valores discretos no Planning Poker?',
+        'options': ['Facilita a comunicação e compreensão das estimativas.', 'Torna o processo mais complicado e demorado.', 'Reduz a necessidade de interação entre os membros da equipe.', ' Aumenta a probabilidade de conflitos durante a estimativa.',' Facilita a manipulação das estimativas para atender aos interesses pessoais.'],
+        'answer': 'Facilita a comunicação e compreensão das estimativas.'
     },
     {
         'id': 7,
-        'question': '7) Quais são alguns exemplos práticos de valores do Scrum?',
-        'options': ['Controle e estagnação', 'Rigidez e documentação abrangente', 'Foco e respeito', ' Falta de colaboração e coragem'],
-        'answer': 'Foco e respeito'
+        'question': '7) Como o Planning Poker ajuda a evitar a influência de vieses individuais nas estimativas?',
+        'options': ['Atribuindo um peso maior às estimativas dos membros mais experientes.', 'Limitando a participação na estimativa apenas aos membros mais antigos da equipe.', 'Encorajando discussões abertas e anônimas durante o processo de estimativa.', ' Ignorando as opiniões dos membros menos experientes.','Permitindo que apenas o Product Owner faça as estimativas.'],
+        'answer': 'Encorajando discussões abertas e anônimas durante o processo de estimativa.'
     },
     {
         'id': 8,
-        'question': '8) O que os princípios ágeis enfatizam?',
-        'options': ['Satisfação do desenvolvedor', 'Satisfação do cliente, entrega incremental, colaboração e adaptação contínua', 'Foco na documentação e nos processos', 'Resistência à mudança'],
-        'answer': 'Satisfação do cliente, entrega incremental, colaboração e adaptação contínua'
+        'question': '8) Quando é apropriado realizar uma rodada de reestimativa durante o desenvolvimento de um projeto SCRUM?',
+        'options': ['Sempre que a equipe de desenvolvimento quiser mudar as estimativas.', 'Apenas quando o Product Owner solicitar uma nova estimativa.', 'Quando uma tarefa estimada excede o tempo planejado.', 'Antes de cada sprint, independentemente do progresso.','Quando uma tarefa é concluída antes do tempo previsto.'],
+        'answer': 'Quando uma tarefa estimada excede o tempo planejado.'
     },
     {
         'id': 9,
-        'question': '9) O que é essencial para promover a colaboração, o trabalho em equipe e a busca pela excelência no Scrum?',
-        'options': ['Rigidez e falta de adaptação', ' Resistência à mudança', 'Valores e princípios do Scrum', ' Controle centralizado'],
-        'answer': ' WValores e princípios do Scrum'
+        'question': '9) Como a técnica de Planning Poker promove a transparência no processo de desenvolvimento do SCRUM?',
+        'options': ['Mantendo todas as estimativas em sigilo até o final do projeto.', 'Incentivando a comunicação aberta e honesta entre os membros da equipe.', 'Limitando a participação na estimativa apenas aos membros mais antigos da equipe.', ' Ocultando as estimativas dos clientes e partes interessadas externas.','Designando um único membro da equipe como responsável por todas as estimativas.'],
+        'answer': 'Incentivando a comunicação aberta e honesta entre os membros da equipe.'
     },
     {
         'id': 10,
-        'question': '10) O que são Métodos Ágeis?',
-        'options': ['Abordagens inflexíveis e rígidas.', 'Estratégias para reduzir a colaboração da equipe.', 'Uma abordagem flexível e adaptativa para maximizar o valor entregue ao cliente.', ' Práticas para evitar feedback contínuo.'],
-        'answer': 'Uma abordagem flexível e adaptativa para maximizar o valor entregue ao cliente.'
+        'question': '10) Qual é o principal objetivo do Scrum Master durante uma sessão de Planning Poker? ',
+        'options': ['Fornecer estimativas precisas para todas as tarefas do backlog.', 'Garantir que todas as estimativas sejam idênticas para evitar conflitos.', 'Facilitar o processo de estimativa e remover obstáculos.','Tomar todas as decisões relacionadas à priorização das tarefas.','Monitorar o progresso do projeto sem se envolver nas estimativas.'],
+        'answer': 'Facilitar o processo de estimativa e remover obstáculos.'
     },
 ]
 
