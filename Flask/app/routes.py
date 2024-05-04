@@ -457,8 +457,6 @@ def submit_quiz_6():  #altere apenas o número do seu módulo
 
 
 #Módulo 7
-
-
 questions_7 = [
         {
         'id': 1,
@@ -519,7 +517,7 @@ questions_7 = [
         'question': '10) Qual é o principal objetivo do Scrum Master durante uma sessão de Planning Poker? ',
         'options': ['Fornecer estimativas precisas para todas as tarefas do backlog.', 'Garantir que todas as estimativas sejam idênticas para evitar conflitos.', 'Facilitar o processo de estimativa e remover obstáculos.','Tomar todas as decisões relacionadas à priorização das tarefas.','Monitorar o progresso do projeto sem se envolver nas estimativas.'],
         'answer': 'Facilitar o processo de estimativa e remover obstáculos.'
-    }
+    },
 ]
 
 @app.route('/mod_7')
@@ -542,5 +540,5 @@ def submit_quiz_7():
         if user_answer == correct_answer:
             score += 1
         user_answers[question['question']] = user_answer
-    total_questions = len(questions_6)
+    total_questions = len(questions_7)
     return render_template('mod_7_results.html', score=score, total_questions=total_questions, results=user_answers)
