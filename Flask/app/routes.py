@@ -521,6 +521,10 @@ questions_1 = [
     },
 ]
 
+questions_7 = [
+
+]
+
 @app.route('/mod_7')
 def modulo_7():
     return render_template('mod_7.html')
