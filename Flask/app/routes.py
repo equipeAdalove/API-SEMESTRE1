@@ -445,7 +445,7 @@ def modulo_7():
 
 @app.route('/mod_7_quiz')
 def modulo_7_quiz():
-    return render_template('mod_7_quiz.html', questions=questions_1)
+    return render_template('mod_7_quiz.html', questions=questions_7)
 
 @app.route('/submit_quiz_7', methods=['POST'])
 def submit_quiz_7():
