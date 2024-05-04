@@ -117,67 +117,86 @@ questions_4 = [
         'id': 1,
         'question': '1) Qual é a função principal da Sprint Planning Meeting?',
         'options': ['Rever o progresso da Sprint.', 'Planejar as entregas em produção.', 'Planejar o trabalho a ser realizado durante a Sprint.', 'Coletar feedbacks do produto.'],
-        'answer': ''
+        'answer': 'Planejar o trabalho a ser realizado durante a Sprint.'
     },
     {
         'id': 2,
-        'question': '2) ',
-        'options': ['', '', '', ''],
-        'answer': ''
+        'question': '2) Como é dividida a Sprint Planning Meeting em suas duas partes e quais são as perguntas que cada parte responde?',
+        'options': ['Uma parte: Planejar o trabalho da Sprint; Segunda parte: Avaliar o progresso da Sprint.', 'Uma parte: O que será entregue?; Segunda parte: Como vamos entregar?', 'Uma parte: Estimar o tempo; Segunda parte: Coletar feedbacks do cliente.', 'Uma parte: Discutir problemas; Segunda parte: Resolver impedimentos.'],
+        'answer': 'Uma parte: O que será entregue?; Segunda parte: Como vamos entregar?'
     },
     {
         'id': 3,
-        'question': '3) ',
-        'options': ['', '', '', ''],
-        'answer': ''
+        'question': '3) Qual é o propósito da Daily Scrum e como ela beneficia o Time de Desenvolvimento?',
+        'options': ['Reportar para o Scrum Master.', 'Sincronizar o trabalho e resolver impedimentos.', 'Revisar o progresso da Sprint.', 'Discutir questões técnicas.'],
+        'answer': ' Sincronizar o trabalho e resolver impedimentos.'
     },
     {
         'id': 4,
-        'question': '4) ',
-        'options': ['', '', '', ''],
-        'answer': ''
+        'question': '4) Quais são as três perguntas padrão que cada membro responde durante a Daily Scrum?',
+        'options': ['O que fiz desde a última reunião, o que farei até a próxima e qual o meu cargo?', 'O que realizei desde a última Daily Scrum, quais são os meus planos até a próxima e houve algum obstáculo?', 'Quem impediu o meu progresso, o que realizei e o que planejo fazer?', 'O que realizei desde a última reunião, quem está com problemas e quem realizou mais tarefas?'],
+        'answer': 'O que realizei desde a última Daily Scrum, quais são os meus planos até a próxima e houve algum obstáculo?'
     },
     {
         'id': 5,
-        'question': '5) ',
-        'options': ['', '', '', ''],
-        'answer': ''
+        'question': '5) Quais são os objetivos da Sprint Review e quem participa dessa cerimônia?',
+        'options': ['Rever o progresso da Sprint; Apenas o Scrum Master.', 'Inspecionar o produto e coletar feedbacks; Todos interessados no produto.', 'Resolver impedimentos; Apenas o Product Owner.', 'Definir a meta da Sprint; Apenas o Development Team.'],
+        'answer': 'Inspecionar o produto e coletar feedbacks; Todos interessados no produto.'
     },
     {
         'id': 6,
-        'question': '6) ',
-        'options': ['', '', '', ''],
-        'answer': ''
+        'question': '6) Qual é a importância da Sprint Retrospective e o que geralmente é discutido durante essa reunião?',
+        'options': ['Identificar problemas e discutir sobre o próximo sprint; Técnicas de programação.', 'Rever o progresso da Sprint e discutir problemas pessoais; Avaliar o mercado.', 'Reflexão e melhoria contínua do processo; Interação entre os membros do time e práticas utilizadas.', 'Decidir os próximos passos do projeto; Revisão de documentos.'],
+        'answer': 'Reflexão e melhoria contínua do processo; Interação entre os membros do time e práticas utilizadas.'
     },
     {
         'id': 7,
-        'question': '7) ',
-        'options': ['', '', '', ''],
-        'answer': ''
+        'question': '7) O que é uma Release Planning Meeting e quando ela ocorre?',
+        'options': ['Uma reunião para revisar o progresso da Sprint; No início de cada Sprint.', 'Uma reunião para planejar as entregas em produção; Ao final de uma Sprint.', 'Uma reunião para resolver impedimentos; Diariamente.', 'Uma reunião para revisar o Product Backlog; Mensalmente.'],
+        'answer': 'Uma reunião para planejar as entregas em produção; Ao final de uma Sprint.'
     },
     {
         'id': 8,
-        'question': '',
-        'options': [' ', ' ', '', ''],
-        'answer': ''
+        'question': '8) Por que é importante manter o período entre as Releases o mais curto possível?',
+        'options': ['Para evitar reuniões longas.', 'Para aumentar a precisão do planejamento.', 'Para obter feedbacks mais rápidos e frequentes.', 'Para reduzir a participação dos membros do Time Scrum.'],
+        'answer': 'Para obter feedbacks mais rápidos e frequentes.'
     },
     {
         'id': 9,
-        'question': '9) ',
-        'options': [' ', '', '', ' '],
-        'answer': ''
+        'question': '9) Quais são os principais tópicos que podem ser incluídos em uma agenda para uma Release Planning Meeting?',
+        'options': ['Revisão do propósito da reunião e estrutura; Discussão de problemas pessoais.', 'Apresentação de gráficos de status das últimas Sprints; Decisões sobre tecnologias a serem utilizadas.', 'Definição da meta para a Release; Montagem de gráficos de Release Burndown.', 'Discussão sobre o roadmap do produto; Revisão dos documentos legais.'],
+        'answer': 'efinição da meta para a Release; Montagem de gráficos de Release Burndown.'
     },
     {
         'id': 10,
-        'question': '10) ',
-        'options': ['', ' ', ' ', ''],
-        'answer': ''
+        'question': '10) Durante a Sprint Planning Meeting, quem apresenta os itens prioritários do Product Backlog ao Time Scrum?',
+        'options': ['Scrum Master.', 'Product Owner.', 'Todos os membros do Time Scrum.', 'Development Team.'],
+        'answer': 'Product Owner.'
     },
 ]
 
 @app.route('/mod_4')
 def modulo_4():
     return render_template('mod_4.html')
+
+@app.route('/mod_4_quiz')  #altere apenas o número do seu módulo  )
+def modulo_4_quiz():   #altere apenas o número do seu módulo          
+    return render_template('mod_4_quiz.html', questions=questions_6)   #altere apenas o número do seu módulo
+
+@app.route('/submit_quiz_4', methods=['POST'])  #altere apenas o número do seu módulo
+def submit_quiz_4():  #altere apenas o número do seu módulo
+    # Lógica para processar o formulário e verificar as respostas
+    score = 0
+    user_answers = {}
+    for question in questions_6:
+        question_id = str(question['id'])
+        user_answer = request.form.get(question_id)
+        correct_answer = question['answer']
+        if user_answer == correct_answer:
+            score += 1
+        user_answers[question['question']] = user_answer
+    total_questions = len(questions_6)
+    return render_template('mod_4_results.html', score=score, total_questions=total_questions, results=user_answers)
 
  # Módulo 5
 
