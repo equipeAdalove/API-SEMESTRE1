@@ -458,8 +458,9 @@ def submit_quiz_6():  #altere apenas o número do seu módulo
 
 #Módulo 7
 
+
 questions_7 = [
-    {
+        {
         'id': 1,
         'question': '1) Qual é o principal objetivo do Planning Poker no SCRUM?',
         'options': ['Determinar quem são os membros mais rápidos da equipe.', 'Estabelecer um consenso sobre o esforço necessário para as tarefas.','Aumentar a competição entre os membros da equipe.', 'Acelerar o processo de desenvolvimento de software.','Identificar os membros da equipe que precisam de treinamento adicional.'],
@@ -518,11 +519,7 @@ questions_7 = [
         'question': '10) Qual é o principal objetivo do Scrum Master durante uma sessão de Planning Poker? ',
         'options': ['Fornecer estimativas precisas para todas as tarefas do backlog.', 'Garantir que todas as estimativas sejam idênticas para evitar conflitos.', 'Facilitar o processo de estimativa e remover obstáculos.','Tomar todas as decisões relacionadas à priorização das tarefas.','Monitorar o progresso do projeto sem se envolver nas estimativas.'],
         'answer': 'Facilitar o processo de estimativa e remover obstáculos.'
-    },
-]
-
-questions_7 = [
-
+    }
 ]
 
 @app.route('/mod_7')
