@@ -59,13 +59,11 @@
             }
 
             footer{
-                display: flex;
                 background-color: #32363f;
                 height: 30vh;
             }
 
-            .footer-custom{
-                margin: auto 9vh;
+            .footer-custom{ 
                 font-family: "Poppins", sans-serif;
                 color: #C8C8C8;
                 background-color: #32363f;
@@ -130,58 +128,19 @@
                 background-color: #32363F;
                 padding: 2px 16px;
             }
-            .button {
-                background-color: #32363F;
-                border: none;
-                color: white;
-                padding: 16px 32px;
-                text-align: center;
-                font-size: 16px;
-                margin: 4px 2px;
-                opacity: 1;
-                transition: 0.3s;
-                display: inline-block;
-                text-decoration: none;
-                cursor: pointer;
-            }
-
-            .button:hover {opacity: 0.8}
-
-            .button2 {
-                background-color: #32363f;
-                border: none;
-                color: white;
-                padding: 16px 32px;
-                text-align: center;
-                font-size: 16px;
-                margin: 4px 2px;
-                opacity: 1;
-                transition: 0.3s;
-                display: inline-block;
-                text-decoration: none;
-                cursor: pointer;
-            }
-
-            .button2:hover {opacity: 0.8}
-
-            .position_btn{
-                display: flex;
-                justify-content:center;
-                align-items: center;
-            }
 
             .title{
                 margin: auto 45%;
             }
 
-            .btnsub{
+            .btn-lg{
                 background-color:#32363F;
                 border: none;
                 margin: auto 45%;
                 margin-bottom: 12px;
             }
 
-            .btnsub:hover{
+            .btn-lg:hover{
                 background-color: #5a5d64;
             }
             
@@ -191,7 +150,7 @@
 {% block content %}
         <div class="div2">
             <img src="{{ url_for('static', filename='/imgs/pilarescapa.png') }}" width="400px" height="400" class="img">
-            <h1 style="font-size: 5pc; position: absolute;top: 13pc; left:59px;"><font color="D6D6D6"> QUIZ MÓDULO 1</font></h1>
+            <h1 style="font-size: 5pc; position: absolute;top: 13pc; left:59px;"><font color="D6D6D6"> QUIZ MÓDULO 2</font></h1>
             <h1 style="font-size: 3pc; position: absolute;top: 22pc; left:59px;"><font color="D6D6D6"> Teste seus conhecimentos!</font></h1>
         </div>
         <div class="wave">
@@ -220,7 +179,10 @@
                         </div>
                     </div>
                 {% endfor %}
-                <button type="submit" class="btn btn-primary btnsub">Submit</button>
+                <br>
+                <button type="submit" class="d-grid gap-2 col-6 mx-auto btn btn-dark btn-lg">CORRIGIR</button>
+                <br>
+                <br>
             </form>
         </div>
     
