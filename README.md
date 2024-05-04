@@ -4,7 +4,7 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 <img src="/assets/img/Apresentação.jpg">
 
 # Equipe:
-<img src="/assets/img/Scrum Team (2).jpg">
+<img src="/assets/img/Sprint 1/Scrum Team_I.jpg">
 
 
 
@@ -19,35 +19,33 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 * [Autores](#autores)
 
 # Objetivo do Projeto:
-<img src="/assets/img/Objetivo.jpg">
+<img src="/assets/img/Sprint 1/Objetivo.jpg">
 
 # Cliente:
-<img src="/assets/img/Requisito.jpg">
+<img src="/assets/img/Sprint 1/Requisitos.jpg">
 
 
 # Cronograma:
-<img src="/assets/img/Cronograma.jpg">
+<img src="/assets/img/Sprint 1/Cronograma.jpg">
 
 ##
 
 # Backlog do produto
-<img src="/assets/img/sprintsI.jpg">
+<img src="/assets/img/Sprint 1/Backlog.jpg">
 
-<img src="/assets/img/sprints.jpg">
+# Sprints
+<img src="/assets/img/Sprint 1/Sprint ProgressI.jpg">
+<img src="/assets/img/Sprint 1/Sprint ProgressII.jpg">
 
 ## Sprint 2
-- [ ] Aprimoramento do HTML/CSS;
-- [ ] Aprimoramento do conteudo didático apresentado no site.
+- [X] Aprimoramento do HTML/CSS;
+- [X] Aprimoramento do conteudo didático apresentado no site.
       
 ## Sprint 3
 - [ ] Correções de possíveis bugs;
 - [ ] Finalização do site.
       
-## Sprint 4
-- [ ] -----------------------------
-
 ##
-
 
 # Protótipo Figma:
 <img src="/assets/img/Telas.jpg">
