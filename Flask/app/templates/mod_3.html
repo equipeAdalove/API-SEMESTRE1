@@ -142,46 +142,27 @@
                 background-color: #32363F;
                 padding: 2px 16px;
             }
-            .button {
-                background-color: #32363F;
-                border: none;
-                color: white;
-                padding: 16px 32px;
-                text-align: center;
-                font-size: 16px;
-                margin: 4px 2px;
-                opacity: 0.6;
-                transition: 0.3s;
-                display: inline-block;
-                text-decoration: none;
-                cursor: pointer;
+            .btn.btn-lg.btn-dark{
+                background-color:#32363F;
             }
-
-            .button:hover {opacity: 1}
-
-            .button2 {
-                background-color: #32363F;
-                border: none;
-                color: white;
-                padding: 16px 32px;
-                text-align: center;
-                font-size: 16px;
-                margin: 4px 2px;
-                opacity: 0.6;
-                transition: 0.3s;
-                display: inline-block;
-                text-decoration: none;
-                cursor: pointer;
+            .btn.btn-lg.btn-dark:hover{
+                background-color: #464c5c;
             }
-
-            .button2:hover {opacity: 1}
-            
+            .d-grid.gap-2.d-md-flex{
+                justify-content: space-between;
+            }
+            .btn.my-5{
+                font-size: larger;
+            }
+            .btnange:hover{
+                color: #464c5c;
+            }
         </style>
 {% endblock %}
 
 {% block content %}
         <div class="div2">
-            <img src="{{ url_for('static', filename='/imgs/capamod3.png') }}" width="500px" height="500" class="img">
+            <img src="{{ url_for('static', filename='/imgs/capamod3.png') }}" width="400px" height="400" class="img">
             <h1 style="font-size: 5pc; position: absolute;top: 13pc; left:59px;"><font color="D6D6D6"> 3. Responsabilidades <br> e Papéis</font></h1>
         </div>
         <div class="wave">
@@ -225,10 +206,24 @@
                <p class="pp2">Somente o Product Owner tem a autoridade para cancelar uma Sprint, embora essa não deva ser uma ação frequente, pois pode afetar negativamente o trabalho da equipe. Isso pode acontecer se os objetivos da entrega não forem mais relevantes devido a mudanças nas condições do mercado ou em outras circunstâncias.</p>
         <br>
             <p>É importante destacar que o sucesso do produto depende em grande parte das habilidades do Product Owner em entender as necessidades do mercado e do negócio, além de comunicar de forma eficaz essas informações à equipe Scrum. Além disso, mesmo que uma empresa possa ter um comitê para identificar novas funcionalidades, é recomendado que haja apenas um Product Owner para tomar decisões sobre o Product Backlog. </p>
+            <div>
+                <img src="{{ url_for('static', filename='/imgs/mod3po.png') }}" class="imgm">
+            </div>
+            <br>
+        <hr>
+        <br>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <a class="btn btn-lg btn-dark" href="/mod_5_quiz">Teste seu conhecimento</a>
+        </div>
+        <br>
+        <br>
+        <div>
+            <div class="d-grid gap-2 d-md-flex">
+                <a class="btn my-5 btnange" href="/mod_4"><i><strong>← Módulo anterior<strong></i></a>
+                <a class="btn my-5 btnange" href="/mod_6"><i><strong>Próximo módulo →</strong></i></a>
+            </div>
+        </div>
+        <br>
         </div>
         <br>    
-        <div>
-            <img src="{{ url_for('static', filename='/imgs/mod3po.png') }}" class="imgm">
-        </div>
-
 {% endblock %}
