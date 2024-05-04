@@ -44,7 +44,7 @@
                 margin: 0 10px 10px 0;
                 position: absolute;
                 top: 04pc;
-                right: 3pc;
+                right: 7pc;
             }
 
             .div2{
@@ -89,6 +89,10 @@
                 margin-bottom: 80px;
                 text-align: justify;
             }
+            .h3{
+                line-height: 1.5;
+                text-indent: 20px;
+            }
             p{
                 line-height: 1.5;
                 text-indent: 50px;
@@ -112,22 +116,10 @@
             .imag{
                 width: 45%;
                 height: 45%;
-                margin-top: -10pc;
-                margin-bottom: -5pc;
                 margin-left: 350px;
                 margin-right: 350px;
             }
-
-            .imgm{
-                width: 45%;
-                height: 45%;
-                margin-top: -2%;
-                margin-bottom: 2%;
-                margin-left: 350px;
-                margin-right: 350px;
-            }
-
-            .card {
+            .cardcard {
                 box-shadow: 0 4px 8px 0 #1c1e21;
                 transition: 0.3s;
                 width: 100%;
@@ -135,13 +127,12 @@
                 border-radius: 5px;
             }
 
-            .card:hover {
+            .cardcard:hover {
                 box-shadow: 0 8px 16px 0 #1c1e21;
             }
-            .container {
+            .containercard{
                 background-color: #32363F;
-                padding: 2px 16px;
-            }
+                padding: 2px 16px;}
             .btn.btn-lg.btn-dark{
                 background-color:#32363F;
             }
@@ -163,7 +154,7 @@
 {% block content %}
         <div class="div2">
             <img src="{{ url_for('static', filename='/imgs/capamod3.png') }}" width="400" height="400" class="img">
-            <h1 style="font-size: 5pc; position: absolute;top: 13pc; left:59px;"><font color="D6D6D6"> 3. Responsabilidades <br> e Papéis</font></h1>
+            <h1 style="font-size: 5pc; position: absolute;top: 13pc; left:59px;"><font color="D6D6D6"> 3. RESPONSABILIDADE <br> E PAPÉIS</font></h1>
         </div>
         <div class="wave">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
@@ -172,58 +163,138 @@
         <!-- curso -->
 
         <div class="divtext">
-            <h1> Time SCRUM </h1>
-                <h3 class="h3"> Definição </h3>
-                    <p>Em uma equipe Scrum, existem funções específicas, mas não são posições fixas. Isso significa que as pessoas podem desempenhar diferentes papéis em momentos diferentes. Por exemplo, alguém pode ser o 'Product Owner' em um projeto e depois assumir o papel de 'Scrum Master' em outro. As equipes Scrum são autogerenciadas, o que significa que elas decidem como realizar o trabalho sem precisar de supervisão constante. Elas também são versáteis e têm todas as habilidades necessárias para realizar as tarefas, o que significa que não dependem de recursos externos. Esse modelo foi projetado para tornar as equipes mais ágeis, inovadoras e eficientes.</p>
-            <img src="{{ url_for('static', filename='/imgs/mod3timescrum.png') }}" class="imag">
+            <h1>TIME SCRUM</h1>
+            <ol>
+                <li><i><strong>Funções Específicas, mas Não Fixas:</strong></i></li>
+                <p>Em uma equipe Scrum, há três papéis principais: Product Owner, Scrum Master e Time de Desenvolvimento. Embora esses papéis tenham responsabilidades específicas, não são atribuídos a pessoas específicas de forma permanente. Isso significa que os membros da equipe podem assumir diferentes papéis em projetos diferentes, dependendo das necessidades da equipe e de suas habilidades individuais. Por exemplo, alguém pode atuar como Product Owner em um projeto e depois como Scrum Master em outro, ou até mesmo como parte do Time de Desenvolvimento.</p>
+                <li><i><strong>Equipes Autogerenciadas:</strong></i></li>
+                <p>Equipes Scrum são autogerenciadas, o que significa que têm autoridade para tomar decisões relacionadas ao trabalho sem a necessidade de supervisão constante de uma figura de autoridade externa. Isso promove um ambiente de trabalho colaborativo e empoderado, onde os membros da equipe têm liberdade para organizar seu próprio trabalho, definir metas e tomar decisões sobre como alcançá-las.</p>
+                <li><i><strong>Versatilidade e Habilidades Completas:</strong></i></li>
+                <p>As equipes Scrum são compostas por membros multifuncionais e versáteis, que possuem todas as habilidades necessárias para realizar as tarefas do projeto. Isso significa que não dependem de recursos externos para concluir o trabalho e têm a capacidade de lidar com uma variedade de desafios sem a necessidade de recorrer a especialistas externos. Essa abordagem promove a colaboração e a eficiência dentro da equipe, permitindo que ela se adapte rapidamente às mudanças e desafios que surgem durante o desenvolvimento do projeto.</p>
+                <li><i><strong>Modelo para Agilidade e Eficiência:</strong></i></li>
+                <p>O modelo Scrum foi projetado para tornar as equipes mais ágeis, inovadoras e eficientes. Ao permitir que os membros da equipe assumam diferentes papéis, promover a autogestão, incentivar a versatilidade e habilidades completas, o Scrum capacita as equipes a responder rapidamente às mudanças do mercado, entregar valor de forma incremental e contínua, e manter um alto nível de qualidade em seus produtos e serviços.</p>
+            </ol>
+            <br>
+            <p>Em resumo, o Scrum é mais do que apenas um conjunto de regras e processos; é uma filosofia que promove uma cultura de trabalho colaborativa, flexível e centrada no valor do cliente. Ele capacita as equipes a serem mais eficazes na entrega de produtos e serviços de alta qualidade, adaptando-se rapidamente às necessidades do mercado e às mudanças no ambiente de negócios.</p>
+            <img src="#" class="imag">
         <br>
         <br>
-        <h1> Product Owner (P.O.) </h1>
-            <p> O trabalho do Product Owner é fundamental para garantir o sucesso de um produto. Ele é responsável por várias tarefas importantes:</p>
         <br>
-            <P class="pp"><strong> 1. Gerenciar o Product Backlog: </strong></P> 
-               <p class="pp2">Isso significa manter uma lista de todas as coisas que precisam ser feitas no produto e garantir que estejam organizadas da maneira mais útil.</p>
-        <br>
-            <P class="pp"><strong> 2. Garantir o ROI (Retorno sobre o Investimento): </strong></P> 
-               <p class="pp2">O Product Owner precisa garantir que as funcionalidades desenvolvidas tragam valor ao produto e, consequentemente, à empresa.</p>
-        <br>
-            <P class="pp"><strong> 3. Definir a visão do produto: </strong></P> 
-               <p class="pp2">É importante que o Product Owner tenha uma compreensão clara de como o produto deve ser e transmita essa visão à equipe.</p>
-        <br>
-            <P class="pp"><strong> 4. Gerenciar Novos Requisitos: </strong></P> 
-               <p class="pp2">À medida que novas ideias surgem, o Product Owner decide se e quando elas devem ser adicionadas ao trabalho a ser feito.</p>
-        <br>
-            <P class="pp"><strong> 5. Determinar a ordem de prioridade: </strong></P> 
-               <p class="pp2">Ele decide qual funcionalidade é mais importante e deve ser implementada primeiro.</p>
+            <P class="pp"><strong> 1. Objetivo do Scrum: </strong>,</P> 
+                <p class="pp2"> O Scrum é mais do que apenas um processo - é um framework que capacita as equipes a resolverem problemas complexos e adaptáveis, entregando produtos de forma produtiva e criativa, maximizando seu valor. Embora seja leve e simples de entender em sua essência, sua aplicação eficaz pode ser desafiadora.</p>
         <br>  
-            <P class="pp"><strong> 6.Supervisionar o plano de lançamentos: </strong></P> 
-               <p class="pp2">O Product Owner acompanha o progresso do desenvolvimento e decide quando novas versões do produto serão lançadas.</p>
+            <P class="pp"><strong> 2. Princípios do Scrum: </strong>,</P> 
+                <p class="pp2"> O Scrum é baseado em três pilares fundamentais: transparência, inspeção e adaptação. Estes pilares guiam o relacionamento e interação entre os membros da equipe, bem como a forma como o trabalho é realizado. 
+                    <p class="ppp"><i><strong>Transparência:</strong></i>todos os aspectos do trabalho devem ser visíveis e compreensíveis para todos os envolvidos.
+                    <p class="ppp"><i><strong>Inspeção: </strong></i>os artefatos e o progresso do trabalho devem ser inspecionados regularmente para garantir a qualidade e a conformidade com os objetivos.
+                    <p class="ppp"><i><strong>Adaptação: </strong></i>com base na inspeção, ajustes e melhorias contínuas devem ser feitos para alcançar os melhores resultados.</p>
+        <br>    
+            <p class="pp"><strong> 3. Aplicação do Scrum: </strong></p>
+                <p class="pp2"> Embora tenha sido originado no desenvolvimento de software, o Scrum é aplicável a uma variedade de projetos, desde que haja complexidade e incerteza. Seu enfoque no controle empírico de processos, ou empirismo, permite que as equipes melhorem continuamente seu trabalho à medida que avançam. Diferente de processos pré definidos, onde cada passo é previsível, o Scrum reconhece a natureza imprevisível dos projetos complexos e abraça a mudança como uma vantagem competitiva.</p>
+                <p class="pp2"> Um exemplo prático de aplicação do Scrum é na gestão de projetos de desenvolvimento de software. Imagine uma equipe de desenvolvedores trabalhando em um projeto complexo. Utilizando o Scrum, o projeto é dividido em sprints, que são períodos de tempo bem definidos, geralmente de duas a quatro semanas. Cada sprint tem um objetivo claro e os desenvolvedores trabalham em conjunto para alcançá-lo. Durante o sprint, são realizadas reuniões diárias de acompanhamento, chamadas de Daily Scrum, onde cada membro da equipe compartilha o que foi feito, o que está planejado e quais são os possíveis obstáculos. Ao final de cada sprint, é feita uma revisão para avaliar o que foi entregue e planejar o próximo sprint. Esse ciclo se repete até que o projeto seja concluído. </p>
+        <br>     
+            <p class="pp"><strong> 4. Benefícios do Scrum: </strong></p>
+            <p class="pp2"> Os benefícios do Scrum são vastos, incluindo maior colaboração entre os membros da equipe, foco no valor entregue ao cliente, e capacidade de adaptação às mudanças do mercado. Esses aspectos combinados permitem que as equipes entreguem produtos de alta qualidade de forma rápida e eficiente.
+                <p class="ppp"><strong><i> Primeiro benefício do Scrum: Melhor gerenciamento de projetos </i></strong></p>
+                    <p class="ppp2"> -> O Scrum oferece uma abordagem eficiente e eficaz para organizar, planejar e acompanhar as tarefas de um projeto. </p>
+                    <p class="ppp2"> -> A estrutura de times organizada em sprints permite um melhor controle do progresso do projeto e a detecção precoce de problemas.
+                    <p class="ppp2"> -> O papel do Scrum Master facilita a condução do projeto, removendo obstáculos e promovendo a colaboração. </p>
+                    <p class="ppp2"> -> Ferramentas como o Product Backlog e Sprint Backlog proporcionam clareza e planejamento efetivo. </p>
+                <p class="ppp"><strong><i>  Segundo benefício do Scrum: Maior flexibilidade e adaptabilidade </i></strong></p>
+                    <p class="ppp2"> -> O Scrum permite que as equipes respondam rapidamente a mudanças e imprevistos. </p>
+                    <p class="ppp2"> -> Revisões periódicas e retrospectivas permitem ajustes e redefinição de prioridades. </p>
+                    <p class="ppp2"> -> O Product Backlog flexível e as iterações incrementais garantem que o produto final atenda às necessidades em constante evolução do cliente. </p>
+                    <p class="ppp2"> -> A natureza iterativa e incremental do Scrum possibilita uma constante evolução e aprimoramento do produto. </p>
+                <p class="ppp"><strong><i>  Terceiro benefício do Scrum: Aumento da produtividade e eficiência no desenvolvimento</i></strong></p>
+                    <p class="ppp2"> -> A divisão do trabalho em sprints evita a procrastinação e permite a entrega de resultados concretos de forma mais rápida. </p>
+                    <p class="ppp2"> -> A autogestão das equipes e a redução de retrabalhos contribuem para a eficiência do processo. </p>
+                    <p class="ppp2"> -> A transparência promovida pelo Scrum e a comunicação constante entre os membros da equipe aumentam a produtividade. </p>
+                <p class="ppp"><strong><i>  Quarto benefício do Scrum: Melhor colaboração e comunicação entre equipes </i></strong></p>
+                    <p class="ppp2"> -> A figura do Product Owner facilita a comunicação entre as partes interessadas. </p>
+                    <p class="ppp2"> -> Rituais como as reuniões de planejamento do sprint e as reuniões diárias promovem a colaboração e a comunicação eficaz. </p>
+                    <p class="ppp2"> -> A colaboração multidisciplinar e o ambiente de trabalho colaborativo estimulam a criatividade e fortalecem os laços entre os membros da equipe. </p>
         <br>  
-            <P class="pp"><strong> 7. Aceitar ou Rejeitar o Trabalho Concluído: </strong></P> 
-               <p class="pp2">No final de cada ciclo de trabalho, o Product Owner decide se está de acordo com as expectativas e se pode ser entregue aos usuários finais.</p>
-        <br>  
-            <P class="pp"><strong> 8. Validação das sprints: </strong></P> 
-               <p class="pp2">Somente o Product Owner tem a autoridade para cancelar uma Sprint, embora essa não deva ser uma ação frequente, pois pode afetar negativamente o trabalho da equipe. Isso pode acontecer se os objetivos da entrega não forem mais relevantes devido a mudanças nas condições do mercado ou em outras circunstâncias.</p>
-        <br>
-            <p>É importante destacar que o sucesso do produto depende em grande parte das habilidades do Product Owner em entender as necessidades do mercado e do negócio, além de comunicar de forma eficaz essas informações à equipe Scrum. Além disso, mesmo que uma empresa possa ter um comitê para identificar novas funcionalidades, é recomendado que haja apenas um Product Owner para tomar decisões sobre o Product Backlog. </p>
-            <div>
-                <img src="{{ url_for('static', filename='/imgs/mod3po.png') }}" class="imgm">
+        <div class="cardcard">
+            <div class="containercard">
+                <p><font color="#C8C8C8"><strong> Exemplos práticos: </strong></font></p> 
+                    <P class="pp"><font color="#C8C8C8"><strong><i>  Priorização de Backlog: </i></strong></font></P>
+                        <p class="ppp"><font color="#C8C8C8">Imagine uma equipe de desenvolvimento de software usando Scrum. Eles têm um backlog de itens de trabalho, cada um representando uma funcionalidade ou melhoria do produto. Durante a reunião de planejamento do sprint, a equipe e o Product Owner priorizam esses itens com base no valor que cada um trará ao usuário e ao negócio. Se surgirem novas informações ou requisitos, a equipe pode ajustar a priorização do backlog para garantir que o produto entregue o máximo valor possível a cada sprint.</font> </P>
+                    <p class="pp"><font color="#C8C8C8"><strong><i>  Sprint Review: </i></strong></font></p>
+                        <p class="ppp"><font color="#C8C8C8">No final de cada sprint, a equipe realiza uma revisão do sprint com os stakeholders para demonstrar o trabalho realizado. Durante essa revisão, os stakeholders têm a oportunidade de fornecer feedback sobre o produto entregue. Se surgirem novas ideias ou requisitos, a equipe pode adaptar o plano para os próximos sprints com base nesse feedback, garantindo que o produto esteja sempre alinhado às necessidades do cliente.</font> </p>
+                    <P class="pp"><font color="#C8C8C8"><strong><i>  Retrospectiva do Sprint: </i></strong></font></P>
+                        <p class="ppp"><font color="#C8C8C8">Após a revisão do sprint, a equipe realiza uma retrospectiva do sprint para refletir sobre o que funcionou bem, o que não funcionou e como eles podem melhorar no próximo sprint. Se identificarem áreas onde a equipe pode ser mais eficiente ou onde o processo pode ser aprimorado para fornecer mais valor, eles podem adaptar suas práticas e abordagens para o próximo sprint.</font> </P>
             </div>
+        </div>
+        <BR>
+            <img src="{{ url_for('static', filename='/imgs/fundamentos1.png') }}" class="imag">
+        <br>
+        <br>
+            <h1> Valores e princípios do Scrum: Fundamentos para o Sucesso </h1>
+            <h3> Manifesto Ágil, Princípios Ágeis e Valores do Scrum </h3>
+                <p>  Os princípios do SCRUM são essenciais para o sucesso de projetos ágeis. Através da transparência, inspeção e adaptação, comunicação, autogerenciamento e entrega contínua de valor, as equipes podem melhorar a eficiência, qualidade e satisfação do cliente. Aplicar os princípios do SCRUM exige comprometimento, disciplina e capacitação, mas os resultados obtidos valem o esforço. </p>
+            <P class="pp"><strong> Manifesto Ágil:</strong></P>   
+                <p class="pp2"> O Manifesto Ágil foi criado em 2001 por um grupo de profissionais e pensadores, incluindo Jeff Sutherland e Ken Schwaber, os criadores do SCRUM. Este manifesto serve como a base dos métodos ágeis, valorizando indivíduos e interações, software em funcionamento, colaboração com o cliente e resposta a mudanças. </p>
+                <p class="pp2"> O Manifesto Ágil é um documento crucial que estabelece os valores e princípios fundamentais da abordagem ágil no desenvolvimento de software. Criado por um grupo de profissionais de TI em 2001, o Manifesto Ágil enfatiza a importância de: </p>
+                    <p class="ppp"><strong><i>  Indivíduos e interações: </i></strong> Valoriza o potencial humano e destaca a colaboração entre membros da equipe em vez de processos e ferramentas. </p>
+                    <p class="ppp"><strong><i>  Software funcionando: </i></strong> Prioriza a entrega de software funcional e de valor para o cliente em intervalos curtos e frequentes. </p>
+                    <p class="ppp"><strong><i>  Colaboração com o cliente: </i></strong> Enfatiza a importância da colaboração contínua com o cliente para garantir que o produto final atenda às suas necessidades e expectativas. </p>
+                    <p class="ppp"><strong><i>  Responder a mudanças:</i></strong> Reconhece a natureza dinâmica do desenvolvimento de software e responder de forma rápida e eficaz a mudanças nos requisitos e ambiente. </p>
+            <br>
+            <div class="cardcard">
+                <div class="containercard">
+                    <p><font color="#C8C8C8"><strong> Exemplos práticos: </strong></font></p> 
+                        <P class="pp"><font color="#C8C8C8"><strong><i> Indivíduos e interações mais que processos e ferramentas: </i></strong></font></P>
+                            <p class="ppp"><font color="#C8C8C8">Em uma equipe ágil, os membros priorizam a comunicação face a face e a colaboração. Eles realizam reuniões diárias (stand-ups) para discutir o progresso do trabalho, em vez de depender exclusivamente de ferramentas de gerenciamento de projetos. </font></P>
+                        <p class="pp"><font color="#C8C8C8"><strong><i> Software em funcionamento mais que documentação abrangente: </i></strong></font></p>
+                            <p class="ppp"><font color="#C8C8C8"> Uma equipe ágil prioriza a entrega de incrementos de software funcionais em intervalos regulares. Em vez de gastar tempo em extensa documentação, eles preferem criar protótipos ou MVPs (Minimum Viable Products) que possam ser testados e refinados pelos usuários. </font></p>
+                        <P class="pp"><font color="#C8C8C8"><strong><i> Colaboração com o cliente mais que negociação de contratos: </i></strong></font></P>
+                            <p class="ppp"><font color="#C8C8C8"> Em um projeto ágil, a equipe e o cliente trabalham juntos de forma colaborativa e iterativa. Eles realizam revisões regulares do produto para garantir que o que está sendo desenvolvido atenda às necessidades do cliente, em vez de seguir rigidamente um contrato pré-estabelecido. </font></P>
+                        <P class="pp"><font color="#C8C8C8"><strong><i> Responder a mudanças mais que seguir um plano: </i></strong></font></P>
+                            <p class="ppp"><font color="#C8C8C8"> Uma equipe ágil está aberta a mudanças nos requisitos do projeto, mesmo durante o desenvolvimento. Eles são capazes de se adaptar rapidamente a novas informações ou prioridades do cliente, ajustando o plano conforme necessário para maximizar o valor entregue. </font></P>
+                </div>
+            </div>
+        <br>    
+            <p class="pp"><strong> Princípios Ágeis: </strong> </p>
+                <P class="pp2"> Os Princípios Ágeis complementam o Manifesto Ágil, oferecendo diretrizes específicas para o desenvolvimento de software ágil. Os princípios ágeis são diretrizes que orientam a prática ágil, visando a entrega contínua de valor ao cliente e a adaptação às mudanças. Entre os princípios ágeis, destacam-se: </P>
+                    <p class="ppp"><strong><i>  Satisfação do cliente: </i></strong> Priorizar a satisfação do cliente através da entrega contínua e rápida de software funcional. </p>
+                    <p class="ppp"><strong><i>  Entrega incremental: </i></strong> Dividir o trabalho em incrementos menores e entregáveis, permitindo feedback rápido e ajustes conforme necessário. </p>
+                    <p class="ppp"><strong><i>  Colaboração: </i></strong> Fomentar a colaboração entre membros da equipe para garantir alinhamento e entendimento compartilhado dos objetivos do projeto. </p>
+                    <p class="ppp"><strong><i>  Adaptação contínua: </i></strong> Estar aberto a mudanças nos requisitos e circunstâncias do projeto, adaptando-se rapidamente para maximizar o valor entregue. </p>
+        <br>    
+        <div class="cardcard">
+            <div class="containercard">
+                <p><font color="#C8C8C8"><strong> Exemplos práticos: </strong></font></p> 
+                    <P class="pp"><font color="#C8C8C8"><strong><i> Satisfazer o cliente através da entrega contínua e adiantada de software com valor agregado: </i></strong></font></P>
+                        <p class="ppp"><font color="#C8C8C8"> Uma equipe ágil prioriza a entrega de funcionalidades que proporcionam valor ao cliente em cada incremento de software, permitindo que o cliente comece a usar e fornecer feedback mais cedo no processo de desenvolvimento.  </font> </P>
+                    <p class="pp"><font color="#C8C8C8"><strong><i>  Dar as boas-vindas a mudanças nos requisitos, mesmo no fim do desenvolvimento: </i></strong></font></p>
+                        <p class="ppp"><font color="#C8C8C8"> Uma equipe ágil reconhece que os requisitos do projeto podem evoluir ao longo do tempo. Eles estão preparados para incorporar mudanças mesmo em estágios avançados de desenvolvimento, desde que isso gere valor adicional para o cliente.  </font> </p>
+            </div>
+        </div>
+        <br>   
+            <p class="pp"><strong> Valores de Scrum:</strong></p>
+                <p class="pp2"> Além de seguir o Manifesto Ágil e seus Princípios, o SCRUM possui cinco valores fundamentais que guiam o comportamento das equipes. Estes valores são essenciais para promover a colaboração, o trabalho em equipe e a busca pela excelência, são inspirados nos princípios ágeis e no Manifesto Ágil, e constituem a base cultural e comportamental das equipes que adotam o Scrum: </p>
+                    <p class="ppp"><strong><i>  Comprometimento: </i></strong>Os membros da equipe estão comprometidos com os objetivos do projeto e com a entrega de valor ao cliente. </i></strong></p>
+                    <p class="ppp"><strong><i>  Foco: </i></strong>A equipe mantém o foco no trabalho necessário para alcançar os objetivos do sprint e do projeto. </i></strong></p>
+                    <p class="ppp"><strong><i>  Abertura: </i></strong>Há transparência e honestidade em todas as interações, promovendo uma cultura de confiança e colaboração. </i></strong></p>
+                    <p class="ppp"><strong><i>  Respeito: </i></strong>Todos os membros da equipe são respeitados por suas contribuições e perspectivas únicas. </i></strong></p>
+                    <p class="ppp"><strong><i>  Coragem: </i></strong>A equipe tem a coragem de enfrentar desafios, buscar melhorias contínuas e tomar decisões difíceis quando necessário. </i></strong></p>
+                <p class="pp2"> Esses valores e princípios são fundamentais para o sucesso do Scrum, fornecendo uma base sólida para equipes que desejam adotar uma abordagem ágil e alcançar resultados excepcionais no desenvolvimento de produtos. Ao internalizar e praticar esses valores e princípios, as equipes podem criar um ambiente propício à inovação, colaboração e entrega de valor contínuo ao cliente. </p>
+            <img src="{{ url_for('static', filename='/imgs/valores1.png') }}" class="imag">
+            <br>
             <br>
         <hr>
         <br>
         <div class="d-grid gap-2 col-6 mx-auto">
-            <a class="btn btn-lg btn-dark" href="#">Teste seu conhecimento</a>
+            <a class="btn btn-lg btn-dark" href="/mod_1_quiz">Teste seu conhecimento</a>
         </div>
         <br>
         <br>
         <div>
             <div class="d-grid gap-2 d-md-flex">
-                <a class="btn my-5 btnange" href="/mod_2"><i><strong>← Módulo anterior<strong></i></a>
-                <a class="btn my-5 btnange" href="/mod_4"><i><strong>Próximo módulo →</strong></i></a>
+                <a class="btn my-5 btnmafe" href="/modulos"><i><strong>← Módulos<strong></i></a>
+                <a class="btn my-5 btnmafe" href="/mod_2"><i><strong>Próximo módulo →</strong></i></a>
             </div>
         </div>
-        <br>
         </div>
-        <br>    
+
 {% endblock %}
