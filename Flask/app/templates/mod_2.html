@@ -134,46 +134,21 @@
     background-color: #32363f;
     padding: 2px 16px;
   }
-  .button {
-    background-color: #32363f;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    opacity: 1;
-    transition: 0.3s;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
+  .btn.btn-lg.btn-dark{
+      background-color:#32363F;
   }
-
-  .button:hover { opacity: 0.8; }
-
-  .button2 {
-    background-color: #32363f;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    opacity: 1;
-    transition: 0.3s;
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
+  .btn.btn-lg.btn-dark:hover{
+      background-color: #464c5c;
   }
-
-  .button2:hover {opacity: 0.8;}
-
-  .position_btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .d-grid.gap-2.d-md-flex{
+      justify-content: space-between;
   }
-
+  .btn.my-5{
+      font-size: larger;
+  }
+  .btncelso:hover{
+      color: #464c5c;
+  }
 </style>
 {% endblock %}
 
@@ -301,20 +276,17 @@
             <img src="{{ url_for('static', filename='/imgs/pilaresfinal.png')}}" class="imag">
             <br>
             <br>
-            <br>
-            <div class="position_btn">
-                <div class="button">
-                    <button class="button"><a href="/modulos"><font color="#C8C8C8"><span> Voltar</span></font></button>
-                </div>
-                <br>
-                <div class="button2">
-                    <button class="button"><a href="/mod_3"><font color="#C8C8C8"><span> Avançar</span></font></button>
-                </div>
-                <div class="button3">
-                    <button class="button"><a href="#"><font color="#C8C8C8"><span> Teste</span></font></button>
-                </div>
+        <hr>
+        <br>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <a class="btn btn-lg btn-dark" href="#">Teste seu conhecimento</a>
+        </div>
+        <br>
+        <br>
+        <div>
+            <div class="d-grid gap-2 d-md-flex">
+                <a class="btn my-5 btncelso" href="/mod_1"><i><strong>← Módulo anterior<strong></i></a>
+                <a class="btn my-5 btncelso" href="/mod_3"><i><strong>Próximo módulo →</strong></i></a>
             </div>
-            <br>
-            <br>
-            <br>
+        </div>
 {% endblock %}
