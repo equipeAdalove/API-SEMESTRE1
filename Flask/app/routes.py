@@ -375,8 +375,89 @@ def submit_quiz_6():  #altere apenas o número do seu módulo
 
 
 #Módulo 7
+
+questions_1 = [
+    {
+        'id': 1,
+        'question': '1) Qual é a principal transformação que o desenvolvimento de software passou nos últimos anos?',
+        'options': ['Aumento da rigidez nas abordagens de gestão de projetos.', 'Maior foco na entrega incremental.', 'Redução da competitividade no mercado.', 'A adoção de métodos ágeis.'],
+        'answer': 'A adoção de métodos ágeis.'
+    },
+    {
+        'id': 2,
+        'question': '2) Quais são os três pilares fundamentais do Scrum?',
+        'options': [' Planejamento, execução, controle', 'Transparência, inspeção, adaptação', 'Documentação, revisão, entrega', 'Individualidade, inovação, adaptação'],
+        'answer': 'Transparência, inspeção, adaptação'
+    },
+    {
+        'id': 3,
+        'question': '3) Onde o Scrum pode ser aplicado?',
+        'options': ['Apenas em projetos de desenvolvimento de software', 'Apenas em projetos com requisitos estáveis e definidos', 'A uma variedade de projetos, desde que haja complexidade e incerteza', 'Apenas em empresas de grande porte'],
+        'answer': 'A uma variedade de projetos, desde que haja complexidade e incerteza'
+    },
+    {
+        'id': 4,
+        'question': '4) Qual é um dos benefícios do Scrum em termos de gerenciamento de projetos?',
+        'options': ['Maior rigidez no controle do progresso do projeto', 'Redução da colaboração entre os membros da equipe', ' Detecção precoce de problemas', 'Menor foco no valor entregue ao cliente'],
+        'answer': 'Detecção precoce de problemas'
+    },
+    {
+        'id': 5,
+        'question': '5) Quem são os criadores do SCRUM?',
+        'options': ['Steve Jobs e Bill Gates.', 'Jeff Sutherland e Ken Schwaber.', 'Tim Berners-Lee e Linus Torvalds.', 'Larry Page e Sergey Brin.'],
+        'answer': 'Jeff Sutherland e Ken Schwaber.'
+    },
+    {
+        'id': 6,
+        'question': '6) O que é enfatizado pelo Manifesto Ágil?',
+        'options': ['Indivíduos e interações, software em funcionamento, colaboração com o cliente e resposta a mudanças', 'Processos e ferramentas, documentação abrangente, negociação de contratos, seguir um plano', 'Entrega de produtos finais sem interações com o cliente', 'Priorização de documentação sobre indivíduos e interações'],
+        'answer': 'Indivíduos e interações, software em funcionamento, colaboração com o cliente e resposta a mudanças'
+    },
+    {
+        'id': 7,
+        'question': '7) Quais são alguns exemplos práticos de valores do Scrum?',
+        'options': ['Controle e estagnação', 'Rigidez e documentação abrangente', 'Foco e respeito', ' Falta de colaboração e coragem'],
+        'answer': 'Foco e respeito'
+    },
+    {
+        'id': 8,
+        'question': '8) O que os princípios ágeis enfatizam?',
+        'options': ['Satisfação do desenvolvedor', 'Satisfação do cliente, entrega incremental, colaboração e adaptação contínua', 'Foco na documentação e nos processos', 'Resistência à mudança'],
+        'answer': 'Satisfação do cliente, entrega incremental, colaboração e adaptação contínua'
+    },
+    {
+        'id': 9,
+        'question': '9) O que é essencial para promover a colaboração, o trabalho em equipe e a busca pela excelência no Scrum?',
+        'options': ['Rigidez e falta de adaptação', ' Resistência à mudança', 'Valores e princípios do Scrum', ' Controle centralizado'],
+        'answer': ' WValores e princípios do Scrum'
+    },
+    {
+        'id': 10,
+        'question': '10) O que são Métodos Ágeis?',
+        'options': ['Abordagens inflexíveis e rígidas.', 'Estratégias para reduzir a colaboração da equipe.', 'Uma abordagem flexível e adaptativa para maximizar o valor entregue ao cliente.', ' Práticas para evitar feedback contínuo.'],
+        'answer': 'Uma abordagem flexível e adaptativa para maximizar o valor entregue ao cliente.'
+    },
+]
+
 @app.route('/mod_7')
 def modulo_7():
     return render_template('mod_7.html')
 
-#Módulo 7 - quiz
+@app.route('/mod_7_quiz')
+def modulo_7_quiz():
+    return render_template('mod_7_quiz.html', questions=questions_1)
+
+@app.route('/submit_quiz_7', methods=['POST'])
+def submit_quiz_7():
+    # Lógica para processar o formulário e verificar as respostas
+    score = 0
+    user_answers = {}
+    for question in questions_7:
+        question_id = str(question['id'])
+        user_answer = request.form.get(question_id)
+        correct_answer = question['answer']
+        if user_answer == correct_answer:
+            score += 1
+        user_answers[question['question']] = user_answer
+    total_questions = len(questions_6)
+    return render_template('mod_7_results.html', score=score, total_questions=total_questions, results=user_answers)
