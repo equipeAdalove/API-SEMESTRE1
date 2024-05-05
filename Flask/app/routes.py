@@ -372,62 +372,62 @@ questions_5 = [
     {
         'id': 1,
         'question': '1) O Product Backlog contém:',
-        'options': ['Somente itens funcionais.', 'Itens priorizados apenas pelo Scrum Master.', 'Itens de negócios, funcionais, não funcionais, arquiteturais e de infraestrutura.', 'Itens sem critérios claros de aceitação.'],
-        'answer': 'Itens de negócios, funcionais, não funcionais, arquiteturais e de infraestrutura.'
+        'options': ['a) Somente itens funcionais.', 'b) Itens priorizados apenas pelo Scrum Master.', 'c) Itens de negócios, funcionais, não funcionais, arquiteturais e de infraestrutura.', 'd) Itens sem critérios claros de aceitação.'],
+        'answer': 'c) Itens de negócios, funcionais, não funcionais, arquiteturais e de infraestrutura.'
     },
     {
         'id': 2,
         'question': '2) Qual é o principal requisito para um Product Increment?',
-        'options': ['Ser completamente perfeito.', 'Ser potencialmente entregável.', 'Ser aprovado pelo Scrum Master.', 'Ser entregue em cada Daily Scrum.'],
-        'answer': 'Ser potencialmente entregável.'
+        'options': ['a) Ser completamente perfeito.', 'b) Ser potencialmente entregável.', 'c) Ser aprovado pelo Scrum Master.', 'd) Ser entregue em cada Daily Scrum.'],
+        'answer': 'b) Ser potencialmente entregável.'
     },
     {
         'id': 3,
         'question': '3) O que é o Sprint Backlog?',
-        'options': ['Uma lista de tarefas organizadas por ordem alfabética.', 'Uma lista de itens selecionados para implementação durante a Sprint.', 'Uma lista de bugs identificados após o final da Sprint.', 'Uma lista de itens priorizados pelo Product Owner.'],
-        'answer': 'Uma lista de itens selecionados para implementação durante a Sprint.'
+        'options': ['a) Uma lista de tarefas organizadas por ordem alfabética.', 'b) Uma lista de itens selecionados para implementação durante a Sprint.', 'c) Uma lista de bugs identificados após o final da Sprint.', 'd) Uma lista de itens priorizados pelo Product Owner.'],
+        'answer': 'b) Uma lista de itens selecionados para implementação durante a Sprint.'
     },
     {
         'id': 4,
         'question': '4) Qual é a função do Definition of Done (DoD)?',
-        'options': ['Definir os itens que serão incluídos no Sprint Backlog.', 'Determinar quem é responsável por cada tarefa na Sprint.', 'Estabelecer critérios para uma funcionalidade ser considerada "pronta".', 'Gerenciar o Product Increment ao longo do tempo.'],
-        'answer': 'Estabelecer critérios para uma funcionalidade ser considerada "pronta".'
+        'options': ['a) Definir os itens que serão incluídos no Sprint Backlog.', 'b) Determinar quem é responsável por cada tarefa na Sprint.', 'c) Estabelecer critérios para uma funcionalidade ser considerada "pronta".', 'd) Gerenciar o Product Increment ao longo do tempo.'],
+        'answer': 'c) Estabelecer critérios para uma funcionalidade ser considerada "pronta".'
     },
     {
         'id': 5,
         'question': '5) O que o Burndown Chart mostra visualmente?',
-        'options': ['O número total de itens no Product Backlog', 'A quantidade de trabalho concluída a cada dia durante a Sprint.', 'A lista de itens a serem entregues no próximo Sprint.', 'O tempo estimado para cada tarefa no Sprint Backlog.'],
-        'answer': 'A quantidade de trabalho concluída a cada dia durante a Sprint.'
+        'options': ['a) O número total de itens no Product Backlog', 'b) A quantidade de trabalho concluída a cada dia durante a Sprint.', 'c) A lista de itens a serem entregues no próximo Sprint.', 'd) O tempo estimado para cada tarefa no Sprint Backlog.'],
+        'answer': 'b) A quantidade de trabalho concluída a cada dia durante a Sprint.'
     },
     {
         'id': 6,
         'question': '6) Quem é responsável por gerenciar o Product Backlog?',
-        'options': ['O Scrum Master.', 'O Time de Desenvolvimento.', 'O Product Owner.', 'O Gerente de Projeto.'],
-        'answer': 'O Product Owner.'
+        'options': ['a) O Scrum Master.', 'b) O Time de Desenvolvimento.', 'c) O Product Owner.', 'd) O Gerente de Projeto.'],
+        'answer': 'c) O Product Owner.'
     },
     {
         'id': 7,
         'question': '7) Qual é o objetivo principal do Sprint Review?',
-        'options': ['Analisar as métricas de produtividade da equipe.', 'Revisar e adaptar o processo de desenvolvimento.', 'Demonstrar o Product Increment e obter feedback.', '  Priorizar novos itens para o Product Backlog.'],
-        'answer': 'Demonstrar o Product Increment e obter feedback.'
+        'options': ['a) Analisar as métricas de produtividade da equipe.', 'b) Revisar e adaptar o processo de desenvolvimento.', 'c) Demonstrar o Product Increment e obter feedback.', 'd) Priorizar novos itens para o Product Backlog.'],
+        'answer': 'c)Demonstrar o Product Increment e obter feedback.'
     },
     {
         'id': 8,
         'question': '8) Qual é a analogia mais adequada para descrever o Sprint Backlog?',
-        'options': [' Uma lista de tarefas em um buffet de ideias.', ' Um mapa de tesouro com objetivos para explorar.', 'Um álbum de figurinhas colecionáveis para completar.', 'Uma caixa de ferramentas com os recursos necessários para construir algo incrível.'],
-        'answer': 'Uma caixa de ferramentas com os recursos necessários para construir algo incrível.'
+        'options': [' a) Uma lista de tarefas em um buffet de ideias.', 'b) Um mapa de tesouro com objetivos para explorar.', 'c) Um álbum de figurinhas colecionáveis para completar.', 'd) Uma caixa de ferramentas com os recursos necessários para construir algo incrível.'],
+        'answer': 'd) Uma caixa de ferramentas com os recursos necessários para construir algo incrível.'
     },
     {
         'id': 9,
         'question': '9) Qual seria uma comparação criativa para ilustrar a função do Burndown Chart?',
-        'options': [' Um cronômetro em uma corrida de revezamento.', 'Um mapa de navegação em uma viagem de exploração.', 'Um termômetro que mede o progresso do projeto.', '  Uma linha do tempo em uma história em quadrinhos.'],
-        'answer': 'Um termômetro que mede o progresso do projeto.'
+        'options': ['a) Um cronômetro em uma corrida de revezamento.', 'b) Um mapa de navegação em uma viagem de exploração.', 'c) Um termômetro que mede o progresso do projeto.', 'd) Uma linha do tempo em uma história em quadrinhos.'],
+        'answer': 'c) Um termômetro que mede o progresso do projeto.'
     },
     {
         'id': 10,
         'question': '10) Qual é o principal objetivo da Sprint Planning para o Scrum Team?',
-        'options': ['Definir metas pessoais para cada membro da equipe.', ' Revisar e ajustar o Product Backlog.', ' Estabelecer uma lista de tarefas para cada membro da equipe.', 'Planejar o trabalho a ser realizado durante a próxima Sprint.'],
-        'answer': 'Planejar o trabalho a ser realizado durante a próxima Sprint.'
+        'options': ['a) Definir metas pessoais para cada membro da equipe.', 'b) Revisar e ajustar o Product Backlog.', 'c) Estabelecer uma lista de tarefas para cada membro da equipe.', 'd) Planejar o trabalho a ser realizado durante a próxima Sprint.'],
+        'answer': 'd) Planejar o trabalho a ser realizado durante a próxima Sprint.'
     },
 ]
 @app.route('/mod_5')
