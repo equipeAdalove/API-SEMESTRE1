@@ -232,8 +232,8 @@ questions_3 = [
     {
         'id': 7,
         'question': '7) Por que é importante que os Development Teams sejam do tamanho certo?',
-        'options': ['Para maximizar o número de membros no time', 'Para facilitar a coordenação e colaboração.', 'Para aumentar a competitividade entre os membros.', ' Para permitir a intervenção externa mais eficaz.'],
-        'answer': 'Para facilitar a coordenação e colaboração.'
+        'options': ['a)Para maximizar o número de membros no time', 'b)Para facilitar a coordenação e colaboração.', 'c)Para aumentar a competitividade entre os membros.', 'd)Para permitir a intervenção externa mais eficaz.'],
+        'answer': 'b)Para facilitar a coordenação e colaboração.'
     },
     {
         'id': 8,
