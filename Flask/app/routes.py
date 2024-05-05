@@ -202,8 +202,8 @@ questions_3 = [
     {
         'id': 2,
         'question': '2) Qual é uma das principais responsabilidades do Scrum Master?',
-        'options': ['Ditar regras para a equipe.', 'Ser o líder absoluto da equipe.', 'Garantir que a equipe siga as regras e valores do Scrum.', 'Tomar todas as decisões importantes no projeto.'],
-        'answer': 'Garantir que a equipe siga as regras e valores do Scrum.'
+        'options': ['a)Ditar regras para a equipe.', 'b)Ser o líder absoluto da equipe.', 'c)Garantir que a equipe siga as regras e valores do Scrum.', 'd)Tomar todas as decisões importantes no projeto.'],
+        'answer': 'c)Garantir que a equipe siga as regras e valores do Scrum.'
     },
     {
         'id': 3,
