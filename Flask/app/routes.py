@@ -20,61 +20,61 @@ questions_1 = [
     {
         'id': 1,
         'question': '1) Qual é a principal transformação que o desenvolvimento de software passou nos últimos anos?',
-        'options': ['Aumento da rigidez nas abordagens de gestão de projetos.', 'Maior foco na entrega incremental.', 'Redução da competitividade no mercado.', 'A adoção de métodos ágeis.'],
+        'options': ['a)Aumento da rigidez nas abordagens de gestão de projetos.', 'b)Maior foco na entrega incremental.', 'c)Redução da competitividade no mercado.', 'd)A adoção de métodos ágeis.'],
         'answer': 'A adoção de métodos ágeis.'
     },
     {
         'id': 2,
         'question': '2) Quais são os três pilares fundamentais do Scrum?',
-        'options': [' Planejamento, execução, controle', 'Transparência, inspeção, adaptação', 'Documentação, revisão, entrega', 'Individualidade, inovação, adaptação'],
+        'options': ['a)Planejamento, execução, controle', 'b)Transparência, inspeção, adaptação', 'c)Documentação, revisão, entrega', 'd)Individualidade, inovação, adaptação'],
         'answer': 'Transparência, inspeção, adaptação'
     },
     {
         'id': 3,
         'question': '3) Onde o Scrum pode ser aplicado?',
-        'options': ['Apenas em projetos de desenvolvimento de software', 'Apenas em projetos com requisitos estáveis e definidos', 'A uma variedade de projetos, desde que haja complexidade e incerteza', 'Apenas em empresas de grande porte'],
+        'options': ['a)Apenas em projetos de desenvolvimento de software', 'b)Apenas em projetos com requisitos estáveis e definidos', 'c)A uma variedade de projetos, desde que haja complexidade e incerteza', 'd)Apenas em empresas de grande porte'],
         'answer': 'A uma variedade de projetos, desde que haja complexidade e incerteza'
     },
     {
         'id': 4,
         'question': '4) Qual é um dos benefícios do Scrum em termos de gerenciamento de projetos?',
-        'options': ['Maior rigidez no controle do progresso do projeto', 'Redução da colaboração entre os membros da equipe', ' Detecção precoce de problemas', 'Menor foco no valor entregue ao cliente'],
+        'options': ['a)Maior rigidez no controle do progresso do projeto', 'b)Redução da colaboração entre os membros da equipe', ' c)Detecção precoce de problemas', 'd)Menor foco no valor entregue ao cliente'],
         'answer': 'Detecção precoce de problemas'
     },
     {
         'id': 5,
         'question': '5) Quem são os criadores do SCRUM?',
-        'options': ['Steve Jobs e Bill Gates.', 'Jeff Sutherland e Ken Schwaber.', 'Tim Berners-Lee e Linus Torvalds.', 'Larry Page e Sergey Brin.'],
+        'options': ['a)Steve Jobs e Bill Gates.', 'b)Jeff Sutherland e Ken Schwaber.', 'c)Tim Berners-Lee e Linus Torvalds.', 'd)Larry Page e Sergey Brin.'],
         'answer': 'Jeff Sutherland e Ken Schwaber.'
     },
     {
         'id': 6,
         'question': '6) O que é enfatizado pelo Manifesto Ágil?',
-        'options': ['Indivíduos e interações, software em funcionamento, colaboração com o cliente e resposta a mudanças', 'Processos e ferramentas, documentação abrangente, negociação de contratos, seguir um plano', 'Entrega de produtos finais sem interações com o cliente', 'Priorização de documentação sobre indivíduos e interações'],
+        'options': ['a)Indivíduos e interações, software em funcionamento, colaboração com o cliente e resposta a mudanças', 'b)Processos e ferramentas, documentação abrangente, negociação de contratos, seguir um plano', 'c)Entrega de produtos finais sem interações com o cliente', 'd)Priorização de documentação sobre indivíduos e interações'],
         'answer': 'Indivíduos e interações, software em funcionamento, colaboração com o cliente e resposta a mudanças'
     },
     {
         'id': 7,
         'question': '7) Quais são alguns exemplos práticos de valores do Scrum?',
-        'options': ['Controle e estagnação', 'Rigidez e documentação abrangente', 'Foco e respeito', ' Falta de colaboração e coragem'],
+        'options': ['a)Controle e estagnação', 'b)Rigidez e documentação abrangente', 'c)Foco e respeito', 'd)Falta de colaboração e coragem'],
         'answer': 'Foco e respeito'
     },
     {
         'id': 8,
         'question': '8) O que os princípios ágeis enfatizam?',
-        'options': ['Satisfação do desenvolvedor', 'Satisfação do cliente, entrega incremental, colaboração e adaptação contínua', 'Foco na documentação e nos processos', 'Resistência à mudança'],
+        'options': ['a)Satisfação do desenvolvedor', 'b)Satisfação do cliente, entrega incremental, colaboração e adaptação contínua', 'c)Foco na documentação e nos processos', 'd)Resistência à mudança'],
         'answer': 'Satisfação do cliente, entrega incremental, colaboração e adaptação contínua'
     },
     {
         'id': 9,
         'question': '9) O que é essencial para promover a colaboração, o trabalho em equipe e a busca pela excelência no Scrum?',
-        'options': ['Rigidez e falta de adaptação', ' Resistência à mudança', 'Valores e princípios do Scrum', ' Controle centralizado'],
+        'options': ['a)Rigidez e falta de adaptação', 'b)Resistência à mudança', 'c)Valores e princípios do Scrum', 'd)Controle centralizado'],
         'answer': ' WValores e princípios do Scrum'
     },
     {
         'id': 10,
         'question': '10) O que são Métodos Ágeis?',
-        'options': ['Abordagens inflexíveis e rígidas.', 'Estratégias para reduzir a colaboração da equipe.', 'Uma abordagem flexível e adaptativa para maximizar o valor entregue ao cliente.', ' Práticas para evitar feedback contínuo.'],
+        'options': ['a)Abordagens inflexíveis e rígidas.', 'b)Estratégias para reduzir a colaboração da equipe.', 'c)Uma abordagem flexível e adaptativa para maximizar o valor entregue ao cliente.', 'd)Práticas para evitar feedback contínuo.'],
         'answer': 'Uma abordagem flexível e adaptativa para maximizar o valor entregue ao cliente.'
     },
 ]
