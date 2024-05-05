@@ -196,8 +196,8 @@ questions_3 = [
     {
         'id': 1,
         'question': '1) Qual das seguintes tarefas é uma responsabilidade do Product Owner?',
-        'options': ['Codificar funcionalidades do produto.', ' Supervisionar o plano de lançamentos.', 'Executar testes de qualidade do produto.', 'Configurar o ambiente de desenvolvimento.'],
-        'answer': 'Supervisionar o plano de lançamentos.'
+        'options': ['a)Codificar funcionalidades do produto.', 'b)Supervisionar o plano de lançamentos.', 'c)Executar testes de qualidade do produto.', 'd)Configurar o ambiente de desenvolvimento.'],
+        'answer': 'b)Supervisionar o plano de lançamentos.'
     },
     {
         'id': 2,
