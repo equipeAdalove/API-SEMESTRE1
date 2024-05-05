@@ -250,8 +250,8 @@ questions_3 = [
     {
         'id': 10,
         'question': '10) Qual dos seguintes estágios é visto como parte do desenvolvimento de um time auto-organizado no Scrum?',
-        'options': ['Planejamento.', ' Execução.', ' Conflito.', 'Monitoramento.'],
-        'answer': 'Conflito.'
+        'options': ['a)Planejamento.', 'b)Execução.', 'c)Conflito.', 'd)Monitoramento.'],
+        'answer': 'c)Conflito.'
     },
 ]
 
