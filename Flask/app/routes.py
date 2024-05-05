@@ -459,62 +459,62 @@ questions_6 = [ #question_<seu módulo>
     {
         'id': 1, #id segue padrão para todas
         'question': '1) Qual é a base da auto-organização no Scrum?', #coloque sua pergunta aqui
-        'options': ['Instruções detalhadas', 'Microgerenciamento', 'Confiança mútua e clareza dos objetivos do projeto', 'Autoritarismo', 'Delegação excessiva'], #bote as opções de resposta
-        'answer': 'Confiança mútua e clareza dos objetivos do projeto' #insira a resposta certa 
+        'options': ['a) Instruções detalhadas', 'b)Microgerenciamento', 'c) Confiança mútua e clareza dos objetivos do projeto', 'd) Autoritarismo', 'e) Delegação excessiva'], #bote as opções de resposta
+        'answer': 'c) Confiança mútua e clareza dos objetivos do projeto' #insira a resposta certa 
     },
     {
         'id': 2,
         'question': '2) O que a auto-organização promove nas equipes ágeis?',
-        'options': ['Conformidade', 'Individualismo', 'Colaboração', 'Resistência à mudança', 'Competição'],
-        'answer': 'Colaboração'
+        'options': ['a) Conformidade', 'b) Individualismo', 'c) Colaboração', 'd) Resistência à mudança', 'e) Competição'],
+        'answer': 'c) Colaboração'
     },
     {
         'id': 3,
         'question': '3) Qual é uma das responsabilidades do Scrum Master?',
-        'options': ['Promover o engajamento', 'Ditar as tarefas da equipe', 'Resolver todos os conflitos', 'Focar apenas nos resultados', 'Delegação excessiva'],
-        'answer': 'Promover o engajamento'
+        'options': ['a) Promover o engajamento', 'b) Ditar as tarefas da equipe', 'c) Resolver todos os conflitos', 'd) Focar apenas nos resultados', 'e) Delegação excessiva'],
+        'answer': 'a) Promover o engajamento'
     },
     {
         'id': 4,
         'question': '4) O que são User Stories em metodologias ágeis?',
-        'options': ['Grandes descrições de funcionalidades', 'Requisitos escritos apenas pelo Product Owner', ' Histórias irrelevantes', 'Documentos detalhados e rígidos', 'Pequenas descrições de funcionalidades'],
-        'answer': 'Pequenas descrições de funcionalidades'
+        'options': ['a) Grandes descrições de funcionalidades', 'b) Requisitos escritos apenas pelo Product Owner', 'c) Histórias irrelevantes', 'd) Documentos detalhados e rígidos', 'e) Pequenas descrições de funcionalidades'],
+        'answer': 'e) Pequenas descrições de funcionalidades'
     },
     {
         'id': 5,
         'question': '5) Qual é um dos benefícios da auto-organização?',
-        'options': ['Microgerenciamento eficiente', 'Colaboração ativa', 'Resistência à mudança', 'Conformidade absoluta', ' Falta de autonomia'],
-        'answer': 'Promover o engajamento'
+        'options': ['a) Microgerenciamento eficiente', 'b) Colaboração ativa', 'c) Resistência à mudança', 'd) Conformidade absoluta', 'e) Falta de autonomia'],
+        'answer': 'b) Colaboração ativa'
     },
     {
         'id': 6,
         'question': '6) Qual é uma das funções do Scrum Master como facilitador?',
-        'options': ['Aumentar os conflitos na equipe', 'Minimizar a comunicação entre os membros', 'Ignorar as necessidades dos stakeholders', 'Otimizar os processos de trabalho', 'Incentivar a competição entre os membros'],
-        'answer': 'Otimizar os processos de trabalho'
+        'options': ['a) Aumentar os conflitos na equipe', 'b) Minimizar a comunicação entre os membros', 'c) Ignorar as necessidades dos stakeholders', 'd) Otimizar os processos de trabalho', 'e) Incentivar a competição entre os membros'],
+        'answer': 'd) Otimizar os processos de trabalho'
     },
     {
         'id': 7,
         'question': '7) O que é a visão do produto em metodologias ágeis?',
-        'options': ['Uma declaração clara dos métodos de desenvolvimento', 'Um documento rígido com requisitos detalhados', 'Uma declaração dos objetivos e valores do produto', ' Uma descrição dos recursos do produto', 'Um plano de projeto estático'],
-        'answer': 'Uma declaração dos objetivos e valores do produto'
+        'options': ['a) Uma declaração clara dos métodos de desenvolvimento', 'b) Um documento rígido com requisitos detalhados', 'c) Uma declaração dos objetivos e valores do produto', 'd) Uma descrição dos recursos do produto', 'e) Um plano de projeto estático'],
+        'answer': 'c) Uma declaração dos objetivos e valores do produto'
     },
     {
         'id': 8,
         'question': '8) Qual é a importância dos critérios de aceitação em User Stories?',
-        'options': ['Determinar o tamanho da história', 'Garantir que a história seja implementada', 'Avaliar o desempenho do Scrum Master', 'Controlar o escopo do projeto', 'Promover a inovação na equipe'],
-        'answer': 'Garantir que a história seja implementada'
+        'options': ['a) Determinar o tamanho da história', 'b) Garantir que a história seja implementada', 'c) Avaliar o desempenho do Scrum Master', 'd) Controlar o escopo do projeto', 'e) Promover a inovação na equipe'],
+        'answer': 'b) Garantir que a história seja implementada'
     },
     {
         'id': 9,
         'question': '9) Qual é um dos elementos principais de uma User Story?',
-        'options': ['Código-fonte', ' Estrutura de dados', 'Diagrama de Gantt', ' Lista de tarefas', ' Who, What, Why'],
-        'answer': ' Who, What, Why'
+        'options': ['a) Código-fonte', 'b) Estrutura de dados', 'c) Diagrama de Gantt', 'd) Lista de tarefas', 'e) Who, What, Why'],
+        'answer': 'e) Who, What, Why'
     },
     {
         'id': 10,
         'question': '10) Qual é o papel do Product Owner em relação à visão do produto?',
-        'options': ['Criar a visão do produto sozinho', 'Desenvolver a visão do produto durante a Sprint Planning', 'Transmitir a visão do produto para a equipe', ' Ignorar a visão do produto após sua criação', 'Promover a competição entre os membros da equipe'],
-        'answer': 'Transmitir a visão do produto para a equipe'
+        'options': ['a) Criar a visão do produto sozinho', 'b) Desenvolver a visão do produto durante a Sprint Planning', 'c) Transmitir a visão do produto para a equipe', 'd) Ignorar a visão do produto após sua criação', 'e) Promover a competição entre os membros da equipe'],
+        'answer': 'c) Transmitir a visão do produto para a equipe'
     },
 ]
 
