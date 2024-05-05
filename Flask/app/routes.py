@@ -208,8 +208,8 @@ questions_3 = [
     {
         'id': 3,
         'question': '3) Qual é a principal responsabilidade do Development Team em um framework Scrum?',
-        'options': ['Estimar o esforço necessário para cada item do Product Backlog.', 'Criar partes do produto que possam ser entregues ao final de cada Sprint.', 'Gerenciar o trabalho do Scrum Master.', 'Definir as metas da Sprint.'],
-        'answer': 'Criar partes do produto que possam ser entregues ao final de cada Sprint.Criar partes do produto que possam ser entregues ao final de cada Sprint.'
+        'options': ['a)Estimar o esforço necessário para cada item do Product Backlog.', 'b)Criar partes do produto que possam ser entregues ao final de cada Sprint.', 'c)Gerenciar o trabalho do Scrum Master.', 'd)Definir as metas da Sprint.'],
+        'answer': 'b)Criar partes do produto que possam ser entregues ao final de cada Sprint.Criar partes do produto que possam ser entregues ao final de cada Sprint.'
     },
     {
         'id': 4,
