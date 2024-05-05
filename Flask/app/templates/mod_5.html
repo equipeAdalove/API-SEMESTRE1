@@ -87,11 +87,15 @@
                 margin-bottom: 80px;
                 text-align: justify;
             }
+            h1{
+                color: #1c1e21;
+            }
             .h3{
                 line-height: 1.5;
                 text-indent: 20px;
             }
             p{
+                color: #1c1e21;
                 line-height: 1.5;
                 text-indent: 50px;
             }
@@ -213,7 +217,7 @@
         <h1> Sprint Backlog</h1>
             <p><strong><i>O QUE É UM SPRINT BACKLOG?</i></strong></p>
                 <P class="pp2">O Sprint Backlog no Scrum é uma lista de tarefas específicas que a equipe de desenvolvimento escolhe para trabalhar durante um período de tempo chamado Sprint. Essas tarefas são retiradas de uma lista maior de coisas a serem feitas chamada Product Backlog. Resumindo o conteúdo em tópicos:</p>
-                    <P class="ppp"><strong><i>Composto pelos itens selecionados para implementação durante a Sprint, juntamente com o plano para transformá-los em um Incremento do produto:</i></strong></p>
+                    <P class="ppp"><strong><i>Composto pelos itens selecionados para implementação durante a Spri   nt, juntamente com o plano para transformá-los em um Incremento do produto:</i></strong></p>
                         <P class="ppp2">->Durante o planejamento da Sprint, a equipe seleciona uma quantidade de itens do Product Backlog que considera viável para trabalhar durante aquela iteração. Esses itens selecionados são movidos para o Sprint Backlog e representam o trabalho que a equipe se compromete a completar até o final da Sprint. O Sprint Backlog também inclui um plano detalhado de como esses itens serão transformados em um Incremento do produto funcional e potencialmente entregável até o final da Sprint.</p>
                     <P class="ppp"><strong><i>Geralmente organizado em um Taskboard, onde as tarefas são listadas como "To do", "Doing" e "Done":</i></strong></p>
                         <P class="ppp2">->Um Taskboard é uma ferramenta visual usada pela equipe Scrum para acompanhar o progresso das tarefas durante a Sprint. Nele, as tarefas são divididas em colunas, como "A fazer" (To do), "Fazendo" (Doing) e "Feito" (Done). Cada tarefa é representada por um cartão, e a equipe move esses cartões entre as colunas à medida que progride no trabalho.</p>
@@ -262,9 +266,8 @@
                         <p class="ppp">->O incremento entregue ao final da Sprint é potencialmente utilizável e pronto para ser implantado em produção. Embora possa não conter todos os recursos desejados, é seguro e funcional, permitindo progresso incremental.</p>
                     <p class="pp2"><strong><i>Requer código de alta qualidade:</i></strong></li>
                         <p class="ppp">->O incremento é resultado do trabalho realizado durante a Sprint, refletindo esforços para produzir código de alta qualidade. É desenvolvido com o mínimo de defeitos possível, seguindo práticas de desenvolvimento e testes rigorosas.</p>
-                    <p class="pp2"><strong><i>Resultado do trabalho realizado durante a Sprint:</i></strong></li>
+                    <p class="pp2"><strong><i>Resultado do trabalho realizado durante a Sprint:</i></strong></p>
                         <p class="ppp">->Cada incremento representa o progresso alcançado durante o período de trabalho da Sprint. Reflete a implementação de funcionalidades planejadas e priorizadas pelo Time de Desenvolvimento e Product Owner.</p>
-        </ul>
         <br>
         <img src="{{ url_for('static', filename='/imgs/increment.png') }}" class="imag" alt="#">
         <br>
@@ -297,6 +300,7 @@
         <br>
         <br>
         <h1 style="color: #1c1e21;">Defenition of Done (DOD)</h1>
+        <h1>Definition of Done (DoD)</h1>
             <p><strong><i>O que é Definition of Done (DOD)?</i></strong></p>
             <p class="pp">A Definição de Pronto (DoD) é uma lista de critérios que define quando uma funcionalidade está completa e pronta para ser entregue ao cliente ou usuário final. Resumindo o conteúdo em tópicos:</p>
                 <p class="pp2"><strong><i>CRITÉRIOS DE UMA FUNCIONALIDADE "PRONTA":</i></strong></li>
@@ -336,7 +340,7 @@
         <p><strong><i>COMO AJUDA?</i></strong></p>
             <p class="pp">Ajuda o Time de Desenvolvimento a se auto-gerenciar, pois eles podem ver claramente o progresso do trabalho e fazer ajustes se necessário para cumprir os objetivos da Sprint.</p>
             <p class="pp">Também permite que a organização acompanhe o progresso da Sprint e faça intervenções se necessário para garantir que o trabalho seja concluído dentro do prazo.</p>
-        <p><strong><i> USo pelo Product Owner:</i></strong></p>
+        <p><strong><i> Uso pelo Product Owner:</i></strong></p>
             <p class="pp">O Product Owner pode usar um tipo específico de Burndown Chart, chamado Release Burndown Chart, para gerenciar o progresso de todo o lançamento do produto (release).</p>
             <p class="pp">Isso é feito com base nas estimativas fornecidas pelo Time de Desenvolvimento, permitindo que o Product Owner acompanhe o progresso geral do projeto e tome decisões informadas sobre o lançamento do produto.</p>
         <br>
@@ -355,7 +359,7 @@
             </div>
         </div>
         <br>
-        <hr>
+        <hr class="text-dark">
         <br>
         <div class="d-grid gap-2 col-6 mx-auto">
             <a class="btn btn-lg btn-dark" href="/mod_5_quiz">Teste seu conhecimento</a>
