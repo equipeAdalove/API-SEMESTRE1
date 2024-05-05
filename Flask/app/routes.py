@@ -244,8 +244,8 @@ questions_3 = [
     {
         'id': 9,
         'question': '9) Qual é o papel do Scrum Master durante as reuniões do Scrum?',
-        'options': ['Liderar todas as discussões.', 'Garantir que todos tenham a chance de falar e que as decisões sejam tomadas rapidamente.', ' Ignorar as contribuições dos membros da equipe.', '  Impor suas próprias opiniões e decisões aos outros.'],
-        'answer': 'Garantir que todos tenham a chance de falar e que as decisões sejam tomadas rapidamente.'
+        'options': ['a)Liderar todas as discussões.', 'b)Garantir que todos tenham a chance de falar e que as decisões sejam tomadas rapidamente.', 'c)Ignorar as contribuições dos membros da equipe.', ' d)Impor suas próprias opiniões e decisões aos outros.'],
+        'answer': 'b)Garantir que todos tenham a chance de falar e que as decisões sejam tomadas rapidamente.'
     },
     {
         'id': 10,
