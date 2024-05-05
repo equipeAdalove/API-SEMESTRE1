@@ -220,8 +220,8 @@ questions_3 = [
     {
         'id': 5,
         'question': '5) Por que é importante que o Product Owner defina a visão do produto?',
-        'options': ['Para garantir que todas as funcionalidades sejam implementadas.', 'Para comunicar claramente os requisitos aos desenvolvedores.',  'Para controlar o acesso ao Product Backlog.', 'Para decidir quando cancelar uma Sprint.'],
-        'answer': 'Para comunicar claramente os requisitos aos desenvolvedores.'
+        'options': ['a)Para garantir que todas as funcionalidades sejam implementadas.', 'b)Para comunicar claramente os requisitos aos desenvolvedores.',  'c)Para controlar o acesso ao Product Backlog.', 'd)Para decidir quando cancelar uma Sprint.'],
+        'answer': 'b)Para comunicar claramente os requisitos aos desenvolvedores.'
     },
     {
         'id': 6,
