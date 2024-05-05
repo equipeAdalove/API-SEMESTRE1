@@ -20,62 +20,62 @@ questions_1 = [
     {
         'id': 1,
         'question': '1) Qual é a principal transformação que o desenvolvimento de software passou nos últimos anos?',
-        'options': ['a)Aumento da rigidez nas abordagens de gestão de projetos.', 'b)Maior foco na entrega incremental.', 'c)Redução da competitividade no mercado.', 'd)A adoção de métodos ágeis.'],
-        'answer': 'A adoção de métodos ágeis.'
+        'options': ['a) Aumento da rigidez nas abordagens de gestão de projetos.', 'b) Maior foco na entrega incremental.', 'c) Redução da competitividade no mercado.', 'd) A adoção de métodos ágeis.'],
+        'answer': 'd) A adoção de métodos ágeis.'
     },
     {
         'id': 2,
         'question': '2) Quais são os três pilares fundamentais do Scrum?',
-        'options': ['a)Planejamento, execução, controle', 'b)Transparência, inspeção, adaptação', 'c)Documentação, revisão, entrega', 'd)Individualidade, inovação, adaptação'],
-        'answer': 'Transparência, inspeção, adaptação'
+        'options': ['a) Planejamento, execução, controle', 'b) Transparência, inspeção, adaptação', 'c) Documentação, revisão, entrega', 'd) Individualidade, inovação, adaptação'],
+        'answer': 'b) Transparência, inspeção, adaptação'
     },
     {
         'id': 3,
         'question': '3) Onde o Scrum pode ser aplicado?',
-        'options': ['a)Apenas em projetos de desenvolvimento de software', 'b)Apenas em projetos com requisitos estáveis e definidos', 'c)A uma variedade de projetos, desde que haja complexidade e incerteza', 'd)Apenas em empresas de grande porte'],
-        'answer': 'A uma variedade de projetos, desde que haja complexidade e incerteza'
+        'options': ['a) Apenas em projetos de desenvolvimento de software', 'b) Apenas em projetos com requisitos estáveis e definidos', 'c) A uma variedade de projetos, desde que haja complexidade e incerteza', 'd) Apenas em empresas de grande porte'],
+        'answer': 'c) A uma variedade de projetos, desde que haja complexidade e incerteza'
     },
     {
         'id': 4,
         'question': '4) Qual é um dos benefícios do Scrum em termos de gerenciamento de projetos?',
-        'options': ['a)Maior rigidez no controle do progresso do projeto', 'b)Redução da colaboração entre os membros da equipe', ' c)Detecção precoce de problemas', 'd)Menor foco no valor entregue ao cliente'],
-        'answer': 'Detecção precoce de problemas'
+        'options': ['a) Maior rigidez no controle do progresso do projeto', 'b) Redução da colaboração entre os membros da equipe', ' c) Detecção precoce de problemas', 'd) Menor foco no valor entregue ao cliente'],
+        'answer': 'c) Detecção precoce de problemas'
     },
     {
         'id': 5,
         'question': '5) Quem são os criadores do SCRUM?',
-        'options': ['a)Steve Jobs e Bill Gates.', 'b)Jeff Sutherland e Ken Schwaber.', 'c)Tim Berners-Lee e Linus Torvalds.', 'd)Larry Page e Sergey Brin.'],
-        'answer': 'Jeff Sutherland e Ken Schwaber.'
+        'options': ['a) Steve Jobs e Bill Gates.', 'b) Jeff Sutherland e Ken Schwaber.', 'c) Tim Berners-Lee e Linus Torvalds.', 'd) Larry Page e Sergey Brin.'],
+        'answer': 'b) Jeff Sutherland e Ken Schwaber.'
     },
     {
         'id': 6,
         'question': '6) O que é enfatizado pelo Manifesto Ágil?',
-        'options': ['a)Indivíduos e interações, software em funcionamento, colaboração com o cliente e resposta a mudanças', 'b)Processos e ferramentas, documentação abrangente, negociação de contratos, seguir um plano', 'c)Entrega de produtos finais sem interações com o cliente', 'd)Priorização de documentação sobre indivíduos e interações'],
-        'answer': 'Indivíduos e interações, software em funcionamento, colaboração com o cliente e resposta a mudanças'
+        'options': ['a) Indivíduos e interações, software em funcionamento, colaboração com o cliente e resposta a mudanças', 'b) Processos e ferramentas, documentação abrangente, negociação de contratos, seguir um plano', 'c) Entrega de produtos finais sem interações com o cliente', 'd) Priorização de documentação sobre indivíduos e interações'],
+        'answer': 'a) Indivíduos e interações, software em funcionamento, colaboração com o cliente e resposta a mudanças'
     },
     {
         'id': 7,
         'question': '7) Quais são alguns exemplos práticos de valores do Scrum?',
-        'options': ['a)Controle e estagnação', 'b)Rigidez e documentação abrangente', 'c)Foco e respeito', 'd)Falta de colaboração e coragem'],
-        'answer': 'Foco e respeito'
+        'options': ['a) Controle e estagnação', 'b) Rigidez e documentação abrangente', 'c) Foco e respeito', 'd) Falta de colaboração e coragem'],
+        'answer': 'c) Foco e respeito'
     },
     {
         'id': 8,
         'question': '8) O que os princípios ágeis enfatizam?',
-        'options': ['a)Satisfação do desenvolvedor', 'b)Satisfação do cliente, entrega incremental, colaboração e adaptação contínua', 'c)Foco na documentação e nos processos', 'd)Resistência à mudança'],
-        'answer': 'Satisfação do cliente, entrega incremental, colaboração e adaptação contínua'
+        'options': ['a) Satisfação do desenvolvedor', 'b) Satisfação do cliente, entrega incremental, colaboração e adaptação contínua', 'c) Foco na documentação e nos processos', 'd) Resistência à mudança'],
+        'answer': 'b) Satisfação do cliente, entrega incremental, colaboração e adaptação contínua'
     },
     {
         'id': 9,
         'question': '9) O que é essencial para promover a colaboração, o trabalho em equipe e a busca pela excelência no Scrum?',
-        'options': ['a)Rigidez e falta de adaptação', 'b)Resistência à mudança', 'c)Valores e princípios do Scrum', 'd)Controle centralizado'],
-        'answer': ' WValores e princípios do Scrum'
+        'options': ['a) Rigidez e falta de adaptação', 'b) Resistência à mudança', 'c) Valores e princípios do Scrum', 'd) Controle centralizado'],
+        'answer': 'c) Valores e princípios do Scrum'
     },
     {
         'id': 10,
         'question': '10) O que são Métodos Ágeis?',
-        'options': ['a)Abordagens inflexíveis e rígidas.', 'b)Estratégias para reduzir a colaboração da equipe.', 'c)Uma abordagem flexível e adaptativa para maximizar o valor entregue ao cliente.', 'd)Práticas para evitar feedback contínuo.'],
-        'answer': 'Uma abordagem flexível e adaptativa para maximizar o valor entregue ao cliente.'
+        'options': ['a) Abordagens inflexíveis e rígidas.', 'b) Estratégias para reduzir a colaboração da equipe.', 'c) Uma abordagem flexível e adaptativa para maximizar o valor entregue ao cliente.', 'd) Práticas para evitar feedback contínuo.'],
+        'answer': 'c) Uma abordagem flexível e adaptativa para maximizar o valor entregue ao cliente.'
     },
 ]
 
@@ -112,62 +112,62 @@ questions_2 = [
     {
         'id': 1,
         'question': '1) Qual é um dos pilares fundamentais do Scrum, que permeia todas as atividades e interações da equipe?',
-        'options': ['A Inspeção', 'A Adaptação', 'Possuir Transparência', 'Colaboração'],
-        'answer': 'Possuir Transparência'
+        'options': ['a) A Inspeção', 'b) A Adaptação', 'c) Possuir Transparência', 'd) Colaboração'],
+        'answer': 'c) Possuir Transparência'
     },
     {
         'id': 2,
         'question': '2) Durante o planejamento do sprint, a equipe seleciona itens para incluir no backlog do sprint com base em:',
-        'options': ['Feedback dos stakeholders', 'Prioridades estabelecidas pela equipe', 'Revisões de sprint', 'Objetivos do produto'],
-        'answer': 'Prioridades estabelecidas pela equipe'
+        'options': ['a) Feedback dos stakeholders', 'b) Prioridades estabelecidas pela equipe', 'c) Revisões de sprint', 'd) Objetivos do produto'],
+        'answer': 'b) Prioridades estabelecidas pela equipe'
     },
     {
         'id': 3,
         'question': '3) O que acontece durante as reuniões diárias de stand-up no Scrum?',
-        'options': ['Análises da sprint', 'Discussão dos resultados do sprint', 'Compartilhamento do progresso do trabalho', 'Atualização do backlog do sprint'],
-        'answer': 'Compartilhamento do progresso do trabalho'
+        'options': ['a) Análises da sprint', 'b) Discussão dos resultados do sprint', 'c) Compartilhamento do progresso do trabalho', 'd) Atualização do backlog do sprint'],
+        'answer': 'c) Compartilhamento do progresso do trabalho'
     },
     {
         'id': 4,
         'question': '4) Qual é uma das oportunidades importantes de inspeção no Scrum, onde a equipe reflete sobre o processo de trabalho e identifica melhorias?',
-        'options': ['Reunião diária de stand-up', 'Planejamento do sprint', 'Análise de sprint', 'Retrospectiva do sprint'],
-        'answer': 'Retrospectiva do sprint'
+        'options': ['a) Reunião diária de stand-up', 'b) Planejamento do sprint', 'c) Análise de sprint', 'd) Retrospectiva do sprint'],
+        'answer': 'd) Retrospectiva do sprint'
     },
     {
         'id': 5,
         'question': '5) O que permite que o Scrum responda de forma eficaz aos desafios e mudanças ao longo do ciclo de vida do projeto?',
-        'options': ['Transparência', 'Inspeção',  'Adaptação', 'Todas as opções acima'],
-        'answer': 'Todas as opções acima'
+        'options': ['a) Transparência', 'b) Inspeção',  'c) Adaptação', 'd) Todas as opções acima'],
+        'answer': 'd) Todas as opções acima'
     },
     {
         'id': 6,
         'question': '6) Durante a adaptação no Scrum, que tipo de ajustes a equipe pode fazer no backlog do sprint?',
-        'options': ['Alterações na estrutura das reuniões diárias', 'Adição ou remoção de tarefas com base no feedback do cliente', 'Revisão do progresso do trabalho', 'Definição de metas para o próximo sprint'],
-        'answer': 'Adição ou remoção de tarefas com base no feedback do cliente'
+        'options': ['a) Alterações na estrutura das reuniões diárias', 'b) Adição ou remoção de tarefas com base no feedback do cliente', 'c) Revisão do progresso do trabalho', 'd) Definição de metas para o próximo sprint'],
+        'answer': 'b) Adição ou remoção de tarefas com base no feedback do cliente'
     },
     {
         'id': 7,
         'question': '7) Qual é o objetivo principal das reuniões de revisão de sprint no Scrum?',
-        'options': ['Selecionar itens para o backlog do sprint', 'Apresentar o trabalho concluído aos stakeholders', 'Identificar tendências preocupantes', 'Refletir sobre o processo de trabalho'],
-        'answer': 'Apresentar o trabalho concluído aos stakeholders'
+        'options': ['a) Selecionar itens para o backlog do sprint', 'b) Apresentar o trabalho concluído aos stakeholders', 'c) Identificar tendências preocupantes', 'd) Refletir sobre o processo de trabalho'],
+        'answer': 'b) Apresentar o trabalho concluído aos stakeholders'
     },
     {
         'id': 8,
         'question': '8) O que é considerado um artefato central do Scrum que captura todas as funcionalidades, requisitos e correções desejadas para o produto em desenvolvimento?',
-        'options': ['Reuniões diária de stand-up', 'Backlog do Sprint', 'Backlog do Produto', 'Retrospectiva do Sprint'],
-        'answer': 'Backlog do Produto'
+        'options': ['a) Reuniões diária de stand-up', 'b) Backlog do Sprint', 'c) Backlog do Produto', 'd) Retrospectiva do Sprint'],
+        'answer': 'c) Backlog do Produto'
     },
     {
         'id': 9,
         'question': '9) Quando ocorre a inspeção do progresso e dos resultados no Scrum?',
-        'options': ['Durante o planejamento do sprint', 'Nas reuniões diárias de stand-up', 'Na análise de sprint', 'Na retrospectiva do sprint'],
-        'answer': 'Na análise de sprint'
+        'options': ['a) Durante o planejamento do sprint', 'b) Nas reuniões diárias de stand-up', 'c) Na análise de sprint', 'd) Na retrospectiva do sprint'],
+        'answer': 'c) Na análise de sprint'
     },
     {
         'id': 10,
         'question': '10) Por que a adaptabilidade é essencial para o sucesso do Scrum?',
-        'options': ['Para garantir que todas as tarefas sejam concluídas dentro do prazo', 'Para responder eficazmente às mudanças no ambiente do projeto', 'Para manter a qualidade do produto', 'Para garantir a transparência em todas as atividades da equipe'],
-        'answer': 'Para responder eficazmente às mudanças no ambiente do projeto'
+        'options': ['a) Para garantir que todas as tarefas sejam concluídas dentro do prazo', 'b) Para responder eficazmente às mudanças no ambiente do projeto', 'c) Para manter a qualidade do produto', 'd) Para garantir a transparência em todas as atividades da equipe'],
+        'answer': 'b) Para responder eficazmente às mudanças no ambiente do projeto'
     },
 ]
 
