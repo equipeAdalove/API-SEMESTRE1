@@ -226,8 +226,8 @@ questions_3 = [
     {
         'id': 6,
         'question': '6) Como o Scrum Master lidera a equipe?',
-        'options': ['Através do controle autoritário.', 'Estabelecendo regras rígidas.', 'Pelo exemplo e pelo conhecimento.', 'Ignorando as necessidades individuais dos membros da equipe.'],
-        'answer': 'Pelo exemplo e pelo conhecimento.'
+        'options': ['a)Através do controle autoritário.', 'b)Estabelecendo regras rígidas.', 'c)Pelo exemplo e pelo conhecimento.', 'd)Ignorando as necessidades individuais dos membros da equipe.'],
+        'answer': 'c)Pelo exemplo e pelo conhecimento.'
     },
     {
         'id': 7,
