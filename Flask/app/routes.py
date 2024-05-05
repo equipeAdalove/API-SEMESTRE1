@@ -214,8 +214,8 @@ questions_3 = [
     {
         'id': 4,
         'question': '4) Qual das seguintes afirmações melhor descreve uma característica das equipes Scrum?',
-        'options': ['As equipes Scrum têm posições fixas, onde cada membro desempenha sempre o mesmo papel em todos os projetos.', 'As equipes Scrum são autogerenciadas e possuem a capacidade de decidir como realizar o trabalho sem supervisão constante.', 'As equipes Scrum dependem fortemente de recursos externos para realizar suas tarefas, tornando-as menos ágeis.', 'As equipes Scrum são especializadas em uma única habilidade e não possuem versatilidade para realizar diferentes tarefas.'],
-        'answer': 'As equipes Scrum são autogerenciadas e possuem a capacidade de decidir como realizar o trabalho sem supervisão constante.'
+        'options': ['a)As equipes Scrum têm posições fixas, onde cada membro desempenha sempre o mesmo papel em todos os projetos.', 'b)As equipes Scrum são autogerenciadas e possuem a capacidade de decidir como realizar o trabalho sem supervisão constante.', 'c)As equipes Scrum dependem fortemente de recursos externos para realizar suas tarefas, tornando-as menos ágeis.', 'd)As equipes Scrum são especializadas em uma única habilidade e não possuem versatilidade para realizar diferentes tarefas.'],
+        'answer': 'b)As equipes Scrum são autogerenciadas e possuem a capacidade de decidir como realizar o trabalho sem supervisão constante.'
     },
     {
         'id': 5,
