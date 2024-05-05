@@ -238,8 +238,8 @@ questions_3 = [
     {
         'id': 8,
         'question': '8) Quem tem a autoridade para aceitar ou rejeitar o trabalho concluído no final de cada ciclo de trabalho?',
-        'options': [' O Scrum Master.', ' A equipe de desenvolvimento.', 'O Product Owner.', 'O cliente final.'],
-        'answer': 'O Product Owner.'
+        'options': ['a)O Scrum Master.', 'b)A equipe de desenvolvimento.', 'c)O Product Owner.', 'd)O cliente final.'],
+        'answer': 'c)O Product Owner.'
     },
     {
         'id': 9,
