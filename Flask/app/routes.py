@@ -196,62 +196,62 @@ questions_3 = [
     {
         'id': 1,
         'question': '1) Qual das seguintes tarefas é uma responsabilidade do Product Owner?',
-        'options': ['a)Codificar funcionalidades do produto.', 'b)Supervisionar o plano de lançamentos.', 'c)Executar testes de qualidade do produto.', 'd)Configurar o ambiente de desenvolvimento.'],
-        'answer': 'b)Supervisionar o plano de lançamentos.'
+        'options': ['a) Codificar funcionalidades do produto.', 'b) Supervisionar o plano de lançamentos.', 'c) Executar testes de qualidade do produto.', 'd) Configurar o ambiente de desenvolvimento.'],
+        'answer': 'b) Supervisionar o plano de lançamentos.'
     },
     {
         'id': 2,
         'question': '2) Qual é uma das principais responsabilidades do Scrum Master?',
-        'options': ['a)Ditar regras para a equipe.', 'b)Ser o líder absoluto da equipe.', 'c)Garantir que a equipe siga as regras e valores do Scrum.', 'd)Tomar todas as decisões importantes no projeto.'],
-        'answer': 'c)Garantir que a equipe siga as regras e valores do Scrum.'
+        'options': ['a) Ditar regras para a equipe.', 'b) Ser o líder absoluto da equipe.', 'c) Garantir que a equipe siga as regras e valores do Scrum.', 'd) Tomar todas as decisões importantes no projeto.'],
+        'answer': 'c) Garantir que a equipe siga as regras e valores do Scrum.'
     },
     {
         'id': 3,
         'question': '3) Qual é a principal responsabilidade do Development Team em um framework Scrum?',
-        'options': ['a)Estimar o esforço necessário para cada item do Product Backlog.', 'b)Criar partes do produto que possam ser entregues ao final de cada Sprint.', 'c)Gerenciar o trabalho do Scrum Master.', 'd)Definir as metas da Sprint.'],
-        'answer': 'b)Criar partes do produto que possam ser entregues ao final de cada Sprint.Criar partes do produto que possam ser entregues ao final de cada Sprint.'
+        'options': ['a) Estimar o esforço necessário para cada item do Product Backlog.', 'b) Criar partes do produto que possam ser entregues ao final de cada Sprint.', 'c) Gerenciar o trabalho do Scrum Master.', 'd) Definir as metas da Sprint.'],
+        'answer': 'b) Criar partes do produto que possam ser entregues ao final de cada Sprint.Criar partes do produto que possam ser entregues ao final de cada Sprint.'
     },
     {
         'id': 4,
         'question': '4) Qual das seguintes afirmações melhor descreve uma característica das equipes Scrum?',
-        'options': ['a)As equipes Scrum têm posições fixas, onde cada membro desempenha sempre o mesmo papel em todos os projetos.', 'b)As equipes Scrum são autogerenciadas e possuem a capacidade de decidir como realizar o trabalho sem supervisão constante.', 'c)As equipes Scrum dependem fortemente de recursos externos para realizar suas tarefas, tornando-as menos ágeis.', 'd)As equipes Scrum são especializadas em uma única habilidade e não possuem versatilidade para realizar diferentes tarefas.'],
-        'answer': 'b)As equipes Scrum são autogerenciadas e possuem a capacidade de decidir como realizar o trabalho sem supervisão constante.'
+        'options': ['a) As equipes Scrum têm posições fixas, onde cada membro desempenha sempre o mesmo papel em todos os projetos.', 'b) As equipes Scrum são autogerenciadas e possuem a capacidade de decidir como realizar o trabalho sem supervisão constante.', 'c) As equipes Scrum dependem fortemente de recursos externos para realizar suas tarefas, tornando-as menos ágeis.', 'd) As equipes Scrum são especializadas em uma única habilidade e não possuem versatilidade para realizar diferentes tarefas.'],
+        'answer': 'b) As equipes Scrum são autogerenciadas e possuem a capacidade de decidir como realizar o trabalho sem supervisão constante.'
     },
     {
         'id': 5,
         'question': '5) Por que é importante que o Product Owner defina a visão do produto?',
-        'options': ['a)Para garantir que todas as funcionalidades sejam implementadas.', 'b)Para comunicar claramente os requisitos aos desenvolvedores.',  'c)Para controlar o acesso ao Product Backlog.', 'd)Para decidir quando cancelar uma Sprint.'],
-        'answer': 'b)Para comunicar claramente os requisitos aos desenvolvedores.'
+        'options': ['a) Para garantir que todas as funcionalidades sejam implementadas.', 'b) Para comunicar claramente os requisitos aos desenvolvedores.',  'c) Para controlar o acesso ao Product Backlog.', 'd) Para decidir quando cancelar uma Sprint.'],
+        'answer': 'b) Para comunicar claramente os requisitos aos desenvolvedores.'
     },
     {
         'id': 6,
         'question': '6) Como o Scrum Master lidera a equipe?',
-        'options': ['a)Através do controle autoritário.', 'b)Estabelecendo regras rígidas.', 'c)Pelo exemplo e pelo conhecimento.', 'd)Ignorando as necessidades individuais dos membros da equipe.'],
-        'answer': 'c)Pelo exemplo e pelo conhecimento.'
+        'options': ['a) Através do controle autoritário.', 'b) Estabelecendo regras rígidas.', 'c) Pelo exemplo e pelo conhecimento.', 'd) Ignorando as necessidades individuais dos membros da equipe.'],
+        'answer': 'c) Pelo exemplo e pelo conhecimento.'
     },
     {
         'id': 7,
         'question': '7) Por que é importante que os Development Teams sejam do tamanho certo?',
-        'options': ['a)Para maximizar o número de membros no time', 'b)Para facilitar a coordenação e colaboração.', 'c)Para aumentar a competitividade entre os membros.', 'd)Para permitir a intervenção externa mais eficaz.'],
-        'answer': 'b)Para facilitar a coordenação e colaboração.'
+        'options': ['a) Para maximizar o número de membros no time', 'b) Para facilitar a coordenação e colaboração.', 'c) Para aumentar a competitividade entre os membros.', 'd) Para permitir a intervenção externa mais eficaz.'],
+        'answer': 'b) Para facilitar a coordenação e colaboração.'
     },
     {
         'id': 8,
         'question': '8) Quem tem a autoridade para aceitar ou rejeitar o trabalho concluído no final de cada ciclo de trabalho?',
-        'options': ['a)O Scrum Master.', 'b)A equipe de desenvolvimento.', 'c)O Product Owner.', 'd)O cliente final.'],
-        'answer': 'c)O Product Owner.'
+        'options': ['a) O Scrum Master.', 'b) A equipe de desenvolvimento.', 'c) O Product Owner.', 'd) O cliente final.'],
+        'answer': 'c) O Product Owner.'
     },
     {
         'id': 9,
         'question': '9) Qual é o papel do Scrum Master durante as reuniões do Scrum?',
-        'options': ['a)Liderar todas as discussões.', 'b)Garantir que todos tenham a chance de falar e que as decisões sejam tomadas rapidamente.', 'c)Ignorar as contribuições dos membros da equipe.', ' d)Impor suas próprias opiniões e decisões aos outros.'],
-        'answer': 'b)Garantir que todos tenham a chance de falar e que as decisões sejam tomadas rapidamente.'
+        'options': ['a) Liderar todas as discussões.', 'b) Garantir que todos tenham a chance de falar e que as decisões sejam tomadas rapidamente.', 'c) Ignorar as contribuições dos membros da equipe.', ' d) Impor suas próprias opiniões e decisões aos outros.'],
+        'answer': 'b) Garantir que todos tenham a chance de falar e que as decisões sejam tomadas rapidamente.'
     },
     {
         'id': 10,
         'question': '10) Qual dos seguintes estágios é visto como parte do desenvolvimento de um time auto-organizado no Scrum?',
-        'options': ['a)Planejamento.', 'b)Execução.', 'c)Conflito.', 'd)Monitoramento.'],
-        'answer': 'c)Conflito.'
+        'options': ['a) Planejamento.', 'b) Execução.', 'c) Conflito.', 'd) Monitoramento.'],
+        'answer': 'c) Conflito.'
     },
 ]
 
@@ -333,7 +333,7 @@ questions_4 = [
         'id': 9,
         'question': '9) Quais são os principais tópicos que podem ser incluídos em uma agenda para uma Release Planning Meeting?',
         'options': ['Revisão do propósito da reunião e estrutura; Discussão de problemas pessoais.', 'Apresentação de gráficos de status das últimas Sprints; Decisões sobre tecnologias a serem utilizadas.', 'Definição da meta para a Release; Montagem de gráficos de Release Burndown.', 'Discussão sobre o roadmap do produto; Revisão dos documentos legais.'],
-        'answer': 'efinição da meta para a Release; Montagem de gráficos de Release Burndown.'
+        'answer': 'Definição da meta para a Release; Montagem de gráficos de Release Burndown.'
     },
     {
         'id': 10,
