@@ -284,62 +284,62 @@ questions_4 = [
     {
         'id': 1,
         'question': '1) Qual é a função principal da Sprint Planning Meeting?',
-        'options': ['Rever o progresso da Sprint.', 'Planejar as entregas em produção.', 'Planejar o trabalho a ser realizado durante a Sprint.', 'Coletar feedbacks do produto.'],
-        'answer': 'Planejar o trabalho a ser realizado durante a Sprint.'
+        'options': ['a) Rever o progresso da Sprint.', 'b) Planejar as entregas em produção.', 'c) Planejar o trabalho a ser realizado durante a Sprint.', 'd) Coletar feedbacks do produto.'],
+        'answer': 'c) Planejar o trabalho a ser realizado durante a Sprint.'
     },
     {
         'id': 2,
         'question': '2) Como é dividida a Sprint Planning Meeting em suas duas partes e quais são as perguntas que cada parte responde?',
-        'options': ['Uma parte: Planejar o trabalho da Sprint; Segunda parte: Avaliar o progresso da Sprint.', 'Uma parte: O que será entregue?; Segunda parte: Como vamos entregar?', 'Uma parte: Estimar o tempo; Segunda parte: Coletar feedbacks do cliente.', 'Uma parte: Discutir problemas; Segunda parte: Resolver impedimentos.'],
-        'answer': 'Uma parte: O que será entregue?; Segunda parte: Como vamos entregar?'
+        'options': ['a) Uma parte: Planejar o trabalho da Sprint; Segunda parte: Avaliar o progresso da Sprint.', 'b) Uma parte: O que será entregue?; Segunda parte: Como vamos entregar?', 'c) Uma parte: Estimar o tempo; Segunda parte: Coletar feedbacks do cliente.', 'd) Uma parte: Discutir problemas; Segunda parte: Resolver impedimentos.'],
+        'answer': 'b) Uma parte: O que será entregue?; Segunda parte: Como vamos entregar?'
     },
     {
         'id': 3,
         'question': '3) Qual é o propósito da Daily Scrum e como ela beneficia o Time de Desenvolvimento?',
-        'options': ['Reportar para o Scrum Master.', 'Sincronizar o trabalho e resolver impedimentos.', 'Revisar o progresso da Sprint.', 'Discutir questões técnicas.'],
-        'answer': ' Sincronizar o trabalho e resolver impedimentos.'
+        'options': ['a) Reportar para o Scrum Master.', 'b) Sincronizar o trabalho e resolver impedimentos.', 'c) Revisar o progresso da Sprint.', 'd) Discutir questões técnicas.'],
+        'answer': 'b) Sincronizar o trabalho e resolver impedimentos.'
     },
     {
         'id': 4,
         'question': '4) Quais são as três perguntas padrão que cada membro responde durante a Daily Scrum?',
-        'options': ['O que fiz desde a última reunião, o que farei até a próxima e qual o meu cargo?', 'O que realizei desde a última Daily Scrum, quais são os meus planos até a próxima e houve algum obstáculo?', 'Quem impediu o meu progresso, o que realizei e o que planejo fazer?', 'O que realizei desde a última reunião, quem está com problemas e quem realizou mais tarefas?'],
-        'answer': 'O que realizei desde a última Daily Scrum, quais são os meus planos até a próxima e houve algum obstáculo?'
+        'options': ['a) O que fiz desde a última reunião, o que farei até a próxima e qual o meu cargo?', 'b) O que realizei desde a última Daily Scrum, quais são os meus planos até a próxima e houve algum obstáculo?', 'c) Quem impediu o meu progresso, o que realizei e o que planejo fazer?', 'd) O que realizei desde a última reunião, quem está com problemas e quem realizou mais tarefas?'],
+        'answer': 'b) O que realizei desde a última Daily Scrum, quais são os meus planos até a próxima e houve algum obstáculo?'
     },
     {
         'id': 5,
         'question': '5) Quais são os objetivos da Sprint Review e quem participa dessa cerimônia?',
-        'options': ['Rever o progresso da Sprint; Apenas o Scrum Master.', 'Inspecionar o produto e coletar feedbacks; Todos interessados no produto.', 'Resolver impedimentos; Apenas o Product Owner.', 'Definir a meta da Sprint; Apenas o Development Team.'],
-        'answer': 'Inspecionar o produto e coletar feedbacks; Todos interessados no produto.'
+        'options': ['a) Rever o progresso da Sprint; Apenas o Scrum Master.', 'b) Inspecionar o produto e coletar feedbacks; Todos interessados no produto.', 'c) Resolver impedimentos; Apenas o Product Owner.', 'd) Definir a meta da Sprint; Apenas o Development Team.'],
+        'answer': 'b) Inspecionar o produto e coletar feedbacks; Todos interessados no produto.'
     },
     {
         'id': 6,
         'question': '6) Qual é a importância da Sprint Retrospective e o que geralmente é discutido durante essa reunião?',
-        'options': ['Identificar problemas e discutir sobre o próximo sprint; Técnicas de programação.', 'Rever o progresso da Sprint e discutir problemas pessoais; Avaliar o mercado.', 'Reflexão e melhoria contínua do processo; Interação entre os membros do time e práticas utilizadas.', 'Decidir os próximos passos do projeto; Revisão de documentos.'],
-        'answer': 'Reflexão e melhoria contínua do processo; Interação entre os membros do time e práticas utilizadas.'
+        'options': ['a) Identificar problemas e discutir sobre o próximo sprint; Técnicas de programação.', 'b) Rever o progresso da Sprint e discutir problemas pessoais; Avaliar o mercado.', 'c) Reflexão e melhoria contínua do processo; Interação entre os membros do time e práticas utilizadas.', 'd) Decidir os próximos passos do projeto; Revisão de documentos.'],
+        'answer': 'c) Reflexão e melhoria contínua do processo; Interação entre os membros do time e práticas utilizadas.'
     },
     {
         'id': 7,
         'question': '7) O que é uma Release Planning Meeting e quando ela ocorre?',
-        'options': ['Uma reunião para revisar o progresso da Sprint; No início de cada Sprint.', 'Uma reunião para planejar as entregas em produção; Ao final de uma Sprint.', 'Uma reunião para resolver impedimentos; Diariamente.', 'Uma reunião para revisar o Product Backlog; Mensalmente.'],
-        'answer': 'Uma reunião para planejar as entregas em produção; Ao final de uma Sprint.'
+        'options': ['a) Uma reunião para revisar o progresso da Sprint; No início de cada Sprint.', 'b) Uma reunião para planejar as entregas em produção; Ao final de uma Sprint.', 'c) Uma reunião para resolver impedimentos; Diariamente.', 'd) Uma reunião para revisar o Product Backlog; Mensalmente.'],
+        'answer': 'b) Uma reunião para planejar as entregas em produção; Ao final de uma Sprint.'
     },
     {
         'id': 8,
         'question': '8) Por que é importante manter o período entre as Releases o mais curto possível?',
-        'options': ['Para evitar reuniões longas.', 'Para aumentar a precisão do planejamento.', 'Para obter feedbacks mais rápidos e frequentes.', 'Para reduzir a participação dos membros do Time Scrum.'],
-        'answer': 'Para obter feedbacks mais rápidos e frequentes.'
+        'options': ['a) Para evitar reuniões longas.', 'b) Para aumentar a precisão do planejamento.', 'c) Para obter feedbacks mais rápidos e frequentes.', 'd) Para reduzir a participação dos membros do Time Scrum.'],
+        'answer': 'c) Para obter feedbacks mais rápidos e frequentes.'
     },
     {
         'id': 9,
         'question': '9) Quais são os principais tópicos que podem ser incluídos em uma agenda para uma Release Planning Meeting?',
-        'options': ['Revisão do propósito da reunião e estrutura; Discussão de problemas pessoais.', 'Apresentação de gráficos de status das últimas Sprints; Decisões sobre tecnologias a serem utilizadas.', 'Definição da meta para a Release; Montagem de gráficos de Release Burndown.', 'Discussão sobre o roadmap do produto; Revisão dos documentos legais.'],
-        'answer': 'Definição da meta para a Release; Montagem de gráficos de Release Burndown.'
+        'options': ['a) Revisão do propósito da reunião e estrutura; Discussão de problemas pessoais.', 'b) Apresentação de gráficos de status das últimas Sprints; Decisões sobre tecnologias a serem utilizadas.', 'c) Definição da meta para a Release; Montagem de gráficos de Release Burndown.', 'd) Discussão sobre o roadmap do produto; Revisão dos documentos legais.'],
+        'answer': 'c) Definição da meta para a Release; Montagem de gráficos de Release Burndown.'
     },
     {
         'id': 10,
         'question': '10) Durante a Sprint Planning Meeting, quem apresenta os itens prioritários do Product Backlog ao Time Scrum?',
-        'options': ['Scrum Master.', 'Product Owner.', 'Todos os membros do Time Scrum.', 'Development Team.'],
-        'answer': 'Product Owner.'
+        'options': ['a) Scrum Master.', 'b) Product Owner.', 'c) Todos os membros do Time Scrum.', 'd) Development Team.'],
+        'answer': 'b) Product Owner.'
     },
 ]
 
@@ -349,7 +349,7 @@ def modulo_4():
 
 @app.route('/mod_4_quiz')  #altere apenas o número do seu módulo  )
 def modulo_4_quiz():   #altere apenas o número do seu módulo          
-    return render_template('mod_4_quiz.html', questions=questions_6)   #altere apenas o número do seu módulo
+    return render_template('mod_4_quiz.html', questions=questions_4)   #altere apenas o número do seu módulo
 
 @app.route('/submit_quiz_4', methods=['POST'])  #altere apenas o número do seu módulo
 def submit_quiz_4():  #altere apenas o número do seu módulo
