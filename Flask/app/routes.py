@@ -547,62 +547,62 @@ questions_7 = [
         {
         'id': 1,
         'question': '1) Qual é o principal objetivo do Planning Poker no SCRUM?',
-        'options': ['Determinar quem são os membros mais rápidos da equipe.', 'Estabelecer um consenso sobre o esforço necessário para as tarefas.','Aumentar a competição entre os membros da equipe.', 'Acelerar o processo de desenvolvimento de software.','Identificar os membros da equipe que precisam de treinamento adicional.'],
-        'answer': 'Estabelecer um consenso sobre o esforço necessário para as tarefas.'
+        'options': ['a) Determinar quem são os membros mais rápidos da equipe.', 'b) Estabelecer um consenso sobre o esforço necessário para as tarefas.','c) Aumentar a competição entre os membros da equipe.', 'd) Acelerar o processo de desenvolvimento de software.','e) Identificar os membros da equipe que precisam de treinamento adicional.'],
+        'answer': 'b) Estabelecer um consenso sobre o esforço necessário para as tarefas.'
     },
     {
         'id': 2,
         'question': '2) O que os membros da equipe de desenvolvimento fazem durante uma sessão de Planning Poker?',
-        'options': ['Estimam o esforço necessário para as tarefas.', 'Supervisionam o processo de estimativa.', 'Fornecem feedback sobre o progresso do projeto.', 'Decidem quais tarefas devem ser priorizadas.','Definem os requisitos das tarefas a serem estimadas.'],
-        'answer': 'Estimam o esforço necessário para as tarefas.'
+        'options': ['a) Estimam o esforço necessário para as tarefas.', 'b) Supervisionam o processo de estimativa.', 'c) Fornecem feedback sobre o progresso do projeto.', 'd) Decidem quais tarefas devem ser priorizadas.','e) Definem os requisitos das tarefas a serem estimadas.'],
+        'answer': 'a) Estimam o esforço necessário para as tarefas.'
     },
     {
         'id': 3,
         'question': '3) O que um número baixo em uma rodada de Planning Poker sugere sobre a tarefa em questão?',
-        'options': ['Que a tarefa será rápida e fácil de concluir.', 'Que a tarefa pode ser complexa e necessitará de mais análise.', 'Que a tarefa não está claramente definida e precisa de mais informações.', 'Que a tarefa é crítica para o sucesso do projeto.','Que a tarefa pode ser adiada para uma iteração futura.'],
-        'answer': 'Que a tarefa pode ser complexa e necessitará de mais análise.'
+        'options': ['a) Que a tarefa será rápida e fácil de concluir.', 'b) Que a tarefa pode ser complexa e necessitará de mais análise.', 'c) Que a tarefa não está claramente definida e precisa de mais informações.', 'd) Que a tarefa é crítica para o sucesso do projeto.','e) Que a tarefa pode ser adiada para uma iteração futura.'],
+        'answer': 'b) Que a tarefa pode ser complexa e necessitará de mais análise.'
     },
     {
         'id': 4,
         'question': '4)  Qual é a vantagem de utilizar a técnica de Planning Poker para estimativas? ',
-        'options': ['Maior precisão nas estimativas e engajamento da equipe.', 'Redução da colaboração entre os membros da equipe', 'Redução do tempo de desenvolvimento e aumento do custo.', 'Aumento da competição entre os membros da equipe.','Diminuição da comunicação entre os membros da equipe.','Aumento da incerteza sobre o progresso do projeto.'],
-        'answer': 'Maior precisão nas estimativas e engajamento da equipe.'
+        'options': ['a) Maior precisão nas estimativas e engajamento da equipe.', 'b) Redução da colaboração entre os membros da equipe', 'c) Redução do tempo de desenvolvimento e aumento do custo.', 'd) Aumento da competição entre os membros da equipe.','e) Diminuição da comunicação entre os membros da equipe.'],
+        'answer': 'a) Maior precisão nas estimativas e engajamento da equipe.'
     },
     {
         'id': 5,
         'question': '5) O que é importante fazer após uma rodada de Planning Poker para alcançar um consenso na equipe?',
-        'options': ['Descartar as estimativas mais baixas e mais altas.', 'Selecionar a média das estimativas fornecidas.', 'Atribuir a tarefa ao membro da equipe com a estimativa mais alta.', 'Ignorar todas as estimativas e decidir arbitrariamente o esforço necessário.','Realizar outra rodada de votação até que haja um consenso unânime.'],
-        'answer': 'Selecionar a média das estimativas fornecidas.'
+        'options': ['a) Descartar as estimativas mais baixas e mais altas.', 'b) Selecionar a média das estimativas fornecidas.', 'c) Atribuir a tarefa ao membro da equipe com a estimativa mais alta.', 'd) Ignorar todas as estimativas e decidir arbitrariamente o esforço necessário.','e) Realizar outra rodada de votação até que haja um consenso unânime.'],
+        'answer': 'b) Selecionar a média das estimativas fornecidas.'
     },
     {
         'id': 6,
         'question': '6) Qual é a principal vantagem de usar cartas com valores discretos no Planning Poker?',
-        'options': ['Facilita a comunicação e compreensão das estimativas.', 'Torna o processo mais complicado e demorado.', 'Reduz a necessidade de interação entre os membros da equipe.', ' Aumenta a probabilidade de conflitos durante a estimativa.',' Facilita a manipulação das estimativas para atender aos interesses pessoais.'],
-        'answer': 'Facilita a comunicação e compreensão das estimativas.'
+        'options': ['a) Facilita a comunicação e compreensão das estimativas.', 'b) Torna o processo mais complicado e demorado.', 'c) Reduz a necessidade de interação entre os membros da equipe.', 'd) Aumenta a probabilidade de conflitos durante a estimativa.','e) Facilita a manipulação das estimativas para atender aos interesses pessoais.'],
+        'answer': 'a) Facilita a comunicação e compreensão das estimativas.'
     },
     {
         'id': 7,
         'question': '7) Como o Planning Poker ajuda a evitar a influência de vieses individuais nas estimativas?',
-        'options': ['Atribuindo um peso maior às estimativas dos membros mais experientes.', 'Limitando a participação na estimativa apenas aos membros mais antigos da equipe.', 'Encorajando discussões abertas e anônimas durante o processo de estimativa.', ' Ignorando as opiniões dos membros menos experientes.','Permitindo que apenas o Product Owner faça as estimativas.'],
-        'answer': 'Encorajando discussões abertas e anônimas durante o processo de estimativa.'
+        'options': ['a) Atribuindo um peso maior às estimativas dos membros mais experientes.', 'b) Limitando a participação na estimativa apenas aos membros mais antigos da equipe.', 'c) Encorajando discussões abertas e anônimas durante o processo de estimativa.', 'd) Ignorando as opiniões dos membros menos experientes.','e) Permitindo que apenas o Product Owner faça as estimativas.'],
+        'answer': 'c) Encorajando discussões abertas e anônimas durante o processo de estimativa.'
     },
     {
         'id': 8,
         'question': '8) Quando é apropriado realizar uma rodada de reestimativa durante o desenvolvimento de um projeto SCRUM?',
-        'options': ['Sempre que a equipe de desenvolvimento quiser mudar as estimativas.', 'Apenas quando o Product Owner solicitar uma nova estimativa.', 'Quando uma tarefa estimada excede o tempo planejado.', 'Antes de cada sprint, independentemente do progresso.','Quando uma tarefa é concluída antes do tempo previsto.'],
-        'answer': 'Quando uma tarefa estimada excede o tempo planejado.'
+        'options': ['a) Sempre que a equipe de desenvolvimento quiser mudar as estimativas.', 'b) Apenas quando o Product Owner solicitar uma nova estimativa.', 'c) Quando uma tarefa estimada excede o tempo planejado.', 'd) Antes de cada sprint, independentemente do progresso.','e) Quando uma tarefa é concluída antes do tempo previsto.'],
+        'answer': 'c) Quando uma tarefa estimada excede o tempo planejado.'
     },
     {
         'id': 9,
         'question': '9) Como a técnica de Planning Poker promove a transparência no processo de desenvolvimento do SCRUM?',
-        'options': ['Mantendo todas as estimativas em sigilo até o final do projeto.', 'Incentivando a comunicação aberta e honesta entre os membros da equipe.', 'Limitando a participação na estimativa apenas aos membros mais antigos da equipe.', ' Ocultando as estimativas dos clientes e partes interessadas externas.','Designando um único membro da equipe como responsável por todas as estimativas.'],
-        'answer': 'Incentivando a comunicação aberta e honesta entre os membros da equipe.'
+        'options': ['a) Mantendo todas as estimativas em sigilo até o final do projeto.', 'b) Incentivando a comunicação aberta e honesta entre os membros da equipe.', 'c) Limitando a participação na estimativa apenas aos membros mais antigos da equipe.', 'd) Ocultando as estimativas dos clientes e partes interessadas externas.','e) Designando um único membro da equipe como responsável por todas as estimativas.'],
+        'answer': 'b) Incentivando a comunicação aberta e honesta entre os membros da equipe.'
     },
     {
         'id': 10,
         'question': '10) Qual é o principal objetivo do Scrum Master durante uma sessão de Planning Poker? ',
-        'options': ['Fornecer estimativas precisas para todas as tarefas do backlog.', 'Garantir que todas as estimativas sejam idênticas para evitar conflitos.', 'Facilitar o processo de estimativa e remover obstáculos.','Tomar todas as decisões relacionadas à priorização das tarefas.','Monitorar o progresso do projeto sem se envolver nas estimativas.'],
-        'answer': 'Facilitar o processo de estimativa e remover obstáculos.'
+        'options': ['a) Fornecer estimativas precisas para todas as tarefas do backlog.', 'b) Garantir que todas as estimativas sejam idênticas para evitar conflitos.', 'c) Facilitar o processo de estimativa e remover obstáculos.','d) Tomar todas as decisões relacionadas à priorização das tarefas.','e) Monitorar o progresso do projeto sem se envolver nas estimativas.'],
+        'answer': 'c) Facilitar o processo de estimativa e remover obstáculos.'
     },
 ]
 
