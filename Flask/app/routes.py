@@ -69,7 +69,7 @@ questions_1 = [
         'id': 9,
         'question': '9) O que é essencial para promover a colaboração, o trabalho em equipe e a busca pela excelência no Scrum?',
         'options': ['a)Rigidez e falta de adaptação', 'b)Resistência à mudança', 'c)Valores e princípios do Scrum', 'd)Controle centralizado'],
-        'answer': ' WValores e princípios do Scrum'
+        'answer': ' c)Valores e princípios do Scrum'
     },
     {
         'id': 10,
