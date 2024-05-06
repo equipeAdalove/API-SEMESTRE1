@@ -19,23 +19,25 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 * [Autores](#autores)
 
 # Objetivo do Projeto:
-<img src="/assets/img/Sprint 1/Objetivo.jpg">
+<img src="/assets/img/Sprint 2/Objetivo.jpg">
 
 # Cliente:
-<img src="/assets/img/Sprint 1/Requisitos.jpg">
+<img src="/assets/img/Sprint 2/Requisito.jpg">
 
 
 # Cronograma:
-<img src="/assets/img/Sprint 1/Cronograma.jpg">
+<img src="/assets/img/Sprint 2/Cronograma.jpg">
 
 ##
 
 # Backlog do produto
-<img src="/assets/img/Sprint 1/Backlog.jpg">
+<img src="/assets/img/Sprint 2/Product Backlog.jpg">
+<img src="/assets/img/Sprint 2/Product BacklogII.jpg">
 
 # Sprints
-<img src="/assets/img/Sprint 1/Sprint ProgressI.jpg">
-<img src="/assets/img/Sprint 1/Sprint ProgressII.jpg">
+<img src="/assets/img/Sprint 2/SprintI.jpg">
+<img src="/assets/img/Sprint 2/SprintII.jpg">
+
 
 ## Sprint 2
 - [X] Aprimoramento do HTML/CSS;
@@ -53,7 +55,7 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 ##
 
 # Tecnologias Utilizadas:
-<img src="/assets/img/Ferramentas.jpg">
+<img src="/assets/img/Sprint 2/Ferramentas.jpg">
 
 # Funcionalidades e registros das sprints:
 ## Apresentação das funcionalidades:
