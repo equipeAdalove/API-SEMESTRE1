@@ -58,8 +58,9 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 
 # Funcionalidades e registros das sprints:
 ## Apresentação das funcionalidades:
-Demonstração das funcionalidades na página HTML:      
+Demonstração das funcionalidades na página HTML:
 
+Link no YouTube: https://youtu.be/rCtdOrJDuak?si=9bGleW8T524WJphA
 
 https://github.com/equipeAdalove/API-SEMESTRE1/assets/160744095/710fb5dd-55c8-4d25-ab05-1b4e1856e436
 
