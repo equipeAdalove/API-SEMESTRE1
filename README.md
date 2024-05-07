@@ -37,12 +37,11 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 # Sprints
 <img src="/assets/img/Sprint 2/Sprint Backlog.jpg">
 
+## Sprint Roadmap 
+<img src="/assets/img/Sprint 2/SprintII.jpg">
 
-## Sprint 2
-- [X] Aprimoramento do HTML/CSS;
-- [X] Aprimoramento do conteudo didático apresentado no site.
-      
-## Sprint 3
+
+## Sprint 3 (atual)
 - [ ] Correções de possíveis bugs;
 - [ ] Finalização do site.
       
