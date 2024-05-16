@@ -143,6 +143,16 @@
             .btnrenan:hover{
                 color: #464c5c;
             }
+            #sidebar {
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+            }
+            #main-content {
+            overflow-y: auto;
+            padding-left: 15px;
+            } 
         </style>
 {% endblock %}
 
@@ -156,12 +166,44 @@
         </div>
 
         <!-- curso -->
+        <div
+        data-bs-spy="scroll"
+        data-bs-target="#navbar-example3"
+        data-bs-offset="0"
+        >
+
+        <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-1">
+                <nav id="sidebar">
+                    <div
+                    class="scrollspy-example-2"
+                    data-bs-spy="scroll"
+                    data-bs-target="#navbar-example3"
+                    data-bs-offset="0"
+                    tabindex="0"
+                    >
+                    <nav class="nav nav-pills flex-column">
+                        <h5 class="mt-3">Sumário</h5>
+                        <a class="nav-link" href="#item-1">Auto-Organização</a>
+                        <a class="nav-link" href="#item-2">Facilitação</a>
+                        <a class="nav-link" href="#item-3">Visão</a>
+                        <a class="nav-link" href="#item-4">User Stories</a>
+                    </nav>
+                    </div>
+                </nav>
+            </div>
+
+        <div class="col-11">
+            <div id="main-content">
 
         <div class="divtext">
 
         <!--Auto Organização-->
-
-            <h1> Auto-Organização </h1>
+            <br>
+            <br>
+            <h1 id="item-1"> Auto-Organização </h1>
             <P><strong> 1. Importância da Auto-Organização no Scrum: </strong></P> 
                 <p class="pp">Na gestão de projetos ágeis, como no Scrum, a auto-organização é um princípio essencial que impulsiona a autonomia e a eficiência das equipes. Neste capítulo, exploraremos como a auto-organização se torna a espinha dorsal de equipes ágeis bem-sucedidas, promovendo um ambiente de trabalho colaborativo e orientado para resultados.</p>
         <br>
@@ -223,7 +265,7 @@
 
         <!--Facilitação-->
 
-            <h1> Facilitação </h1>
+            <h1 id="item-2"> Facilitação </h1>
                 <p>
                     No contexto ágil, o Scrum Master desempenha um papel crucial como facilitador, atuando como um catalisador para as ideias que surgem dentro da equipe. Nesta seção, exploraremos como o Scrum Master busca otimizar processos, reduzir conflitos e motivar a equipe, promovendo um ambiente colaborativo e orientado para resultados.
                 </p>
@@ -254,7 +296,7 @@
 
         <!--Visão-->
 
-            <h1> Visão </h1>
+            <h1 id="item-3"> Visão </h1>
                 <p>
                     A visão do produto, transmitida pelo Product Owner (P.O), desempenha um papel crucial no desenvolvimento ágil, permitindo que ele transfira o direcionamento do projeto para a equipe. Nesta seção, exploraremos como a visão do produto proporciona uma excelente oportunidade para a equipe aprender e discutir aspectos importantes do produto, promovendo uma compreensão compartilhada e um alinhamento eficaz.
                 </p>
@@ -285,7 +327,7 @@
 
         <!--User Stoires-->
 
-        <h1> User Stories </h1>
+        <h1 id="item-4"> User Stories </h1>
             <p>
                 User Stories são elementos cruciais no Product Backlog em metodologias ágeis, como o Scrum. Nesta seção, vamos explorar o significado das User Stories, sua criação e sua importância para o sucesso do projeto.
             </p>
@@ -362,5 +404,10 @@
                 <a class="btn my-5 btnrenan" href="/mod_7"><i><strong>Próximo módulo →</strong></i></a>
             </div>
         </div> 
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
         </div>
 {% endblock %}
