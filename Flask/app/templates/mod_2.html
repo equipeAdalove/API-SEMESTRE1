@@ -147,6 +147,19 @@
   .btncelso:hover{
       color: #464c5c;
   }
+
+        #sidebar {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow-y: auto;
+      }
+
+      #main-content {
+        overflow-y: auto;
+        padding-left: 15px;
+      }
+
 </style>
 {% endblock %}
 
@@ -161,21 +174,57 @@
 
         <!-- curso -->
 
+        <div
+        data-bs-spy="scroll"
+        data-bs-target="#navbar-example3"
+        data-bs-offset="0"
+      >
+
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-1">
+            <nav id="sidebar">
+              <div
+                class="scrollspy-example-2"
+                data-bs-spy="scroll"
+                data-bs-target="#navbar-example3"
+                data-bs-offset="0"
+                tabindex="0"
+              >
+              <nav class="nav nav-pills flex-column">
+                <h5 class="mt-3">Sumário</h5>
+                <a class="nav-link" href="#item-1">Item 1</a>
+                <a class="nav-link" href="#item-2">Item 2</a>
+                <a class="nav-link" href="#item-3">Item 3</a>
+                <a class="nav-link" href="#item-4">Item 4</a>
+                <!-- Adicionar o número total de tópicos de seu módulo -->
+              </nav>
+              </div>
+            </nav>
+          </div>
+
+        <div class="col-11">
+          <div id="main-content">
+
+
         <div class="divtext">
-            <h1> Definições do Scrum </h1>
-                <p><strong><i> Os Pilares do Scrum </i></strong></p>
-                    <p class="pp">Os pilares do Scrum, transparência, inspeção e adaptação, são a base fundamental que sustenta a filosofia ágil do
-                    framework. Esses princípios não apenas definem a essência do Scrum, mas também moldam a maneira como as equipes
-                    colaboram, planejam e executam projetos. Através da transparência, as informações relevantes são compartilhadas
-                    abertamente, permitindo uma compreensão clara do progresso e dos desafios enfrentados. </p>
-                    <p class="pp">A inspeção contínua do trabalho garante que a qualidade seja mantida e que as entregas estejam alinhadas com as
-                    expectativas. E, por fim, a adaptação permite que as equipes respondam de forma ágil às mudanças e ajustem suas
-                    estratégias conforme necessário. Juntos, esses pilares capacitam as equipes a enfrentar os desafios do projeto de forma
-                    eficaz e a maximizar o valor entregue ao cliente.</p>
-            <img src="{{ url_for('static', filename='imgs/pilaresintro.png')}}" class="imag">
+          <br>
+          <br>
+              <h1 class="item" id="item-1"> Definições do Scrum </h1>
+                  <p><strong><i> Os Pilares do Scrum </i></strong></p>
+                      <p class="pp">Os pilares do Scrum, transparência, inspeção e adaptação, são a base fundamental que sustenta a filosofia ágil do
+                      framework. Esses princípios não apenas definem a essência do Scrum, mas também moldam a maneira como as equipes
+                      colaboram, planejam e executam projetos. Através da transparência, as informações relevantes são compartilhadas
+                      abertamente, permitindo uma compreensão clara do progresso e dos desafios enfrentados. </p>
+                      <p class="pp">A inspeção contínua do trabalho garante que a qualidade seja mantida e que as entregas estejam alinhadas com as
+                      expectativas. E, por fim, a adaptação permite que as equipes respondam de forma ágil às mudanças e ajustem suas
+                      estratégias conforme necessário. Juntos, esses pilares capacitam as equipes a enfrentar os desafios do projeto de forma
+                      eficaz e a maximizar o valor entregue ao cliente.</p>
+              <img src="{{ url_for('static', filename='imgs/pilaresintro.png')}}" class="imag">
         <br>
         <br>
-            <h3> 1. Transparência </h3>
+            <h3 class="item" id="item-2"> 1. Transparência </h3>
               <p>Transparência é mais do que apenas uma palavra no contexto do Scrum; é um princípio orientador que permeia todas as
               atividades e interações da equipe. No Scrum, a transparência se manifesta em várias dimensões, começando pelo Backlog do
               Produto. Este é um artefato que captura todas as funcionalidades, requisitos, melhorias e correções desejadas para o
@@ -214,7 +263,7 @@
               </div>
             </div>
               <br>
-              <h3> 2. Inspeção </h3>
+              <h3 class="item" id="item-3"> 2. Inspeção </h3>
                 <p>Inspeção é um componente essencial do Scrum, representando a avaliação contínua e sistemática do trabalho realizado e dos produtos resultantes. Essa prática de inspecionar o progresso do projeto ocorre em vários pontos-chave ao longo do ciclo de vida do sprint, fornecendo oportunidades cruciais para identificar desvios, corrigir o curso e garantir a qualidade e a entrega bem-sucedida.</p>
                 <p>Durante o planejamento do sprint, a equipe revisa e estima as tarefas a serem realizadas. Essa é uma forma inicial de inspeção, onde a equipe examina o backlog do sprint e as expectativas para determinar a viabilidade e a capacidade de entrega durante o período do sprint. Esta inspeção ajuda a garantir que as metas e objetivos do sprint sejam realistas e alcançáveis.</p>
                 <p>As reuniões diárias de stand-up também servem como pontos de inspeção fundamentais. Nestas breves reuniões, os membros da equipe compartilham o progresso do trabalho, identificam possíveis obstáculos e discutem estratégias para resolver problemas. Esta inspeção diária permite que a equipe identifique e aborde rapidamente quaisquer desafios ou desvios que surjam durante o sprint.</p>
@@ -234,7 +283,7 @@
               </div>
             </div>
             <br>
-              <h3> 3. Adaptação </h3>
+              <h3 class="item" id="item-4"> 3. Adaptação </h3>
                 <p>A adaptação, o terceiro e crucial pilar do Scrum, complementa e se baseia na inspeção contínua. Depois de inspecionar meticulosamente o processo e o produto, as equipes estão equipadas com dados e insights valiosos que as capacitam a fazer adaptações significativas. Essa capacidade de adaptação é o que permite que o Scrum responda de forma eficaz aos desafios e mudanças inevitáveis que surgem ao longo do ciclo de vida do projeto.</p>
                 <p>Após a inspeção do progresso e dos resultados, as equipes podem fazer adaptações em várias áreas, desde o backlog do sprint até o plano geral do projeto. Uma das adaptações mais comuns é ajustar o backlog do sprint, adicionando, removendo ou re-priorizando tarefas com base no feedback recebido durante o sprint atual. Essa flexibilidade permite que a equipe responda rapidamente a novas informações ou requisitos do cliente, garantindo que o trabalho permaneça alinhado com as necessidades e expectativas em constante mudança.</p>
                 <p>Além disso, as equipes podem fazer adaptações nas reuniões diárias de stand-up, alterando a estrutura ou o foco das discussões para abordar desafios específicos que surgiram durante o sprint. Por exemplo, se um obstáculo inesperado surgir, a equipe pode usar a reunião diária para colaborar na resolução do problema e ajustar o plano de ação conforme necessário.</p>
@@ -267,4 +316,8 @@
                 <a class="btn my-5 btncelso" href="/mod_3"><i><strong>Próximo módulo →</strong></i></a>
             </div>
         </div>
+      </div>
+      </div>
+      </div>
+      </div>
 {% endblock %}
