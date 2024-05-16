@@ -147,6 +147,17 @@
             .btnmafe:hover{
                 color: #464c5c;
             }
+            #sidebar {
+                position: sticky;
+                top: 0;
+                height: 100vh;
+                overflow-y: auto;
+            }
+
+            #main-content {
+                overflow-y: auto;
+                padding-left: 15px;
+            }
         </style>
 {% endblock %}
 
@@ -161,8 +172,42 @@
 
         <!-- curso -->
 
+        <div
+        data-bs-spy="scroll"
+        data-bs-target="#navbar-example3"
+        data-bs-offset="0"
+        >
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-1">
+                    <nav id="sidebar">
+                      <div
+                        class="scrollspy-example-2"
+                        data-bs-spy="scroll"
+                        data-bs-target="#navbar-example3"
+                        data-bs-offset="0"
+                        tabindex="0"
+                      >
+                      <nav class="nav nav-pills flex-column">
+                        <h5 class="mt-3">Sumário</h5>
+                        <a class="nav-link" href="#item-1">Item 1</a>
+                        <a class="nav-link" href="#item-2">Item 2</a>
+                        <a class="nav-link" href="#item-3">Item 3</a>
+
+                        <!-- Adicionar o número total de tópicos de seu módulo -->
+                      </nav>
+                      </div>
+                    </nav>
+                  </div>
+
+                  <div class="col-11">
+                    <div id="main-content">
+
         <div class="divtext">
-            <h1> ORIGEM DO SCRUM </h1>
+            <br>
+            <br>
+            <h1 id="item-1"> ORIGEM DO SCRUM </h1>
                 <h3 class="h3"> Introdução </h3>
                     <p>Nos últimos anos, o desenvolvimento de software passou por uma transformação significativa. Em um mercado cada vez mais dinâmico e competitivo, as abordagens tradicionais de gestão de projetos muitas vezes se mostraram inadequadas para lidar com as demandas de clientes e as mudanças frequentes nos requisitos. É nesse contexto que surgem os Métodos Ágeis, uma abordagem flexível e adaptativa que busca maximizar o valor entregue ao cliente através de colaboração, feedback contínuo e entrega incremental.</p>
                     <p>Um dos métodos ágeis mais populares e amplamente adotados é o SCRUM. Criado por Jeff Sutherland e Ken Schwaber no início dos anos 90, o SCRUM oferece uma estrutura simples, mas poderosa, para gerenciar projetos complexos. Baseado em princípios como transparência, inspeção e adaptação, o SCRUM permite que as equipes entreguem software de alta qualidade de forma rápida e eficiente.</p>
@@ -170,8 +215,8 @@
             <img src="{{ url_for('static', filename='/imgs/introduçao1.png') }}" class="imag">
         <br>
         <br>
-            <h1> Fundamentos do SCRUM: Adaptabilidade e Valor </h1>
-                <p> O Scrum é uma metodologia ágil de gestão de projetos que traz uma abordagem flexível e adaptável para equipes de desenvolvimento tech. Ao invés de seguir um plano rígido, as equipes trabalham em sprints curtos, onde podem se ajustar rapidamente às mudanças e prioridades do cliente. Essa flexibilidade é essencial em um ambiente onde as necessidades do projeto podem evoluir rapidamente.</p>
+            <h1 id="item-2"> Fundamentos do SCRUM: Adaptabilidade e Valor </h1>
+            <p> O Scrum é uma metodologia ágil de gestão de projetos que traz uma abordagem flexível e adaptável para equipes de desenvolvimento tech. Ao invés de seguir um plano rígido, as equipes trabalham em sprints curtos, onde podem se ajustar rapidamente às mudanças e prioridades do cliente. Essa flexibilidade é essencial em um ambiente onde as necessidades do projeto podem evoluir rapidamente.</p>
                 <p>Além disso, o Scrum promove a entrega contínua de valor ao cliente através de iterações curtas, permitindo que funcionalidades sejam entregues regularmente e ajustadas com base no feedback recebido. Isso mantém o cliente envolvido no processo e garante que o produto final atenda às suas expectativas. </p>
                 <p>A adoção dos fundamentos do Scrum pode trazer diversos benefícios para a gestão de projetos tech. Ao implementar essa metodologia ágil, as equipes têm a oportunidade de melhorar sua eficiência, produtividade e qualidade do produto final. Nesta seção, exploraremos como os fundamentos do Scrum podem levar ao sucesso na gestão de projetos tech.</p>
                 <p class="pp"><i><strong>Flexibilidade e Adaptabilidade:</strong></i>, Os fundamentos do Scrum permitem que as equipes sejam mais flexíveis e se adaptem às mudanças que podem ocorrer durante o desenvolvimento do projeto. Em vez de seguir um plano rígido, as equipes podem se ajustar e responder de forma ágil às necessidades e demandas do cliente.</p>
@@ -230,7 +275,7 @@
             <img src="{{ url_for('static', filename='/imgs/fundamentos1.png') }}" class="imag">
         <br>
         <br>
-            <h1> Valores e princípios do Scrum: Fundamentos para o Sucesso </h1>
+            <h1 id="item-3"> Valores e princípios do Scrum: Fundamentos para o Sucesso </h1>
             <h3> Manifesto Ágil, Princípios Ágeis e Valores do Scrum </h3>
                 <p>  Os princípios do SCRUM são essenciais para o sucesso de projetos ágeis. Através da transparência, inspeção e adaptação, comunicação, autogerenciamento e entrega contínua de valor, as equipes podem melhorar a eficiência, qualidade e satisfação do cliente. Aplicar os princípios do SCRUM exige comprometimento, disciplina e capacitação, mas os resultados obtidos valem o esforço. </p>
             <P class="pp"><strong> Manifesto Ágil:</strong></P>   
@@ -297,5 +342,9 @@
             </div>
         </div>
         </div>
-
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
 {% endblock %}
