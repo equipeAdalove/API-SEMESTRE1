@@ -146,6 +146,18 @@
             .btnange:hover{
                 color: #464c5c;
             }
+    
+            #sidebar {
+                position: sticky;
+                top: 0;
+                height: 100vh;
+                overflow-y: auto;
+            }
+
+            #main-content {
+                overflow-y: auto;
+                padding-left: 15px;
+            }
         </style>
 {% endblock %}
 
@@ -160,45 +172,83 @@
 
         <!-- curso -->
 
-        <div class="divtext">
-            <h1>TIme Scrum</h1>
-            <p><i><strong>Funções Específicas, mas Não Fixas:</strong></i></p>
-                <p class="pp">Em uma equipe Scrum, há três papéis principais: Product Owner, Scrum Master e Time de Desenvolvimento. Embora esses papéis tenham responsabilidades específicas, não são atribuídos a pessoas específicas de forma permanente. Isso significa que os membros da equipe podem assumir diferentes papéis em projetos diferentes, dependendo das necessidades da equipe e de suas habilidades individuais. Por exemplo, alguém pode atuar como Product Owner em um projeto e depois como Scrum Master em outro, ou até mesmo como parte do Time de Desenvolvimento.</p>
-            <p><i><strong>Equipes Autogerenciadas:</strong></i></p>
-                <p class="pp">Equipes Scrum são autogerenciadas, o que significa que têm autoridade para tomar decisões relacionadas ao trabalho sem a necessidade de supervisão constante de uma figura de autoridade externa. Isso promove um ambiente de trabalho colaborativo e empoderado, onde os membros da equipe têm liberdade para organizar seu próprio trabalho, definir metas e tomar decisões sobre como alcançá-las.</p>
-            <p><i><strong>Versatilidade e Habilidades Completas:</strong></i></p>
-                <p class="pp">As equipes Scrum são compostas por membros multifuncionais e versáteis, que possuem todas as habilidades necessárias para realizar as tarefas do projeto. Isso significa que não dependem de recursos externos para concluir o trabalho e têm a capacidade de lidar com uma variedade de desafios sem a necessidade de recorrer a especialistas externos. Essa abordagem promove a colaboração e a eficiência dentro da equipe, permitindo que ela se adapte rapidamente às mudanças e desafios que surgem durante o desenvolvimento do projeto.</p>
-            <p><i><strong>Modelo para Agilidade e Eficiência:</strong></i></p>
-                <p class="pp">O modelo Scrum foi projetado para tornar as equipes mais ágeis, inovadoras e eficientes. Ao permitir que os membros da equipe assumam diferentes papéis, promover a autogestão, incentivar a versatilidade e habilidades completas, o Scrum capacita as equipes a responder rapidamente às mudanças do mercado, entregar valor de forma incremental e contínua, e manter um alto nível de qualidade em seus produtos e serviços.</p>
-            <br>
-                <p class="pp">Em resumo, o Scrum é mais do que apenas um conjunto de regras e processos; é uma filosofia que promove uma cultura de trabalho colaborativa, flexível e centrada no valor do cliente. Ele capacita as equipes a serem mais eficazes na entrega de produtos e serviços de alta qualidade, adaptando-se rapidamente às necessidades do mercado e às mudanças no ambiente de negócios.</p>
-        <br>
-            <img src="{{ url_for('static', filename='/imgs/mod3timescrum.png') }}" class="imag">
-        <br>
+        <div
+        data-bs-spy="scroll"
+        data-bs-target="#navbar-example3"
+        data-bs-offset="0"
+      >
 
-            <h1>1.Product Owner (P.O)</h1>
-            <p><strong><i>O que é Product Owner (P.O) FAZ?</i></strong></p>
-                <p class="pp">O Product Owner (P.O.) é uma figura essencial para o sucesso de um produto. Suas principais responsabilidades incluem:</p>
-                    <p class="pp2"><i><strong>->Gerenciar o Product Backlog:</strong></i></p>
-                        <p class="ppp">-O P.O. mantém uma lista de todas as tarefas necessárias para o produto, garantindo que estejam organizadas de forma útil e priorizadas corretamente.</p>
-                    <p class="pp2"><i><strong>->Garantir o ROI (Retorno sobre o Investimento):</strong></i></p>
-                        <p class="ppp">-Ele assegura que as funcionalidades desenvolvidas tragam valor ao produto e à empresa, tomando decisões alinhadas com os objetivos de negócio.</p>
-                    <p class="pp2"><i><strong>->Definir a Visão do Produto:</strong></i></p>
-                        <p class="ppp">-O P.O. estabelece uma visão clara do produto e transmite essa visão à equipe, garantindo que todos entendam o propósito e os objetivos do produto.</p>
-                    <p class="pp2"><i><strong>->Gerenciar Novos Requisitos:</strong></i></p>
-                        <p class="ppp">-Ele avalia e decide sobre a inclusão de novas ideias ou requisitos no trabalho a ser feito, garantindo que apenas as funcionalidades relevantes sejam desenvolvidas.</p>
-                    <p class="pp2"><i><strong>->Determinar a Ordem de Prioridade:</strong></i></p>
-                        <p class="ppp">-O P.O. define a ordem de prioridade das funcionalidades, decidindo quais devem ser implementadas primeiro com base no valor que agregam ao produto.</p>
-                    <p class="pp2"><i><strong>->Supervisionar o Plano de Lançamentos:</strong></i></p>
-                        <p class="ppp">-Ele acompanha o progresso do desenvolvimento e decide quando novas versões do produto serão lançadas, garantindo que os objetivos de entrega sejam alcançados de acordo com o cronograma planejado.</p>
-                    <p class="pp2"><i><strong>->Aceitar ou Rejeitar o Trabalho Concluído:</strong></i></p>
-                        <p class="ppp">-Ao final de cada ciclo de trabalho, o P.O. avalia se o trabalho concluído atende às expectativas e se pode ser entregue aos usuários finais.</p>
-                    <p class="pp2"><i><strong>->Validação das Sprints:</strong></i></p>
-                        <p class="ppp">-O P.O. tem a autoridade para cancelar uma Sprint se os objetivos da entrega não forem mais relevantes devido a mudanças nas condições do mercado ou outras circunstâncias, embora isso deva ser uma medida excepcional.</p>
-                <p class="pp">O sucesso do produto depende da habilidade do Product Owner em compreender as necessidades do mercado e do negócio, além de comunicar eficazmente essas informações à equipe Scrum. É crucial que haja clareza de visão e alinhamento entre o Product Owner, a equipe de desenvolvimento e as partes interessadas para garantir o desenvolvimento de um produto de sucesso.</p>
-            <br>
-            <br>
-                <img src="{{ url_for('static', filename='/imgs/mod3po.png') }}" class="imag">
+      <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-2">
+                <nav id="sidebar">
+                  <div
+                    class="scrollspy-example-2"
+                    data-bs-spy="scroll"
+                    data-bs-target="#navbar-example3"
+                    data-bs-offset="0"
+                    tabindex="0"
+                  >
+                  <nav class="nav nav-pills flex-column">
+                    <h5 class="mt-3">Sumário</h5>
+                    <a class="nav-link" href="#item-1">Time Scrum</a>
+                    <a class="nav-link" href="#item-2">Product Owner (P.O.)</a>
+                    <a class="nav-link" href="#item-3">Development Team</a>
+                    <a class="nav-link" href="#item-4">Scrum Master</a>
+                    <!-- Adicionar o número total de tópicos de seu módulo -->
+                  </nav>
+                  </div>
+                </nav>
+              </div>
+
+              <div class="col-10">
+                <div id="main-content">
+
+        <div class="divtext">
+            <div id="item-1">
+                <br>
+                <br>
+                <h1>Time Scrum</h1>
+                <p><i><strong>Funções Específicas, mas Não Fixas:</strong></i></p>
+                    <p class="pp">Em uma equipe Scrum, há três papéis principais: Product Owner, Scrum Master e Time de Desenvolvimento. Embora esses papéis tenham responsabilidades específicas, não são atribuídos a pessoas específicas de forma permanente. Isso significa que os membros da equipe podem assumir diferentes papéis em projetos diferentes, dependendo das necessidades da equipe e de suas habilidades individuais. Por exemplo, alguém pode atuar como Product Owner em um projeto e depois como Scrum Master em outro, ou até mesmo como parte do Time de Desenvolvimento.</p>
+                <p><i><strong>Equipes Autogerenciadas:</strong></i></p>
+                    <p class="pp">Equipes Scrum são autogerenciadas, o que significa que têm autoridade para tomar decisões relacionadas ao trabalho sem a necessidade de supervisão constante de uma figura de autoridade externa. Isso promove um ambiente de trabalho colaborativo e empoderado, onde os membros da equipe têm liberdade para organizar seu próprio trabalho, definir metas e tomar decisões sobre como alcançá-las.</p>
+                <p><i><strong>Versatilidade e Habilidades Completas:</strong></i></p>
+                    <p class="pp">As equipes Scrum são compostas por membros multifuncionais e versáteis, que possuem todas as habilidades necessárias para realizar as tarefas do projeto. Isso significa que não dependem de recursos externos para concluir o trabalho e têm a capacidade de lidar com uma variedade de desafios sem a necessidade de recorrer a especialistas externos. Essa abordagem promove a colaboração e a eficiência dentro da equipe, permitindo que ela se adapte rapidamente às mudanças e desafios que surgem durante o desenvolvimento do projeto.</p>
+                <p><i><strong>Modelo para Agilidade e Eficiência:</strong></i></p>
+                    <p class="pp">O modelo Scrum foi projetado para tornar as equipes mais ágeis, inovadoras e eficientes. Ao permitir que os membros da equipe assumam diferentes papéis, promover a autogestão, incentivar a versatilidade e habilidades completas, o Scrum capacita as equipes a responder rapidamente às mudanças do mercado, entregar valor de forma incremental e contínua, e manter um alto nível de qualidade em seus produtos e serviços.</p>
+                <br>
+                    <p class="pp">Em resumo, o Scrum é mais do que apenas um conjunto de regras e processos; é uma filosofia que promove uma cultura de trabalho colaborativa, flexível e centrada no valor do cliente. Ele capacita as equipes a serem mais eficazes na entrega de produtos e serviços de alta qualidade, adaptando-se rapidamente às necessidades do mercado e às mudanças no ambiente de negócios.</p>
+                        <br>
+                <img src="{{ url_for('static', filename='/imgs/mod3timescrum.png') }}" class="imag">
+                        <br>
+            </div>
+
+            <div id="item-2">
+                <h1>1.Product Owner (P.O)</h1>
+                <p><strong><i>O que é Product Owner (P.O) FAZ?</i></strong></p>
+                    <p class="pp">O Product Owner (P.O.) é uma figura essencial para o sucesso de um produto. Suas principais responsabilidades incluem:</p>
+                        <p class="pp2"><i><strong>->Gerenciar o Product Backlog:</strong></i></p>
+                            <p class="ppp">-O P.O. mantém uma lista de todas as tarefas necessárias para o produto, garantindo que estejam organizadas de forma útil e priorizadas corretamente.</p>
+                        <p class="pp2"><i><strong>->Garantir o ROI (Retorno sobre o Investimento):</strong></i></p>
+                            <p class="ppp">-Ele assegura que as funcionalidades desenvolvidas tragam valor ao produto e à empresa, tomando decisões alinhadas com os objetivos de negócio.</p>
+                        <p class="pp2"><i><strong>->Definir a Visão do Produto:</strong></i></p>
+                            <p class="ppp">-O P.O. estabelece uma visão clara do produto e transmite essa visão à equipe, garantindo que todos entendam o propósito e os objetivos do produto.</p>
+                        <p class="pp2"><i><strong>->Gerenciar Novos Requisitos:</strong></i></p>
+                            <p class="ppp">-Ele avalia e decide sobre a inclusão de novas ideias ou requisitos no trabalho a ser feito, garantindo que apenas as funcionalidades relevantes sejam desenvolvidas.</p>
+                        <p class="pp2"><i><strong>->Determinar a Ordem de Prioridade:</strong></i></p>
+                            <p class="ppp">-O P.O. define a ordem de prioridade das funcionalidades, decidindo quais devem ser implementadas primeiro com base no valor que agregam ao produto.</p>
+                        <p class="pp2"><i><strong>->Supervisionar o Plano de Lançamentos:</strong></i></p>
+                            <p class="ppp">-Ele acompanha o progresso do desenvolvimento e decide quando novas versões do produto serão lançadas, garantindo que os objetivos de entrega sejam alcançados de acordo com o cronograma planejado.</p>
+                        <p class="pp2"><i><strong>->Aceitar ou Rejeitar o Trabalho Concluído:</strong></i></p>
+                            <p class="ppp">-Ao final de cada ciclo de trabalho, o P.O. avalia se o trabalho concluído atende às expectativas e se pode ser entregue aos usuários finais.</p>
+                        <p class="pp2"><i><strong>->Validação das Sprints:</strong></i></p>
+                            <p class="ppp">-O P.O. tem a autoridade para cancelar uma Sprint se os objetivos da entrega não forem mais relevantes devido a mudanças nas condições do mercado ou outras circunstâncias, embora isso deva ser uma medida excepcional.</p>
+                    <p class="pp">O sucesso do produto depende da habilidade do Product Owner em compreender as necessidades do mercado e do negócio, além de comunicar eficazmente essas informações à equipe Scrum. É crucial que haja clareza de visão e alinhamento entre o Product Owner, a equipe de desenvolvimento e as partes interessadas para garantir o desenvolvimento de um produto de sucesso.</p>
+                <br>
+                <br>
+                    <img src="{{ url_for('static', filename='/imgs/mod3po.png') }}" class="imag">
             <br>
             <br>
                 <div class="cardcard">
@@ -223,87 +273,92 @@
                         <p><font color="#C8C8C8">Ao desempenhar todas essas funções de forma eficaz, você contribui significativamente para o sucesso do aplicativo e para o crescimento da empresa.</font></P>
                     </div>
                 </div>
-                <br>
-                <h1>2.Development Team </h1>
-                    <p><strong><i>O que o Development Team faz?</i></strong></p>
-                        <p class="pp">No Scrum, o Development Team é responsável por conduzir todo o processo de desenvolvimento do produto. Este time é composto por profissionais com uma variedade de habilidades, incluindo arquitetura, análise, design, programação, teste, entre outras. Trabalhando em conjunto, eles têm como objetivo alcançar metas específicas em períodos de tempo definidos chamados de Sprints.</p>
-                            <p class="pp2"><i><strong>->Principais Responsabilidades:</strong></i></p>
-                                <p class="ppp">Criar partes do produto que possam ser entregues ao final de cada Sprint, seguindo um padrão chamado Definition of Done.</p>
-                                <p class="ppp">Estimar o esforço necessário para cada item do Product Backlog e alinhar-se com as metas da Sprint.</p>
-                                <p class="ppp">Ser auto-organizado e autogerenciado, tomando decisões sobre como transformar os itens do Product Backlog em partes do produto.</p>
-                                <p class="ppp">Trabalhar sem interferências externas para gerenciar seu próprio trabalho, garantindo qualidade e cumprimento de prazos.</p>
-                                <p class="ppp">Assumir a responsabilidade pelo sucesso ou fracasso de uma Sprint como um todo, não de indivíduos isolados.</p>
-                            <p class="pp2"><i><strong>->Tamanho Adequado do Time:</strong></i></p>
-                                <p class="ppp">O tamanho ideal do Development Team é aquele que é pequeno o suficiente para ser ágil, mas grande o suficiente para evitar problemas de coordenação. Menos de três pessoas podem dificultar a colaboração, enquanto mais de nove podem complicar a gestão.</p>
-                            <p class="pp2"><i><strong>->Estágios de Desenvolvimento do Time:</strong></i></p>
-                                <p class="ppp">Normalmente, um time auto-organizado passa por quatro estágios: formação, conflito, normalização e desempenho.</p>
-                                    <p class="ppp2"><i><strong>-Formação:</strong></i> Os membros se conhecem.</p>
-                                    <p class="ppp2"><i><strong>-Conflito:</strong></i> Ajustam suas diferenças.</p>
-                                    <p class="ppp2"><i><strong>-Normalização:</strong></i> Estabelecem regras implícitas.</p>
-                                    <p class="ppp2"><i><strong>-Desempenho:</strong></i> Trabalham de forma sincronizada e eficiente.</p>
-                        <p class="pp2">Alcançar o estágio de desempenho leva tempo e requer orientação cuidadosa do Scrum Master.</p>
-                        <p class="pp">Em resumo, o Development Team é essencial para o sucesso do projeto no Scrum, pois são os responsáveis pela implementação das funcionalidades do produto. Sua auto-organização, habilidades variadas e colaboração são fundamentais para alcançar os objetivos da Sprint e entregar valor ao cliente de forma contínua.</p>
-                <br>
-                <br>
-                    <img src="{{ url_for('static', filename='/imgs/mod3development.png') }}" class="imag">
-                <br>
-                <br>
-                <div class="cardcard">
-                    <div class="containercard">
-                        <br>
-                        <p><font color="#C8C8C8"><strong> Exemplos práticos: </strong></font></p>
-                            <p class="pp"><font color="#C8C8C8">Imagine uma empresa de desenvolvimento de software que adota o framework Scrum para gerenciar seus projetos. Entre esses projetos, há o desenvolvimento de um aplicativo de gerenciamento financeiro pessoal.</font></P> 
-                            <p class="pp"><font color="#C8C8C8">O Development Team encarregado deste projeto é composto por seis membros, cada um trazendo habilidades únicas essenciais para o sucesso do empreendimento: um arquiteto de software, um analista de negócios, dois desenvolvedores de frontend, um desenvolvedor de backend e um testador de qualidade.</font></P> 
-                                <P class="pp2"><font color="#C8C8C8"><strong><i>Início de Cada Sprint:</i></strong></font></P>
-                                    <p class="ppp"><font color="#C8C8C8">No início de cada Sprint, com duração de duas semanas, o time se reúne para revisar o Product Backlog e estimar o esforço necessário para cada item. Também definem metas específicas para alcançar até o final da Sprint.</font> </P>
-                                <P class="pp2"><font color="#C8C8C8"><strong><i>Colaboração e Auto-Organização:</i></strong></font></P>
-                                    <p class="ppp"><font color="#C8C8C8">Durante a Sprint, o time trabalha de forma colaborativa e auto-organizada. Comunicação regular é mantida para discutir progresso, enfrentar desafios e assegurar alinhamento com as metas da Sprint. Cada membro tem liberdade para tomar decisões sobre como transformar os itens do Product Backlog em partes do produto, sem interferências externas.</font> </P>
-                                <P class="pp2"><font color="#C8C8C8"><strong><i>Evolução do Time:</i></strong></font></P>
-                                    <p class="ppp"><font color="#C8C8C8">À medida que avançam na Sprint, o time passa pelos estágios de formação, conflito, normalização e desempenho. Aprendem a se conhecer melhor, resolver diferenças de opinião, estabelecer regras de trabalho e eventualmente começar a trabalhar de forma sincronizada e eficiente.</font> </P>
-                                <P class="pp2"><font color="#C8C8C8"><strong><i>Entrega e Qualidade:</i></strong></font></P>
-                                    <p class="ppp"><font color="#C8C8C8">Ao final de cada Sprint, o Development Team entrega partes do produto prontas para serem lançadas. Seguem rigorosamente o padrão de qualidade estabelecido no Definition of Done para garantir que o produto final atenda às expectativas dos clientes.</font> </P>
-                                <P class="pp2"><font color="#C8C8C8"><strong><i>Sucesso do Projeto:</i></strong></font></P>
-                                    <p class="ppp"><font color="#C8C8C8">Ao seguir os princípios do Scrum e trabalhar de forma colaborativa e auto-organizada, o Development Team consegue desenvolver o aplicativo financeiro com qualidade e dentro do prazo estabelecido, garantindo o sucesso do projeto.</font> </P>
-                    </div>
                 </div>
-        <br>  
-                <h1>3.Scrum Master</h1>
-                    <p><strong><i>O que o Scrum Master faz?</i></strong></p>
-                        <p class="pp">No contexto do Scrum, o Scrum Master desempenha um papel essencial que combina aspectos de orientação, liderança e facilitação. Embora o termo "mestre" possa sugerir autoridade ou domínio absoluto, no Scrum, o Scrum Master é mais um líder de serviço do que um líder autoritário. Suas principais responsabilidades incluem:</p>
-                            <p class="pp2"><i><strong>->Especialista no Scrum:</strong></i></p>
-                                <p class="ppp">O Scrum Master é o especialista em Scrum dentro da equipe, conhecendo o framework melhor do que qualquer outra pessoa. No entanto, sua função não se limita a ditar regras, mas envolve orientar e facilitar o uso eficaz do Scrum.</p>
-                            <p class="pp2"><i><strong>->Facilitador e Orientador:</strong></i></p>
-                                <p class="ppp">O Scrum Master ajuda o Product Owner a organizar o Product Backlog e garante que a equipe siga as regras e valores do Scrum. Além disso, facilita as reuniões importantes do Scrum e ajuda a equipe a resolver problemas que surgem no caminho.</p>
-                            <p class="pp2"><i><strong>->Líder pelo Exemplo e pelo Conhecimento:</strong></i></p>
-                                <p class="ppp">Embora não tenha autoridade direta sobre a equipe, o Scrum Master lidera pelo exemplo e pelo conhecimento. Ele desafia a equipe a crescer e melhorar constantemente, trabalhando em estreita colaboração para garantir que todos sigam os princípios do Scrum e do Agile.</p>
-                            <p class="pp2"><i><strong>->Facilitador das Reuniões do Scrum:</strong></i></p>
-                                <p class="ppp">Durante as reuniões do Scrum, o Scrum Master garante que tudo corra bem, facilitando as discussões e garantindo que todos tenham a chance de falar. Ele não lidera as discussões, mas facilita para que as decisões sejam tomadas rapidamente.</p>
-                            <p class="pp2"><i><strong>->Ponte com Outras Partes da Empresa:</strong></i></p>
-                                <p class="ppp">O Scrum Master atua como uma ponte entre a equipe e outras partes da empresa, explicando o que é o Scrum e como pode ser útil para todos. Ele pode até servir como mentor, ajudando a organização a entender e adotar o Scrum.</p>
-            <br>     
-                    <p class="pp">Em resumo, o papel do Scrum Master é fundamental para o sucesso da equipe e da empresa como um todo. Ele desempenha um papel de liderança e serviço, ajudando a equipe a trabalhar melhor juntos e a alcançar seus objetivos de forma eficaz no contexto do Scrum.</p>
                 <br>
-                <br>
-                    <img src="{{ url_for('static', filename='/imgs/mod3master.png') }}" class="imag">
-                <br>
-                <br>
-                <div class="cardcard">
-                    <div class="containercard">
-                        <br>
-                        <p><font color="#C8C8C8"><strong> Exemplos práticos: </strong></font></p>
-                            <p class="pp"><font color="#C8C8C8">Como Scrum Master em um projeto de desenvolvimento de software na minha empresa, meu objetivo é garantir que a equipe adote e siga os princípios do Scrum para alcançar os melhores resultados possíveis. Aqui está como aplico as ideias do texto em minha nova função:</font></P> 
-                                <P class="pp"><font color="#C8C8C8"><strong><i>Facilitando o Planejamento do Projeto:</i></strong></font></P>
-                                    <p class="ppp"><font color="#C8C8C8">Trabalho em estreita colaboração com o Product Owner para organizar o Product Backlog, priorizando tarefas e definindo metas de sprint. Garanto que toda a equipe compreenda claramente o que precisa ser feito.</font> </P>
-                                <P class="pp"><font color="#C8C8C8"><strong><i>Fomentando a Colaboração e Resolução de Problemas:</i></strong></font></P>
-                                    <p class="ppp"><font color="#C8C8C8">Durante o sprint, estou sempre disponível para ajudar a equipe a superar obstáculos. Ao abordar problemas, facilito discussões construtivas e incentivo soluções colaborativas.</font> </P>
-                                <P class="pp"><font color="#C8C8C8"><strong><i>Liderando Pelo Exemplo:</i></strong></font></P>
-                                    <p class="ppp"><font color="#C8C8C8">Mesmo sem autoridade direta sobre os membros da equipe, influencio positivamente ao demonstrar compromisso com os valores do Scrum e práticas ágeis. Minha dedicação inspira os outros a seguir meu exemplo.</font> </P>
-                                <P class="pp"><font color="#C8C8C8"><strong><i>Facilitando as Reuniões do Scrum:</i></strong></font></P>
-                                    <p class="ppp"><font color="#C8C8C8">Durante as reuniões diárias, de planejamento, revisão e retrospectiva, garanto que todos tenham a oportunidade de falar e que as discussões sejam produtivas. Minha presença tranquilizadora ajuda a manter o foco e o ritmo das reuniões.</font> </P>
-                                <P class="pp"><font color="#C8C8C8"><strong><i>Atuando Como Uma Ponte:</i></strong></font></P>
-                                    <p class="ppp"><font color="#C8C8C8">Além de liderar a equipe, atuo como um elo entre o time e outras partes da empresa. Explico o que é o Scrum e como pode beneficiar não apenas a equipe, mas também outros departamentos. Minha comunicação eficaz promove uma compreensão mais ampla e apoio ao método Scrum em toda a organização.</font> </P>
-                        <br>
-                            <p class="pp"><font color="#C8C8C8">Neste exemplo prático, incorporo o papel do Scrum Master, desempenhando uma função crucial na facilitação do processo Scrum, apoio à equipe e promoção de uma cultura ágil em toda a empresa.</font> </P>
+                <div id="item-3">
+                    <h1>2.Development Team </h1>
+                        <p><strong><i>O que o Development Team faz?</i></strong></p>
+                            <p class="pp">No Scrum, o Development Team é responsável por conduzir todo o processo de desenvolvimento do produto. Este time é composto por profissionais com uma variedade de habilidades, incluindo arquitetura, análise, design, programação, teste, entre outras. Trabalhando em conjunto, eles têm como objetivo alcançar metas específicas em períodos de tempo definidos chamados de Sprints.</p>
+                                <p class="pp2"><i><strong>->Principais Responsabilidades:</strong></i></p>
+                                    <p class="ppp">Criar partes do produto que possam ser entregues ao final de cada Sprint, seguindo um padrão chamado Definition of Done.</p>
+                                    <p class="ppp">Estimar o esforço necessário para cada item do Product Backlog e alinhar-se com as metas da Sprint.</p>
+                                    <p class="ppp">Ser auto-organizado e autogerenciado, tomando decisões sobre como transformar os itens do Product Backlog em partes do produto.</p>
+                                    <p class="ppp">Trabalhar sem interferências externas para gerenciar seu próprio trabalho, garantindo qualidade e cumprimento de prazos.</p>
+                                    <p class="ppp">Assumir a responsabilidade pelo sucesso ou fracasso de uma Sprint como um todo, não de indivíduos isolados.</p>
+                                <p class="pp2"><i><strong>->Tamanho Adequado do Time:</strong></i></p>
+                                    <p class="ppp">O tamanho ideal do Development Team é aquele que é pequeno o suficiente para ser ágil, mas grande o suficiente para evitar problemas de coordenação. Menos de três pessoas podem dificultar a colaboração, enquanto mais de nove podem complicar a gestão.</p>
+                                <p class="pp2"><i><strong>->Estágios de Desenvolvimento do Time:</strong></i></p>
+                                    <p class="ppp">Normalmente, um time auto-organizado passa por quatro estágios: formação, conflito, normalização e desempenho.</p>
+                                        <p class="ppp2"><i><strong>-Formação:</strong></i> Os membros se conhecem.</p>
+                                        <p class="ppp2"><i><strong>-Conflito:</strong></i> Ajustam suas diferenças.</p>
+                                        <p class="ppp2"><i><strong>-Normalização:</strong></i> Estabelecem regras implícitas.</p>
+                                        <p class="ppp2"><i><strong>-Desempenho:</strong></i> Trabalham de forma sincronizada e eficiente.</p>
+                            <p class="pp2">Alcançar o estágio de desempenho leva tempo e requer orientação cuidadosa do Scrum Master.</p>
+                            <p class="pp">Em resumo, o Development Team é essencial para o sucesso do projeto no Scrum, pois são os responsáveis pela implementação das funcionalidades do produto. Sua auto-organização, habilidades variadas e colaboração são fundamentais para alcançar os objetivos da Sprint e entregar valor ao cliente de forma contínua.</p>
+                    <br>
+                    <br>
+                        <img src="{{ url_for('static', filename='/imgs/mod3development.png') }}" class="imag">
+                    <br>
+                    <br>
+                    <div class="cardcard">
+                        <div class="containercard">
+                            <br>
+                            <p><font color="#C8C8C8"><strong> Exemplos práticos: </strong></font></p>
+                                <p class="pp"><font color="#C8C8C8">Imagine uma empresa de desenvolvimento de software que adota o framework Scrum para gerenciar seus projetos. Entre esses projetos, há o desenvolvimento de um aplicativo de gerenciamento financeiro pessoal.</font></P>
+                                <p class="pp"><font color="#C8C8C8">O Development Team encarregado deste projeto é composto por seis membros, cada um trazendo habilidades únicas essenciais para o sucesso do empreendimento: um arquiteto de software, um analista de negócios, dois desenvolvedores de frontend, um desenvolvedor de backend e um testador de qualidade.</font></P>
+                                    <P class="pp2"><font color="#C8C8C8"><strong><i>Início de Cada Sprint:</i></strong></font></P>
+                                        <p class="ppp"><font color="#C8C8C8">No início de cada Sprint, com duração de duas semanas, o time se reúne para revisar o Product Backlog e estimar o esforço necessário para cada item. Também definem metas específicas para alcançar até o final da Sprint.</font> </P>
+                                    <P class="pp2"><font color="#C8C8C8"><strong><i>Colaboração e Auto-Organização:</i></strong></font></P>
+                                        <p class="ppp"><font color="#C8C8C8">Durante a Sprint, o time trabalha de forma colaborativa e auto-organizada. Comunicação regular é mantida para discutir progresso, enfrentar desafios e assegurar alinhamento com as metas da Sprint. Cada membro tem liberdade para tomar decisões sobre como transformar os itens do Product Backlog em partes do produto, sem interferências externas.</font> </P>
+                                    <P class="pp2"><font color="#C8C8C8"><strong><i>Evolução do Time:</i></strong></font></P>
+                                        <p class="ppp"><font color="#C8C8C8">À medida que avançam na Sprint, o time passa pelos estágios de formação, conflito, normalização e desempenho. Aprendem a se conhecer melhor, resolver diferenças de opinião, estabelecer regras de trabalho e eventualmente começar a trabalhar de forma sincronizada e eficiente.</font> </P>
+                                    <P class="pp2"><font color="#C8C8C8"><strong><i>Entrega e Qualidade:</i></strong></font></P>
+                                        <p class="ppp"><font color="#C8C8C8">Ao final de cada Sprint, o Development Team entrega partes do produto prontas para serem lançadas. Seguem rigorosamente o padrão de qualidade estabelecido no Definition of Done para garantir que o produto final atenda às expectativas dos clientes.</font> </P>
+                                    <P class="pp2"><font color="#C8C8C8"><strong><i>Sucesso do Projeto:</i></strong></font></P>
+                                        <p class="ppp"><font color="#C8C8C8">Ao seguir os princípios do Scrum e trabalhar de forma colaborativa e auto-organizada, o Development Team consegue desenvolver o aplicativo financeiro com qualidade e dentro do prazo estabelecido, garantindo o sucesso do projeto.</font> </P>
+                        </div>
+                    </div>
+                            <br>
+                </div>
+                <div id="item-4">
+                    <h1>3.Scrum Master</h1>
+                        <p><strong><i>O que o Scrum Master faz?</i></strong></p>
+                            <p class="pp">No contexto do Scrum, o Scrum Master desempenha um papel essencial que combina aspectos de orientação, liderança e facilitação. Embora o termo "mestre" possa sugerir autoridade ou domínio absoluto, no Scrum, o Scrum Master é mais um líder de serviço do que um líder autoritário. Suas principais responsabilidades incluem:</p>
+                                <p class="pp2"><i><strong>->Especialista no Scrum:</strong></i></p>
+                                    <p class="ppp">O Scrum Master é o especialista em Scrum dentro da equipe, conhecendo o framework melhor do que qualquer outra pessoa. No entanto, sua função não se limita a ditar regras, mas envolve orientar e facilitar o uso eficaz do Scrum.</p>
+                                <p class="pp2"><i><strong>->Facilitador e Orientador:</strong></i></p>
+                                    <p class="ppp">O Scrum Master ajuda o Product Owner a organizar o Product Backlog e garante que a equipe siga as regras e valores do Scrum. Além disso, facilita as reuniões importantes do Scrum e ajuda a equipe a resolver problemas que surgem no caminho.</p>
+                                <p class="pp2"><i><strong>->Líder pelo Exemplo e pelo Conhecimento:</strong></i></p>
+                                    <p class="ppp">Embora não tenha autoridade direta sobre a equipe, o Scrum Master lidera pelo exemplo e pelo conhecimento. Ele desafia a equipe a crescer e melhorar constantemente, trabalhando em estreita colaboração para garantir que todos sigam os princípios do Scrum e do Agile.</p>
+                                <p class="pp2"><i><strong>->Facilitador das Reuniões do Scrum:</strong></i></p>
+                                    <p class="ppp">Durante as reuniões do Scrum, o Scrum Master garante que tudo corra bem, facilitando as discussões e garantindo que todos tenham a chance de falar. Ele não lidera as discussões, mas facilita para que as decisões sejam tomadas rapidamente.</p>
+                                <p class="pp2"><i><strong>->Ponte com Outras Partes da Empresa:</strong></i></p>
+                                    <p class="ppp">O Scrum Master atua como uma ponte entre a equipe e outras partes da empresa, explicando o que é o Scrum e como pode ser útil para todos. Ele pode até servir como mentor, ajudando a organização a entender e adotar o Scrum.</p>
+                                <br>
+                        <p class="pp">Em resumo, o papel do Scrum Master é fundamental para o sucesso da equipe e da empresa como um todo. Ele desempenha um papel de liderança e serviço, ajudando a equipe a trabalhar melhor juntos e a alcançar seus objetivos de forma eficaz no contexto do Scrum.</p>
+                    <br>
+                    <br>
+                        <img src="{{ url_for('static', filename='/imgs/mod3master.png') }}" class="imag">
+                    <br>
+                    <br>
+                    <div class="cardcard">
+                        <div class="containercard">
+                            <br>
+                            <p><font color="#C8C8C8"><strong> Exemplos práticos: </strong></font></p>
+                                <p class="pp"><font color="#C8C8C8">Como Scrum Master em um projeto de desenvolvimento de software na minha empresa, meu objetivo é garantir que a equipe adote e siga os princípios do Scrum para alcançar os melhores resultados possíveis. Aqui está como aplico as ideias do texto em minha nova função:</font></P>
+                                    <P class="pp"><font color="#C8C8C8"><strong><i>Facilitando o Planejamento do Projeto:</i></strong></font></P>
+                                        <p class="ppp"><font color="#C8C8C8">Trabalho em estreita colaboração com o Product Owner para organizar o Product Backlog, priorizando tarefas e definindo metas de sprint. Garanto que toda a equipe compreenda claramente o que precisa ser feito.</font> </P>
+                                    <P class="pp"><font color="#C8C8C8"><strong><i>Fomentando a Colaboração e Resolução de Problemas:</i></strong></font></P>
+                                        <p class="ppp"><font color="#C8C8C8">Durante o sprint, estou sempre disponível para ajudar a equipe a superar obstáculos. Ao abordar problemas, facilito discussões construtivas e incentivo soluções colaborativas.</font> </P>
+                                    <P class="pp"><font color="#C8C8C8"><strong><i>Liderando Pelo Exemplo:</i></strong></font></P>
+                                        <p class="ppp"><font color="#C8C8C8">Mesmo sem autoridade direta sobre os membros da equipe, influencio positivamente ao demonstrar compromisso com os valores do Scrum e práticas ágeis. Minha dedicação inspira os outros a seguir meu exemplo.</font> </P>
+                                    <P class="pp"><font color="#C8C8C8"><strong><i>Facilitando as Reuniões do Scrum:</i></strong></font></P>
+                                        <p class="ppp"><font color="#C8C8C8">Durante as reuniões diárias, de planejamento, revisão e retrospectiva, garanto que todos tenham a oportunidade de falar e que as discussões sejam produtivas. Minha presença tranquilizadora ajuda a manter o foco e o ritmo das reuniões.</font> </P>
+                                    <P class="pp"><font color="#C8C8C8"><strong><i>Atuando Como Uma Ponte:</i></strong></font></P>
+                                        <p class="ppp"><font color="#C8C8C8">Além de liderar a equipe, atuo como um elo entre o time e outras partes da empresa. Explico o que é o Scrum e como pode beneficiar não apenas a equipe, mas também outros departamentos. Minha comunicação eficaz promove uma compreensão mais ampla e apoio ao método Scrum em toda a organização.</font> </P>
+                            <br>
+                                <p class="pp"><font color="#C8C8C8">Neste exemplo prático, incorporo o papel do Scrum Master, desempenhando uma função crucial na facilitação do processo Scrum, apoio à equipe e promoção de uma cultura ágil em toda a empresa.</font> </P>
+                        </div>
                     </div>
                 </div>
             <br>
@@ -321,5 +376,10 @@
             </div>
         </div>
         </div>
-
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        
 {% endblock %}
