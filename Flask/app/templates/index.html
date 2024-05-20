@@ -3,236 +3,185 @@
 {% block title %}Home{% endblock %}
 
 {% block styles %}  
-    <style>
-        body{
-            margin: 0;
-            font-family: "Alatsi", sans-serif;
-            background-color: #C8C8C8;
-        }
+        <style>
+            body{
+                font-family: "Poppins", sans-serif;
+                background-color: #C8C8C8;
+            }
+            .container-custom{
+                display: flex;
+                height: 50vh;
+                background-color: #32363f;
+            }
+            .titulo{
+                font-family: "Alatsi", sans-serif;
+                height: 45vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                user-select: none;
+                background-color: #32363F;
+                position: relative;
+            }
 
-        .container{
-            background-color: #32363f;
-            width: 70vh;
-            display: flex;
-            justify-content: space-around;
-            border-top: 10vh solid #32363F;
-            border-left: 9vh solid #32363F;
-        }
+            #txt1{
+                color: #c8c8c8;
+                font-size: 50px;
+                margin-bottom: -45px;
+            }
 
-        #cor{
-            background-color: #32363f;
-            height: 15vh;
-        }
+            #txt2{
+                color: #c8c8c8;
+                font-size: 200px;
+            }
 
-        .nav{
-            text-decoration: none;
-            color: aliceblue;
-            font-family: "Poppins", sans-serif;
-        }
+            .btn2{
+                background-color: #c8c8c8;
+                display: flex;
+                height: 50px;
+                align-items: center;
+                font-size: 28px;    ;
+                user-select: none;
+                cursor: pointer;
+                border-radius: 10px;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+            }
 
-        .titulo{
-            height: 45vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            user-select: none;
-            background-color: #32363F;
-            position: relative;
-        }
+            #start{
+                text-decoration: none;
+                color: #32363F;
+                padding: 5px 100px ;
+            }
+            .btn2:hover{
+                background-color: #b9b9b9;
+                transform: scale(1.05);
+            }
+            .card-custom {
+                width: 20.1rem; /* Ajuste a largura do card */
+                margin: 15px auto;
+                background-color: #cbcbcb;
+            }
+            /* Celular */
+            @media (max-width: 575.98px) {
+                .titulo {
+                    font-size: 16px;
+                    text-align: center;
+                }
 
-        #txt1{
-            color: #c8c8c8;
-            font-size: 50px;
-            margin-bottom: -45px;
-        }
+                #txt2{
+                    font-size: 100px
+                }
 
-        #txt2{
-            color: #c8c8c8;
-            font-size: 200px;
-        }
+                .card-custom {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
 
-        .btn2{
-            background-color: #c8c8c8;
-            display: flex;
-            height: 50px;
-            align-items: center;
-            font-size: 28px;    ;
-            user-select: none;
-            cursor: pointer;
-            border-radius: 10px;
-        }
+                .btn2 {
+                    font-size: 20px;
+                }
+            }
+            /* Tablet */
+            @media (min-width: 576px) and (max-width: 767.98px) {
+                .titulo {
+                    font-size: 20px;
+                }
 
-        #start{
-            text-decoration: none;
-            color: #32363F;
-            padding: 5px 100px ;
-        }
+                .card-custom {
+                    width: 80%;
+                    margin-bottom: 20px;
+                }
 
-        .topicos{
-            font-family: "Poppins", sans-serif;
-            color: #35383D;
-            margin: auto 9vh;
-        }
+                .btn2 {
+                    font-size: 22px;
+                }
+            }
+            /* Laptop */
+            @media (min-width: 768px) and (max-width: 991.98px) {
+                .titulo {
+                    font-size: 24px;
+                }
 
-        .topicos p{
-            color: #86888B;
-        }
+                .card-custom {
+                    width: 60%;
+                    margin-bottom: 20px;
+                }
 
-        .equipe{
-            display: flex;
-            justify-content: space-between;
-            margin: auto 9vh;
-        }
+                .btn2 {
+                    font-size: 24px;
+                }
+            }
+        </style>
+    {% endblock %}
 
-        .equipe-btn{
-            background-color: #EBECF0;
-            width: 350px;
-            border-radius: 25px;
-            padding: 15px 15px;
-        }
+    {% block content %}
+        <!--Title-->
+        <div class="container-fluid container-custom">
 
-        .ver-mais{
-            height: 32vh;
-            margin: auto 9vh;
-            display: flex;
-            justify-content: end;
-            padding: 25px 5px;
-        }
-
-        .ver-mais a{
-            text-decoration: none;
-            color: #35383D;
-            font-size: 22px;
-        }
-
-        img{
-            display: flex;
-            width: 150px;
-            height: 150px;
-        }
-
-        .btn3{
-            text-decoration: none;
-            color: #35383D;
-            font-family: "Poppins", sans-serif;
-
-        }
-
-        .img-back{
-            height: 200px;
-            border-radius: 20px;
-            background-color: #C8C8C8;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        footer{
-            background-color: #32363f;
-            height: 30vh;
-        }
-
-        .footer-custom{ 
-            font-family: "Poppins", sans-serif;
-            color: #C8C8C8;
-            background-color: #32363f;
-            height: 18vh;
-            padding: 20px;
-            display: flex;
-            flex-flow: column;
-            justify-content: space-between
-        }
-
-        #menu ul{
-            background-color: #32363f;
-            list-style: none;
-        }
-
-        #menu{ 
-            padding: 52px 25px; 
-            background-color:#32363f; 
-            color: #32363f; 
-            justify-content: space-around;
-        }
-
-        #menu ul li a{ 
-            padding: 30px 10px; 
-            background-color:#32363f; 
-            color: #32363f; 
-            font-family: "Poppins", sans-serif;
-        }
-
-        #menu ul li{
-            left: 31pc;
-            display: inline;
-            padding: 13px
-        }
-    </style>
-{% endblock %}
-
-{% block content %}
-    <!-- Conteúdo da página Home -->
-    <!--Titulo SCRUM-->
-    <div class="titulo">
-        <div id="txt1">
-            METODOLOGIA ÁGIL
-        </div>
-        <div id="txt2">
-            SCRUM
-        </div>
-        <div class="btn2">
-        <a href="/mod_1" id="start">COMECE AQUI!</a>
-        </div>
-    </div>  
-
-    <!--Wave-->
-    <div class="wave">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-    </div>
-
-    <!--Topicos em destaque-->
-    <div class="topicos">
-        <h1>Tópicos em Destaque:</h1>
-        <p>Aqui você encontra os principais conceitos a respeito da metodologia ágil</p>
-    </div>
-    <br><br>
-    <!--Botões equipe-->
-    <div class="equipe">
-        <div class="equipe-btn">
-            <a class="btn3" href="">
-                <h4>Scrum Master</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quos dignissimos exercitationem incidunt consectetur.</p>
-                <div class="img-back">
-                    <img src="{{ url_for('static', filename='imgs/pana.png') }}">
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <div class="titulo">
+                        <div id="txt1">
+                            METODOLOGIA ÁGIL
+                        </div>
+                        <div id="txt2">
+                            SCRUM
+                        </div>
+                        <div class="btn2">
+                            <a href="/mod_1" id="start">COMECE AQUI!</a>
+                        </div>
+                    </div>
                 </div>
-            </a>
+                <div class="col-3"></div>
         </div>
-
-        <div class="equipe-btn">
-            <a class="btn3" href="">
-                <h4>Product Owner</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quos dignissimos exercitationem incidunt consectetur.</p>
-                <div class="img-back">
-                    <img src="{{ url_for('static', filename='imgs/PO.png') }}">
+        <!--Wave-->
+        <div class="wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+        </div>
+        <!--Cards-->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card card-custom">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 1</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </a>
-        </div>
-
-        <div class="equipe-btn">
-            <a class="btn3" href="">
-                <h4>Dev Team</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quos dignissimos exercitationem incidunt consectetur.</p>
-                <div class="img-back">
-                    <img src="{{ url_for('static', filename='imgs/programming.png') }}">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card card-custom">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 2</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </a>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card card-custom">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Card 3</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="ver-mais">
-        <a href=""> Ver Mais </a>
-    </div>
-    <div class="espaco"></div>
-{% endblock %}
+        <br>
+        <br>
+        <br>
+    {% endblock %}

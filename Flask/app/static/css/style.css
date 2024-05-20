@@ -1,0 +1,26 @@
+.navbar-custom {
+    background-color: #32363f;
+    font-family: "Poppins",sans-serif;
+}
+.navbar-custom .nav-link {
+    color: white;
+}
+.navbar-custom .nav-link:hover {
+    color: #d3d3d3;
+}
+.navbar-custom .navbar-brand {
+    margin-right: 2rem; 
+}
+.navbar-custom .nav-item {
+    margin-right: 2rem; 
+}
+.navbar-margin{
+    margin: 40px 60px;
+}
+.footer-custom{
+    bottom: 0;
+    width: 100%;
+    background-color: #32363f;
+    padding: 20px 0;
+    text-align: center;
+}
