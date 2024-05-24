@@ -3,7 +3,7 @@
 {% block title %}Módulo 7{% endblock %}
 
 {% block styles %}
-      <style>
+        <style>
             body{
                 justify-content: space-around;
                 margin: 0%;
@@ -58,7 +58,7 @@
 
             }
 
-           footer{
+            footer{
                 background-color: #32363f;
                 height: 30vh;
             }
@@ -87,10 +87,6 @@
                 margin-bottom: 80px;
                 text-align: justify;
             }
-            .h3{
-                line-height: 1.5;
-                text-indent: 20px;
-            }
             p{
                 line-height: 1.5;
                 text-indent: 50px;
@@ -114,8 +110,8 @@
             .imag{
                 width: 45%;
                 height: 45%;
-                margin-left: 350px;
-                margin-right: 350px;
+                margin-left: 30%;
+                margin-right: 30%;;
             }
             .cardcard {
                 box-shadow: 0 4px 8px 0 #1c1e21;
@@ -128,7 +124,7 @@
             .cardcard:hover {
                 box-shadow: 0 8px 16px 0 #1c1e21;
             }
-            .containercard{
+            .containercard {
                 background-color: #32363F;
                 padding: 2px 16px;
             }
@@ -144,36 +140,73 @@
             .btn.my-5{
                 font-size: larger;
             }
-            .btnmafe:hover{
+            .btnrenan:hover{
                 color: #464c5c;
             }
             #sidebar {
-                position: sticky;
-                top: 0;
-                height: 100vh;
-                overflow-y: auto;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
             }
-
             #main-content {
-                overflow-y: auto;
-                padding-left: 15px;
-            }
+            overflow-y: auto;
+            padding-left: 15px;
+            } 
         </style>
 {% endblock %}
 
 {% block content %}
-<!-- Conteúdo específico para a página 7 -->
-<div class="div2">
-    <img src="{{ url_for('static', filename='/imgs/Introdução7.png') }}" width="500" height="500" class="img">
-    <h1 style="font-size: 5pc; position: absolute;top: 13pc; left:59px;"><font color="D6D6D6">7. ESTIMATIVA</font></h1>
-</div>
-<div class="wave">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-</div>
 
-<!-- Curso -->
-    <div class="divtext">
-        <h1>Estimativa</h1>
+            <div class="div2">
+            <img src="{{ url_for('static', filename='imgs/Introdução7.png') }}" width="520" height="520" class="img">
+            <h1 style="font-size: 5pc; position: absolute;top: 13pc; left:59px;"><font color="D6D6D6"> 2. DEFINIÇÕES</font></h1>
+        </div>
+        <div class="wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z" ></path></svg>
+        </div>
+
+      
+        <!-- curso -->
+        <div
+        data-bs-spy="scroll"
+        data-bs-target="#navbar-example3"
+        data-bs-offset="0"
+        >
+
+        <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-1">
+                <nav id="sidebar">
+                    <div
+                    class="scrollspy-example-2"
+                    data-bs-spy="scroll"
+                    data-bs-target="#navbar-example3"
+                    data-bs-offset="0"
+                    tabindex="0"
+                    >
+                    <nav class="nav nav-pills flex-column">
+                        <h5 class="mt-3">Sumário</h5>
+                        <a class="nav-link" href="#item-1">Definição</a>
+                        <a class="nav-link" href="#item-2">Facilitação</a>
+                        <a class="nav-link" href="#item-3">Visão</a>
+                        <a class="nav-link" href="#item-4">User Stories</a>
+                    </nav>
+                    </div>
+                </nav>
+            </div>
+
+        <div class="col-11">
+            <div id="main-content">
+
+        <div class="divtext">
+            <br>
+            <br>
+            <h1 id="item-1"> Estimativa</h1>
+        <div class="divtext">
+          <br>
+          <br>
             <p><strong><i>O que é estimativa?</i></strong></p>
                 <p class="pp">Aplicada em Story Points, é utilizada para estimar a quantidade de tempo e esforço que uma tarefa necessita. Os Pontos de História/Story Points são unidades de medida usadas para expressar o tamanho geral de uma História do Usuário, ou como são conhecidas, as User Stories. Quando fazemos estimativas com Pontos de História, atribuímos um valor, ou Story Points, a cada item.</p>
                 <p class="pp">Primeiramente, decide-se a tarefa com menos esforço (1) e classifica-se as próximas em comparação a ela.</p>
@@ -184,9 +217,7 @@
 
         <br>
 
-        <h1>Com isso, como estimar usando Story Points(Pontos de História)? </h1>
-
-        <p> Vamos agora a três passos que devem ser seguidos para estimar usando Pontos de História:</p>
+         <h3 class="item" id="item-2">Com isso, como estimar usando Story Points(Pontos de História)?  </h3>
             <p class="pp"><strong><i> 1. Escolher uma escala: </i></strong></p>
                 <p class="pp2"> Diferentemente de projetos tradicionais, em que a estimativa é transformada em horas ou dias, uma equipe Scrum desenvolve sua própria escala de medida. No próximo tópico, serão apresentados mais detalhes a respeito da escala tradicionalmente utilizada em projetos Scrum.</p>
             <p class="pp"><strong><i> 2. Escolha itens de referência: </i></strong></p>
@@ -239,7 +270,7 @@
         <div class="cardcard">
             <div class="containercard">
                 <br>
-                <p><font color="#C8C8C8"><strong> Exemplo prático: </strong></font></p>
+                  <h3 class="item" id="item-3"> Exemplo prático: </h3>
                     <p class="pp"><font color="#C8C8C8"> Imagine que uma equipe de desenvolvimento de software utiliza o SCRUM para estimar quantidade de tempo e esforço necessário para implementar novas funcionalidades em um aplicativo. </font> </p>
 
                         <p class="pp2"><font color="#C8C8C8"><strong><i>1. Sprint Planning:</i></strong></font></p>
