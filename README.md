@@ -12,7 +12,9 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 * [Objetivo do Projeto](#objetivo-do-projeto)
 * [Cliente](#cliente)
 * [Cronograma](#cronograma)
-* [Backlog do produto](#backlog-do-produto)
+* [Backlog do produto](#product-backlog)
+* [Backlog da sprint](#sprint-backlog)
+* [Roadmaps](#roadmap)
 * [Protótipo - Figma](#prototipo)
 * [Tecnologias Utilizadas:](#tecnologias-utilizadas)
 * [Funcionalidades e registros (vídeos e apresentações) das sprints](#funcionalidades-e-registros-das-sprints)
@@ -27,9 +29,10 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 
 # Cronograma:
 <img src="/assets/img/Sprint III/Cronograma.jpg">
+
 ##
 
-# Backlog do produto
+# Product Backlog
 <img src="/assets/img/Sprint III/Product BacklogI.jpg">
 <img src="/assets/img/Sprint III/Product BackogII.jpg">
 <img src="/assets/img/Sprint III/Product BacklogIII.jpg">
