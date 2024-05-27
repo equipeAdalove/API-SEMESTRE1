@@ -38,7 +38,10 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 <img src="/assets/img/Sprint III/Product BacklogIII.jpg">
 
 # Sprints Backlog
+<img src="/assets/img/Sprint 1/Sprint Backlog.jpg">
+<img src="/assets/img/Sprint 2/Sprint Backlog.jpg">
 <img src="/assets/img/Sprint III/Sprint Backlog3.jpg">
+
 
 ## Sprints Roadmap 
 <img src="/assets/img/Sprint III/Roadmap1-2.jpg">
@@ -83,7 +86,6 @@ https://github.com/equipeAdalove/API-SEMESTRE1/assets/160744095/710fb5dd-55c8-4d
 | :-----------: | :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | Product Owner |   Angelina Borroni         |     [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/borroniff)              |
 | Scrum Master  | Celso Rocha |      [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/celsick)     |
-|  Team Member  | João Pedro Cava                 |   [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/JoaoPedroCava)   |
 | Team Member   | Maria Fernanda Hansen              |         [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Madhs31)        |
 |  Team Member  | Raphaela Monteiro       |           [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/raphaelamonteiro)          |
 |  Team Member  | Renan Tomasi       |           [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/renan21-tg)          |
