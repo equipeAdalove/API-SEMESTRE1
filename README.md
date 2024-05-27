@@ -4,7 +4,7 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 <img src="/assets/img/Apresentação.jpg">
 
 # Equipe:
-<img src="/assets/img/Sprint 1/Scrum Team_I.jpg">
+<img src="/assets/img/Sprint III/ScrumTeam.jpg">
 
 
 
@@ -26,24 +26,31 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 
 
 # Cronograma:
-<img src="/assets/img/Sprint 2/Cronograma.jpg">
-
+<img src="/assets/img/Sprint III/Cronograma.jpg">
 ##
 
 # Backlog do produto
-<img src="/assets/img/Sprint 2/Product Backlog.jpg">
-<img src="/assets/img/Sprint 2/Product BacklogII.jpg">
+<img src="/assets/img/Sprint III/Product BacklogI.jpg">
+<img src="/assets/img/Sprint III/Product BackogII.jpg">
+<img src="/assets/img/Sprint III/Product BacklogIII.jpg">
 
-# Sprints
-<img src="/assets/img/Sprint 2/Sprint Backlog.jpg">
+# Sprints Backlog
+<img src="/assets/img/Sprint III/Sprint Backlog3.jpg">
 
-## Sprint Roadmap 
-<img src="/assets/img/Sprint 2/SprintII.jpg">
+## Sprints Roadmap 
+<img src="/assets/img/Sprint III/Roadmap1-2.jpg">
+<img src="/assets/img/Sprint III/Roadmap2-3.jpg">
+<img src="/assets/img/Sprint III/Roadmap3-4.jpg">
 
 
 ## Sprint 3 (atual)
-- [ ] Correções de possíveis bugs;
-- [ ] Finalização do site.
+- [x] Correções de possíveis bugs;
+- [x] Finalização do site.
+
+## Sprint 4
+- [ ] Finalização - responsividade;
+- [ ] Banco de dados(formulário).
+- [ ] Debug e finalização.
       
 ##
 
