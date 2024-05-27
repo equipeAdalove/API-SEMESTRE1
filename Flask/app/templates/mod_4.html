@@ -148,6 +148,19 @@
     .btncava:hover{
         color: #464c5c;
     }
+
+    #sidebar {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow-y: auto;
+      }
+
+      #main-content {
+        overflow-y: auto;
+        padding-left: 15px;
+      }
+
 </style>
 {% endblock %}
 
@@ -162,224 +175,261 @@
 
 <!-- curso -->
 
+<div
+data-bs-spy="scroll"
+data-bs-target="#navbar-example3"
+data-bs-offset="0"
+>
+
+<div class="container-fluid">
+<div class="row">
+
+  <div class="col-2">
+    <nav id="sidebar">
+      <div
+        class="scrollspy-example-2"
+        data-bs-spy="scroll"
+        data-bs-target="#navbar-example3"
+        data-bs-offset="0"
+        tabindex="0"
+      >
+      <nav class="nav nav-pills flex-column">
+        <h5 class="mt-3">Sumário</h5>
+        <a class="nav-link" href="#item-1">Item 1</a>
+        <a class="nav-link" href="#item-2">Item 2</a>
+        <a class="nav-link" href="#item-3">Item 3</a>
+        <a class="nav-link" href="#item-4">Item 4</a>
+        <a class="nav-link" href="#item-5">Item 5</a>
+        <a class="nav-link" href="#item-6">Item 6</a>
+        <!-- Adicionar o número total de tópicos de seu módulo -->
+      </nav>
+      </div>
+    </nav>
+  </div>
+
+<div class="col-10">
+  <div id="main-content">
+
+
+
 <div class="divtext">
-    <h1>Sprint: O Coração do Scrum</h1>
-    <p><strong><i>O que é uma sprint?</i></strong></p>
-        <p class="pp">O Scrum é uma metodologia ágil amplamente usada no desenvolvimento de software, destacando-se pela rapidez e eficiência na entrega de resultados de alta qualidade. No coração do Scrum estão as Sprints, que são períodos de tempo fixos nos quais a equipe se dedica a produzir uma parte específica do produto. </p>
-        <p class="pp">Durante uma Sprint, a equipe segue um conjunto de etapas cruciais para garantir o progresso eficaz do trabalho:</p>
-            <p class="pp2"><i><strong>-> Planejamento da Sprint :</strong></i> Nesta reunião, chamada de Sprint Planning Meeting, a equipe e o Product Owner definem o que será realizado durante a Sprint. Isso inclui identificar as tarefas a serem realizadas e estimar quanto tempo levará para concluí-las.</p>
-            <p class="pp2"><i><strong>-> Reuniões Diárias:</strong></i> As Daily Scrums são reuniões curtas e diárias onde a equipe compartilha o que foi feito desde a última reunião, o que será feito até a próxima e quaisquer obstáculos que estejam enfrentando. Isso mantém todos atualizados e ajuda a identificar e resolver problemas rapidamente.</p>
-            <p class="pp2"><i><strong>-> Trabalho de Desenvolvimento :</strong></i> Durante a Sprint, a equipe se concentra na execução das tarefas planejadas. Isso envolve o desenvolvimento de software, testes e qualquer outra atividade necessária para concluir as funcionalidades planejadas para a Sprint.</p>
-            <p class="pp2"><i><strong>-> Avaliação da Sprint:</strong></i> Ao final da Sprint, a equipe revisa o trabalho realizado e verifica se atendeu aos critérios de aceitação definidos durante o planejamento. Isso inclui demonstrar o trabalho concluído ao Product Owner para revisão e feedback.</p>
-            <p class="pp2"><i><strong>-> Retrospectiva da Sprint :</strong></i> Após a avaliação, a equipe realiza uma retrospectiva para analisar o que funcionou bem durante a Sprint, o que pode ser melhorado e quais ações podem ser tomadas para tornar as próximas Sprints mais eficientes.</p>
-        <p class="pp">Durante uma Sprint, não são permitidas mudanças que possam afetar o objetivo da Sprint, garantindo assim que a equipe possa se concentrar no trabalho planejado. No entanto, o produto final pode ser renegociado entre o Development Team e o Product Owner à medida que novas informações surgem ou requisitos mudam ao longo do tempo. Essa flexibilidade permite que o produto evolua de acordo com as necessidades do cliente e as mudanças no ambiente de desenvolvimento.</p>
-        <div class="cardcard">
-            <div class="containercard">
-                <br>    
-                <p><font color="#C8C8C8"><strong> Exemplos práticos: </strong></font></p> 
-                <p class="pp"><font color="#C8C8C8">Um exemplo simples e didático sobre o conceito de sprint é usando uma metáfora de uma corrida de revezamento:</font></p>
-                <p class="ppp"><font color="#C8C8C8">Imagine que o projeto é uma corrida de revezamento. Em vez de cada corredor percorrer toda a distância, cada membro da equipe corre uma parte da distância antes de passar o bastão para o próximo corredor. Da mesma forma, em uma Sprint de desenvolvimento de software, a equipe se dedica a trabalhar em uma parte específica do projeto durante um período de tempo fixo, geralmente de uma a quatro semanas. Durante esse tempo, os membros da equipe se concentram em completar as tarefas atribuídas para alcançar um objetivo definido, antes de passar para a próxima parte do projeto.</font></P>
+    <div class="item" id="item-1">
+        <h1>Sprint: O Coração do Scrum</h1>
+        <p><strong><i>O que é uma sprint?</i></strong></p>
+            <p class="pp">O Scrum é uma metodologia ágil amplamente usada no desenvolvimento de software, destacando-se pela rapidez e eficiência na entrega de resultados de alta qualidade. No coração do Scrum estão as Sprints, que são períodos de tempo fixos nos quais a equipe se dedica a produzir uma parte específica do produto. </p>
+            <p class="pp">Durante uma Sprint, a equipe segue um conjunto de etapas cruciais para garantir o progresso eficaz do trabalho:</p>
+                <p class="pp2"><i><strong>-> Planejamento da Sprint :</strong></i> Nesta reunião, chamada de Sprint Planning Meeting, a equipe e o Product Owner definem o que será realizado durante a Sprint. Isso inclui identificar as tarefas a serem realizadas e estimar quanto tempo levará para concluí-las.</p>
+                <p class="pp2"><i><strong>-> Reuniões Diárias:</strong></i> As Daily Scrums são reuniões curtas e diárias onde a equipe compartilha o que foi feito desde a última reunião, o que será feito até a próxima e quaisquer obstáculos que estejam enfrentando. Isso mantém todos atualizados e ajuda a identificar e resolver problemas rapidamente.</p>
+                <p class="pp2"><i><strong>-> Trabalho de Desenvolvimento :</strong></i> Durante a Sprint, a equipe se concentra na execução das tarefas planejadas. Isso envolve o desenvolvimento de software, testes e qualquer outra atividade necessária para concluir as funcionalidades planejadas para a Sprint.</p>
+                <p class="pp2"><i><strong>-> Avaliação da Sprint:</strong></i> Ao final da Sprint, a equipe revisa o trabalho realizado e verifica se atendeu aos critérios de aceitação definidos durante o planejamento. Isso inclui demonstrar o trabalho concluído ao Product Owner para revisão e feedback.</p>
+                <p class="pp2"><i><strong>-> Retrospectiva da Sprint :</strong></i> Após a avaliação, a equipe realiza uma retrospectiva para analisar o que funcionou bem durante a Sprint, o que pode ser melhorado e quais ações podem ser tomadas para tornar as próximas Sprints mais eficientes.</p>
+            <p class="pp">Durante uma Sprint, não são permitidas mudanças que possam afetar o objetivo da Sprint, garantindo assim que a equipe possa se concentrar no trabalho planejado. No entanto, o produto final pode ser renegociado entre o Development Team e o Product Owner à medida que novas informações surgem ou requisitos mudam ao longo do tempo. Essa flexibilidade permite que o produto evolua de acordo com as necessidades do cliente e as mudanças no ambiente de desenvolvimento.</p>
+            <div class="cardcard">
+                <div class="containercard">
+                    <br>
+                    <p><font color="#C8C8C8"><strong> Exemplos práticos: </strong></font></p>
+                    <p class="pp"><font color="#C8C8C8">Um exemplo simples e didático sobre o conceito de sprint é usando uma metáfora de uma corrida de revezamento:</font></p>
+                    <p class="ppp"><font color="#C8C8C8">Imagine que o projeto é uma corrida de revezamento. Em vez de cada corredor percorrer toda a distância, cada membro da equipe corre uma parte da distância antes de passar o bastão para o próximo corredor. Da mesma forma, em uma Sprint de desenvolvimento de software, a equipe se dedica a trabalhar em uma parte específica do projeto durante um período de tempo fixo, geralmente de uma a quatro semanas. Durante esse tempo, os membros da equipe se concentram em completar as tarefas atribuídas para alcançar um objetivo definido, antes de passar para a próxima parte do projeto.</font></P>
+                </div>
             </div>
-        </div>
-        <BR>
-            <img src="{{ url_for('static', filename='/imgs/1.png') }}" class="imag">
+            <BR>
+                <img src="{{ url_for('static', filename='/imgs/1.png') }}" class="imag">
+            <br>
         <br>
-<br>
-    <h1>Sprint Planning Meeting:Planejando o Trabalho da Sprint</h1>
-        <p><strong><i>O que é uma Sprint Planning Meeting?</strong></i></p>
-            <p class="pp">Podemos resumir didaticamente a Sprint Planning Meeting em duas partes: </p>
-        <p><strong><i>O que vamos entregar?</i></strong></p>
-            <p class="pp">Nesta fase, o foco está em determinar quais funcionalidades serão desenvolvidas durante a Sprint. Os passos principais incluem:</p>
-                <p class="pp2"><i><strong>-> Apresentação do Product Backlog :</strong></i> O Product Owner apresenta os itens prioritários do Product Backlog ao Time Scrum, representando as necessidades e expectativas do cliente.</p>
-                <p class="pp2"><i><strong>-> Discussão e colaboração :</strong></i> Toda a equipe Scrum, incluindo o Development Team e o Product Owner, discute os itens do Product Backlog para garantir um claro entendimento dos requisitos e objetivos do projeto.</p>
-                <p class="pp2"><i><strong>-> Seleção dos itens para a Sprint :</strong></i>  Com base em sua capacidade e experiência, o Development Team seleciona os itens do Product Backlog que serão trabalhados durante a Sprint, considerando complexidade, prioridade e histórico de Sprints anteriores.</p>
-                <p class="pp2"><i><strong>-> Definição da meta da Sprint :</strong></i> A equipe define uma meta clara e compartilhada para o que será alcançado durante a Sprint, servindo como um guia para manter o foco comum.</p>
-        <p><strong><i>Como vamos entregar?</i></strong></p>
-            <p class="pp">Nesta fase, o foco é determinar como os itens selecionados serão transformados em um Incremento durante a Sprint. Os passos principais incluem: </p>
-                <p class="pp2"><i><strong>-> Decomposição dos itens :</strong></i>  O Development Team divide os itens selecionados em trabalhos menores que podem ser completados em curtos períodos de tempo, facilitando o acompanhamento do progresso e a gestão das atividades.</p>
-                <p class="pp2"><i><strong>-> Criação do Sprint Backlog:</strong></i> É criada uma lista detalhada de todas as tarefas necessárias para completar os itens selecionados, incluindo estimativas de tempo e ordem de realização das tarefas.</p>
-                <p class="pp2"><i><strong>-> Reafirmação da meta da Sprint:</strong></i> Garantindo que todos os membros estejam alinhados com o objetivo final e compartilhado da Sprint, para manter o foco e a duração durante o período de trabalho.</p>
-            <p class="pp">Essas duas partes da Sprint Planning Meeting são fundamentais para garantir que a equipe Scrum esteja alinhada com os objetivos do projeto e tenha um plano claro para alcançar esses objetivos durante a Sprint.</p>
-        <div class="cardcard">
-            <div class="containercard">
-                <br>
-                <p><font color="#C8C8C8"><strong>Exemplo prático :</strong></font></p> 
-                <p class="pp"><font color="#C8C8C8"> Uma equipe Scrum está desenvolvendo um aplicativo de lista de tarefas. Vamos dividir o exemplo em duas partes, correspondendo às duas partes da Sprint Planning Meeting:</font></P>
-                    <P class="pp2"><font color="#C8C8C8"><strong><i>O que vamos entregar?</i></strong></font></P>
-                        <p class="ppp"><font color="#C8C8C8"> Imagine que a equipe Scrum se reúne para planejar a próxima Sprint. O Product Owner apresenta os seguintes itens prioritários do Product Backlog:</font></p>
-                            <p class="ppp2"><font color="#C8C8C8"> -> Adicionar funcionalidade de notificação de lembrete de tarefas.</font></p>
-                            <p class="ppp2"><font color="#C8C8C8"> -> Implementar a capacidade de categorizar tarefas como 'trabalho', 'pessoal' ou 'estudo'.</font></p>
-                            <p class="ppp2"><font color="#C8C8C8"> -> Melhorar a interface do usuário da lista de tarefas para torná-la mais intuitiva.</font></p>
-                        <p class="ppp"><font color="#C8C8C8"> Após uma discussão, a equipe concorda que esses são os itens mais importantes para os usuários do aplicativo neste momento.</font></p>
-                
-                <p class="pp"><font color="#C8C8C8"><strong><i>COMO VAMOS ENTREGAR?</i></strong></font></p>
-                    <p class="pp2"><font color="#C8C8C8"> A equipe agora precisa determinar como transformar os itens selecionados em um Incremento durante a Sprint:</font></p>
-                        <p class="ppp"><font color="#C8C8C8"> ->Eles dividem a funcionalidade de notificação de lembrete em tarefas menores, como "Implementar a lógica de notificação" e "Desenvolver a interface do usuário para configurar lembretes".</font></p>
-                        <p class="ppp"><font color="#C8C8C8"> ->Criam um Sprint Backlog detalhado, incluindo todas as tarefas necessárias para completar os itens selecionados, como design, codificação, testes e integração.</font></p>
-                        <p class="ppp"><font color="#C8C8C8"> ->Reafirmam a meta da Sprint, lembrando-se de que o objetivo principal é melhorar a usabilidade do aplicativo para aumentar a produtividade dos usuários.</font></p>
-                    <p class="pp2"><font color="#C8C8C8">Ao final da Sprint Planning Meeting, a equipe está alinhada com os objetivos da Sprint e tem um plano claro de como alcançá-los. Durante a Sprint, eles trabalharão no desenvolvimento desses itens, acompanhando seu progresso diariamente e ajustando conforme necessário para garantir que a meta da Sprint seja alcançada.</font></p>
-            </div>
-        </div>
-        <BR>
-            <img src="{{ url_for('static', filename='/imgs/2.png') }}" class="imag">
-        <br>
-<br>
-    <h1> Daily Scrum: Sincronização Diária e Resolução de Impedimentos</h1>
-        <p><strong><i>O que é uma Daily Scrum?</strong></i></p>
-            <p class="pp">A Daily Scrum é uma reunião diária do Time de Desenvolvimento no Scrum, projetada para ser rápida e focada, com duração máxima de 15 minutos. Durante essa reunião, cada membro responde a três perguntas:</p>
-        <p><strong><i>O que realizei desde a última Daily Scrum?</strong></i></p>
-            <p class="pp">Os membros compartilham brevemente o trabalho concluído desde a última reunião, destacando as tarefas finalizadas ou progresso significativo em direção aos objetivos da Sprint.</p>
-        <p><strong><i>Quais são os meus planos até a próxima Daily Scrum?</strong></i></p>
-            <p class="pp">Os membros explicam o que planejam fazer até a próxima reunião, destacando as tarefas que pretendem abordar e os objetivos que desejam alcançar durante o período seguinte.</p>
-        <p><strong><i>Houve algum obstáculo que me impediu de concluir alguma tarefa?</strong></i></p>
-            <p class="pp">Se algum membro encontrou obstáculos ou bloqueios que afetaram seu progresso, eles compartilham esses desafios com a equipe. Isso pode incluir questões técnicas, dependências de outras equipes ou qualquer outra coisa que esteja dificultando o avanço do trabalho.</p>
-        <p>É importante ressaltar que a Daily Scrum é uma oportunidade para o Time de Desenvolvimento se comunicar e sincronizar seu trabalho de forma colaborativa. Como são autogerenciados, os membros são responsáveis por resolver obstáculos que possam surgir durante o processo. Se um obstáculo estiver além da capacidade da equipe resolver, o Scrum Master pode ser envolvido para ajudar a remover esses impedimentos.</p>
-        <p>Além disso, as Daily Scrums desempenham um papel crucial no ciclo de inspeção e adaptação do Scrum. Ao analisar diariamente o progresso da Sprint e identificar quaisquer problemas ou desafios, o Time de Desenvolvimento pode tomar medidas imediatas para corrigi-los, garantindo que a Sprint permaneça no caminho certo para alcançar seus objetivos.</p>
-        <div class="cardcard">
-            <div class="containercard">
-                <br>
-                <p><font color="#C8C8C8"><strong>Exemplo prático :</strong></font></p> 
-                <p class="pp"><font color="#C8C8C8">Imagine que você é parte de um Time de Desenvolvimento Scrum trabalhando neste aplicativo. Vocês têm uma Daily Scrum todos os dias pela manhã para se manterem sincronizados e resolver quaisquer obstáculos que possam surgir.</font></P>
-                    <P class="pp2"><font color="#C8C8C8"><strong><i>EXEMPLO DE DAILY SCRUM :</i></strong></font></P>
-                    <p class="ppp"><font color="#C8C8C8"><i><strong>Equipe:</strong></i></font></p>
-                        <p class="ppp2"><font color="#C8C8C8">-> Ana (Desenvolvedora)</font></p>
-                        <p class="ppp2"><font color="#C8C8C8">-> João (Desenvolvedor)</font></p>
-                        <p class="ppp2"><font color="#C8C8C8">-> Maria (Desenvolvedora)</font></p>
-                        <p class="ppp2"><font color="#C8C8C8">-> Pedro (Scrum Master)</font></p>
-                <p class="pp"><font color="#C8C8C8"> <i><strong>Dia 1 :</strong></i></font></p>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>Ana :</strong></i> Desde a última Daily Scrum, terminei de implementar a função de adicionar tarefas à lista. Pretendo começar a trabalhar na função de editar tarefas até a próxima Daily Scrum.</font></p>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>João :</strong></i>  Eu terminei de corrigir alguns bugs menores na interface do usuário. Meu plano para a próxima Daily Scrum é continuar trabalhando na melhoria da experiência do usuário ao marcar tarefas como concluídas.</font></p>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>Maria :</strong></i>  Consegui integrar uma biblioteca de notificações push ao aplicativo. Para a próxima Daily Scrum, vou começar a trabalhar na funcionalidade de agrupamento de tarefas por categoria.</font></p>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>Pedro (Scrum Master) :</strong></i> Não houve nenhum impedimento relatado hoje. Lembre-se de que estou aqui para ajudar se surgirem obstáculos que não possam ser resolvidos pela equipe.</font></p>
-                <p class="pp"><font color="#C8C8C8"><i><strong>Dia 2 :</strong></i></font></p>
-                    <p class="pp2"><font color="#C8C8C8"> <i><strong>Ana :</strong></i> Consegui adicionar a função de edição de tarefas à lista. Agora estou trabalhando na correção de um problema de desempenho ao exibir muitas tarefas na tela.</font></p>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>João :</strong></i> Terminei de melhorar a experiência do usuário ao marcar tarefas como concluídas. Meu próximo passo é realizar testes de usabilidade para garantir que tudo funcione conforme o esperado.</font></p>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>Maria :</strong></i>  Comecei a trabalhar na funcionalidade de agrupamento de tarefas por categoria. Encontrei um obstáculo ao tentar integrar essa função com a interface do usuário existente. Vou precisar da ajuda da equipe para resolver isso.</font></p>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>Pedro (Scrum Master) :</strong></i>  Maria, vamos agendar uma reunião após a Daily Scrum para discutir o obstáculo que você encontrou. Enquanto isso, o resto da equipe pode continuar avançando em suas tarefas.</font></p>
-                <p class="ppp"><font color="#C8C8C8">Neste exemplo, a Daily Scrum permite que a equipe se mantenha sincronizada sobre o progresso das tarefas e identifique rapidamente qualquer impedimento que possa surgir. Ao comunicar seus planos e obstáculos diariamente, a equipe pode colaborar efetivamente para resolver problemas e manter o projeto avançando.</font></p>
-            </div>
-        </div>
-        <BR>
-            <img src="{{ url_for('static', filename='/imgs/3.png') }}" class="imag">
-        <br>
-<br>
-        <h1>Sprint Review: Demonstrações e Feedbacks do Produto</h1>
-            <p><strong><i>Sprint Review:</i></strong></p>
-                <p class="pp">A Sprint Review é uma cerimônia fundamental dentro do framework do Scrum, realizada ao final de cada Sprint. É uma oportunidade para que o Time de Desenvolvimento, o Product Owner e demais stakeholders se reúnam e revisem o trabalho concluído durante a Sprint.</p>
-                <p class="pp">É uma cerimônia colaborativa e interativa, onde todos os interessados no produto têm a oportunidade de participar, oferecendo insights e feedback valiosos.</p>
+    </div>
+    <div class="item" id="item-2">
+        <h1>Sprint Planning Meeting:Planejando o Trabalho da Sprint</h1>
+            <p><strong><i>O que é uma Sprint Planning Meeting?</strong></i></p>
+                <p class="pp">Podemos resumir didaticamente a Sprint Planning Meeting em duas partes: </p>
+            <p><strong><i>O que vamos entregar?</i></strong></p>
+                <p class="pp">Nesta fase, o foco está em determinar quais funcionalidades serão desenvolvidas durante a Sprint. Os passos principais incluem:</p>
+                    <p class="pp2"><i><strong>-> Apresentação do Product Backlog :</strong></i> O Product Owner apresenta os itens prioritários do Product Backlog ao Time Scrum, representando as necessidades e expectativas do cliente.</p>
+                    <p class="pp2"><i><strong>-> Discussão e colaboração :</strong></i> Toda a equipe Scrum, incluindo o Development Team e o Product Owner, discute os itens do Product Backlog para garantir um claro entendimento dos requisitos e objetivos do projeto.</p>
+                    <p class="pp2"><i><strong>-> Seleção dos itens para a Sprint :</strong></i>  Com base em sua capacidade e experiência, o Development Team seleciona os itens do Product Backlog que serão trabalhados durante a Sprint, considerando complexidade, prioridade e histórico de Sprints anteriores.</p>
+                    <p class="pp2"><i><strong>-> Definição da meta da Sprint :</strong></i> A equipe define uma meta clara e compartilhada para o que será alcançado durante a Sprint, servindo como um guia para manter o foco comum.</p>
+            <p><strong><i>Como vamos entregar?</i></strong></p>
+                <p class="pp">Nesta fase, o foco é determinar como os itens selecionados serão transformados em um Incremento durante a Sprint. Os passos principais incluem: </p>
+                    <p class="pp2"><i><strong>-> Decomposição dos itens :</strong></i>  O Development Team divide os itens selecionados em trabalhos menores que podem ser completados em curtos períodos de tempo, facilitando o acompanhamento do progresso e a gestão das atividades.</p>
+                    <p class="pp2"><i><strong>-> Criação do Sprint Backlog:</strong></i> É criada uma lista detalhada de todas as tarefas necessárias para completar os itens selecionados, incluindo estimativas de tempo e ordem de realização das tarefas.</p>
+                    <p class="pp2"><i><strong>-> Reafirmação da meta da Sprint:</strong></i> Garantindo que todos os membros estejam alinhados com o objetivo final e compartilhado da Sprint, para manter o foco e a duração durante o período de trabalho.</p>
+                <p class="pp">Essas duas partes da Sprint Planning Meeting são fundamentais para garantir que a equipe Scrum esteja alinhada com os objetivos do projeto e tenha um plano claro para alcançar esses objetivos durante a Sprint.</p>
+            <div class="cardcard">
+                <div class="containercard">
+                    <br>
+                    <p><font color="#C8C8C8"><strong>Exemplo prático :</strong></font></p>
+                    <p class="pp"><font color="#C8C8C8"> Uma equipe Scrum está desenvolvendo um aplicativo de lista de tarefas. Vamos dividir o exemplo em duas partes, correspondendo às duas partes da Sprint Planning Meeting:</font></P>
+                        <P class="pp2"><font color="#C8C8C8"><strong><i>O que vamos entregar?</i></strong></font></P>
+                            <p class="ppp"><font color="#C8C8C8"> Imagine que a equipe Scrum se reúne para planejar a próxima Sprint. O Product Owner apresenta os seguintes itens prioritários do Product Backlog:</font></p>
+                                <p class="ppp2"><font color="#C8C8C8"> -> Adicionar funcionalidade de notificação de lembrete de tarefas.</font></p>
+                                <p class="ppp2"><font color="#C8C8C8"> -> Implementar a capacidade de categorizar tarefas como 'trabalho', 'pessoal' ou 'estudo'.</font></p>
+                                <p class="ppp2"><font color="#C8C8C8"> -> Melhorar a interface do usuário da lista de tarefas para torná-la mais intuitiva.</font></p>
+                            <p class="ppp"><font color="#C8C8C8"> Após uma discussão, a equipe concorda que esses são os itens mais importantes para os usuários do aplicativo neste momento.</font></p>
         
-            <p><strong><i>Objetivo</i></strong></p>
-                <p class="pp">A principal finalidade da Sprint Review é garantir que o produto esteja sempre alinhado com as necessidades e expectativas dos clientes e usuários finais. Para isso, é essencial inspecionar o trabalho realizado pelo Time de Desenvolvimento, identificando o que foi bem-sucedido e onde podem haver oportunidades de melhoria.</p>
-                <p class="pp">Além disso, a coleta de feedback durante a Sprint Review permite que o Time de Desenvolvimento e o Product Owner adaptem o plano para a próxima Sprint, caso seja necessário, priorizando as funcionalidades e ajustando as estratégias conforme as demandas do mercado e as mudanças no contexto do projeto.</p>
-        
-            <p><strong><i>Atividades</i></strong></p>
-                <p class="pp">Durante a Sprint Review, uma das principais atividades é a demonstração das novas funcionalidades desenvolvidas durante a Sprint. Isso proporciona uma oportunidade para os stakeholders visualizarem o progresso do produto e entenderem como as novas funcionalidades agregam valor ao produto.</p>
-                <p class="pp">Além da demonstração, é importante que haja um espaço para a discussão aberta, onde os participantes possam compartilhar suas opiniões, impressões e sugestões de melhorias. Essa interação é fundamental para garantir que o produto atenda às expectativas e necessidades do cliente.</p>
-        
-            <p><strong><i>Papéis na Reunião</i></strong></p>
-                <p class="pp">O Product Owner desempenha um papel crucial na Sprint Review, sendo responsável por validar se os objetivos da Sprint foram alcançados de acordo com a meta estabelecida durante a Sprint Planning Meeting. Sua validação é essencial para garantir que o produto esteja sempre alinhado com as necessidades do cliente.</p>
-                <p class="pp">O Time de Desenvolvimento, por sua vez, é responsável por apresentar o trabalho realizado durante a Sprint, destacando o que foi bem-sucedido, os desafios enfrentados e as soluções encontradas. Eles também estão disponíveis para responder a quaisquer perguntas dos participantes e esclarecer dúvidas sobre o trabalho realizado.</p>
-
-        <div class="cardcard">
-            <div class="containercard">
-                <br>
-                <p><font color="#C8C8C8"><strong>Exemplo prático :</strong></font></p> 
-                <p class="pp"><font color="#C8C8C8">Vamos imaginar que somos uma equipe de desenvolvimento de software que acabou de concluir um sprint de duas semanas trabalhando em um aplicativo de gerenciamento de tarefas. Agora é hora da Sprint Review, onde demonstraremos as funcionalidades concluídas aos stakeholders e receberemos feedback sobre o produto. Aqui está um exemplo prático de como essa revisão poderia ocorrer:</font></P>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>Preparação: </strong></i> Antes da revisão, a equipe se certifica de que todas as funcionalidades concluídas estejam prontas para serem demonstradas. Isso pode envolver a verificação de bugs de última hora, a finalização da interface do usuário e a preparação de uma apresentação.</font></p>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>Convite aos Stakeholders: </strong></i> O Product Owner envia convites para a Sprint Review aos stakeholders relevantes, como clientes, gerentes de produto e outros interessados no projeto. O convite inclui a data, hora e local da revisão, assim como a agenda da apresentação.</font></p>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>Início da Revisão:</strong></i>Na hora marcada, a equipe e os stakeholders se reúnem na sala de reuniões ou em uma videoconferência. O Product Owner começa a revisão introduzindo o objetivo do sprint e o que foi planejado para ser entregue.</font></p>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>Demonstração das Funcionalidades Concluídas:</strong></i> Os membros da equipe começam a demonstrar as funcionalidades concluídas uma por uma. Por exemplo, eles podem mostrar como adicionar e editar tarefas, atribuir responsáveis, definir prazos, etc. Durante a demonstração, os stakeholders têm a oportunidade de interagir com o produto e fazer perguntas.</font></p>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>Discussão e Feedback:</strong></i> Após cada demonstração, os stakeholders são convidados a fornecer feedback. Eles podem comentar sobre a usabilidade, a aparência visual, a funcionalidade e qualquer outra área relevante do produto. A equipe faz anotações sobre os comentários dos stakeholders para referência futura.</font></p>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>Identificação de Próximos Passos:</strong></i> Com base no feedback recebido, a equipe e os stakeholders discutem quaisquer alterações ou melhorias necessárias no produto. O Product Owner registra os próximos passos a serem tomados, incluindo correções de bugs, ajustes de design ou novas funcionalidades a serem desenvolvidas.</font></p>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>Encerramento:</strong></i> O Product Owner recapitula os pontos principais discutidos durante a revisão e agradece a todos por sua participação e feedback. Ele reitera o compromisso da equipe em trabalhar continuamente para melhorar o produto com base no feedback recebido.</font></p>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>Follow-Up: </strong></i> Após a revisão, a equipe prioriza e implementa as alterações acordadas. Os stakeholders são mantidos informados sobre o progresso das alterações e são convidados para futuras revisões à medida que novas funcionalidades são desenvolvidas.</font></p>
-                <p class="pp"><font color="#C8C8C8">Este exemplo demonstra como a Sprint Review é uma oportunidade crucial para envolver os stakeholders, obter feedback valioso sobre o produto e garantir que as necessidades do cliente sejam atendidas de maneira eficaz.</font>
+                    <p class="pp"><font color="#C8C8C8"><strong><i>COMO VAMOS ENTREGAR?</i></strong></font></p>
+                        <p class="pp2"><font color="#C8C8C8"> A equipe agora precisa determinar como transformar os itens selecionados em um Incremento durante a Sprint:</font></p>
+                            <p class="ppp"><font color="#C8C8C8"> ->Eles dividem a funcionalidade de notificação de lembrete em tarefas menores, como "Implementar a lógica de notificação" e "Desenvolver a interface do usuário para configurar lembretes".</font></p>
+                            <p class="ppp"><font color="#C8C8C8"> ->Criam um Sprint Backlog detalhado, incluindo todas as tarefas necessárias para completar os itens selecionados, como design, codificação, testes e integração.</font></p>
+                            <p class="ppp"><font color="#C8C8C8"> ->Reafirmam a meta da Sprint, lembrando-se de que o objetivo principal é melhorar a usabilidade do aplicativo para aumentar a produtividade dos usuários.</font></p>
+                        <p class="pp2"><font color="#C8C8C8">Ao final da Sprint Planning Meeting, a equipe está alinhada com os objetivos da Sprint e tem um plano claro de como alcançá-los. Durante a Sprint, eles trabalharão no desenvolvimento desses itens, acompanhando seu progresso diariamente e ajustando conforme necessário para garantir que a meta da Sprint seja alcançada.</font></p>
+                </div>
             </div>
-        </div>
-        <BR>
-            <img src="{{ url_for('static', filename='/imgs/4.png') }}" class="imag">
+            <BR>
+                <img src="{{ url_for('static', filename='/imgs/2.png') }}" class="imag">
+            <br>
         <br>
-<br>
-        <br>
-        <h1>Sprint Retrospective: Reflexão e Melhoria Contínua</h1>
-            <p><strong><i>Sprint Retrospective:</i></strong></p>
-                <p class="pp">É o momento em que o Time Scrum se reúne para refletir sobre a Sprint que acabou de ser concluída. Essa reunião é uma oportunidade valiosa para avaliar o trabalho realizado, identificar pontos fortes e áreas de melhoria, e planejar ações para aumentar a eficácia do Time Scrum.</p>
-
-            <p><strong><i>Foco da Sprint Retrospective:</i></strong></p>
-                <p class="pp">A principal ênfase da Sprint Retrospective está no aprimoramento do processo do Time Scrum. Isso inclui a análise da dinâmica de equipe, das práticas e técnicas utilizadas, bem como das ferramentas empregadas no desenvolvimento do produto. A intenção é identificar o que está funcionando bem e o que pode ser melhorado para aumentar a produtividade e a qualidade do trabalho entregue.</p>
-
-            <p><strong><i>O que é discutido:</i></strong></p>
-                <p class="pp">Durante a Sprint Retrospective, os membros do Time Scrum discutem abertamente sobre o que funcionou bem durante a Sprint, destacando os sucessos e conquistas alcançados. Eles também revisam as áreas que apresentaram desafios ou obstáculos, identificando oportunidades de melhoria para a próxima Sprint.</p>
-
-            <p><strong><i>Identificação de medidas de melhoria:</i></strong></p>
-                <p class="pp">Identificar problemas é apenas o primeiro passo; é igualmente importante propor medidas concretas de melhoria. Durante a Sprint Retrospective, o Time Scrum colabora para definir ações específicas que podem ser implementadas para superar os desafios identificados e melhorar o processo de trabalho.</p>
-
-            <p><strong><i>Atitude dos membros do Time:</i></strong></p>
-                <p class="pp">Uma atitude aberta e receptiva é essencial durante a Sprint Retrospective. Os membros do Time Scrum devem estar dispostos a ouvir e receber feedback construtivo, sem levar as críticas para o lado pessoal. O objetivo é focar na melhoria contínua do processo de trabalho, em vez de atribuir culpas ou apontar falhas individuais. Isso promove um ambiente de confiança e colaboração, fundamental para o sucesso do Time Scrum.</p>
-
-        <div class="cardcard">
-            <div class="containercard">
-                <br>
-                <p><font color="#C8C8C8"><strong>Exemplo prático :</strong></font></p> 
-                <p class="pp"><font color="#C8C8C8">Vamos supor que estamos trabalhando em uma equipe de desenvolvimento de software que segue a metodologia ágil, utilizando o framework Scrum. Após concluir um sprint de duas semanas, é hora de realizar a Sprint Retrospective, onde nos reunimos para refletir sobre o que correu bem, o que não correu tão bem e como podemos melhorar no próximo sprint. Aqui está um exemplo prático de como essa retrospectiva poderia ocorrer:</font></P>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>Preparação: </strong></i>  O Scrum Master agenda a reunião para o último dia do sprint e envia um convite a todos os membros da equipe. Ele também prepara o ambiente, garantindo que haja um quadro branco ou uma ferramenta online para registrar as discussões e decisões.</font></p>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>Início da Retrospectiva:</strong></i>A equipe se reúne na sala de reuniões ou em uma videoconferência. O Scrum Master começa a reunião relembrando o objetivo da Sprint Retrospective: refletir sobre o sprint concluído e identificar maneiras de melhorar.</li>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>Discussão dos Aspectos Positivos: </strong></i>O Scrum Master convida os membros da equipe a compartilharem o que correu bem durante o sprint. Os membros podem mencionar conquistas, colaborações eficazes, entregas de alta qualidade, etc. Cada ponto positivo é registrado no quadro ou na ferramenta online.</li>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>Identificação dos Desafios:</strong></i>Em seguida, a equipe discute os desafios enfrentados durante o sprint. Isso pode incluir obstáculos encontrados, problemas de comunicação, atrasos, etc. Novamente, cada desafio é registrado para referência futura.</li>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>Análise das Causas Raízes: </strong></i> Depois de listar os desafios, a equipe mergulha mais fundo para entender as causas raízes por trás deles. Por exemplo, se houve atrasos na entrega de uma funcionalidade, pode ser devido a requisitos mal definidos ou falta de comunicação entre os membros da equipe.</li>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>Brainstorming de Soluções: </strong></i> Com uma compreensão clara dos desafios e suas causas, a equipe começa a brainstormear soluções. Todos os membros são encorajados a contribuir com ideias para melhorar os processos, a comunicação ou qualquer outra área identificada como problemática.</li>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>Definição de Ações de Melhoria: </strong></i> Com base nas soluções discutidas, a equipe decide quais ações serão implementadas para melhorar no próximo sprint. Cada ação é atribuída a um membro da equipe, e prazos são definidos para sua implementação.</font></p>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>Encerramento:</strong></i> O Scrum Master recapitula as ações acordadas e agradece a todos por sua contribuição. Ele lembra à equipe que a Sprint Retrospective é uma oportunidade contínua de aprendizado e melhoria, e encoraja todos a aplicarem as lições aprendidas no próximo sprint.</font></p>
-                    <p class="pp2"><font color="#C8C8C8"><i><strong>Follow-Up:</strong></i> Durante o próximo sprint, a equipe monitora o progresso das ações de melhoria e ajusta conforme necessário. Os resultados das ações são discutidos na próxima Sprint Retrospective, fechando assim o ciclo de melhoria contínua.</font></p>
-                <p class="pp"><font color="#C8C8C8">Este exemplo mostra como a Sprint Retrospective é uma ferramenta valiosa para promover a reflexão e a melhoria contínua em uma equipe ágil.</font></p>
+    </div>
+    <div class="item" id="item-3">
+        <h1> Daily Scrum: Sincronização Diária e Resolução de Impedimentos</h1>
+            <p><strong><i>O que é uma Daily Scrum?</strong></i></p>
+                <p class="pp">A Daily Scrum é uma reunião diária do Time de Desenvolvimento no Scrum, projetada para ser rápida e focada, com duração máxima de 15 minutos. Durante essa reunião, cada membro responde a três perguntas:</p>
+            <p><strong><i>O que realizei desde a última Daily Scrum?</strong></i></p>
+                <p class="pp">Os membros compartilham brevemente o trabalho concluído desde a última reunião, destacando as tarefas finalizadas ou progresso significativo em direção aos objetivos da Sprint.</p>
+            <p><strong><i>Quais são os meus planos até a próxima Daily Scrum?</strong></i></p>
+                <p class="pp">Os membros explicam o que planejam fazer até a próxima reunião, destacando as tarefas que pretendem abordar e os objetivos que desejam alcançar durante o período seguinte.</p>
+            <p><strong><i>Houve algum obstáculo que me impediu de concluir alguma tarefa?</strong></i></p>
+                <p class="pp">Se algum membro encontrou obstáculos ou bloqueios que afetaram seu progresso, eles compartilham esses desafios com a equipe. Isso pode incluir questões técnicas, dependências de outras equipes ou qualquer outra coisa que esteja dificultando o avanço do trabalho.</p>
+            <p>É importante ressaltar que a Daily Scrum é uma oportunidade para o Time de Desenvolvimento se comunicar e sincronizar seu trabalho de forma colaborativa. Como são autogerenciados, os membros são responsáveis por resolver obstáculos que possam surgir durante o processo. Se um obstáculo estiver além da capacidade da equipe resolver, o Scrum Master pode ser envolvido para ajudar a remover esses impedimentos.</p>
+            <p>Além disso, as Daily Scrums desempenham um papel crucial no ciclo de inspeção e adaptação do Scrum. Ao analisar diariamente o progresso da Sprint e identificar quaisquer problemas ou desafios, o Time de Desenvolvimento pode tomar medidas imediatas para corrigi-los, garantindo que a Sprint permaneça no caminho certo para alcançar seus objetivos.</p>
+            <div class="cardcard">
+                <div class="containercard">
+                    <br>
+                    <p><font color="#C8C8C8"><strong>Exemplo prático :</strong></font></p>
+                    <p class="pp"><font color="#C8C8C8">Imagine que você é parte de um Time de Desenvolvimento Scrum trabalhando neste aplicativo. Vocês têm uma Daily Scrum todos os dias pela manhã para se manterem sincronizados e resolver quaisquer obstáculos que possam surgir.</font></P>
+                        <P class="pp2"><font color="#C8C8C8"><strong><i>EXEMPLO DE DAILY SCRUM :</i></strong></font></P>
+                        <p class="ppp"><font color="#C8C8C8"><i><strong>Equipe:</strong></i></font></p>
+                            <p class="ppp2"><font color="#C8C8C8">-> Ana (Desenvolvedora)</font></p>
+                            <p class="ppp2"><font color="#C8C8C8">-> João (Desenvolvedor)</font></p>
+                            <p class="ppp2"><font color="#C8C8C8">-> Maria (Desenvolvedora)</font></p>
+                            <p class="ppp2"><font color="#C8C8C8">-> Pedro (Scrum Master)</font></p>
+                    <p class="pp"><font color="#C8C8C8"> <i><strong>Dia 1 :</strong></i></font></p>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>Ana :</strong></i> Desde a última Daily Scrum, terminei de implementar a função de adicionar tarefas à lista. Pretendo começar a trabalhar na função de editar tarefas até a próxima Daily Scrum.</font></p>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>João :</strong></i>  Eu terminei de corrigir alguns bugs menores na interface do usuário. Meu plano para a próxima Daily Scrum é continuar trabalhando na melhoria da experiência do usuário ao marcar tarefas como concluídas.</font></p>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>Maria :</strong></i>  Consegui integrar uma biblioteca de notificações push ao aplicativo. Para a próxima Daily Scrum, vou começar a trabalhar na funcionalidade de agrupamento de tarefas por categoria.</font></p>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>Pedro (Scrum Master) :</strong></i> Não houve nenhum impedimento relatado hoje. Lembre-se de que estou aqui para ajudar se surgirem obstáculos que não possam ser resolvidos pela equipe.</font></p>
+                    <p class="pp"><font color="#C8C8C8"><i><strong>Dia 2 :</strong></i></font></p>
+                        <p class="pp2"><font color="#C8C8C8"> <i><strong>Ana :</strong></i> Consegui adicionar a função de edição de tarefas à lista. Agora estou trabalhando na correção de um problema de desempenho ao exibir muitas tarefas na tela.</font></p>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>João :</strong></i> Terminei de melhorar a experiência do usuário ao marcar tarefas como concluídas. Meu próximo passo é realizar testes de usabilidade para garantir que tudo funcione conforme o esperado.</font></p>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>Maria :</strong></i>  Comecei a trabalhar na funcionalidade de agrupamento de tarefas por categoria. Encontrei um obstáculo ao tentar integrar essa função com a interface do usuário existente. Vou precisar da ajuda da equipe para resolver isso.</font></p>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>Pedro (Scrum Master) :</strong></i>  Maria, vamos agendar uma reunião após a Daily Scrum para discutir o obstáculo que você encontrou. Enquanto isso, o resto da equipe pode continuar avançando em suas tarefas.</font></p>
+                    <p class="ppp"><font color="#C8C8C8">Neste exemplo, a Daily Scrum permite que a equipe se mantenha sincronizada sobre o progresso das tarefas e identifique rapidamente qualquer impedimento que possa surgir. Ao comunicar seus planos e obstáculos diariamente, a equipe pode colaborar efetivamente para resolver problemas e manter o projeto avançando.</font></p>
+                </div>
             </div>
-        </div>
-        <BR>
-            <img src="{{ url_for('static', filename='/imgs/5.png') }}" class="imag">
+            <BR>
+                <img src="{{ url_for('static', filename='/imgs/3.png') }}" class="imag">
+            <br>
         <br>
-<br>
-        <h1 style="color: #1c1e21;">Release Planning Meeting: Planejamento das Entregas em Produção</h1>
-            <p><strong><i>Release Planning Meeting:</i></strong></p>
-                <p class="pp">É uma reunião que ocorre após uma Sprint, onde o Time de Desenvolvimento entrega um Incremento do produto. Durante essa reunião, o foco está na planificação da entrega do produto em produção, conhecida como Release.</p>
-
-            <p><strong><i>Propósito da Release Planning Meeting:</i></strong></p>
-                <p class="pp">O propósito principal é planejar a entrega do produto em produção, seja para atender a obrigações contratuais, demandas do mercado ou eventos específicos, como conferências ou lançamentos de produtos. É um momento crucial para alinhar o planejamento do produto com as necessidades do negócio e dos clientes.</p>
-
-            <p><strong><i>Projeção além de uma Sprint:</i></strong></p>
-                <p class="pp">Enquanto as Sprints são períodos curtos de trabalho, a Release Planning Meeting permite ao Time Scrum olhar além de uma Sprint e planejar as entregas para os clientes em um horizonte mais amplo. Embora o planejamento possa ter menos precisão do que para uma Sprint individual, ainda é essencial para garantir uma visão estratégica do produto.</p>
-
-            <p><strong><i>Participação do Time Scrum:</i></strong></p>
-                <p class="pp">Todos os membros do Time Scrum participam da Release Planning Meeting, independentemente de sua especialização ou papel. Isso é importante para garantir que todos tenham uma compreensão compartilhada do produto e das metas da Release. Além disso, essa participação promove um alinhamento completo do time em relação aos objetivos da entrega do produto.</p>
-
-            <p><strong><i>Conteúdo da Reunião:</i></strong></p>
-                <p class="pp">Durante a reunião, o Time Scrum discute e concorda sobre o valor de cada item a ser entregue na Release, identifica e avalia os riscos associados e as dependências entre as funcionalidades. Isso permite que o Time Scrum tenha uma visão completa das prioridades e desafios que enfrentarão durante o período da Release.</p>
-
-            <p><strong><i>Conteúdo da Reunião:</i></strong></p>
-                <p class="pp">Embora não haja uma regra fixa para a duração da Release Planning Meeting, em média, ela dura cerca de dois dias. É importante respeitar esse limite de tempo para evitar excesso de detalhes que podem comprometer a eficiência da reunião.</p>
-                <p>Quanto à frequência, é recomendável que o período de uma Release não ultrapasse seis meses. No entanto, o time deve revisar e atualizar o planejamento a cada Sprint Review e, se necessário, fazer ajustes nas Releases antes do previsto para garantir que estejam alinhadas com as necessidades do produto e do negócio.</p>
-
-        <div class="cardcard">
-            <div class="containercard">
-                <br>
-                <p><font color="#C8C8C8"><strong>Passos para cria uma Release Planning Meeting:</strong></font></p> 
-                    <p class="pp"><font color="#C8C8C8"><strong>-> Abertura:</strong></i> Revisão do propósito da reunião, estrutura, agenda, etc.</p></font>
-                    <p class="pp"><font color="#C8C8C8"><i><strong>-> Visão do Produto e Roadmap:</strong></i> Revisão da Visão do Produto para alinhar expectativas.</p></font>
-                    <p class="pp"><font color="#C8C8C8"><i><strong>-> Status atual do projeto:</strong></i> Apresentação de gráficos e relatórios de status das últimas Sprints.</p></font>
-                    <p class="pp"><font color="#C8C8C8"><i><strong>-> Meta/tema da Release:</strong></i>  Definição da meta para a Release.</p></font>
-                    <p class="pp"><font color="#C8C8C8"><i><strong>-> Estimativa de velocidade:</strong></i>Estimativa da velocidade para esta Release com base nas Sprints anteriores.</p></font>
-                    <p class="pp"><font color="#C8C8C8"><i><strong>-> Agenda da Release e número de Sprints:</strong></i> Definição de Milestones e tamanho das Sprints.</p></font>
-                    <p class="pp"><font color="#C8C8C8"><i><strong>-> Estimativa de itens do Product Backlog:</strong></i>Estimativa de itens do Product Backlog caso não estejam estimados.</p></font>
-                    <p class="pp"><font color="#C8C8C8"><i><strong>-> Mapeamento de itens nas Sprints do Release:</strong></i>  Mapeamento de itens priorizados nas Sprints.</p></font>
-                    <p class="pp"><font color="#C8C8C8"><i><strong>-> Riscos, dependências e preocupações: </strong></i>   Identificação de riscos, dependências e impedimentos.</p></font>
-                    <p class="pp"><font color="#C8C8C8"><i><strong>-> Comprometimento:</strong></i>  Comprometimento com a meta da Release.</p></font>
-                    <p class="pp"><font color="#C8C8C8"><i><strong>-> Plano de comunicação e logística da Sprint:</strong></i>  Definição do plano de comunicação e logística.</li>
-                    <p class="pp"><font color="#C8C8C8"><i><strong>-> Montagem de gráficos:</strong></i> Montagem de Release Burndown e/ou Parking Lot.</p></font>
-                    <p class="pp"><font color="#C8C8C8"><i><strong>-> Retrospectiva:</strong></i> Avaliação dos pontos positivos e de melhoria desta reunião.</p></font>
-                <p class="p"><font color="#C8C8C8">Esta agenda serve apenas como exemplo. Você pode incluir outras práticas, atividades ou técnicas conforme necessário, ou remover algo se considerar desnecessário.</font></p>
+    </div>
+        <div class="item" id="item-4">
+            <h1>Sprint Review: Demonstrações e Feedbacks do Produto</h1>
+                <p><strong><i>Sprint Review:</i></strong></p>
+                    <p class="pp">A Sprint Review é uma cerimônia fundamental dentro do framework do Scrum, realizada ao final de cada Sprint. É uma oportunidade para que o Time de Desenvolvimento, o Product Owner e demais stakeholders se reúnam e revisem o trabalho concluído durante a Sprint.</p>
+                    <p class="pp">É uma cerimônia colaborativa e interativa, onde todos os interessados no produto têm a oportunidade de participar, oferecendo insights e feedback valiosos.</p>
+            
+                <p><strong><i>Objetivo</i></strong></p>
+                    <p class="pp">A principal finalidade da Sprint Review é garantir que o produto esteja sempre alinhado com as necessidades e expectativas dos clientes e usuários finais. Para isso, é essencial inspecionar o trabalho realizado pelo Time de Desenvolvimento, identificando o que foi bem-sucedido e onde podem haver oportunidades de melhoria.</p>
+                    <p class="pp">Além disso, a coleta de feedback durante a Sprint Review permite que o Time de Desenvolvimento e o Product Owner adaptem o plano para a próxima Sprint, caso seja necessário, priorizando as funcionalidades e ajustando as estratégias conforme as demandas do mercado e as mudanças no contexto do projeto.</p>
+            
+                <p><strong><i>Atividades</i></strong></p>
+                    <p class="pp">Durante a Sprint Review, uma das principais atividades é a demonstração das novas funcionalidades desenvolvidas durante a Sprint. Isso proporciona uma oportunidade para os stakeholders visualizarem o progresso do produto e entenderem como as novas funcionalidades agregam valor ao produto.</p>
+                    <p class="pp">Além da demonstração, é importante que haja um espaço para a discussão aberta, onde os participantes possam compartilhar suas opiniões, impressões e sugestões de melhorias. Essa interação é fundamental para garantir que o produto atenda às expectativas e necessidades do cliente.</p>
+            
+                <p><strong><i>Papéis na Reunião</i></strong></p>
+                    <p class="pp">O Product Owner desempenha um papel crucial na Sprint Review, sendo responsável por validar se os objetivos da Sprint foram alcançados de acordo com a meta estabelecida durante a Sprint Planning Meeting. Sua validação é essencial para garantir que o produto esteja sempre alinhado com as necessidades do cliente.</p>
+                    <p class="pp">O Time de Desenvolvimento, por sua vez, é responsável por apresentar o trabalho realizado durante a Sprint, destacando o que foi bem-sucedido, os desafios enfrentados e as soluções encontradas. Eles também estão disponíveis para responder a quaisquer perguntas dos participantes e esclarecer dúvidas sobre o trabalho realizado.</p>
+            <div class="cardcard">
+                <div class="containercard">
+                    <br>
+                    <p><font color="#C8C8C8"><strong>Exemplo prático :</strong></font></p>
+                    <p class="pp"><font color="#C8C8C8">Vamos imaginar que somos uma equipe de desenvolvimento de software que acabou de concluir um sprint de duas semanas trabalhando em um aplicativo de gerenciamento de tarefas. Agora é hora da Sprint Review, onde demonstraremos as funcionalidades concluídas aos stakeholders e receberemos feedback sobre o produto. Aqui está um exemplo prático de como essa revisão poderia ocorrer:</font></P>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>Preparação: </strong></i> Antes da revisão, a equipe se certifica de que todas as funcionalidades concluídas estejam prontas para serem demonstradas. Isso pode envolver a verificação de bugs de última hora, a finalização da interface do usuário e a preparação de uma apresentação.</font></p>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>Convite aos Stakeholders: </strong></i> O Product Owner envia convites para a Sprint Review aos stakeholders relevantes, como clientes, gerentes de produto e outros interessados no projeto. O convite inclui a data, hora e local da revisão, assim como a agenda da apresentação.</font></p>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>Início da Revisão:</strong></i>Na hora marcada, a equipe e os stakeholders se reúnem na sala de reuniões ou em uma videoconferência. O Product Owner começa a revisão introduzindo o objetivo do sprint e o que foi planejado para ser entregue.</font></p>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>Demonstração das Funcionalidades Concluídas:</strong></i> Os membros da equipe começam a demonstrar as funcionalidades concluídas uma por uma. Por exemplo, eles podem mostrar como adicionar e editar tarefas, atribuir responsáveis, definir prazos, etc. Durante a demonstração, os stakeholders têm a oportunidade de interagir com o produto e fazer perguntas.</font></p>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>Discussão e Feedback:</strong></i> Após cada demonstração, os stakeholders são convidados a fornecer feedback. Eles podem comentar sobre a usabilidade, a aparência visual, a funcionalidade e qualquer outra área relevante do produto. A equipe faz anotações sobre os comentários dos stakeholders para referência futura.</font></p>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>Identificação de Próximos Passos:</strong></i> Com base no feedback recebido, a equipe e os stakeholders discutem quaisquer alterações ou melhorias necessárias no produto. O Product Owner registra os próximos passos a serem tomados, incluindo correções de bugs, ajustes de design ou novas funcionalidades a serem desenvolvidas.</font></p>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>Encerramento:</strong></i> O Product Owner recapitula os pontos principais discutidos durante a revisão e agradece a todos por sua participação e feedback. Ele reitera o compromisso da equipe em trabalhar continuamente para melhorar o produto com base no feedback recebido.</font></p>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>Follow-Up: </strong></i> Após a revisão, a equipe prioriza e implementa as alterações acordadas. Os stakeholders são mantidos informados sobre o progresso das alterações e são convidados para futuras revisões à medida que novas funcionalidades são desenvolvidas.</font></p>
+                    <p class="pp"><font color="#C8C8C8">Este exemplo demonstra como a Sprint Review é uma oportunidade crucial para envolver os stakeholders, obter feedback valioso sobre o produto e garantir que as necessidades do cliente sejam atendidas de maneira eficaz.</font>
+                </div>
             </div>
+            <BR>
+                <img src="{{ url_for('static', filename='/imgs/4.png') }}" class="imag">
+            <br>
+            <br>
+            <br>
         </div>
-            <img src="{{ url_for('static', filename='/imgs/6.png') }}" class="imag">
-        <br>
+        <div class="item" id="item-5">
+            <h1>Sprint Retrospective: Reflexão e Melhoria Contínua</h1>
+                <p><strong><i>Sprint Retrospective:</i></strong></p>
+                    <p class="pp">É o momento em que o Time Scrum se reúne para refletir sobre a Sprint que acabou de ser concluída. Essa reunião é uma oportunidade valiosa para avaliar o trabalho realizado, identificar pontos fortes e áreas de melhoria, e planejar ações para aumentar a eficácia do Time Scrum.</p>
+                <p><strong><i>Foco da Sprint Retrospective:</i></strong></p>
+                    <p class="pp">A principal ênfase da Sprint Retrospective está no aprimoramento do processo do Time Scrum. Isso inclui a análise da dinâmica de equipe, das práticas e técnicas utilizadas, bem como das ferramentas empregadas no desenvolvimento do produto. A intenção é identificar o que está funcionando bem e o que pode ser melhorado para aumentar a produtividade e a qualidade do trabalho entregue.</p>
+                <p><strong><i>O que é discutido:</i></strong></p>
+                    <p class="pp">Durante a Sprint Retrospective, os membros do Time Scrum discutem abertamente sobre o que funcionou bem durante a Sprint, destacando os sucessos e conquistas alcançados. Eles também revisam as áreas que apresentaram desafios ou obstáculos, identificando oportunidades de melhoria para a próxima Sprint.</p>
+                <p><strong><i>Identificação de medidas de melhoria:</i></strong></p>
+                    <p class="pp">Identificar problemas é apenas o primeiro passo; é igualmente importante propor medidas concretas de melhoria. Durante a Sprint Retrospective, o Time Scrum colabora para definir ações específicas que podem ser implementadas para superar os desafios identificados e melhorar o processo de trabalho.</p>
+                <p><strong><i>Atitude dos membros do Time:</i></strong></p>
+                    <p class="pp">Uma atitude aberta e receptiva é essencial durante a Sprint Retrospective. Os membros do Time Scrum devem estar dispostos a ouvir e receber feedback construtivo, sem levar as críticas para o lado pessoal. O objetivo é focar na melhoria contínua do processo de trabalho, em vez de atribuir culpas ou apontar falhas individuais. Isso promove um ambiente de confiança e colaboração, fundamental para o sucesso do Time Scrum.</p>
+            <div class="cardcard">
+                <div class="containercard">
+                    <br>
+                    <p><font color="#C8C8C8"><strong>Exemplo prático :</strong></font></p>
+                    <p class="pp"><font color="#C8C8C8">Vamos supor que estamos trabalhando em uma equipe de desenvolvimento de software que segue a metodologia ágil, utilizando o framework Scrum. Após concluir um sprint de duas semanas, é hora de realizar a Sprint Retrospective, onde nos reunimos para refletir sobre o que correu bem, o que não correu tão bem e como podemos melhorar no próximo sprint. Aqui está um exemplo prático de como essa retrospectiva poderia ocorrer:</font></P>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>Preparação: </strong></i>  O Scrum Master agenda a reunião para o último dia do sprint e envia um convite a todos os membros da equipe. Ele também prepara o ambiente, garantindo que haja um quadro branco ou uma ferramenta online para registrar as discussões e decisões.</font></p>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>Início da Retrospectiva:</strong></i>A equipe se reúne na sala de reuniões ou em uma videoconferência. O Scrum Master começa a reunião relembrando o objetivo da Sprint Retrospective: refletir sobre o sprint concluído e identificar maneiras de melhorar.</li>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>Discussão dos Aspectos Positivos: </strong></i>O Scrum Master convida os membros da equipe a compartilharem o que correu bem durante o sprint. Os membros podem mencionar conquistas, colaborações eficazes, entregas de alta qualidade, etc. Cada ponto positivo é registrado no quadro ou na ferramenta online.</li>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>Identificação dos Desafios:</strong></i>Em seguida, a equipe discute os desafios enfrentados durante o sprint. Isso pode incluir obstáculos encontrados, problemas de comunicação, atrasos, etc. Novamente, cada desafio é registrado para referência futura.</li>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>Análise das Causas Raízes: </strong></i> Depois de listar os desafios, a equipe mergulha mais fundo para entender as causas raízes por trás deles. Por exemplo, se houve atrasos na entrega de uma funcionalidade, pode ser devido a requisitos mal definidos ou falta de comunicação entre os membros da equipe.</li>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>Brainstorming de Soluções: </strong></i> Com uma compreensão clara dos desafios e suas causas, a equipe começa a brainstormear soluções. Todos os membros são encorajados a contribuir com ideias para melhorar os processos, a comunicação ou qualquer outra área identificada como problemática.</li>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>Definição de Ações de Melhoria: </strong></i> Com base nas soluções discutidas, a equipe decide quais ações serão implementadas para melhorar no próximo sprint. Cada ação é atribuída a um membro da equipe, e prazos são definidos para sua implementação.</font></p>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>Encerramento:</strong></i> O Scrum Master recapitula as ações acordadas e agradece a todos por sua contribuição. Ele lembra à equipe que a Sprint Retrospective é uma oportunidade contínua de aprendizado e melhoria, e encoraja todos a aplicarem as lições aprendidas no próximo sprint.</font></p>
+                        <p class="pp2"><font color="#C8C8C8"><i><strong>Follow-Up:</strong></i> Durante o próximo sprint, a equipe monitora o progresso das ações de melhoria e ajusta conforme necessário. Os resultados das ações são discutidos na próxima Sprint Retrospective, fechando assim o ciclo de melhoria contínua.</font></p>
+                    <p class="pp"><font color="#C8C8C8">Este exemplo mostra como a Sprint Retrospective é uma ferramenta valiosa para promover a reflexão e a melhoria contínua em uma equipe ágil.</font></p>
+                </div>
+            </div>
+            <BR>
+                <img src="{{ url_for('static', filename='/imgs/5.png') }}" class="imag">
+            <br>
+            <br>
+        </div>
+        <div class="item" id="item-6">
+            <h1 style="color: #1c1e21;">Release Planning Meeting: Planejamento das Entregas em Produção</h1>
+                <p><strong><i>Release Planning Meeting:</i></strong></p>
+                    <p class="pp">É uma reunião que ocorre após uma Sprint, onde o Time de Desenvolvimento entrega um Incremento do produto. Durante essa reunião, o foco está na planificação da entrega do produto em produção, conhecida como Release.</p>
+                <p><strong><i>Propósito da Release Planning Meeting:</i></strong></p>
+                    <p class="pp">O propósito principal é planejar a entrega do produto em produção, seja para atender a obrigações contratuais, demandas do mercado ou eventos específicos, como conferências ou lançamentos de produtos. É um momento crucial para alinhar o planejamento do produto com as necessidades do negócio e dos clientes.</p>
+                <p><strong><i>Projeção além de uma Sprint:</i></strong></p>
+                    <p class="pp">Enquanto as Sprints são períodos curtos de trabalho, a Release Planning Meeting permite ao Time Scrum olhar além de uma Sprint e planejar as entregas para os clientes em um horizonte mais amplo. Embora o planejamento possa ter menos precisão do que para uma Sprint individual, ainda é essencial para garantir uma visão estratégica do produto.</p>
+                <p><strong><i>Participação do Time Scrum:</i></strong></p>
+                    <p class="pp">Todos os membros do Time Scrum participam da Release Planning Meeting, independentemente de sua especialização ou papel. Isso é importante para garantir que todos tenham uma compreensão compartilhada do produto e das metas da Release. Além disso, essa participação promove um alinhamento completo do time em relação aos objetivos da entrega do produto.</p>
+                <p><strong><i>Conteúdo da Reunião:</i></strong></p>
+                    <p class="pp">Durante a reunião, o Time Scrum discute e concorda sobre o valor de cada item a ser entregue na Release, identifica e avalia os riscos associados e as dependências entre as funcionalidades. Isso permite que o Time Scrum tenha uma visão completa das prioridades e desafios que enfrentarão durante o período da Release.</p>
+                <p><strong><i>Conteúdo da Reunião:</i></strong></p>
+                    <p class="pp">Embora não haja uma regra fixa para a duração da Release Planning Meeting, em média, ela dura cerca de dois dias. É importante respeitar esse limite de tempo para evitar excesso de detalhes que podem comprometer a eficiência da reunião.</p>
+                    <p>Quanto à frequência, é recomendável que o período de uma Release não ultrapasse seis meses. No entanto, o time deve revisar e atualizar o planejamento a cada Sprint Review e, se necessário, fazer ajustes nas Releases antes do previsto para garantir que estejam alinhadas com as necessidades do produto e do negócio.</p>
+            <div class="cardcard">
+                <div class="containercard">
+                    <br>
+                    <p><font color="#C8C8C8"><strong>Passos para cria uma Release Planning Meeting:</strong></font></p>
+                        <p class="pp"><font color="#C8C8C8"><strong>-> Abertura:</strong></i> Revisão do propósito da reunião, estrutura, agenda, etc.</p></font>
+                        <p class="pp"><font color="#C8C8C8"><i><strong>-> Visão do Produto e Roadmap:</strong></i> Revisão da Visão do Produto para alinhar expectativas.</p></font>
+                        <p class="pp"><font color="#C8C8C8"><i><strong>-> Status atual do projeto:</strong></i> Apresentação de gráficos e relatórios de status das últimas Sprints.</p></font>
+                        <p class="pp"><font color="#C8C8C8"><i><strong>-> Meta/tema da Release:</strong></i>  Definição da meta para a Release.</p></font>
+                        <p class="pp"><font color="#C8C8C8"><i><strong>-> Estimativa de velocidade:</strong></i>Estimativa da velocidade para esta Release com base nas Sprints anteriores.</p></font>
+                        <p class="pp"><font color="#C8C8C8"><i><strong>-> Agenda da Release e número de Sprints:</strong></i> Definição de Milestones e tamanho das Sprints.</p></font>
+                        <p class="pp"><font color="#C8C8C8"><i><strong>-> Estimativa de itens do Product Backlog:</strong></i>Estimativa de itens do Product Backlog caso não estejam estimados.</p></font>
+                        <p class="pp"><font color="#C8C8C8"><i><strong>-> Mapeamento de itens nas Sprints do Release:</strong></i>  Mapeamento de itens priorizados nas Sprints.</p></font>
+                        <p class="pp"><font color="#C8C8C8"><i><strong>-> Riscos, dependências e preocupações: </strong></i>   Identificação de riscos, dependências e impedimentos.</p></font>
+                        <p class="pp"><font color="#C8C8C8"><i><strong>-> Comprometimento:</strong></i>  Comprometimento com a meta da Release.</p></font>
+                        <p class="pp"><font color="#C8C8C8"><i><strong>-> Plano de comunicação e logística da Sprint:</strong></i>  Definição do plano de comunicação e logística.</li>
+                        <p class="pp"><font color="#C8C8C8"><i><strong>-> Montagem de gráficos:</strong></i> Montagem de Release Burndown e/ou Parking Lot.</p></font>
+                        <p class="pp"><font color="#C8C8C8"><i><strong>-> Retrospectiva:</strong></i> Avaliação dos pontos positivos e de melhoria desta reunião.</p></font>
+                    <p class="p"><font color="#C8C8C8">Esta agenda serve apenas como exemplo. Você pode incluir outras práticas, atividades ou técnicas conforme necessário, ou remover algo se considerar desnecessário.</font></p>
+                </div>
+            </div>
+                <img src="{{ url_for('static', filename='/imgs/6.png') }}" class="imag">
+            <br>
+        </div>
 <br>
 <hr class="text-dark">
 <br>
