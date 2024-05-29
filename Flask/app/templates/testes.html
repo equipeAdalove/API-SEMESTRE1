@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %}Módulos{% endblock %}
+{% block title %}Quizzes{% endblock %}
 
 {% block styles %}
     <style>
@@ -10,6 +10,11 @@
             margin-bottom: 0%;
             font-family: 'Alatsi',  sans-serif;
             background-color: #C8C8C8;
+        }
+        
+        .img{
+            width: 500px;
+            height: auto;
         }
 
         table { 
@@ -108,7 +113,7 @@
             </div>
         </div>
         <div class="col-lg-6 col-md-12 text-center text-lg-end div-img">
-            <img src="{{ url_for('static', filename='imgs/imgmódulo.png') }}" class="img" alt="Imagem do módulo">
+            <img src="{{ url_for('static', filename='imgs/capaquiz.png') }}" class="img" alt="Imagem do módulo">
         </div>
         
     </div>
