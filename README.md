@@ -4,7 +4,7 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 <img src="/assets/img/Apresentação.jpg">
 
 # Equipe:
-<img src="/assets/img/Sprint 1/Scrum Team_I.jpg">
+<img src="/assets/img/Sprint III/ScrumTeam.jpg">
 
 
 
@@ -12,7 +12,9 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 * [Objetivo do Projeto](#objetivo-do-projeto)
 * [Cliente](#cliente)
 * [Cronograma](#cronograma)
-* [Backlog do produto](#backlog-do-produto)
+* [Backlog do produto](#product-backlog)
+* [Backlog da sprint](#sprint-backlog)
+* [Roadmaps](#roadmap)
 * [Protótipo - Figma](#prototipo)
 * [Tecnologias Utilizadas:](#tecnologias-utilizadas)
 * [Funcionalidades e registros (vídeos e apresentações) das sprints](#funcionalidades-e-registros-das-sprints)
@@ -26,24 +28,36 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 
 
 # Cronograma:
-<img src="/assets/img/Sprint 2/Cronograma.jpg">
+<img src="/assets/img/Sprint III/Cronograma.jpg">
 
 ##
 
-# Backlog do produto
-<img src="/assets/img/Sprint 2/Product Backlog.jpg">
-<img src="/assets/img/Sprint 2/Product BacklogII.jpg">
+# Product Backlog
+<img src="/assets/img/Sprint III/Product BacklogI.jpg">
+<img src="/assets/img/Sprint III/Product BackogII.jpg">
+<img src="/assets/img/Sprint III/Product BacklogIII.jpg">
 
-# Sprints
+# Sprints Backlog
+<img src="/assets/img/Sprint 1/Sprint Backlog.jpg">
 <img src="/assets/img/Sprint 2/Sprint Backlog.jpg">
+<img src="/assets/img/Sprint III/Sprint Backlog3.jpg">
+🔒 SPRINT 4 
 
-## Sprint Roadmap 
-<img src="/assets/img/Sprint 2/SprintII.jpg">
+
+## Sprints Roadmap 
+<img src="/assets/img/Sprint III/Roadmap1-2.jpg">
+<img src="/assets/img/Sprint III/Roadmap2-3.jpg">
+<img src="/assets/img/Sprint III/Roadmap3-4.jpg">
 
 
 ## Sprint 3 (atual)
-- [ ] Correções de possíveis bugs;
-- [ ] Finalização do site.
+- [x] Correções de possíveis bugs;
+- [x] Finalização do site.
+
+## Sprint 4
+- [ ] Finalização - responsividade;
+- [ ] Banco de dados(formulário).
+- [ ] Debug e finalização.
       
 ##
 
@@ -59,9 +73,7 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 ## Apresentação das funcionalidades:
 Demonstração das funcionalidades na página HTML:
 
-Link no YouTube: https://youtu.be/rCtdOrJDuak?si=9bGleW8T524WJphA
-
-https://github.com/equipeAdalove/API-SEMESTRE1/assets/160744095/710fb5dd-55c8-4d25-ab05-1b4e1856e436
+Link no YouTube: [https://youtu.be/rCtdOrJDuak?si=9bGleW8T524WJphA](https://youtu.be/DxzPR7kv87s)
 
 
 ##
@@ -73,7 +85,6 @@ https://github.com/equipeAdalove/API-SEMESTRE1/assets/160744095/710fb5dd-55c8-4d
 | :-----------: | :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | Product Owner |   Angelina Borroni         |     [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/borroniff)              |
 | Scrum Master  | Celso Rocha |      [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/celsick)     |
-|  Team Member  | João Pedro Cava                 |   [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/JoaoPedroCava)   |
 | Team Member   | Maria Fernanda Hansen              |         [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Madhs31)        |
 |  Team Member  | Raphaela Monteiro       |           [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/raphaelamonteiro)          |
 |  Team Member  | Renan Tomasi       |           [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/renan21-tg)          |

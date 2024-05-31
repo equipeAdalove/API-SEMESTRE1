@@ -4,169 +4,170 @@
 
 {% block styles %}
         <style>
-            body{
-                justify-content: space-around;
-                margin: 0%;
-                margin-bottom: 0%;
-                font-family: 'Alatsi',  sans-serif;
-                background-color: #C8C8C8;
-            }
+            body {
+        justify-content: space-around;
+        margin: 0%;
+        margin-bottom: 0%;
+        font-family: "Alatsi", sans-serif;
+        background-color: #c8c8c8;
+    }
 
-            #menu ul{
+    .divtext {
+        margin-top: -3pc;
+        margin-left: 100px;
+        margin-right: 100px;
+        text-align: justify;
+    }
+    .funcoes {
+        margin-top: 6pc;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 80px;
+        text-align: justify;
+    }
+    .h3 {
+        line-height: 1.5;
+        text-indent: 20px;
+    }
+    p {
+        line-height: 1.5;
+        text-indent: 50px;
+    }
+    .pp {
+        line-height: 1.5;
+        text-indent: 80px;
+    }
+    .pp2 {
+        line-height: 1.5;
+        text-indent: 100px;
+    }
+    .ppp {
+        line-height: 1.5;
+        text-indent: 120px;
+    }
+    .ppp2 {
+        line-height: 1.5;
+        text-indent: 140px;
+    }
+    .imag {
+        width: 45%;
+        height: 45%;
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+    .cardcard {
+        box-shadow: 0 4px 8px 0 #1c1e21;
+        transition: 0.3s;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .cardcard:hover {
+        box-shadow: 0 8px 16px 0 #1c1e21;
+    }
+    .containercard {
+        background-color: #32363f;
+        padding: 2px 16px;
+    }
+    .btn.btn-lg.btn-dark{
+        background-color:#32363F;
+    }
+    .btn.btn-lg.btn-dark:hover{
+        background-color: #464c5c;
+    }
+    .d-grid.gap-2.d-md-flex{
+        justify-content: space-between;
+    }
+    .btn.my-5{
+        font-size: larger;
+    }
+    .btncelso:hover{
+        color: #464c5c;
+    }
+
+    #sidebar {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    #main-content {
+        overflow-y: auto;
+        padding-left: 15px;
+    }
+    
+    .container-custom{
+                height: 50vh;
                 background-color: #32363f;
-                list-style: none;
             }
-
-            #menu{ 
-                padding: 52px 25px; 
-                background-color:#32363f; 
-                color: #32363f; 
-                justify-content: space-around;
+            .title-mod{
+                margin: 30px 50px;
+                color: #D6D6D6;
+                
             }
-
-            #menu ul li a{ 
-                padding: 30px 10px; 
-                background-color:#32363f; 
-                color: #32363f; 
-                font-family: "Poppins", sans-serif;
+            .title-mod h1{
+                font-size: 120px;
             }
-
-            #menu ul li{
-                left: 31pc;
-                display: inline;
-                padding: 13px
-            } 
 
             .img{
-                justify-content: space-around;
-                display: flex;
-                float:right ;
-                margin: 0 10px 10px 0;
-                position: absolute;
-                top: 04pc;
-                right: 7pc;
+                width: 500px;
+                height: auto;
             }
 
-            .div2{
-                display: flex;
-                width: 91,5pc;
-                display: flex;
-                border-top: 10vh solid #32363F;
-                border-left: 9vh solid #32363F;
-                height: 45vh;    background-color: #32363F;
-                margin-bottom: -94px;
-
+            @media (max-width:575.98px){
+                .title-mod h1{
+                    font-size: 40px;
+                }
+                .img{
+                    width: 335px;
+                    height: auto;
+                }
             }
 
-            footer{
-                background-color: #32363f;
-                height: 30vh;
+            @media (min-width: 576px) and (max-width: 767.98px){
+                .img{
+                    width: 350px;
+                    height: auto;
+                }
             }
 
-            .footer-custom{ 
-                font-family: "Poppins", sans-serif;
-                color: #C8C8C8;
-                background-color: #32363f;
-                height: 18vh;
-                padding: 20px;
-                display: flex;
-                flex-flow: column;
-                justify-content: space-between
+            @media (min-width: 768px) and (max-width: 991.98px){
+                .img{
+                    width: 400px;
+                    height: auto;
+                }
             }
 
-            .divtext{
-                margin-top: -3pc;
-                margin-left: 100px;
-                margin-right: 100px;
-                text-align: justify;
-            }
-            .funcoes{
-                margin-top: 6pc;
-                margin-left: 100px;
-                margin-right: 100px;
-                margin-bottom: 80px;
-                text-align: justify;
-            }
-            p{
-                line-height: 1.5;
-                text-indent: 50px;
-            }
-            .pp{
-                line-height: 1.5;
-                text-indent: 80px;
-            }
-            .pp2{
-                line-height: 1.5;
-                text-indent: 100px;
-            }
-            .ppp{
-                line-height: 1.5;
-                text-indent: 120px;
-            }
-            .ppp2{
-                line-height: 1.5;
-                text-indent: 140px;
-            }
-            .imag{
-                width: 45%;
-                height: 45%;
-                margin-left: 30%;
-                margin-right: 30%;;
-            }
-            .cardcard {
-                box-shadow: 0 4px 8px 0 #1c1e21;
-                transition: 0.3s;
-                width: 100%;
-                height: 100%;
-                border-radius: 5px;
-            }
-
-            .cardcard:hover {
-                box-shadow: 0 8px 16px 0 #1c1e21;
-            }
-            .containercard {
-                background-color: #32363F;
-                padding: 2px 16px;
-            }
-            .btn.btn-lg.btn-dark{
-                background-color:#32363F;
-            }
-            .btn.btn-lg.btn-dark:hover{
-                background-color: #464c5c;
-            }
-            .d-grid.gap-2.d-md-flex{
-                justify-content: space-between;
-            }
-            .btn.my-5{
-                font-size: larger;
-            }
-            .btnrenan:hover{
-                color: #464c5c;
-            }
-            #sidebar {
-            position: sticky;
-            top: 0;
-            height: 100vh;
-            overflow-y: auto;
-            }
-            #main-content {
-            overflow-y: auto;
-            padding-left: 15px;
+            @media (min-width: 992px) and (max-width: 1224.98px){
+                .img{
+                    width: 400px;
+                    height: auto;
+                }
             } 
         </style>
 {% endblock %}
 
 {% block content %}
-
-            <div class="div2">
-            <img src="{{ url_for('static', filename='imgs/Introdução7.png') }}" width="520" height="520" class="img">
-            <h1 style="font-size: 5pc; position: absolute;top: 13pc; left:59px;"><font color="D6D6D6"> 7. ESTIMATIVA</font></h1>
+<div class="container-fluid container-custom position-relative">
+    <div class="row">
+        <div class="col-lg-6 col-md-12 text-center text-lg-start mb-4 mb-lg-0">
+            <div class="title-mod">
+                <h1>7. Estimativa</h1>
+            </div>
         </div>
+        <div class="col-lg-6 col-md-12 text-center text-lg-end div-img">
+            <img src="{{ url_for('static', filename='imgs/Introdução7.png') }}" class="img" alt="Imagem do módulo">
+        </div>
+        
+    </div>
+</div>
         <div class="wave">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z" ></path></svg>
         </div>
 
-      
+
         <!-- curso -->
         <div
         data-bs-spy="scroll"
