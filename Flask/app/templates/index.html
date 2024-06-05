@@ -2,186 +2,307 @@
 
 {% block title %}Home{% endblock %}
 
-{% block styles %}  
-        <style>
-            body{
-                font-family: "Poppins", sans-serif;
-                background-color: #C8C8C8;
-            }
-            .container-custom{
-                display: flex;
-                height: 50vh;
-                background-color: #32363f;
-            }
-            .titulo{
-                font-family: "Alatsi", sans-serif;
-                height: 45vh;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-                justify-content: center;
-                user-select: none;
-                background-color: #32363F;
-                position: relative;
-            }
+{% block styles %}
+<style>
+    body {
+        font-family: "Poppins", sans-serif;
+        background-color: #C8C8C8;
+    }
+    .container-custom {
+        display: flex;
+        height: 50vh;
+        background-color: #32363f;
+    }
+    .titulo {
+        font-family: "Alatsi", sans-serif;
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        user-select: none;
+        background-color: #32363F;
+        position: relative;
+    }
 
-            #txt1{
-                color: #c8c8c8;
-                font-size: 50px;
-                margin-bottom: -45px;
-            }
+    #txt1 {
+        color: #c8c8c8;
+        font-size: 50px;
+        margin-bottom: -45px;
+    }
 
-            #txt2{
-                color: #c8c8c8;
-                font-size: 200px;
-            }
+    #txt2 {
+        color: #c8c8c8;
+        font-size: 200px;
+    }
 
-            .btn2{
-                background-color: #c8c8c8;
-                display: flex;
-                height: 50px;
-                align-items: center;
-                font-size: 28px;    ;
-                user-select: none;
-                cursor: pointer;
-                border-radius: 10px;
-                transition: background-color 0.3s ease, transform 0.3s ease;
-            }
+    .btn2 {
+        background-color: #c8c8c8;
+        display: flex;
+        height: 50px;
+        align-items: center;
+        font-size: 28px;
+        user-select: none;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
 
-            #start{
-                text-decoration: none;
-                color: #32363F;
-                padding: 5px 100px ;
-            }
-            .btn2:hover{
-                background-color: #b9b9b9;
-                transform: scale(1.05);
-            }
-            .card-custom {
-                width: 20.1rem; /* Ajuste a largura do card */
-                margin: 15px auto;
-                background-color: #cbcbcb;
-            }
-            /* Celular */
-            @media (max-width: 575.98px) {
-                .titulo {
-                    font-size: 16px;
-                    text-align: center;
-                }
+    #start {
+        text-decoration: none;
+        color: #32363F;
+        padding: 5px 100px;
+    }
 
-                #txt2{
-                    font-size: 100px
-                }
+    .btn2:hover {
+        background-color: #b9b9b9;
+        transform: scale(1.05);
+    }
 
-                .card-custom {
-                    width: 100%;
-                    margin-bottom: 20px;
-                }
+    .card-custom {
+        width: 20.1rem;
+        margin: 15px auto;
+        background-color: #cbcbcb;
+    }
 
-                .btn2 {
-                    font-size: 18.5px;
-                }
-            }
-            /* Tablet */
-            @media (min-width: 576px) and (max-width: 767.98px) {
-                .titulo {
-                    font-size: 20px;
-                }
+    /* Celular */
+    @media (max-width: 575.98px) {
+        .titulo {
+            font-size: 16px;
+            text-align: center;
+        }
 
-                .card-custom {
-                    width: 80%;
-                    margin-bottom: 20px;
-                }
+        #txt2 {
+            font-size: 100px
+        }
 
-                .btn2 {
-                    font-size: 19.5px;
-                }
-            }
-            /* Laptop */
-            @media (min-width: 768px) and (max-width: 991.98px) {
-                .titulo {
-                    font-size: 24px;
-                }
+        .card-custom {
+            width: 100%;
+            margin-bottom: 20px;
+        }
 
-                .card-custom {
-                    width: 60%;
-                    margin-bottom: 20px;
-                }
+        .btn2 {
+            font-size: 18.5px;
+        }
+    }
 
-                .btn2 {
-                    font-size: 22px;
-                }
-            }
-        </style>
-    {% endblock %}
+    /* Tablet */
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        .titulo {
+            font-size: 20px;
+        }
 
-    {% block content %}
-        <!--Title-->
-        <div class="container-fluid container-custom">
+        .card-custom {
+            width: 80%;
+            margin-bottom: 20px;
+        }
 
-                <div class="col-3"></div>
-                <div class="col-6">
-                    <div class="titulo">
-                        <div id="txt1">
-                            METODOLOGIA ÁGIL
-                        </div>
-                        <div id="txt2">
-                            SCRUM
-                        </div>
-                        <div class="btn2">
-                            <a href="/mod_1" id="start">COMECE AQUI!</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3"></div>
+        .btn2 {
+            font-size: 19.5px;
+        }
+    }
+
+    /* Laptop */
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .titulo {
+            font-size: 24px;
+        }
+
+        .card-custom {
+            width: 60%;
+            margin-bottom: 20px;
+        }
+
+        .btn2 {
+            font-size: 22px;
+        }
+    }
+
+    /* Estilos personalizados para o modal */
+    .modal-content {
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal-header {
+        border-bottom: none;
+    }
+
+    .modal-title {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .form-label {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .rating {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .rating input {
+        display: none;
+    }
+
+    .rating label {
+        font-size: 25px;
+        color: #ddd;
+        cursor: pointer;
+        margin: 0 5px;
+    }
+
+    .rating input:checked ~ label,
+    .rating input:hover ~ label {
+        color: #ffc107;
+    }
+
+    .form-control {
+        border-radius: 5px;
+    }
+
+    .btn-close {
+        background-color: transparent;
+        border: none;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        border-radius: 5px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!--Title-->
+<div class="container-fluid container-custom">
+    <div class="col-3"></div>
+    <div class="col-6">
+        <div class="titulo">
+            <div id="txt1">
+                METODOLOGIA ÁGIL
+            </div>
+            <div id="txt2">
+                SCRUM
+            </div>
+            <div class="btn2">
+                <a href="/mod_1" id="start">COMECE AQUI!</a>
+            </div>
         </div>
-        <!--Wave-->
-        <div class="wave">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-        </div>
-        <!--Cards-->
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card card-custom">
-                        <img src="{{ url_for('static', filename='/imgs/mod3timescrum.png') }}" class="card-img-top" alt="Image 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Time Scrum</h5>
-                            <p class="card-text">Conheça o Time Scrum, a equipe multifuncional que trabalha de forma colaborativa para entregar valor contínuo e incremental ao produto.</p>
-                            <div class="text-center">
-                                <a href="/mod_3" class="btn btn-primary">Detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card card-custom">
-                        <img src="{{ url_for('static', filename='/imgs/scrumboard.png') }}" class="card-img-top" alt="Image 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Sprint Backlog</h5>
-                            <p class="card-text">Descubra o Sprint Backlog, o conjunto de tarefas priorizadas que a equipe Scrum se compromete a completar durante a Sprint atual.</p>
-                            <div class="text-center">
-                                <a href="/mod_5" class="btn btn-primary">Detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card card-custom">
-                        <img src="{{ url_for('static', filename='/imgs/vision.png') }}" class="card-img-top" alt="Image 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Visão do Produto</h5>
-                            <p class="card-text">Explore a Visão do Produto, a estratégia de longo prazo que define o objetivo e as características principais do produto, guiando todo o trabalho da equipe Scrum.</p>
-                            <div class="text-center">
-                                <a href="/mod_6" class="btn btn-primary">Detalhes</a>
-                            </div>
-                        </div>
+    </div>
+    <div class="col-3"></div>
+</div>
+<!--Wave-->
+<div class="wave">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+    </svg>
+</div>
+<!--Cards-->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card card-custom">
+                <img src="{{ url_for('static', filename='/imgs/mod3timescrum.png') }}" class="card-img-top" alt="Image 1">
+                <div class="card-body">
+                    <h5 class="card-title">Time Scrum</h5>
+                    <p class="card-text">Conheça o Time Scrum, a equipe multifuncional que trabalha de forma colaborativa para entregar valor contínuo e incremental ao produto.</p>
+                    <div class="text-center">
+                        <a href="/mod_3" class="btn btn-primary">Detalhes</a>
                     </div>
                 </div>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-    {% endblock %}
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card card-custom">
+                <img src="{{ url_for('static', filename='/imgs/scrumboard.png') }}" class="card-img-top" alt="Image 2">
+                <div class="card-body">
+                    <h5 class="card-title">Sprint Backlog</h5>
+                    <p class="card-text">Descubra o Sprint Backlog, o conjunto de tarefas priorizadas que a equipe Scrum se compromete a completar durante a Sprint atual.</p>
+                    <div class="text-center">
+                        <a href="/mod_5" class="btn btn-primary">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card card-custom">
+                <img src="{{ url_for('static', filename='/imgs/vision.png') }}" class="card-img-top" alt="Image 3">
+                <div class="card-body">
+                    <h5 class="card-title">Visão do Produto</h5>
+                    <p class="card-text">Explore a Visão do Produto, a estratégia de longo prazo que define o objetivo e as características principais do produto, guiando todo o trabalho da equipe Scrum.</p>
+                    <div class="text-center">
+                        <a href="/mod_6" class="btn btn-primary">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+
+<!-- Botão para abrir o modal -->
+<div class="container text-center mt-5">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal">
+        Abrir Pesquisa de Satisfação
+    </button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="formModalLabel">Pesquisa de Satisfação</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Olá, seja bem-vindo(a) a nossa pesquisa de satisfação!</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="userID" class="form-label">Insira seu ID:</label>
+                        <input type="text" class="form-control" id="userID">
+                    </div>
+                    <div class="mb-3">
+                        <label for="userName" class="form-label">Seu nome completo:</label>
+                        <input type="text" class="form-control" id="userName">
+                    </div>
+                    <div class="mb-3">
+                        <label for="satisfacao" class="form-label">De 0 a 5 (sendo 5 a maior nota) o quão satisfeito você está com o site?</label>
+                        <div class="rating">
+                            <input type="radio" name="rating" id="rating-5"><label for="rating-5">★</label>
+                            <input type="radio" name="rating" id="rating-4"><label for="rating-4">★</label>
+                            <input type="radio" name="rating" id="rating-3"><label for="rating-3">★</label>
+                            <input type="radio" name="rating" id="rating-2"><label for="rating-2">★</label>
+                            <input type="radio" name="rating" id="rating-1"><label for="rating-1">★</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="experiencia" class="form-label">Compartilhe sua experiência com a metodologia Scrum! Sua opinião é fundamental para continuarmos aprimorando nosso conteúdo e oferecer a melhor experiência de aprendizado possível.</label>
+                        <textarea class="form-control" id="experiencia" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+{% endblock %}
