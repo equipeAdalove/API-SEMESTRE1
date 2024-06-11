@@ -175,6 +175,20 @@
     .btn-secondary {
         border-radius: 5px;
     }
+    .cardcard {
+        background-color: #fff;
+        box-shadow: 0 4px 8px 0;
+        transition: 0.3s;
+        width: 80%;
+        margin-left: 10%;
+        border-radius: 15px; 
+        padding: 2px 16px;
+    }
+
+    .pesquisa{
+        margin-left: 10%;
+    }
+    
 </style>
 {% endblock %}
 
@@ -249,11 +263,26 @@
 <br>
 
 <!-- Botão para abrir o modal -->
-<div class="container text-center mt-5">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal">
-        Abrir Pesquisa de Satisfação
-    </button>
+<div class="cardcard">
+    <div class="containercard" class="rounded">
+        <br>
+        <h4><font color="#32363F">Responda nossa pesquisa de satisfação! </font></h4>
+        <p><font color="#FF0000">Complete o formulário de avaliação somente após concluir o curso</font></p>
+        <p><strong><font color="#32363F">Nós queremos saber a sua opinião!</font></strong></P>
+        <p>Clique no botão a seguir e responda o formulário.</P>
+            <button type="button" class="btn btn-lg btn-dark" data-toggle="modal" data-target="#formModal" >
+                ACESSAR FORMULÁRIO
+            </button>
+    </div>
 </div>
+<br>
+<div class="pesquisa">
+<p><strong><font color="#32363F">Acessar respostas</font></strong></P>
+</div>
+<br>
+<br>
+<br>
+<br>
 
 <!-- Modal -->
 <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true">
