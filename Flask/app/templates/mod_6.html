@@ -155,7 +155,23 @@
                     width: 400px;
                     height: auto;
                 }
-            } 
+            }
+            
+            .dropdown .btn-dark {
+            border-radius: 50px;
+            padding: 10px 20px;
+            margin: 10px;
+        }
+
+        .dropdown-menu {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .dropdown-menu .dropdown-item:hover {
+            background-color: #343a40;
+            color: #fff;
+        }
         </style>
 {% endblock %}
 
@@ -179,12 +195,13 @@
 
         <!-- Sumário -->
 
-        <div class="container my-4">
+        <div class="containerd my-4">
             <div class="dropdown">
                 <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                    Sumário
+                    <i class="fas fa-bars"></i>  Sumário
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <ul class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
+                    <h2 class="dropdown-header">Tópicos</h2>
                     <li><a class="dropdown-item" href="#item-1">Auto-Organização</a></li>
                     <li><a class="dropdown-item" href="#item-2">Facilitação</a></li>
                     <li><a class="dropdown-item" href="#item-3">Visão</a></li>
