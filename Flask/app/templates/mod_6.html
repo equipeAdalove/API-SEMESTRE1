@@ -97,6 +97,12 @@
         overflow-y: auto;
         padding-left: 15px;
     }
+
+    .divimag{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
     .container-custom{
                 height: 50vh;
@@ -122,6 +128,10 @@
                 }
                 .img{
                     width: 335px;
+                    height: auto;
+                }
+                .imag{
+                    width: 290px;
                     height: auto;
                 }
             }
@@ -167,38 +177,22 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
         </div>
 
-        <!-- curso -->
-        <div
-        data-bs-spy="scroll"
-        data-bs-target="#navbar-example3"
-        data-bs-offset="0"
-        >
+        <!-- Sumário -->
 
-        <div class="container-fluid">
-        <div class="row">
-
-            <div class="col-2">
-                <nav id="sidebar">
-                    <div
-                    class="scrollspy-example-2"
-                    data-bs-spy="scroll"
-                    data-bs-target="#navbar-example3"
-                    data-bs-offset="0"
-                    tabindex="0"
-                    >
-                    <nav class="nav nav-pills flex-column">
-                        <h5 class="mt-3">Sumário</h5>
-                        <a class="nav-link" href="#item-1">Auto-Organização</a>
-                        <a class="nav-link" href="#item-2">Facilitação</a>
-                        <a class="nav-link" href="#item-3">Visão</a>
-                        <a class="nav-link" href="#item-4">User Stories</a>
-                    </nav>
-                    </div>
-                </nav>
+        <div class="container my-4">
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sumário
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#item-1">Auto-Organização</a></li>
+                    <li><a class="dropdown-item" href="#item-2">Facilitação</a></li>
+                    <li><a class="dropdown-item" href="#item-3">Visão</a></li>
+                    <li><a class="dropdown-item" href="#item-4">User Stories</a></li>
+                </ul>
             </div>
-
-        <div class="col-10">
-            <div id="main-content">
+        </div>
+        
 
         <div class="divtext">
 
@@ -261,7 +255,9 @@
                 </div>
             </div>
         <br>
+        <div class="divimag">
             <img src="{{ url_for('static', filename='/imgs/auto_org.png') }}" class="imag">
+        </div>
         <br>
         <br>
 
@@ -292,7 +288,9 @@
                     O Scrum Master também desempenha um papel importante na motivação da equipe e no fomento do engajamento. Ele reconhece e celebra as conquistas da equipe, proporcionando feedback positivo e incentivando o desenvolvimento pessoal e profissional dos membros da equipe. Além disso, o Scrum Master promove um ambiente de trabalho inclusivo e estimulante, onde todos se sintam valorizados e empoderados para contribuir para o sucesso do projeto.
                 </p>            
         <br>
+        <div class="divimag">
             <img src="{{ url_for('static', filename='/imgs/facilitador.png') }}" class="imag">
+        </div>
         <br>
         <br>
 
@@ -323,7 +321,9 @@
                     Ao transmitir a visão do produto, o Product Owner promove uma compreensão compartilhada entre os membros da equipe. Todos têm uma visão clara do que estão trabalhando para alcançar e por que é importante. Isso ajuda a alinhar as atividades da equipe com os objetivos do projeto e a garantir que todos estejam trabalhando na mesma direção.
                 </p>            
         <br>
+        <div class="divimag">
             <img src="{{ url_for('static', filename='/imgs/vision.png') }}" class="imag">
+        </div>
         <br>
         <br>
 
@@ -390,26 +390,25 @@
         </div>   
     <br>  
     <br>
+    <div class="divimag">
         <img src="{{ url_for('static', filename='/imgs/user_storie.png') }}" class="imag">
+    </div>
     <br>
     <br>
         <hr>
         <br>
-        <div class="d-grid gap-2 col-6 mx-auto">
-            <a class="btn btn-lg btn-dark" href="/mod_6_quiz">Teste seu conhecimento</a>
-        </div>
-        <br>
-        <br>
-        <div>
-            <div class="d-grid gap-2 d-md-flex">
-                <a class="btn my-5 btnrenan" href="/mod_5"><i><strong>← Módulo anterior<strong></i></a>
-                <a class="btn my-5 btnrenan" href="/mod_7"><i><strong>Próximo módulo →</strong></i></a>
-            </div>
-        </div> 
-        </div>
-        </div>
-        </div>
-        </div>
+        <!-- Test Your Knowledge Button -->
+<div class="d-grid gap-2 col-12 col-md-6 mx-auto">
+    <a class="btn btn-lg btn-dark" href="/mod_6_quiz">Teste seu conhecimento</a>
+</div>
+<br>
+<br>
+
+<!-- Navigation Buttons -->
+<div class="d-grid gap-2 d-sm-flex justify-content-sm-between">
+    <a class="btn btn-primary my-5" href="/mod_5"><strong>← Módulo anterior</strong></a>
+    <a class="btn btn-primary my-5" href="/mod_7"><strong>Próximo módulo →</strong></a>
+</div> 
         </div>
         </div>
 {% endblock %}
