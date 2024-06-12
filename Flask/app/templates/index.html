@@ -296,34 +296,34 @@
             </div>
             <div class="modal-body">
                 <p>Olá, seja bem-vindo(a) a nossa pesquisa de satisfação!</p>
-                <form>
+                <form action="/add" method="POST">
                     <div class="mb-3">
                         <label for="userID" class="form-label">Insira seu ID:</label>
-                        <input type="text" class="form-control" id="userID">
+                        <input type="text" class="form-control" id="userID" name="id" required>
                     </div>
                     <div class="mb-3">
-                        <label for="userName" class="form-label">Seu nome completo:</label>
-                        <input type="text" class="form-control" id="userName">
+                        <label for="userName" class="form-label" name="nome">Seu nome completo:</label>
+                        <input type="text" class="form-control" id="userName" name="nome" required>
                     </div>
                     <div class="mb-3">
                         <label for="satisfacao" class="form-label">De 0 a 5 (sendo 5 a maior nota) o quão satisfeito você está com o site?</label>
                         <div class="rating">
-                            <input type="radio" name="rating" id="rating-5"><label for="rating-5">★</label>
-                            <input type="radio" name="rating" id="rating-4"><label for="rating-4">★</label>
-                            <input type="radio" name="rating" id="rating-3"><label for="rating-3">★</label>
-                            <input type="radio" name="rating" id="rating-2"><label for="rating-2">★</label>
-                            <input type="radio" name="rating" id="rating-1"><label for="rating-1">★</label>
+                            <input type="radio" name="rating" id="rating-5"><label for="rating-5" name="nota" required>★</label>
+                            <input type="radio" name="rating" id="rating-4"><label for="rating-4" name="nota" required>★</label>
+                            <input type="radio" name="rating" id="rating-3"><label for="rating-3" name="nota" required>★</label>
+                            <input type="radio" name="rating" id="rating-2"><label for="rating-2" name="nota" required>★</label>
+                            <input type="radio" name="rating" id="rating-1"><label for="rating-1" name="nota" required>★</label>
                         </div>
                     </div>
                     <div class="mb-3">
                         <label for="experiencia" class="form-label">Compartilhe sua experiência com a metodologia Scrum! Sua opinião é fundamental para continuarmos aprimorando nosso conteúdo e oferecer a melhor experiência de aprendizado possível.</label>
-                        <textarea class="form-control" id="experiencia" rows="3"></textarea>
+                        <textarea class="form-control" id="experiencia" rows="3" name="opiniao" required></textarea>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                <button action="/add" method="POST" type="button" class="btn btn-primary">Enviar</button>
+                <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
         </div>
     </div>
