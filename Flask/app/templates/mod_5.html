@@ -3,13 +3,14 @@
 {% block title %}Módulo 5{% endblock %}
 
 {% block styles %}
-    <style>
-        body {
+<style>
+    body {
         justify-content: space-around;
         margin: 0%;
         margin-bottom: 0%;
         font-family: "Alatsi", sans-serif;
         background-color: #c8c8c8;
+        overflow-x: hidden;
     }
 
     .divtext {
@@ -70,22 +71,20 @@
         background-color: #32363f;
         padding: 2px 16px;
     }
-    .btn.btn-lg.btn-dark{
-        background-color:#32363F;
+    .navigation-btn {
+        background-color: transparent; 
+        border: none; 
+        color: #32363f;  
+        font-size: 1.25rem; 
     }
-    .btn.btn-lg.btn-dark:hover{
-        background-color: #464c5c;
+    .navigation-btn:hover {
+        transition: 250ms;
+        transform: scale(1.05);
+        background-color: transparent; 
+        border: none; 
+        color: #32363f;  
+        font-size: 1.25rem; 
     }
-    .d-grid.gap-2.d-md-flex{
-        justify-content: space-between;
-    }
-    .btn.my-5{
-        font-size: larger;
-    }
-    .btncelso:hover{
-        color: #464c5c;
-    }
-
     #sidebar {
         position: sticky;
         top: 0;
@@ -97,56 +96,72 @@
         overflow-y: auto;
         padding-left: 15px;
     }
+
+    .divimag{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
     .container-custom{
-                height: 50vh;
-                background-color: #32363f;
-            }
-            .title-mod{
-                margin: 30px 50px;
-                color: #D6D6D6;
-                
-            }
-            .title-mod h1{
-                font-size: 120px;
-            }
+        height: 50vh;
+        background-color: #32363f;
+    }
+    .title-mod{
+        margin: 30px 50px;
+        color: #D6D6D6;                
+    }
+    .title-mod h1{
+        font-size: 120px;
+    }
 
-            .img{
-                width: 500px;
-                height: auto;
-            }
+    .img{
+        width: 500px;
+        height: auto;
+    }
 
-            @media (max-width:575.98px){
-                .title-mod h1{
-                    font-size: 40px;
-                }
-                .img{
-                    width: 335px;
-                    height: auto;
-                }
-            }
+    @media (max-width:575.98px){
+        .title-mod h1{
+            font-size: 40px;
+        }
+        .img{
+            width: 335px;
+            height: auto;
+        }
+        .imag{
+            width: 290px;
+            height: auto;
+        }
+        #main-content .divtext{
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        hr{
+            display: none;
+        }
+    }
 
-            @media (min-width: 576px) and (max-width: 767.98px){
-                .img{
-                    width: 350px;
-                    height: auto;
-                }
-            }
+    @media (min-width: 576px) and (max-width: 767.98px){
+        .img{
+            width: 350px;
+            height: auto;
+        }
+    }
 
-            @media (min-width: 768px) and (max-width: 991.98px){
-                .img{
-                    width: 400px;
-                    height: auto;
-                }
-            }
+    @media (min-width: 768px) and (max-width: 991.98px){
+        .img{
+            width: 400px;
+            height: auto;
+        }
+    }
 
-            @media (min-width: 992px) and (max-width: 1224.98px){
-                .img{
-                    width: 400px;
-                    height: auto;
-                }
-            }
-        </style>
+    @media (min-width: 992px) and (max-width: 1224.98px){
+        .img{
+            width: 400px;
+            height: auto;
+        }
+    }
+</style>
 {% endblock %}
 
 {% block content %}
@@ -178,7 +193,7 @@
     <div class="container-fluid">
     <div class="row">
     
-      <div class="col-2">
+      <div class="col-2 d-none d-md-block">
         <nav id="sidebar">
           <div
             class="scrollspy-example-2"
@@ -233,7 +248,9 @@
                         <p class="ppp"><strong><i>->Cada item deve ser suficientemente pequeno e ter critérios claros de aceitação para ser incluído em uma Sprint:</i></strong></p>
                         <p class="ppp2">Para que uma tarefa seja considerada pronta para ser trabalhada em uma iteração (Sprint) do desenvolvimento, ela precisa ser clara e específica o suficiente, além de ter critérios claros que definam quando ela estará completa e pronta para ser entregue aos usuários. Isso garante que a equipe possa trabalhar de forma eficiente e entender exatamente o que precisa ser feito.</p>
                 <br>
-                <img src="{{ url_for('static', filename='/imgs/productbacklog.png') }}" class="imag" alt="#">
+                <div class="divimag">
+                    <img src="{{ url_for('static', filename='/imgs/productbacklog.png') }}" class="imag" alt="#">
+                </div>
                 <br>
                 <br>
                 <div class="cardcard">
@@ -268,7 +285,9 @@
                             <P class="ppp2">Um Taskboard é uma ferramenta visual usada pela equipe Scrum para acompanhar o progresso das tarefas durante a Sprint. Nele, as tarefas são divididas em colunas, como "A fazer" (To do), "Fazendo" (Doing) e "Feito" (Done). Cada tarefa é representada por um cartão, e a equipe move esses cartões entre as colunas à medida que progride no trabalho.</p>
                         <P class="ppp"><strong><i>->Pode ser atualizado durante a Sprint para refletir novas descobertas ou necessidades:</i></strong></p>
                             <P class="ppp2">Durante a Sprint, a equipe pode encontrar novas informações, obstáculos inesperados ou mudanças nas prioridades que afetam o Product Backlog. Nesses casos, o Product Owner e a equipe podem decidir adicionar, remover ou reordenar itens no backlog para refletir as necessidades atuais do produto. Essa flexibilidade permite que a equipe responda de maneira ágil a mudanças e incertezas durante o desenvolvimento do produto.</p>
-            <img src="{{ url_for('static', filename='/imgs/scrumboard.png') }}" class="imag">
+            <div class="divimag">
+                <img src="{{ url_for('static', filename='/imgs/scrumboard.png') }}" class="imag">
+            </div>
             <div class="cardcard">
                 <div class="containercard">
                     <br>
@@ -316,7 +335,9 @@
                         <p class="pp2"><strong><i>->Resultado do trabalho realizado durante a Sprint:</i></strong></p>
                             <p class="ppp">Cada incremento representa o progresso alcançado durante o período de trabalho da Sprint. Reflete a implementação de funcionalidades planejadas e priorizadas pelo Time de Desenvolvimento e Product Owner.</p>
             <br>
-            <img src="{{ url_for('static', filename='/imgs/increment.png') }}" class="imag" alt="#">
+            <div class="divimag">
+                <img src="{{ url_for('static', filename='/imgs/increment.png') }}" class="imag" alt="#">
+            </div>
             <br>
             <br>
             <div class="cardcard">
@@ -362,7 +383,9 @@
                         <p class="ppp"><font color=#32363f>-A Definição de Pronto deve ser compreendida por todos os membros do Scrum, garantindo que haja um entendimento comum do que é esperado de uma funcionalidade finalizada.</p></font>
                         <p class="ppp"><font color=#32363f>-Além disso, ela pode ser expandida ao longo do tempo para incluir mais critérios de qualidade à medida que a equipe amadurece e aprende com suas experiências. Isso permite que a equipe continue a elevar o padrão de qualidade do produto ao longo do tempo.</p></font>
             <br>
-            <img src="{{ url_for('static', filename='/imgs/done.png') }}" class="imag" alt="#">
+            <div class="divimag">
+                <img src="{{ url_for('static', filename='/imgs/done.png') }}" class="imag" alt="#">
+            </div>
             <br>
             <br>
             <div class="cardcard">
@@ -394,7 +417,9 @@
                 <p class="pp"><font color=#32363f>O Product Owner pode usar um tipo específico de Burndown Chart, chamado Release Burndown Chart, para gerenciar o progresso de todo o lançamento do produto (release).</p></font>
                 <p class="pp"><font color=#32363f>Isso é feito com base nas estimativas fornecidas pelo Time de Desenvolvimento, permitindo que o Product Owner acompanhe o progresso geral do projeto e tome decisões informadas sobre o lançamento do produto.</p></font>
             <br>
-            <img src="{{ url_for('static', filename='/imgs/burndown.png') }}" class="imag" alt="#">
+            <div class="divimag">
+                <img src="{{ url_for('static', filename='/imgs/burndown.png') }}" class="imag" alt="#">
+            </div>
             <br>
             <br>
             <div class="cardcard">
@@ -408,20 +433,28 @@
                             <p class="ppp"><font color="#C8C8C8">->Se a equipe estiver atrasada, a linha do gráfico pode se nivelar ou até mesmo subir, indicando que eles estão demorando mais do que o esperado para concluir o trabalho.</font></P>
                 </div>
             </div>
-        </div>
-        <br>
-        <hr class="text-dark">
-        <br>
-        <div class="d-grid gap-2 col-6 mx-auto">
-            <a class="btn btn-lg btn-dark" href="/mod_5_quiz">Teste seu conhecimento</a>
-        </div>
-        <br>
-        <br>
-        <div>
-            <div class="d-grid gap-2 d-md-flex">
-                <a class="btn my-5 btnvitor" href="/mod_4"><i><strong>← Módulo anterior<strong></i></a>
-                <a class="btn my-5 btnvitor" href="/mod_6"><i><strong>Próximo módulo →</strong></i></a>
-            </div>
-        </div>
-        <br>
+            <br>
+            <br>    
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="divtext">
+    <br>
+    <hr class="text-dark">
+    <br>
+    <div class="d-grid gap-2 col-12 col-md-6 mx-auto">
+        <a class="btn btn-lg btn-dark" href="/mod_5_quiz">Teste seu conhecimento</a>
+    </div>
+    <br>
+    <br>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-between">
+        <a class="btn navigation-btn btn-primary my-5" href="/mod_4"><strong>← Módulo anterior</strong></a>
+        <a class="btn navigation-btn btn-primary my-5" href="/mod_6"><strong>Próximo módulo →</strong></a>
+    </div> 
+</div>
 {% endblock %}
