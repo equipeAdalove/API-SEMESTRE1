@@ -3,13 +3,14 @@
 {% block title %}Módulo 7{% endblock %}
 
 {% block styles %}
-        <style>
-            body {
+<style>
+    body {
         justify-content: space-around;
         margin: 0%;
         margin-bottom: 0%;
         font-family: "Alatsi", sans-serif;
         background-color: #c8c8c8;
+        overflow-x: hidden;
     }
 
     .divtext {
@@ -70,22 +71,20 @@
         background-color: #32363f;
         padding: 2px 16px;
     }
-    .btn.btn-lg.btn-dark{
-        background-color:#32363F;
+    .navigation-btn {
+        background-color: transparent; 
+        border: none; 
+        color: #32363f;  
+        font-size: 1.25rem; 
     }
-    .btn.btn-lg.btn-dark:hover{
-        background-color: #464c5c;
+    .navigation-btn:hover {
+        transition: 250ms;
+        transform: scale(1.05);
+        background-color: transparent; 
+        border: none; 
+        color: #32363f;  
+        font-size: 1.25rem; 
     }
-    .d-grid.gap-2.d-md-flex{
-        justify-content: space-between;
-    }
-    .btn.my-5{
-        font-size: larger;
-    }
-    .btncelso:hover{
-        color: #464c5c;
-    }
-
     #sidebar {
         position: sticky;
         top: 0;
@@ -97,56 +96,72 @@
         overflow-y: auto;
         padding-left: 15px;
     }
+
+    .divimag{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
     .container-custom{
-                height: 50vh;
-                background-color: #32363f;
-            }
-            .title-mod{
-                margin: 30px 50px;
-                color: #D6D6D6;
-                
-            }
-            .title-mod h1{
-                font-size: 120px;
-            }
+        height: 50vh;
+        background-color: #32363f;
+    }
+    .title-mod{
+        margin: 30px 50px;
+        color: #D6D6D6;                
+    }
+    .title-mod h1{
+        font-size: 120px;
+    }
 
-            .img{
-                width: 500px;
-                height: auto;
-            }
+    .img{
+        width: 500px;
+        height: auto;
+    }
 
-            @media (max-width:575.98px){
-                .title-mod h1{
-                    font-size: 40px;
-                }
-                .img{
-                    width: 335px;
-                    height: auto;
-                }
-            }
+    @media (max-width:575.98px){
+        .title-mod h1{
+            font-size: 40px;
+        }
+        .img{
+            width: 335px;
+            height: auto;
+        }
+        .imag{
+            width: 290px;
+            height: auto;
+        }
+        #main-content .divtext{
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        hr{
+            display: none;
+        }
+    }
 
-            @media (min-width: 576px) and (max-width: 767.98px){
-                .img{
-                    width: 350px;
-                    height: auto;
-                }
-            }
+    @media (min-width: 576px) and (max-width: 767.98px){
+        .img{
+            width: 350px;
+            height: auto;
+        }
+    }
 
-            @media (min-width: 768px) and (max-width: 991.98px){
-                .img{
-                    width: 400px;
-                    height: auto;
-                }
-            }
+    @media (min-width: 768px) and (max-width: 991.98px){
+        .img{
+            width: 400px;
+            height: auto;
+        }
+    }
 
-            @media (min-width: 992px) and (max-width: 1224.98px){
-                .img{
-                    width: 400px;
-                    height: auto;
-                }
-            } 
-        </style>
+    @media (min-width: 992px) and (max-width: 1224.98px){
+        .img{
+            width: 400px;
+            height: auto;
+        }
+    }
+</style>
 {% endblock %}
 
 {% block content %}
@@ -178,7 +193,7 @@
         <div class="container-fluid">
         <div class="row">
 
-            <div class="col-2">
+            <div class="col-2 d-none d-md-block">
                 <nav id="sidebar">
                     <div
                     class="scrollspy-example-2"
@@ -213,8 +228,9 @@
                 <p class="pp">Primeiramente, decide-se a tarefa com menos esforço (1) e classifica-se as próximas em comparação a ela.</p>
                 <p class="pp">Os valores brutos que são atribuídos não são importantes, sendo os valores relativos mais importantes para o processo das estimativas.</p>
         <br>
-
-        <img src="{{ url_for('static', filename='/imgs/Estimativa7.png')}}" class="imag"> </p>
+        <div class="divimag">
+            <img src="{{ url_for('static', filename='/imgs/Estimativa7.png')}}" class="imag"> </p>
+        </div>
 
         <br>
 
@@ -232,7 +248,9 @@
         
         <h1>Planning Poker</h1>
         <br>
-        <img src="{{ url_for('static', filename='/imgs/PlanningPoker7.png') }}" width="400px" height="400" class="imag">
+        <div class="divimag">
+            <img src="{{ url_for('static', filename='/imgs/PlanningPoker7.png') }}" width="400px" height="400" class="imag">
+        </div>
         <br>
             <p>Um dos métodos de estimativa mais populares é o Planning Poker, que consiste em um jogo colaborativo em que os membros do time atribuem um valor de Story Points a cada item do backlog, baseando-se em critérios como o tamanho, a dificuldade, o risco e a incerteza da tarefa.</p>
             <p>O Planning Poker estimula a discussão e o consenso entre os participantes, além de evitar influências externas ou viéses individuais.</p>
@@ -271,7 +289,6 @@
         <div class="cardcard">
             <div class="containercard">
                 <br>
-                  <h3 class="item" id="item-4"> Exemplo prático: </h3>
                     <p class="pp"><font color="#C8C8C8"> Imagine que uma equipe de desenvolvimento de software utiliza o SCRUM para estimar quantidade de tempo e esforço necessário para implementar novas funcionalidades em um aplicativo. </font> </p>
 
                         <p class="pp2"><font color="#C8C8C8"><strong><i>1. Sprint Planning:</i></strong></font></p>
@@ -304,20 +321,27 @@
         </div>
         <br>
         <br>
-        <hr class="text-dark">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="divtext">
         <br>
-            <div class="d-grid gap-2 col-6 mx-auto">
-                <a class="btn btn-lg btn-dark" href="/mod_7_quiz">Teste seu conhecimento</a>
-            </div>
-            <br>
-            <br>
-            <div>
-                <div class="d-grid gap-2 d-md-flex">
-                    <a class="btn my-5 btnrafa" href="/mod_6"><i><strong>← Módulo anterior<strong></i></a>
-                    <a class="btn my-5 btnrafa" href="/modulos"><i><strong>Módulos →</strong></i></a>
-                </div>
-            </div>
+        <hr>
         <br>
-    </div>  
+        <div class="d-grid gap-2 col-12 col-md-6 mx-auto">
+            <a class="btn btn-lg btn-dark" href="/mod_7_quiz">Teste seu conhecimento</a>
+        </div>
+        <br>
+        <br>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-between">
+            <a class="btn navigation-btn btn-primary my-5" href="/mod_6"><strong>← Módulo anterior</strong></a>
+            <a class="btn navigation-btn btn-primary my-5" href="/modulos"><strong>Módulos →</strong></a>
+        </div> 
+    </div>
 {% endblock %}
 
