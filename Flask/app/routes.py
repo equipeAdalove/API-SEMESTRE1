@@ -9,26 +9,26 @@ app.config['MYSQL_PASSWORD'] = 'fatec'
 app.config['MYSQL_DB'] = 'api1ads'
 mysql = MySQL(app)
 
-# Rota para adicionar uma nova tarefa
-@app.route('/add', methods=['POST'])
-def add_task():
-    if request.method == 'POST':
-        id = request.form['id']
-        nome = request.form['nome']
-        nota = request.form['nota']
-        opiniao = request.form['opiniao']
-        cur = mysql.connection.cursor()
-        cur.execute("INSERT INTO formulario (id, nome, nota, opiniao) VALUES (%d, %s, %d, %s)", (id, nome, nota, opiniao))
-        mysql.connection.commit()
-        cur.close()
-        return redirect(url_for('index'))
-
 # NavBar
 @app.route('/')
 @app.route('/index')
 def index():
     return render_template('index.html')
 
+# Rota para adicionar uma nova tarefa MySQL
+@app.route('/add', methods=['POST'])
+def add_task():
+    if request.method == 'POST':
+        func_id = request.form['func_id']
+        nome = request.form['nome']
+        nota = request.form['nota']
+        opiniao = request.form['opiniao']
+        cur = mysql.connection.cursor()
+        cur.execute("INSERT INTO formulario (func_id, nome, nota, opiniao) VALUES (%d, %s, %d, %s)", (func_id, nome, nota, opiniao))
+        mysql.connection.commit()
+        cur.close()
+        return redirect(url_for('index'))
+    
 @app.route('/modulos')
 def modulos():
     return render_template('modulos.html')
