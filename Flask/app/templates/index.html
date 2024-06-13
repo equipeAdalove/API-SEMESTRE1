@@ -176,7 +176,7 @@
         border-radius: 5px;
     }
     .cardcard {
-        background-color: #fff;
+        background-color: #d7d4d4;
         box-shadow: 0 4px 8px 0;
         transition: 0.3s;
         width: 80%;
@@ -185,10 +185,26 @@
         padding: 2px 16px;
     }
 
+    .navigation-btn {
+        font-family: 'Alatsi', sans-serif;
+        background-color: transparent; 
+        border: none; 
+        color: #32363f;  
+        font-size: 1.25rem; 
+    }
+    .navigation-btn:hover {
+        transition: 250ms;
+        transform: scale(1.05);
+        background-color: transparent; 
+        border: none; 
+        color: #32363f;  
+        font-size: 1.25rem; 
+    }
+
     .pesquisa{
         margin-left: 10%;
     }
-    
+
 </style>
 {% endblock %}
 
@@ -264,7 +280,7 @@
 
 <!-- Botão para abrir o modal -->
 <div class="cardcard">
-    <div class="containercard" class="rounded">
+    <div class="containercard formcard" class="rounded">
         <br>
         <h4><font color="#32363F">Responda nossa pesquisa de satisfação! </font></h4>
         <p><font color="#FF0000">Complete o formulário de avaliação somente após concluir o curso</font></p>
@@ -273,18 +289,24 @@
             <button type="button" class="btn btn-lg btn-dark" data-toggle="modal" data-target="#formModal" >
                 ACESSAR FORMULÁRIO
             </button>
+        <br>
+        <br>
     </div>
 </div>
 <br>
 <div class="pesquisa">
-<p><strong><font color="#32363F">Acessar respostas</font></strong></P>
+
+<button type="button" class="btn btn-primary navigation-btn" data-toggle="modal" data-target="#passwordModal">
+    Acessar respostas
+</button>
+
 </div>
 <br>
 <br>
 <br>
 <br>
 
-<!-- Modal -->
+<!-- Modal Avaliação -->
 <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -325,6 +347,29 @@
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
         </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Senha -->
+<div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="passwordModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="passwordModalLabel">Inserir Senha</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="{{ url_for('validate_password') }}" method="POST">
+                    <div class="form-group">
+                        <label for="password">Senha:</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
         </div>
     </div>
 </div>

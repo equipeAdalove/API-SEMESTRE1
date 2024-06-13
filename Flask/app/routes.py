@@ -9,6 +9,9 @@ app.config['MYSQL_PASSWORD'] = 'fatec'
 app.config['MYSQL_DB'] = 'api1ads'
 mysql = MySQL(app)
 
+#Senha 
+senha = '12345'
+
 # NavBar
 @app.route('/')
 @app.route('/index')
@@ -27,6 +30,15 @@ def add_task():
         cur.execute("INSERT INTO formulario (func_id, nome, nota, opiniao) VALUES (%d, %s, %d, %s)", (func_id, nome, nota, opiniao))
         mysql.connection.commit()
         cur.close()
+        return redirect(url_for('index'))
+    
+#Verifica senha
+@app.route('/validate-password', methods=['POST'])
+def validate_password():
+    password = request.form.get('password')
+    if password == senha:
+        return redirect('https://youtu.be/dQw4w9WgXcQ')
+    else:
         return redirect(url_for('index'))
     
 @app.route('/modulos')
