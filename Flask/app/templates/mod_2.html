@@ -5,87 +5,86 @@
 {% block styles %}
 <style>
   body {
-    justify-content: space-around;
-    margin: 0%;
-    margin-bottom: 0%;
-    font-family: "Alatsi", sans-serif;
-    background-color: #c8c8c8;
+      justify-content: space-around;
+      margin: 0%;
+      margin-bottom: 0%;
+      font-family: "Alatsi", sans-serif;
+      background-color: #c8c8c8;
+      overflow-x: hidden;
   }
 
   .divtext {
-    margin-top: -3pc;
-    margin-left: 100px;
-    margin-right: 100px;
-    text-align: justify;
+      margin-top: -3pc;
+      margin-left: 100px;
+      margin-right: 100px;
+      text-align: justify;
   }
   .funcoes {
-    margin-top: 6pc;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 80px;
-    text-align: justify;
+      margin-top: 6pc;
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-bottom: 80px;
+      text-align: justify;
   }
   .h3 {
-    line-height: 1.5;
-    text-indent: 20px;
+      line-height: 1.5;
+      text-indent: 20px;
   }
   p {
-    line-height: 1.5;
-    text-indent: 50px;
+      line-height: 1.5;
+      text-indent: 50px;
   }
   .pp {
-    line-height: 1.5;
-    text-indent: 80px;
+      line-height: 1.5;
+      text-indent: 80px;
   }
   .pp2 {
-    line-height: 1.5;
-    text-indent: 100px;
+      line-height: 1.5;
+      text-indent: 100px;
   }
   .ppp {
-    line-height: 1.5;
-    text-indent: 120px;
+      line-height: 1.5;
+      text-indent: 120px;
   }
   .ppp2 {
-    line-height: 1.5;
-    text-indent: 140px;
+      line-height: 1.5;
+      text-indent: 140px;
   }
   .imag {
-    width: 45%;
-    height: 45%;
-    margin-left: 350px;
-    margin-right: 350px;
+      width: 45%;
+      height: 45%;
+      margin-left: 350px;
+      margin-right: 350px;
   }
   .cardcard {
-    box-shadow: 0 4px 8px 0 #1c1e21;
-    transition: 0.3s;
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
+      box-shadow: 0 4px 8px 0 #1c1e21;
+      transition: 0.3s;
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
   }
 
   .cardcard:hover {
-    box-shadow: 0 8px 16px 0 #1c1e21;
+      box-shadow: 0 8px 16px 0 #1c1e21;
   }
   .containercard {
-    background-color: #32363f;
-    padding: 2px 16px;
+      background-color: #32363f;
+      padding: 2px 16px;
   }
-  .btn.btn-lg.btn-dark{
-      background-color:#32363F;
+  .navigation-btn {
+      background-color: transparent; 
+      border: none; 
+      color: #32363f;  
+      font-size: 1.25rem; 
   }
-  .btn.btn-lg.btn-dark:hover{
-      background-color: #464c5c;
+  .navigation-btn:hover {
+      transition: 250ms;
+      transform: scale(1.05);
+      background-color: transparent; 
+      border: none; 
+      color: #32363f;  
+      font-size: 1.25rem; 
   }
-  .d-grid.gap-2.d-md-flex{
-      justify-content: space-between;
-  }
-  .btn.my-5{
-      font-size: larger;
-  }
-  .btncelso:hover{
-      color: #464c5c;
-  }
-
   #sidebar {
       position: sticky;
       top: 0;
@@ -97,55 +96,71 @@
       overflow-y: auto;
       padding-left: 15px;
   }
+
+  .divimag{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
   
   .container-custom{
-                height: 50vh;
-                background-color: #32363f;
-            }
-            .title-mod{
-                margin: 30px 50px;
-                color: #D6D6D6;
-                
-            }
-            .title-mod h1{
-                font-size: 120px;
-            }
+      height: 50vh;
+      background-color: #32363f;
+  }
+  .title-mod{
+      margin: 30px 50px;
+      color: #D6D6D6;                
+  }
+  .title-mod h1{
+      font-size: 120px;
+  }
 
-            .img{
-                width: 500px;
-                height: auto;
-            }
+  .img{
+      width: 500px;
+      height: auto;
+  }
 
-            @media (max-width:575.98px){
-                .title-mod h1{
-                    font-size: 40px;
-                }
-                .img{
-                    width: 335px;
-                    height: auto;
-                }
-            }
+  @media (max-width:575.98px){
+      .title-mod h1{
+          font-size: 40px;
+      }
+      .img{
+          width: 335px;
+          height: auto;
+      }
+      .imag{
+          width: 290px;
+          height: auto;
+      }
+      #main-content .divtext{
+          margin-right: 10px;
+          margin-left: 10px;
+      }
+      hr{
+          display: none;
+      }
+  }
 
-            @media (min-width: 576px) and (max-width: 767.98px){
-                .img{
-                    width: 350px;
-                    height: auto;
-                }
-            }
+  @media (min-width: 576px) and (max-width: 767.98px){
+      .img{
+          width: 350px;
+          height: auto;
+      }
+  }
 
-            @media (min-width: 768px) and (max-width: 991.98px){
-                .img{
-                    width: 400px;
-                    height: auto;
-                }
-            }
+  @media (min-width: 768px) and (max-width: 991.98px){
+      .img{
+          width: 400px;
+          height: auto;
+      }
+  }
 
-            @media (min-width: 992px) and (max-width: 1224.98px){
-                .img{
-                    width: 400px;
-                    height: auto;
-                }
-            }
+  @media (min-width: 992px) and (max-width: 1224.98px){
+      .img{
+          width: 400px;
+          height: auto;
+      }
+  }
 </style>
 {% endblock %}
 
@@ -178,7 +193,7 @@
       <div class="container-fluid">
         <div class="row">
 
-          <div class="col-2">
+          <div class="col-2 d-none d-md-block">
             <nav id="sidebar">
               <div
                 class="scrollspy-example-2"
@@ -217,7 +232,9 @@
                         expectativas. E, por fim, a adaptação permite que as equipes respondam de forma ágil às mudanças e ajustem suas
                         estratégias conforme necessário. Juntos, esses pilares capacitam as equipes a enfrentar os desafios do projeto de forma
                         eficaz e a maximizar o valor entregue ao cliente.</p>
-                <img src="{{ url_for('static', filename='imgs/pilaresintro.png')}}" class="imag">
+                <div class="divimag">
+                  <img src="{{ url_for('static', filename='imgs/pilaresintro.png')}}" class="imag">
+                </div>
                         <br>
                         <br>
               </div>
@@ -302,25 +319,30 @@
                         <font color="C8C8C8">Como resultado dessa adaptação, a equipe ajusta o backlog do sprint para refletir as lições aprendidas e garantir uma entrega mais eficaz no próximo ciclo. Isso pode envolver a adição, remoção ou re-priorização de tarefas com base no feedback recebido durante o sprint atual. Esses ajustes no backlog do sprint garantem que a equipe esteja alinhada com as necessidades do projeto e que esteja trabalhando nas tarefas mais importantes e prioritárias para alcançar os objetivos estabelecidos. Essa abordagem iterativa e adaptativa é fundamental para o sucesso do Scrum, permitindo que a equipe aprenda e melhore continuamente ao longo do tempo.</font></p>
                 </div>
                             </div>
-                            <img src="{{ url_for('static', filename='/imgs/pilaresfinal.png')}}" class="imag">
+                            <div class="divimag">
+                              <img src="{{ url_for('static', filename='/imgs/pilaresfinal.png')}}" class="imag">
+                            </div>
                             <br>
                             <br>
-              </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      <div class="divtext">
+        <br>
         <hr>
         <br>
-        <div class="d-grid gap-2 col-6 mx-auto">
+        <div class="d-grid gap-2 col-12 col-md-6 mx-auto">
             <a class="btn btn-lg btn-dark" href="/mod_2_quiz">Teste seu conhecimento</a>
         </div>
         <br>
         <br>
-        <div>
-            <div class="d-grid gap-2 d-md-flex">
-                <a class="btn my-5 btncelso" href="/mod_1"><i><strong>← Módulo anterior<strong></i></a>
-                <a class="btn my-5 btncelso" href="/mod_3"><i><strong>Próximo módulo →</strong></i></a>
-            </div>
-        </div>
-      </div>
-      </div>
-      </div>
-      </div>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-between">
+            <a class="btn navigation-btn my-5" href="/mod_1"><strong>← Módulo anterior</strong></a>
+            <a class="btn navigation-btn my-5" href="/mod_3"><strong>Próximo módulo →</strong></a>
+        </div> 
+    </div>
 {% endblock %}

@@ -3,13 +3,14 @@
 {% block title %}Módulo 6{% endblock %}
 
 {% block styles %}
-        <style>
-            body {
+<style>
+    body {
         justify-content: space-around;
         margin: 0%;
         margin-bottom: 0%;
         font-family: "Alatsi", sans-serif;
         background-color: #c8c8c8;
+        overflow-x: hidden;
     }
 
     .divtext {
@@ -70,22 +71,20 @@
         background-color: #32363f;
         padding: 2px 16px;
     }
-    .btn.btn-lg.btn-dark{
-        background-color:#32363F;
+    .navigation-btn {
+        background-color: transparent; 
+        border: none; 
+        color: #32363f;  
+        font-size: 1.25rem; 
     }
-    .btn.btn-lg.btn-dark:hover{
-        background-color: #464c5c;
+    .navigation-btn:hover {
+        transition: 250ms;
+        transform: scale(1.05);
+        background-color: transparent; 
+        border: none; 
+        color: #32363f;  
+        font-size: 1.25rem; 
     }
-    .d-grid.gap-2.d-md-flex{
-        justify-content: space-between;
-    }
-    .btn.my-5{
-        font-size: larger;
-    }
-    .btncelso:hover{
-        color: #464c5c;
-    }
-
     #sidebar {
         position: sticky;
         top: 0;
@@ -105,74 +104,64 @@
     }
     
     .container-custom{
-                height: 50vh;
-                background-color: #32363f;
-            }
-            .title-mod{
-                margin: 30px 50px;
-                color: #D6D6D6;
-                
-            }
-            .title-mod h1{
-                font-size: 120px;
-            }
+        height: 50vh;
+        background-color: #32363f;
+    }
+    .title-mod{
+        margin: 30px 50px;
+        color: #D6D6D6;                
+    }
+    .title-mod h1{
+        font-size: 120px;
+    }
 
-            .img{
-                width: 500px;
-                height: auto;
-            }
+    .img{
+        width: 500px;
+        height: auto;
+    }
 
-            @media (max-width:575.98px){
-                .title-mod h1{
-                    font-size: 40px;
-                }
-                .img{
-                    width: 335px;
-                    height: auto;
-                }
-                .imag{
-                    width: 290px;
-                    height: auto;
-                }
-            }
-
-            @media (min-width: 576px) and (max-width: 767.98px){
-                .img{
-                    width: 350px;
-                    height: auto;
-                }
-            }
-
-            @media (min-width: 768px) and (max-width: 991.98px){
-                .img{
-                    width: 400px;
-                    height: auto;
-                }
-            }
-
-            @media (min-width: 992px) and (max-width: 1224.98px){
-                .img{
-                    width: 400px;
-                    height: auto;
-                }
-            }
-            
-            .dropdown .btn-dark {
-            border-radius: 50px;
-            padding: 10px 20px;
-            margin: 10px;
+    @media (max-width:575.98px){
+        .title-mod h1{
+            font-size: 40px;
         }
-
-        .dropdown-menu {
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        .img{
+            width: 335px;
+            height: auto;
         }
-
-        .dropdown-menu .dropdown-item:hover {
-            background-color: #343a40;
-            color: #fff;
+        .imag{
+            width: 290px;
+            height: auto;
         }
-        </style>
+        #main-content .divtext{
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        hr{
+            display: none;
+        }
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px){
+        .img{
+            width: 350px;
+            height: auto;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px){
+        .img{
+            width: 400px;
+            height: auto;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1224.98px){
+        .img{
+            width: 400px;
+            height: auto;
+        }
+    }
+</style>
 {% endblock %}
 
 {% block content %}
@@ -189,243 +178,266 @@
         
     </div>
 </div>
-        <div class="wave">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-        </div>
 
-        <!-- Sumário -->
+<div class="wave">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+</div>
 
-        <div class="containerd my-4">
-            <div class="dropdown">
-                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fas fa-bars"></i>  Sumário
-                </button>
-                <ul class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
-                    <h2 class="dropdown-header">Tópicos</h2>
-                    <li><a class="dropdown-item" href="#item-1">Auto-Organização</a></li>
-                    <li><a class="dropdown-item" href="#item-2">Facilitação</a></li>
-                    <li><a class="dropdown-item" href="#item-3">Visão</a></li>
-                    <li><a class="dropdown-item" href="#item-4">User Stories</a></li>
-                </ul>
-            </div>
-        </div>
-        
+<!-- Curso -->
 
-        <div class="divtext">
+<div
+    data-bs-spy="scroll"
+    data-bs-target="#navbar-example3"
+    data-bs-offset="0"
+>
 
-        <!--Auto Organização-->
-            <br>
-            <br>
-            <h1 id="item-1"> Auto-Organização </h1>
-            <P><strong> 1. Importância da Auto-Organização no Scrum: </strong></P> 
-                <p class="pp">Na gestão de projetos ágeis, como no Scrum, a auto-organização é um princípio essencial que impulsiona a autonomia e a eficiência das equipes. Neste capítulo, exploraremos como a auto-organização se torna a espinha dorsal de equipes ágeis bem-sucedidas, promovendo um ambiente de trabalho colaborativo e orientado para resultados.</p>
-        <br>
-                <P class="pp"><strong> 2. A Base da Autonomia e Responsabilidade: </strong></P> 
-                    <p class="pp2">
-                    A auto-organização é muito mais do que delegar tarefas; é um conceito que permeia toda a cultura ágil. Ela se baseia na confiança mútua entre os membros da equipe e na clareza dos objetivos do projeto. Ao permitir que as equipes decidam como realizar o trabalho, elas se tornam mais engajadas e responsáveis pelo sucesso do projeto.
-                    </p>
-            <div class="cardcard">
-                <div class="containercard">
-                    <p><font color="#C8C8C8"><strong> Exemplo prático: </strong></font></p> 
-                        <p class="pp"><font color="#C8C8C8">
-                            Em vez de esperar por instruções detalhadas, a equipe decide autonomamente sobre a melhor abordagem para implementar o recurso de notificação. Eles entendem a importância de manter os usuários engajados e responsáveis por suas tarefas, alinhando-se com os objetivos do projeto.</font> 
-                        </p>                    
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2 d-none d-md-block">
+            <nav id="sidebar">
+                <div
+                    class="scrollspy-example-2"
+                    data-bs-spy="scroll"
+                    data-bs-target="#navbar-example3"
+                    data-bs-offset="0"
+                    tabindex="0"
+                    >
+                <nav class="nav nav-pills flex-column">
+                    <h5 class="mt-3">Sumário</h5>
+                    <a class="nav-link" href="#item-1">Auto-Organização</a>
+                    <a class="nav-link" href="#item-2">Facilitação</a>
+                    <a class="nav-link" href="#item-3">Visão</a>
+                    <a class="nav-link" href="#item-4">User Stories</a>
+                </nav>
                 </div>
-            </div>
-        <br>
-            <P class="pp"><strong> 3. Promovendo a Colaboração e Comunicação: </strong></P> 
-                <p class="pp2">
-                    Um dos maiores benefícios da auto-organização é a promoção da colaboração ativa e da comunicação efetiva entre os membros da equipe. Ao se sentirem capacitados a tomar decisões, os membros da equipe se tornam mais propensos a compartilhar conhecimento, ideias e feedbacks, criando um ambiente propício à inovação e ao progresso.
-                </p>
-            <div class="cardcard">
-                <div class="containercard">
-                    <p><font color="#C8C8C8"><strong> Exemplo prático: </strong></font></p> 
-                        <p class="pp"><font color="#C8C8C8">
-                            Durante o desenvolvimento, os membros da equipe colaboram ativamente, compartilhando conhecimentos sobre diferentes métodos de implementação de notificações. Eles têm discussões construtivas sobre as melhores práticas e trocam feedbacks para melhorar o processo.</font> 
-                        </p>                    
-                </div>
-            </div>   
-        <br>     
-            <P class="pp"><strong> 4. Flexibilidade e Adaptação Constante: </strong></P> 
-                <p class="pp2">
-                    A natureza volátil dos projetos ágeis exige uma abordagem flexível e adaptável. A auto-organização permite que as equipes se ajustem rapidamente a mudanças nos requisitos do cliente ou no ambiente externo, garantindo que o projeto permaneça alinhado com as necessidades em constante evolução. 
-                </p>
-            <div class="cardcard">
-                <div class="containercard">
-                    <p><font color="#C8C8C8"><strong> Exemplo prático: </strong></font></p> 
-                        <p class="pp"><font color="#C8C8C8">
-                            Quando surgem mudanças nos requisitos do cliente, como a adição de novas opções de personalização para as notificações, a equipe se adapta rapidamente. Eles ajustam o plano original e reavaliam suas abordagens, garantindo que o produto permaneça alinhado com as expectativas do cliente.</font> 
-                        </p>                    
-                </div>
-            </div>   
-        <br>  
-            <P class="pp"><strong> 5. Cultivando a Melhoria Contínua: </strong></P> 
-                <p class="pp2">
-                    A auto-organização também estimula a cultura de melhoria contínua dentro das equipes. Ao refletirem sobre seu próprio trabalho e identificarem áreas de oportunidade, os membros da equipe podem implementar melhorias incrementais ao longo do tempo, garantindo uma entrega de valor cada vez mais eficiente.
-                </p>
-            <div class="cardcard">
-                <div class="containercard">
-                    <p><font color="#C8C8C8"><strong> Exemplo prático: </strong></font></p> 
-                        <p class="pp"><font color="#C8C8C8">
-                            Quando surgem mudanças nos requisitos do cliente, como a adição de novas opções de personalização para as notificações, a equipe se adapta rapidamente. Eles ajustam o plano original e reavaliam suas abordagens, garantindo que o produto permaneça alinhado com as expectativas do cliente.</font> 
-                        </p>                    
-                </div>
-            </div>
-        <br>
-        <div class="divimag">
-            <img src="{{ url_for('static', filename='/imgs/auto_org.png') }}" class="imag">
+            </nav>
         </div>
-        <br>
-        <br>
-
-        <!--Facilitação-->
-
-            <h1 id="item-2"> Facilitação </h1>
-                <p>
-                    No contexto ágil, o Scrum Master desempenha um papel crucial como facilitador, atuando como um catalisador para as ideias que surgem dentro da equipe. Nesta seção, exploraremos como o Scrum Master busca otimizar processos, reduzir conflitos e motivar a equipe, promovendo um ambiente colaborativo e orientado para resultados.
-                </p>
-        <br>
-            <P class="pp"><strong> 1. Catalisando Ideias e Inovação: </strong></P> 
-                <p class="pp2">
-                    Como facilitador, o Scrum Master está constantemente buscando catalisar ideias e promover a inovação dentro da equipe. Ele encoraja a livre expressão de ideias e opiniões, criando um ambiente seguro onde os membros da equipe se sintam confortáveis para compartilhar suas perspectivas e contribuições. Além disso, o Scrum Master utiliza técnicas de facilitação, como brainstorming e técnicas de criatividade, para estimular a geração de novas ideias e soluções.
-                </p>
-        <br>
-            <P class="pp"><strong> 2. Otimizando Processos e Fluxos de Trabalho: </strong></P> 
-                <p class="pp2">
-                    Uma das principais responsabilidades do Scrum Master como facilitador é otimizar os processos e fluxos de trabalho da equipe. Ele trabalha em estreita colaboração com os membros da equipe para identificar oportunidades de melhoria e implementar mudanças que aumentem a eficiência e a eficácia do trabalho. Isso pode incluir a realização de workshops de retrospectiva para refletir sobre o desempenho passado e identificar áreas de oportunidade para melhorias futuras.
-                </p>
-        <br>     
-            <P class="pp"><strong> 3. Reduzindo Conflitos e Promovendo a Colaboração: </strong></P> 
-                <p class="pp2">
-                    Outra função importante do Scrum Master como facilitador é reduzir conflitos e promover um ambiente de trabalho colaborativo. Ele atua como um mediador neutro em situações de conflito, ajudando a facilitar a comunicação e encontrar soluções que sejam mutuamente benéficas para todas as partes envolvidas. Além disso, o Scrum Master incentiva a colaboração entre os membros da equipe, promovendo a troca de conhecimento e experiências. 
-                </p>           
-        <br>  
-            <P class="pp"><strong> 4. Motivando a Equipe e Promovendo o Engajamento: </strong></P> 
-                <p class="pp2">
-                    O Scrum Master também desempenha um papel importante na motivação da equipe e no fomento do engajamento. Ele reconhece e celebra as conquistas da equipe, proporcionando feedback positivo e incentivando o desenvolvimento pessoal e profissional dos membros da equipe. Além disso, o Scrum Master promove um ambiente de trabalho inclusivo e estimulante, onde todos se sintam valorizados e empoderados para contribuir para o sucesso do projeto.
-                </p>            
-        <br>
-        <div class="divimag">
-            <img src="{{ url_for('static', filename='/imgs/facilitador.png') }}" class="imag">
-        </div>
-        <br>
-        <br>
-
-        <!--Visão-->
-
-            <h1 id="item-3"> Visão </h1>
-                <p>
-                    A visão do produto, transmitida pelo Product Owner (P.O), desempenha um papel crucial no desenvolvimento ágil, permitindo que ele transfira o direcionamento do projeto para a equipe. Nesta seção, exploraremos como a visão do produto proporciona uma excelente oportunidade para a equipe aprender e discutir aspectos importantes do produto, promovendo uma compreensão compartilhada e um alinhamento eficaz.
-                </p>
-        <br>
-            <P class="pp"><strong> 1. Definindo a Visão do Produto: </strong></P> 
-                <p class="pp2">
-                    A visão do produto é uma declaração clara e concisa que descreve o propósito, os objetivos e os valores do produto. É transmitida pelo Product Owner para garantir que todos na equipe tenham uma compreensão comum do que estão construindo e por quê. A visão do produto serve como um guia para o desenvolvimento do produto, ajudando a equipe a tomar decisões alinhadas com os objetivos do projeto.
-                </p>
-        <br>
-            <P class="pp"><strong> 2. Transferindo o Direcionamento do Projeto: </strong></P> 
-                <p class="pp2">
-                    Ao comunicar a visão do produto para a equipe, o Product Owner transfere o direcionamento do projeto, capacitando os membros da equipe a tomar decisões informadas e assumir a responsabilidade pelo sucesso do produto. Isso cria um senso de propriedade e engajamento entre os membros da equipe, que se tornam mais investidos no sucesso do projeto e motivados a contribuir para alcançar os objetivos estabelecidos.
-                </p>
-        <br>     
-            <P class="pp"><strong> 3. Promovendo a Aprendizagem e a Discussão: </strong></P> 
-                <p class="pp2">
-                    A visão do produto proporciona uma excelente oportunidade para a equipe aprender e discutir aspectos importantes do produto. Ao entender os objetivos e as necessidades dos stakeholders, os membros da equipe podem discutir e explorar diferentes abordagens para atender às expectativas do cliente e entregar valor de forma eficaz. Isso promove uma cultura de aprendizagem contínua e melhoria dentro da equipe, onde todos são incentivados a contribuir com suas ideias e perspectivas. 
-                </p>           
-        <br>  
-            <P class="pp"><strong> 4. Fomentando a Compreensão Compartilhada: </strong></P> 
-                <p class="pp2">
-                    Ao transmitir a visão do produto, o Product Owner promove uma compreensão compartilhada entre os membros da equipe. Todos têm uma visão clara do que estão trabalhando para alcançar e por que é importante. Isso ajuda a alinhar as atividades da equipe com os objetivos do projeto e a garantir que todos estejam trabalhando na mesma direção.
-                </p>            
-        <br>
-        <div class="divimag">
-            <img src="{{ url_for('static', filename='/imgs/vision.png') }}" class="imag">
-        </div>
-        <br>
-        <br>
-
-        <!--User Stoires-->
-
-        <h1 id="item-4"> User Stories </h1>
-            <p>
-                User Stories são elementos cruciais no Product Backlog em metodologias ágeis, como o Scrum. Nesta seção, vamos explorar o significado das User Stories, sua criação e sua importância para o sucesso do projeto.
-            </p>
-    <br>
-        <P class="pp"><strong> 1. O Que São User Stories: </strong></P> 
-            <p class="pp2">
-                User Stories são pequenas descrições de funcionalidades ou requisitos do produto, escritas do ponto de vista do usuário final. Elas representam uma parcela específica do trabalho necessário para entregar valor ao cliente ou usuário. Cada User Story é concebida para ser independente, negociável, valiosa para o usuário, estimável e pequena o suficiente para ser completada em um curto período de tempo.
-            </p>
-        <div class="cardcard">
-            <div class="containercard">
-                <p><font color="#C8C8C8"><strong> Exemplo prático: </strong></font></p> 
-                    <p class="pp"><font color="#C8C8C8">
-                        Como usuário do sistema de e-commerce, eu quero poder adicionar produtos ao meu carrinho de compras, para que eu possa revisá-los e finalizar minha compra posteriormente</font> 
-                    </p>                    
-            </div>
-        </div>
-    <br>
-        <P class="pp"><strong> 2. Componentes de uma User Story:</strong></P> 
-            <p class="pp2">
-                Uma User Story geralmente consiste em três elementos principais: quem, o que e por que. Essa estrutura garante que todos na equipe compreendam quem se beneficia da funcionalidade, o que precisa ser feito e por que é importante para o usuário ou cliente.
-            </p>
-            <p class="ppp"> -> <strong><i>Quem: </i></strong> Esta parte indica quem é o usuário ou grupo de usuários que se beneficiará da funcionalidade descrita na User Story. É importante identificar claramente para quem estamos desenvolvendo o recurso. </p>
-            <p class="ppp"> -> <strong><i>O que: </i></strong> Aqui descrevemos a funcionalidade ou ação que o usuário deseja realizar. É o que o usuário quer fazer ou o problema que precisa ser resolvido. </p>
-            <p class="ppp"> -> <strong><i>Por que: </i></strong> Esta parte explica o motivo pelo qual a funcionalidade é importante para o usuário ou para o sucesso do projeto. Ajuda a equipe a entender o valor que será entregue ao cliente ou usuário final. </p>
-        <div class="cardcard">
-            <div class="containercard">
-                <p><font color="#C8C8C8"><strong> Exemplo prático: </strong></font></p> 
-                    <p class="pp"><font color="#C8C8C8"><strong><i>Quem: </i></strong> Usuário do sistema de e-commerce.</font></p>
-                    <p class="pp"><font color="#C8C8C8"><strong><i>O que: </i></strong> Adicionar produtos ao carrinho de compras.</font></p>
-                    <p class="pp"><font color="#C8C8C8"><strong><i>Por que: </i></strong> Para revisar e finalizar a compra posteriormente.</font></p>
-            </div>
-        </div>   
-    <br>     
-        <P class="pp"><strong> 3. Critérios de Aceitação em User Stories: </strong></P> 
-            <p class="pp2">
-                Os critérios de aceitação são condições específicas que definem quando uma User Story está completa e atende às expectativas do cliente ou usuário. Eles são uma parte fundamental da definição de uma User Story, pois ajudam a equipe a entender claramente o que precisa ser entregue e como verificar se a funcionalidade está funcionando conforme o esperado. 
-            </p>
-            <p class="ppp"> -> <strong><i>Clareza e Objetividade: </i></strong> Os critérios de aceitação devem ser claros e objetivos, descrevendo de forma precisa o comportamento esperado da funcionalidade. </p>
-            <p class="ppp"> -> <strong><i>Mensurabilidade: </i></strong> Os critérios devem ser mensuráveis e verificáveis. Ou seja, deve ser possível determinar facilmente se a funcionalidade atende aos critérios definidos. </p>
-            <p class="ppp"> -> <strong><i>Relevância: </i></strong> Os critérios devem ser relevantes para a funcionalidade descrita na User Story. Eles devem refletir os requisitos e as expectativas do cliente ou usuário. </p>
-            <p class="ppp"> -> <strong><i>Abrangência: </i></strong> Os critérios devem cobrir todos os aspectos importantes da funcionalidade. Eles devem abordar diferentes cenários de uso e considerar possíveis exceções. </p>
-        <div class="cardcard">
-            <div class="containercard">
-                <p><font color="#C8C8C8"><strong> Exemplo prático: </strong></font></p> 
-                    <p class="pp"><font color="#C8C8C8"><strong><i>User Storie: </i></strong> Como um usuário do sistema de e-commerce, desejo poder adicionar produtos ao meu carrinho de compras, para que eu possa revisá-los e finalizar minha compra posteriormente.</font></p>
-                    <p class="pp"><font color="#C8C8C8"><strong><i>Critérios de aceitação: </i></strong></font></p>
-                    <p class="pp2"><font color="#C8C8C8"> -> O usuário pode adicionar produtos clicando no botão "Adicionar ao Carrinho".</p></font>
-                    <p class="pp2"><font color="#C8C8C8"> -> O carrinho de compras é atualizado automaticamente com os produtos adicionados.</p></font>
-                    <p class="pp2"><font color="#C8C8C8"> -> O usuário pode visualizar os produtos adicionados ao carrinho antes de finalizar a compra.</p></font>
-                    <p class="pp2"><font color="#C8C8C8"> -> O carrinho de compras permite a remoção de produtos, caso o usuário deseje.</p></font>
-                    <p class="pp2"><font color="#C8C8C8"> -> O usuário pode aumentar ou diminuir a quantidade de cada produto no carrinho.</p></font>
-                    <p class="pp2"><font color="#C8C8C8"> -> O sistema exibe claramente o total da compra no carrinho de compras.</p></font>
-                    <p class="pp2"><font color="#C8C8C8"> -> O carrinho de compras mantém os produtos adicionados mesmo após o usuário sair e voltar à página.</p></font>
-                    <p class="pp2"><font color="#C8C8C8"> -> Caso o usuário adicione um produto já existente no carrinho, o sistema não duplica o item, mas atualiza a quantidade</p></font>
+        <div class="col-10">
+            <div id="main-content">
+                <div class="divtext">
                     <br>
-                    <p class="pp"><font color="#C8C8C8"> Esses critérios garantem que a funcionalidade de adicionar produtos ao carrinho de compras seja implementada de acordo com as expectativas do usuário e funcione corretamente em diferentes cenários de uso.</p></font>
+                    <br>
+                    <div id="item-1">
+                    <h1> Auto-Organização </h1>
+                    <P><strong> 1. Importância da Auto-Organização no Scrum: </strong></P> 
+                        <p class="pp">Na gestão de projetos ágeis, como no Scrum, a auto-organização é um princípio essencial que impulsiona a autonomia e a eficiência das equipes. Neste capítulo, exploraremos como a auto-organização se torna a espinha dorsal de equipes ágeis bem-sucedidas, promovendo um ambiente de trabalho colaborativo e orientado para resultados.</p>
+                <br>
+                        <P class="pp"><strong> 2. A Base da Autonomia e Responsabilidade: </strong></P> 
+                            <p class="pp2">
+                            A auto-organização é muito mais do que delegar tarefas; é um conceito que permeia toda a cultura ágil. Ela se baseia na confiança mútua entre os membros da equipe e na clareza dos objetivos do projeto. Ao permitir que as equipes decidam como realizar o trabalho, elas se tornam mais engajadas e responsáveis pelo sucesso do projeto.
+                            </p>
+                    <div class="cardcard">
+                        <div class="containercard">
+                            <p><font color="#C8C8C8"><strong> Exemplo prático: </strong></font></p> 
+                                <p class="pp"><font color="#C8C8C8">
+                                    Em vez de esperar por instruções detalhadas, a equipe decide autonomamente sobre a melhor abordagem para implementar o recurso de notificação. Eles entendem a importância de manter os usuários engajados e responsáveis por suas tarefas, alinhando-se com os objetivos do projeto.</font> 
+                                </p>                    
+                        </div>
+                    </div>
+                <br>
+                    <P class="pp"><strong> 3. Promovendo a Colaboração e Comunicação: </strong></P> 
+                        <p class="pp2">
+                            Um dos maiores benefícios da auto-organização é a promoção da colaboração ativa e da comunicação efetiva entre os membros da equipe. Ao se sentirem capacitados a tomar decisões, os membros da equipe se tornam mais propensos a compartilhar conhecimento, ideias e feedbacks, criando um ambiente propício à inovação e ao progresso.
+                        </p>
+                    <div class="cardcard">
+                        <div class="containercard">
+                            <p><font color="#C8C8C8"><strong> Exemplo prático: </strong></font></p> 
+                                <p class="pp"><font color="#C8C8C8">
+                                    Durante o desenvolvimento, os membros da equipe colaboram ativamente, compartilhando conhecimentos sobre diferentes métodos de implementação de notificações. Eles têm discussões construtivas sobre as melhores práticas e trocam feedbacks para melhorar o processo.</font> 
+                                </p>                    
+                        </div>
+                    </div>   
+                <br>     
+                    <P class="pp"><strong> 4. Flexibilidade e Adaptação Constante: </strong></P> 
+                        <p class="pp2">
+                            A natureza volátil dos projetos ágeis exige uma abordagem flexível e adaptável. A auto-organização permite que as equipes se ajustem rapidamente a mudanças nos requisitos do cliente ou no ambiente externo, garantindo que o projeto permaneça alinhado com as necessidades em constante evolução. 
+                        </p>
+                    <div class="cardcard">
+                        <div class="containercard">
+                            <p><font color="#C8C8C8"><strong> Exemplo prático: </strong></font></p> 
+                                <p class="pp"><font color="#C8C8C8">
+                                    Quando surgem mudanças nos requisitos do cliente, como a adição de novas opções de personalização para as notificações, a equipe se adapta rapidamente. Eles ajustam o plano original e reavaliam suas abordagens, garantindo que o produto permaneça alinhado com as expectativas do cliente.</font> 
+                                </p>                    
+                        </div>
+                    </div>   
+                <br>  
+                    <P class="pp"><strong> 5. Cultivando a Melhoria Contínua: </strong></P> 
+                        <p class="pp2">
+                            A auto-organização também estimula a cultura de melhoria contínua dentro das equipes. Ao refletirem sobre seu próprio trabalho e identificarem áreas de oportunidade, os membros da equipe podem implementar melhorias incrementais ao longo do tempo, garantindo uma entrega de valor cada vez mais eficiente.
+                        </p>
+                    <div class="cardcard">
+                        <div class="containercard">
+                            <p><font color="#C8C8C8"><strong> Exemplo prático: </strong></font></p> 
+                                <p class="pp"><font color="#C8C8C8">
+                                    Quando surgem mudanças nos requisitos do cliente, como a adição de novas opções de personalização para as notificações, a equipe se adapta rapidamente. Eles ajustam o plano original e reavaliam suas abordagens, garantindo que o produto permaneça alinhado com as expectativas do cliente.</font> 
+                                </p>                    
+                        </div>
+                    </div>
+                <br>
+                <div class="divimag">
+                    <img src="{{ url_for('static', filename='/imgs/auto_org.png') }}" class="imag">
                 </div>
-        </div>   
-    <br>  
+                <br>
+                <br>
+                </div>
+
+                <!--Facilitação-->
+                <div id="item-2">
+                    <h1> Facilitação </h1>
+                        <p>
+                            No contexto ágil, o Scrum Master desempenha um papel crucial como facilitador, atuando como um catalisador para as ideias que surgem dentro da equipe. Nesta seção, exploraremos como o Scrum Master busca otimizar processos, reduzir conflitos e motivar a equipe, promovendo um ambiente colaborativo e orientado para resultados.
+                        </p>
+                <br>
+                    <P class="pp"><strong> 1. Catalisando Ideias e Inovação: </strong></P> 
+                        <p class="pp2">
+                            Como facilitador, o Scrum Master está constantemente buscando catalisar ideias e promover a inovação dentro da equipe. Ele encoraja a livre expressão de ideias e opiniões, criando um ambiente seguro onde os membros da equipe se sintam confortáveis para compartilhar suas perspectivas e contribuições. Além disso, o Scrum Master utiliza técnicas de facilitação, como brainstorming e técnicas de criatividade, para estimular a geração de novas ideias e soluções.
+                        </p>
+                <br>
+                    <P class="pp"><strong> 2. Otimizando Processos e Fluxos de Trabalho: </strong></P> 
+                        <p class="pp2">
+                            Uma das principais responsabilidades do Scrum Master como facilitador é otimizar os processos e fluxos de trabalho da equipe. Ele trabalha em estreita colaboração com os membros da equipe para identificar oportunidades de melhoria e implementar mudanças que aumentem a eficiência e a eficácia do trabalho. Isso pode incluir a realização de workshops de retrospectiva para refletir sobre o desempenho passado e identificar áreas de oportunidade para melhorias futuras.
+                        </p>
+                <br>     
+                    <P class="pp"><strong> 3. Reduzindo Conflitos e Promovendo a Colaboração: </strong></P> 
+                        <p class="pp2">
+                            Outra função importante do Scrum Master como facilitador é reduzir conflitos e promover um ambiente de trabalho colaborativo. Ele atua como um mediador neutro em situações de conflito, ajudando a facilitar a comunicação e encontrar soluções que sejam mutuamente benéficas para todas as partes envolvidas. Além disso, o Scrum Master incentiva a colaboração entre os membros da equipe, promovendo a troca de conhecimento e experiências. 
+                        </p>           
+                <br>  
+                    <P class="pp"><strong> 4. Motivando a Equipe e Promovendo o Engajamento: </strong></P> 
+                        <p class="pp2">
+                            O Scrum Master também desempenha um papel importante na motivação da equipe e no fomento do engajamento. Ele reconhece e celebra as conquistas da equipe, proporcionando feedback positivo e incentivando o desenvolvimento pessoal e profissional dos membros da equipe. Além disso, o Scrum Master promove um ambiente de trabalho inclusivo e estimulante, onde todos se sintam valorizados e empoderados para contribuir para o sucesso do projeto.
+                        </p>            
+                <br>
+                    <div class="divimag">
+                        <img src="{{ url_for('static', filename='/imgs/facilitador.png') }}" class="imag">
+                    </div>
+                <br>
+                <br>
+                </div>
+
+                <!--Visão-->
+                <div id="item-3">
+                    <h1> Visão </h1>
+                        <p>
+                            A visão do produto, transmitida pelo Product Owner (P.O), desempenha um papel crucial no desenvolvimento ágil, permitindo que ele transfira o direcionamento do projeto para a equipe. Nesta seção, exploraremos como a visão do produto proporciona uma excelente oportunidade para a equipe aprender e discutir aspectos importantes do produto, promovendo uma compreensão compartilhada e um alinhamento eficaz.
+                        </p>
+                <br>
+                    <P class="pp"><strong> 1. Definindo a Visão do Produto: </strong></P> 
+                        <p class="pp2">
+                            A visão do produto é uma declaração clara e concisa que descreve o propósito, os objetivos e os valores do produto. É transmitida pelo Product Owner para garantir que todos na equipe tenham uma compreensão comum do que estão construindo e por quê. A visão do produto serve como um guia para o desenvolvimento do produto, ajudando a equipe a tomar decisões alinhadas com os objetivos do projeto.
+                        </p>
+                <br>
+                    <P class="pp"><strong> 2. Transferindo o Direcionamento do Projeto: </strong></P> 
+                        <p class="pp2">
+                            Ao comunicar a visão do produto para a equipe, o Product Owner transfere o direcionamento do projeto, capacitando os membros da equipe a tomar decisões informadas e assumir a responsabilidade pelo sucesso do produto. Isso cria um senso de propriedade e engajamento entre os membros da equipe, que se tornam mais investidos no sucesso do projeto e motivados a contribuir para alcançar os objetivos estabelecidos.
+                        </p>
+                <br>     
+                    <P class="pp"><strong> 3. Promovendo a Aprendizagem e a Discussão: </strong></P> 
+                        <p class="pp2">
+                            A visão do produto proporciona uma excelente oportunidade para a equipe aprender e discutir aspectos importantes do produto. Ao entender os objetivos e as necessidades dos stakeholders, os membros da equipe podem discutir e explorar diferentes abordagens para atender às expectativas do cliente e entregar valor de forma eficaz. Isso promove uma cultura de aprendizagem contínua e melhoria dentro da equipe, onde todos são incentivados a contribuir com suas ideias e perspectivas. 
+                        </p>           
+                <br>  
+                    <P class="pp"><strong> 4. Fomentando a Compreensão Compartilhada: </strong></P> 
+                        <p class="pp2">
+                            Ao transmitir a visão do produto, o Product Owner promove uma compreensão compartilhada entre os membros da equipe. Todos têm uma visão clara do que estão trabalhando para alcançar e por que é importante. Isso ajuda a alinhar as atividades da equipe com os objetivos do projeto e a garantir que todos estejam trabalhando na mesma direção.
+                        </p>            
+                <br>
+                    <div class="divimag">
+                        <img src="{{ url_for('static', filename='/imgs/vision.png') }}" class="imag">
+                    </div>
+                <br>
+                <br>
+                </div>
+
+                <!--User Stoires-->
+            <div id="item-4">
+                <h1> User Stories </h1>
+                    <p>
+                        User Stories são elementos cruciais no Product Backlog em metodologias ágeis, como o Scrum. Nesta seção, vamos explorar o significado das User Stories, sua criação e sua importância para o sucesso do projeto.
+                    </p>
+            <br>
+                <P class="pp"><strong> 1. O Que São User Stories: </strong></P> 
+                    <p class="pp2">
+                        User Stories são pequenas descrições de funcionalidades ou requisitos do produto, escritas do ponto de vista do usuário final. Elas representam uma parcela específica do trabalho necessário para entregar valor ao cliente ou usuário. Cada User Story é concebida para ser independente, negociável, valiosa para o usuário, estimável e pequena o suficiente para ser completada em um curto período de tempo.
+                    </p>
+                <div class="cardcard">
+                    <div class="containercard">
+                        <p><font color="#C8C8C8"><strong> Exemplo prático: </strong></font></p> 
+                            <p class="pp"><font color="#C8C8C8">
+                                Como usuário do sistema de e-commerce, eu quero poder adicionar produtos ao meu carrinho de compras, para que eu possa revisá-los e finalizar minha compra posteriormente</font> 
+                            </p>                    
+                    </div>
+                </div>
+            <br>
+                <P class="pp"><strong> 2. Componentes de uma User Story:</strong></P> 
+                    <p class="pp2">
+                        Uma User Story geralmente consiste em três elementos principais: quem, o que e por que. Essa estrutura garante que todos na equipe compreendam quem se beneficia da funcionalidade, o que precisa ser feito e por que é importante para o usuário ou cliente.
+                    </p>
+                    <p class="ppp"> -> <strong><i>Quem: </i></strong> Esta parte indica quem é o usuário ou grupo de usuários que se beneficiará da funcionalidade descrita na User Story. É importante identificar claramente para quem estamos desenvolvendo o recurso. </p>
+                    <p class="ppp"> -> <strong><i>O que: </i></strong> Aqui descrevemos a funcionalidade ou ação que o usuário deseja realizar. É o que o usuário quer fazer ou o problema que precisa ser resolvido. </p>
+                    <p class="ppp"> -> <strong><i>Por que: </i></strong> Esta parte explica o motivo pelo qual a funcionalidade é importante para o usuário ou para o sucesso do projeto. Ajuda a equipe a entender o valor que será entregue ao cliente ou usuário final. </p>
+                <div class="cardcard">
+                    <div class="containercard">
+                        <p><font color="#C8C8C8"><strong> Exemplo prático: </strong></font></p> 
+                            <p class="pp"><font color="#C8C8C8"><strong><i>Quem: </i></strong> Usuário do sistema de e-commerce.</font></p>
+                            <p class="pp"><font color="#C8C8C8"><strong><i>O que: </i></strong> Adicionar produtos ao carrinho de compras.</font></p>
+                            <p class="pp"><font color="#C8C8C8"><strong><i>Por que: </i></strong> Para revisar e finalizar a compra posteriormente.</font></p>
+                    </div>
+                </div>   
+            <br>     
+                <P class="pp"><strong> 3. Critérios de Aceitação em User Stories: </strong></P> 
+                    <p class="pp2">
+                        Os critérios de aceitação são condições específicas que definem quando uma User Story está completa e atende às expectativas do cliente ou usuário. Eles são uma parte fundamental da definição de uma User Story, pois ajudam a equipe a entender claramente o que precisa ser entregue e como verificar se a funcionalidade está funcionando conforme o esperado. 
+                    </p>
+                    <p class="ppp"> -> <strong><i>Clareza e Objetividade: </i></strong> Os critérios de aceitação devem ser claros e objetivos, descrevendo de forma precisa o comportamento esperado da funcionalidade. </p>
+                    <p class="ppp"> -> <strong><i>Mensurabilidade: </i></strong> Os critérios devem ser mensuráveis e verificáveis. Ou seja, deve ser possível determinar facilmente se a funcionalidade atende aos critérios definidos. </p>
+                    <p class="ppp"> -> <strong><i>Relevância: </i></strong> Os critérios devem ser relevantes para a funcionalidade descrita na User Story. Eles devem refletir os requisitos e as expectativas do cliente ou usuário. </p>
+                    <p class="ppp"> -> <strong><i>Abrangência: </i></strong> Os critérios devem cobrir todos os aspectos importantes da funcionalidade. Eles devem abordar diferentes cenários de uso e considerar possíveis exceções. </p>
+                <div class="cardcard">
+                    <div class="containercard">
+                        <p><font color="#C8C8C8"><strong> Exemplo prático: </strong></font></p> 
+                            <p class="pp"><font color="#C8C8C8"><strong><i>User Storie: </i></strong> Como um usuário do sistema de e-commerce, desejo poder adicionar produtos ao meu carrinho de compras, para que eu possa revisá-los e finalizar minha compra posteriormente.</font></p>
+                            <p class="pp"><font color="#C8C8C8"><strong><i>Critérios de aceitação: </i></strong></font></p>
+                            <p class="pp2"><font color="#C8C8C8"> -> O usuário pode adicionar produtos clicando no botão "Adicionar ao Carrinho".</p></font>
+                            <p class="pp2"><font color="#C8C8C8"> -> O carrinho de compras é atualizado automaticamente com os produtos adicionados.</p></font>
+                            <p class="pp2"><font color="#C8C8C8"> -> O usuário pode visualizar os produtos adicionados ao carrinho antes de finalizar a compra.</p></font>
+                            <p class="pp2"><font color="#C8C8C8"> -> O carrinho de compras permite a remoção de produtos, caso o usuário deseje.</p></font>
+                            <p class="pp2"><font color="#C8C8C8"> -> O usuário pode aumentar ou diminuir a quantidade de cada produto no carrinho.</p></font>
+                            <p class="pp2"><font color="#C8C8C8"> -> O sistema exibe claramente o total da compra no carrinho de compras.</p></font>
+                            <p class="pp2"><font color="#C8C8C8"> -> O carrinho de compras mantém os produtos adicionados mesmo após o usuário sair e voltar à página.</p></font>
+                            <p class="pp2"><font color="#C8C8C8"> -> Caso o usuário adicione um produto já existente no carrinho, o sistema não duplica o item, mas atualiza a quantidade</p></font>
+                            <br>
+                            <p class="pp"><font color="#C8C8C8"> Esses critérios garantem que a funcionalidade de adicionar produtos ao carrinho de compras seja implementada de acordo com as expectativas do usuário e funcione corretamente em diferentes cenários de uso.</p></font>
+                        </div>
+                </div>   
+            <br>  
+            <br>
+                <div class="divimag">
+                    <img src="{{ url_for('static', filename='/imgs/user_storie.png') }}" class="imag">
+                </div>
+            <br>
+            <br>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="divtext">
     <br>
-    <div class="divimag">
-        <img src="{{ url_for('static', filename='/imgs/user_storie.png') }}" class="imag">
+    <hr>
+    <br>
+    <div class="d-grid gap-2 col-12 col-md-6 mx-auto">
+        <a class="btn btn-lg btn-dark" href="/mod_6_quiz">Teste seu conhecimento</a>
     </div>
     <br>
     <br>
-        <hr>
-        <br>
-        <!-- Test Your Knowledge Button -->
-<div class="d-grid gap-2 col-12 col-md-6 mx-auto">
-    <a class="btn btn-lg btn-dark" href="/mod_6_quiz">Teste seu conhecimento</a>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-between">
+        <a class="btn navigation-btn my-5" href="/mod_5"><strong>← Módulo anterior</strong></a>
+        <a class="btn navigation-btny my-5" href="/mod_7"><strong>Próximo módulo →</strong></a>
+    </div> 
 </div>
-<br>
-<br>
 
-<!-- Navigation Buttons -->
-<div class="d-grid gap-2 d-sm-flex justify-content-sm-between">
-    <a class="btn btn-primary my-5" href="/mod_5"><strong>← Módulo anterior</strong></a>
-    <a class="btn btn-primary my-5" href="/mod_7"><strong>Próximo módulo →</strong></a>
-</div> 
-        </div>
-        </div>
 {% endblock %}

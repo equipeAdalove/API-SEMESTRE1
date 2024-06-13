@@ -67,7 +67,33 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 ##
 
 # Tecnologias Utilizadas:
-<img src="/assets/img/Sprint 2/Ferramentas.jpg">
+
+
+<div style="display: inline_block"><br>
+ 
+<img align="center" alt="Raphs-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  
+<img align="center" alt="Raphs-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+
+<img align="center" alt="Raphs-Flask" height="30" width="40"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" >
+
+<img align="center" alt="Raphs-Bootstrap" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original.svg">
+
+<img align="center" alt="Raphs-AWS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg">      
+
+<img align="center" alt="Raphs-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+  
+<img align="center" alt="Raphs-MySQL" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg">
+
+<img align="center" alt="Raphs-Git" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg">
+
+<img align="center" alt="Raphs-VsCode" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg">
+                    
+<img align="center" alt="Raphs-Figma" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg">
+       
+    
+</div>
+
 
 # Funcionalidades e registros das sprints:
 ## Apresentação das funcionalidades:
