@@ -10,6 +10,7 @@
         margin-bottom: 0%;
         font-family: "Alatsi", sans-serif;
         background-color: #c8c8c8;
+        overflow-x: hidden;
     }
 
     .divtext {
@@ -70,22 +71,20 @@
         background-color: #32363f;
         padding: 2px 16px;
     }
-    .btn.btn-lg.btn-dark{
-        background-color:#32363F;
+    .navigation-btn {
+        background-color: transparent; 
+        border: none; 
+        color: #32363f;  
+        font-size: 1.25rem; 
     }
-    .btn.btn-lg.btn-dark:hover{
-        background-color: #464c5c;
+    .navigation-btn:hover {
+        transition: 250ms;
+        transform: scale(1.05);
+        background-color: transparent; 
+        border: none; 
+        color: #32363f;  
+        font-size: 1.25rem; 
     }
-    .d-grid.gap-2.d-md-flex{
-        justify-content: space-between;
-    }
-    .btn.my-5{
-        font-size: larger;
-    }
-    .btncelso:hover{
-        color: #464c5c;
-    }
-
     #sidebar {
         position: sticky;
         top: 0;
@@ -97,55 +96,71 @@
         overflow-y: auto;
         padding-left: 15px;
     }
+
+    .divimag{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
     .container-custom{
-                height: 50vh;
-                background-color: #32363f;
-            }
-            .title-mod{
-                margin: 30px 50px;
-                color: #D6D6D6;
-                
-            }
-            .title-mod h1{
-                font-size: 120px;
-            }
+        height: 50vh;
+        background-color: #32363f;
+    }
+    .title-mod{
+        margin: 30px 50px;
+        color: #D6D6D6;                
+    }
+    .title-mod h1{
+        font-size: 120px;
+    }
 
-            .img{
-                width: 500px;
-                height: auto;
-            }
+    .img{
+        width: 500px;
+        height: auto;
+    }
 
-            @media (max-width:575.98px){
-                .title-mod h1{
-                    font-size: 40px;
-                }
-                .img{
-                    width: 335px;
-                    height: auto;
-                }
-            }
+    @media (max-width:575.98px){
+        .title-mod h1{
+            font-size: 40px;
+        }
+        .img{
+            width: 335px;
+            height: auto;
+        }
+        .imag{
+            width: 290px;
+            height: auto;
+        }
+        #main-content .divtext{
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        hr{
+            display: none;
+        }
+    }
 
-            @media (min-width: 576px) and (max-width: 767.98px){
-                .img{
-                    width: 350px;
-                    height: auto;
-                }
-            }
+    @media (min-width: 576px) and (max-width: 767.98px){
+        .img{
+            width: 350px;
+            height: auto;
+        }
+    }
 
-            @media (min-width: 768px) and (max-width: 991.98px){
-                .img{
-                    width: 400px;
-                    height: auto;
-                }
-            }
+    @media (min-width: 768px) and (max-width: 991.98px){
+        .img{
+            width: 400px;
+            height: auto;
+        }
+    }
 
-            @media (min-width: 992px) and (max-width: 1224.98px){
-                .img{
-                    width: 400px;
-                    height: auto;
-                }
-            }
+    @media (min-width: 992px) and (max-width: 1224.98px){
+        .img{
+            width: 400px;
+            height: auto;
+        }
+    }
 </style>
 {% endblock %}
 
@@ -178,7 +193,7 @@ data-bs-offset="0"
 <div class="container-fluid">
 <div class="row">
 
-  <div class="col-2">
+  <div class="col-2 d-none d-md-block">
     <nav id="sidebar">
       <div
         class="scrollspy-example-2"
@@ -228,7 +243,9 @@ data-bs-offset="0"
                 </div>
             </div>
             <BR>
-                <img src="{{ url_for('static', filename='/imgs/1.png') }}" class="imag">
+                <div class="divimag">
+                    <img src="{{ url_for('static', filename='/imgs/1.png') }}" class="imag">
+                </div>
             <br>
         <br>
     </div>
@@ -269,7 +286,9 @@ data-bs-offset="0"
                 </div>
             </div>
             <BR>
+            <div class="divimag">
                 <img src="{{ url_for('static', filename='/imgs/2.png') }}" class="imag">
+            </div>
             <br>
         <br>
     </div>
@@ -310,7 +329,9 @@ data-bs-offset="0"
                 </div>
             </div>
             <BR>
+            <div  class="divimag">
                 <img src="{{ url_for('static', filename='/imgs/3.png') }}" class="imag">
+            </div>
             <br>
         <br>
     </div>
@@ -348,7 +369,9 @@ data-bs-offset="0"
                 </div>
             </div>
             <BR>
-                <img src="{{ url_for('static', filename='/imgs/4.png') }}" class="imag">
+                <div class="divimag">
+                    <img src="{{ url_for('static', filename='/imgs/4.png') }}" class="imag">
+                </div>
             <br>
             <br>
             <br>
@@ -383,7 +406,9 @@ data-bs-offset="0"
                 </div>
             </div>
             <BR>
+            <div class="divimag">
                 <img src="{{ url_for('static', filename='/imgs/5.png') }}" class="imag">
+            </div>
             <br>
             <br>
         </div>
@@ -422,24 +447,30 @@ data-bs-offset="0"
                     <p class="p"><font color="#C8C8C8">Esta agenda serve apenas como exemplo. Você pode incluir outras práticas, atividades ou técnicas conforme necessário, ou remover algo se considerar desnecessário.</font></p>
                 </div>
             </div>
+            <div class="divimag">
                 <img src="{{ url_for('static', filename='/imgs/6.png') }}" class="imag">
-            <br>
-        </div>
-<br>
-<hr class="text-dark">
-<br>
-        <div class="d-grid gap-2 col-6 mx-auto">
-            <a class="btn btn-lg btn-dark" href="/mod_4_quiz">Teste seu conhecimento</a>
-        </div>
-        <br>
-        <br>
-        <div>
-            <div class="d-grid gap-2 d-md-flex">
-                <a class="btn my-5 btncava" href="/mod_3"><i><strong>← Módulo anterior<strong></i></a>
-                <a class="btn my-5 btncava" href="/mod_5"><i><strong>Próximo módulo →</strong></i></a>
             </div>
-        </div>
+            <br>
 </div>
-<br>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="divtext">
+    <br>
+    <hr>
+    <br>
+    <div class="d-grid gap-2 col-12 col-md-6 mx-auto">
+        <a class="btn btn-lg btn-dark" href="/mod_4_quiz">Teste seu conhecimento</a>
+    </div>
+    <br>
+    <br>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-between">
+        <a class="btn navigation-btn btn-primary my-5" href="/mod_3"><strong>← Módulo anterior</strong></a>
+        <a class="btn navigation-btn btn-primary my-5" href="/mod_5"><strong>Próximo módulo →</strong></a>
+    </div> 
 </div>
 {% endblock %}
