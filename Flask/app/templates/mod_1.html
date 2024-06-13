@@ -3,160 +3,165 @@
 {% block title %}Módulo 1{% endblock %}
 
 {% block styles %}
-        <style>
-            body{
-                justify-content: space-around;
-                margin: 0%;
-                margin-bottom: 0%;
-                font-family: 'Alatsi',  sans-serif;
-                background-color: #C8C8C8;
-            }
+<style>
+    body {
+        justify-content: space-around;
+        margin: 0%;
+        margin-bottom: 0%;
+        font-family: "Alatsi", sans-serif;
+        background-color: #c8c8c8;
+        overflow-x: hidden;
+    }
 
-            .div2{
-                display: flex;
-                width: 91,5pc;
-                display: flex;
-                border-top: 10vh solid #32363F;
-                border-left: 9vh solid #32363F;
-                height: 45vh;    background-color: #32363F;
-                margin-bottom: -94px;
+    .divtext {
+        margin-top: -3pc;
+        margin-left: 100px;
+        margin-right: 100px;
+        text-align: justify;
+    }
+    .funcoes {
+        margin-top: 6pc;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 80px;
+        text-align: justify;
+    }
+    .h3 {
+        line-height: 1.5;
+        text-indent: 20px;
+    }
+    p {
+        line-height: 1.5;
+        text-indent: 50px;
+    }
+    .pp {
+        line-height: 1.5;
+        text-indent: 80px;
+    }
+    .pp2 {
+        line-height: 1.5;
+        text-indent: 100px;
+    }
+    .ppp {
+        line-height: 1.5;
+        text-indent: 120px;
+    }
+    .ppp2 {
+        line-height: 1.5;
+        text-indent: 140px;
+    }
+    .imag {
+        width: 45%;
+        height: 45%;
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+    .cardcard {
+        box-shadow: 0 4px 8px 0 #1c1e21;
+        transition: 0.3s;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
 
-            }
+    .cardcard:hover {
+        box-shadow: 0 8px 16px 0 #1c1e21;
+    }
+    .containercard {
+        background-color: #32363f;
+        padding: 2px 16px;
+    }
+    .navigation-btn {
+        background-color: transparent; 
+        border: none; 
+        color: #32363f;  
+        font-size: 1.25rem; 
+    }
+    .navigation-btn:hover {
+        transition: 250ms;
+        transform: scale(1.05);
+        background-color: transparent; 
+        border: none; 
+        color: #32363f;  
+        font-size: 1.25rem; 
+    }
+    #sidebar {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow-y: auto;
+    }
 
-            .divtext{
-                margin-top: -3pc;
-                margin-left: 100px;
-                margin-right: 100px;
-                text-align: justify;
-            }
-            .funcoes{
-                margin-top: 6pc;
-                margin-left: 100px;
-                margin-right: 100px;
-                margin-bottom: 80px;
-                text-align: justify;
-            }
-            .h3{
-                line-height: 1.5;
-                text-indent: 20px;
-            }
-            p{
-                line-height: 1.5;
-                text-indent: 50px;
-            }
-            .pp{
-                line-height: 1.5;
-                text-indent: 80px;
-            }
-            .pp2{
-                line-height: 1.5;
-                text-indent: 100px;
-            }
-            .ppp{
-                line-height: 1.5;
-                text-indent: 120px;
-            }
-            .ppp2{
-                line-height: 1.5;
-                text-indent: 140px;
-            }
-            .imag{
-                width: 45%;
-                height: 45%;
-                margin-left: 350px;
-                margin-right: 350px;
-            }
-            .cardcard {
-                box-shadow: 0 4px 8px 0 #1c1e21;
-                transition: 0.3s;
-                width: 100%;
-                height: 100%;
-                border-radius: 5px;
-            }
+    #main-content {
+        overflow-y: auto;
+        padding-left: 15px;
+    }
 
-            .cardcard:hover {
-                box-shadow: 0 8px 16px 0 #1c1e21;
-            }
-            .containercard{
-                background-color: #32363F;
-                padding: 2px 16px;
-            }
-            .btn.btn-lg.btn-dark{
-                background-color:#32363F;
-            }
-            .btn.btn-lg.btn-dark:hover{
-                background-color: #464c5c;
-            }
-            .d-grid.gap-2.d-md-flex{
-                justify-content: space-between;
-            }
-            .btn.my-5{
-                font-size: larger;
-            }
-            .btnmafe:hover{
-                color: #464c5c;
-            }
-            #sidebar {
-                position: sticky;
-                top: 0;
-                height: 100vh;
-                overflow-y: auto;
-            }
+    .divimag{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container-custom{
+        height: 50vh;
+        background-color: #32363f;
+    }
+    .title-mod{
+        margin: 30px 50px;
+        color: #D6D6D6;                
+    }
+    .title-mod h1{
+        font-size: 120px;
+    }
 
-            #main-content {
-                overflow-y: auto;
-                padding-left: 15px;
-            }
+    .img{
+        width: 500px;
+        height: auto;
+    }
 
-            .container-custom{
-                height: 50vh;
-                background-color: #32363f;
-            }
-            .title-mod{
-                margin: 30px 50px;
-                color: #D6D6D6;
-                
-            }
-            .title-mod h1{
-                font-size: 120px;
-            }
+    @media (max-width:575.98px){
+        .title-mod h1{
+            font-size: 40px;
+        }
+        .img{
+            width: 335px;
+            height: auto;
+        }
+        .imag{
+            width: 290px;
+            height: auto;
+        }
+        #main-content .divtext{
+            margin-right:8px;
+            margin-left: 20px;
+        }
+        hr{
+            display: none;
+        }
+    }
 
-            .img{
-                width: 500px;
-                height: auto;
-            }
+    @media (min-width: 576px) and (max-width: 767.98px){
+        .img{
+            width: 350px;
+            height: auto;
+        }
+    }
 
-            @media (max-width:575.98px){
-                .title-mod h1{
-                    font-size: 40px;
-                }
-                .img{
-                    width: 335px;
-                    height: auto;
-                }
-            }
+    @media (min-width: 768px) and (max-width: 991.98px){
+        .img{
+            width: 400px;
+            height: auto;
+        }
+    }
 
-            @media (min-width: 576px) and (max-width: 767.98px){
-                .img{
-                    width: 350px;
-                    height: auto;
-                }
-            }
-
-            @media (min-width: 768px) and (max-width: 991.98px){
-                .img{
-                    width: 400px;
-                    height: auto;
-                }
-            }
-
-            @media (min-width: 992px) and (max-width: 1224.98px){
-                .img{
-                    width: 400px;
-                    height: auto;
-                }
-            }
-        </style>
+    @media (min-width: 992px) and (max-width: 1224.98px){
+        .img{
+            width: 400px;
+            height: auto;
+        }
+    }
+</style>
 {% endblock %}
 
 {% block content %}
@@ -187,7 +192,7 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-2">
+                <div class="col-2 d-none d-md-block">
                     <nav id="sidebar">
                       <div
                         class="scrollspy-example-2"
@@ -219,7 +224,9 @@
                         <p>Nos últimos anos, o desenvolvimento de software passou por uma transformação significativa. Em um mercado cada vez mais dinâmico e competitivo, as abordagens tradicionais de gestão de projetos muitas vezes se mostraram inadequadas para lidar com as demandas de clientes e as mudanças frequentes nos requisitos. É nesse contexto que surgem os Métodos Ágeis, uma abordagem flexível e adaptativa que busca maximizar o valor entregue ao cliente através de colaboração, feedback contínuo e entrega incremental.</p>
                         <p>Um dos métodos ágeis mais populares e amplamente adotados é o SCRUM. Criado por Jeff Sutherland e Ken Schwaber no início dos anos 90, o SCRUM oferece uma estrutura simples, mas poderosa, para gerenciar projetos complexos. Baseado em princípios como transparência, inspeção e adaptação, o SCRUM permite que as equipes entreguem software de alta qualidade de forma rápida e eficiente.</p>
                         <p>Neste artigo, vamos explorar em detalhes os fundamentos do SCRUM, desde seus princípios básicos até suas práticas mais avançadas. Ao final desta leitura, você terá uma compreensão sólida do SCRUM e estará preparado para aplicar esses conceitos em seu próprio ambiente de trabalho.</p>
-                <img src="{{ url_for('static', filename='/imgs/introduçao1.png') }}" class="imag">
+                    <div class="divimag">
+                        <img src="{{ url_for('static', filename='/imgs/introduçao1.png') }}" class="imag">
+                    </div>
             </div>
         <br>
         <br>
@@ -281,7 +288,9 @@
                 </div>
                         </div>
                         <BR>
-                <img src="{{ url_for('static', filename='/imgs/fundamentos1.png') }}" class="imag">
+                <div class="divimag">
+                    <img src="{{ url_for('static', filename='/imgs/fundamentos1.png') }}" class="imag">
+                </div>
             </div>
         <br>
         <br>
@@ -336,27 +345,31 @@
                         <p class="ppp"><strong><i>  ->Respeito: </i></strong>Todos os membros da equipe são respeitados por suas contribuições e perspectivas únicas. </i></strong></p>
                         <p class="ppp"><strong><i>  ->Coragem: </i></strong>A equipe tem a coragem de enfrentar desafios, buscar melhorias contínuas e tomar decisões difíceis quando necessário. </i></strong></p>
                     <p class="pp2"> Esses valores e princípios são fundamentais para o sucesso do Scrum, fornecendo uma base sólida para equipes que desejam adotar uma abordagem ágil e alcançar resultados excepcionais no desenvolvimento de produtos. Ao internalizar e praticar esses valores e princípios, as equipes podem criar um ambiente propício à inovação, colaboração e entrega de valor contínuo ao cliente. </p>
-                <img src="{{ url_for('static', filename='/imgs/valores1.png') }}" class="imag">
+                <div class="divimag">
+                    <img src="{{ url_for('static', filename='/imgs/valores1.png') }}" class="imag">
+                </div>
             </div>
             <br>
             <br>
-        <hr>
-        <br>
-        <div class="d-grid gap-2 col-6 mx-auto">
-            <a class="btn btn-lg btn-dark" href="/mod_1_quiz">Teste seu conhecimento</a>
         </div>
-        <br>
-        <br>
-        <div>
-            <div class="d-grid gap-2 d-md-flex">
-                <a class="btn my-5 btnmafe" href="/modulos"><i><strong>← Módulos<strong></i></a>
-                <a class="btn my-5 btnmafe" href="/mod_2"><i><strong>Próximo módulo →</strong></i></a>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="divtext">
+            <br>
+            <hr>
+            <br>
+            <div class="d-grid gap-2 col-12 col-md-6 mx-auto">
+                <a class="btn btn-lg btn-dark" href="/mod_1_quiz">Teste seu conhecimento</a>
             </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
+            <br>
+            <br>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-between">
+                <a class="btn navigation-btn btn-primary my-5" href="/modulos"><strong>← Módulos</strong></a>
+                <a class="btn navigation-btn btn-primary my-5" href="/mod_2"><strong>Próximo módulo →</strong></a>
+            </div> 
         </div>
 {% endblock %}
