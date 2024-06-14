@@ -3,79 +3,111 @@
 {% block title %}Quiz Módulo 4{% endblock %}
 
 {% block styles %}
-        <style>
-            body{
-                justify-content: space-around;
-                margin: 0%;
-                margin-bottom: 0%;
-                font-family: 'Alatsi',  sans-serif;
-                background-color: #C8C8C8;
-            }
+<style>
+    body {
+        justify-content: space-around;
+        margin: 0;
+        font-family: 'Alatsi', sans-serif;
+        background-color: #C8C8C8;
+    }
 
-            .title{
-                margin: auto 45%;
-            }
+    .title {
+        margin: auto;
+        text-align: center;
+    }
 
-            .btn-lg{
-                background-color:#32363F;
-                border: none;
-                margin: auto 45%;
-                margin-bottom: 12px;
-            }
+    .btn-lg {
+        background-color: #32363F;
+        border: none;
+        margin: auto;
+        display: block;
+        margin-top: 20px;
+    }
 
-            .btn-lg:hover{
-                background-color: #5a5d64;
-            }
-            
-            .container-custom{
-                height: 50vh;
-                background-color: #32363f;
-            }
-            .title-mod{
-                margin: 30px 50px;
-                color: #D6D6D6;
-                
-            }
-            .title-mod h1{
-                font-size: 120px;
-            }
+    .btn-lg:hover {
+        background-color: #5a5d64;
+    }
 
-            .img{
-                width: 500px;
-                height: auto;
-            }
+    .container-custom {
+        height: 50vh;
+        background-color: #32363f;
+    }
 
-            @media (max-width:575.98px){
-                .title-mod h1{
-                    font-size: 40px;
-                }
-                .img{
-                    width: 335px;
-                    height: auto;
-                }
-            }
+    .title-mod {
+        margin: 30px 50px;
+        color: #D6D6D6;
+    }
 
-            @media (min-width: 576px) and (max-width: 767.98px){
-                .img{
-                    width: 350px;
-                    height: auto;
-                }
-            }
+    .title-mod h1 {
+        font-size: 120px;
+    }
 
-            @media (min-width: 768px) and (max-width: 991.98px){
-                .img{
-                    width: 400px;
-                    height: auto;
-                }
-            }
+    .img {
+        width: 500px;
+        height: auto;
+    }
 
-            @media (min-width: 992px) and (max-width: 1224.98px){
-                .img{
-                    width: 400px;
-                    height: auto;
-                }
-            }            
-        </style>
+    .cardcard {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        border-radius: 10px;
+        background-color: #e0e0e0;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .containercard h5 {
+        color: #32363f;
+        margin-bottom: 20px;
+    }
+
+    .custom-control {
+        display: flex;
+        align-items: center;
+    }
+
+    .custom-control-input {
+        margin-right: 10px;
+    }
+
+    .list-group-item {
+        border: none;
+        padding-left: 0;
+        background-color: #e0e0e0;
+    }
+
+    @media (max-width: 575.98px) {
+        .title-mod h1 {
+            font-size: 40px;
+        }
+
+        .img {
+            width: 335px;
+            height: auto;
+        }
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        .img {
+            width: 350px;
+            height: auto;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .img {
+            width: 400px;
+            height: auto;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1224.98px) {
+        .img {
+            width: 400px;
+            height: auto;
+        }
+    }
+</style>
 {% endblock %}
 
 {% block content %}
@@ -85,50 +117,47 @@
             <div class="title-mod">
                 <h1>Quiz Módulo 4</h1>
                 <br>
-                <h2>Teste seus conheciemntos</h2>
+                <h2>Teste seus conhecimentos</h2>
             </div>
         </div>
         <div class="col-lg-6 col-md-12 text-center text-lg-end div-img">
-            <img src="{{ url_for('static', filename='imgs/imgcapa1.png') }}" class="img" alt="Imagem do módulo">
+            <img src="{{ url_for('static', filename='imgs/capamod3.png') }}" class="img" alt="Imagem do módulo">
         </div>
-        
     </div>
 </div>
-        <div class="wave">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-        </div>
+<div class="wave">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+    </svg>
+</div>
 
-        <!-- Quiz -->
-
-        <div class="container">
-            <h1 class="mt-5 mb-4 title">Quiz</h1>
-            <form action="{{ url_for('submit_quiz_4') }}" method="POST">
-                {% for question in questions %}
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ question['question'] }}</h5>
-                            <ul class="list-group">
-                                {% for option in question['options'] %}
-                                    <li class="list-group-item">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="{{ option }}" name="{{ question['id'] }}" value="{{ option }}" class="custom-control-input">
-                                            <label class="custom-control-label" for="{{ option }}">{{ option }}</label>
-                                        </div>
-                                    </li>
-                                {% endfor %}
-                            </ul>
+<!-- Quiz -->
+<div class="container">
+    <h1 class="mt-5 mb-4 title">Quiz</h1>
+    <form action="{{ url_for('submit_quiz_4') }}" method="POST">
+        {% for question in questions %}
+        <div class="cardcard">
+            <div class="containercard">
+                <h5 class="card-title">{{ question['question'] }}</h5>
+                <ul class="list-group">
+                    {% for option in question['options'] %}
+                    <li class="list-group-item">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="{{ question['id'] }}{{ loop.index }}" name="{{ question['id'] }}" value="{{ option }}" class="custom-control-input">
+                            <label class="custom-control-label" for="{{ question['id'] }}{{ loop.index }}">{{ option }}</label>
                         </div>
-                    </div>
-                {% endfor %}
-                <br>
-                <button type="submit" class="d-grid gap-2 col-6 mx-auto btn btn-dark btn-lg">CORRIGIR</button>
-                <br>
-                <br>
-            </form>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
-    
-        <!-- Adicione os scripts do Bootstrap no final do corpo -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        {% endfor %}
+        <button type="submit" class="btn btn-dark btn-lg">CORRIGIR</button>
+    </form>
+</div>
+
+<!-- Add Bootstrap scripts at the end of the body -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 {% endblock %}
