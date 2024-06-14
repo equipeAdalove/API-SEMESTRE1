@@ -663,3 +663,4 @@ def submit_quiz_7():
         user_answers[question['question']] = user_answer
     total_questions = len(questions_7)
     return render_template('mod_7_results.html', score=score, total_questions=total_questions, results=user_answers)
+
