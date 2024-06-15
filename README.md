@@ -96,8 +96,8 @@ Link no YouTube: [https://youtu.be/rCtdOrJDuak?si=9bGleW8T524WJphA](https://yout
 | :-----------: | :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | Product Owner |   Angelina Borroni         |     [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/borroniff)              |
 | Scrum Master  | Celso Rocha |      [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/celsick)     |
-| Team Member   | Maria Fernanda Hansen              |         [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Madhs31)        |
-|  Team Member  | Raphaela Monteiro       |           [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/raphaelamonteiro)          |
-|  Team Member  | Renan Tomasi       |           [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/renan21-tg)          |
-|  Team Member  | Vitor Ribeiro                 |        [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/ribeirovitor04)        |
+| Dev Team   | Maria Fernanda Hansen              |         [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Madhs31)        |
+|  Dev Team  | Raphaela Monteiro       |           [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/raphaelamonteiro)          |
+|  Dev Team  | Renan Tomasi       |           [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/renan21-tg)          |
+| Dev Team  | Vitor Ribeiro                 |        [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/ribeirovitor04)        |
 
