@@ -3,85 +3,130 @@
 {% block title %}Quiz Resultados - Módulo 2{% endblock %}
 
 {% block styles %}
-        <style>
-            body{
-                justify-content: space-around;
-                margin: 0%;
-                margin-bottom: 0%;
-                font-family: 'Alatsi',  sans-serif;
-                background-color: #C8C8C8;
-            }
+<style>
+    body {
+        justify-content: space-around;
+        margin: 0;
+        font-family: 'Alatsi', sans-serif;
+        background-color: #C8C8C8;
+    }
 
-            .title{
-                margin: auto 45%;
-            }
+    .title {
+        margin: auto;
+        text-align: center;
+    }
 
-            .btn-lg{
-                background-color:#32363F;
-                border: none;
-                margin: auto 45%;
-                margin-bottom: 12px;
-            }
+    .btn-lg {
+        background-color: #32363F;
+        border: none;
+        margin-bottom: 12px;
+    }
 
-            .btn-lg:hover{
-                background-color: #5a5d64;
-            }
-            
-            .divsub{
-                margin-right: 120px;
-                display: flex;
-                justify-content: space-between;
-            }
+    .btn-lg:hover {
+        background-color: #5a5d64;
+    }
 
-            .container-custom{
-                height: 50vh;
-                background-color: #32363f;
-            }
-            .title-mod{
-                margin: 30px 50px;
-                color: #D6D6D6;
-                
-            }
-            .title-mod h1{
-                font-size: 120px;
-            }
+    .container-custom {
+        height: 50vh;
+        background-color: #32363f;
+    }
 
-            .img{
-                width: 500px;
-                height: auto;
-            }
-            
-            @media (max-width:575.98px){
-                .title-mod h1{
-                    font-size: 40px;
-                }
-                .img{
-                    width: 335px;
-                    height: auto;
-                }
-            }
+    .title-mod {
+        margin: 30px 50px;
+        color: #D6D6D6;
+    }
 
-            @media (min-width: 576px) and (max-width: 767.98px){
-                .img{
-                    width: 350px;
-                    height: auto;
-                }
-            }
+    .title-mod h1 {
+        font-size: 120px;
+    }
 
-            @media (min-width: 768px) and (max-width: 991.98px){
-                .img{
-                    width: 400px;
-                    height: auto;
-                }
-            }
+    .img {
+        width: 500px;
+        height: auto;
+    }
 
-            @media (min-width: 992px) and (max-width: 1224.98px){
-                .img{
-                    width: 400px;
-                    height: auto;
-                }
-            }
-        </style>
+    .cardcard {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        border-radius: 10px;
+        background-color: #e0e0e0;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .containercard h5 {
+        color: #32363f;
+        margin-bottom: 20px;
+    }
+
+    .custom-control {
+        display: flex;
+        align-items: center;
+    }
+
+    .custom-control-input {
+        margin-right: 10px;
+    }
+
+    .list-group-item {
+        border: none;
+        padding-left: 0;
+        background-color: #e0e0e0;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 70vh;
+    }
+
+    .divsub {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .correct-answer {
+        background-color: #c8e6c9; /* Verde suave para respostas corretas */
+    }
+    
+    .wrong-answer {
+        background-color: #ffcdd2; /* Vermelho suave para respostas incorretas */
+    }
+
+    @media (max-width: 575.98px) {
+        .title-mod h1 {
+            font-size: 40px;
+        }
+
+        .img {
+            width: 335px;
+            height: auto;
+        }
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        .img {
+            width: 350px;
+            height: auto;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .img {
+            width: 400px;
+            height: auto;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1224.98px) {
+        .img {
+            width: 400px;
+            height: auto;
+        }
+    }
+</style>
 {% endblock %}
 
 {% block content %}
@@ -97,51 +142,52 @@
         <div class="col-lg-6 col-md-12 text-center text-lg-end div-img">
             <img src="{{ url_for('static', filename='imgs/pilarescapa.png') }}" class="img" alt="Imagem do módulo">
         </div>
-        
     </div>
 </div>
-        <div class="wave">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
-        </div>
+<div class="wave">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+    </svg>
+</div>
 
-        <!-- Quiz -->
-
-        <div class="container">
-            <h1 class="mt-5 mb-4">Resultado do Quiz</h1>
-            <div class="card mb-4">
-                <div class="card-body">
+<!-- Quiz -->
+<div class="container">
+    <h1 class="mt-5 mb-4 title">Resultado do Quiz</h1>
+    <div class="content-container">
+        <div>
+            <div class="cardcard">
+                <div class="containercard">
                     <h5 class="card-title">Seu Score</h5>
                     <p class="card-text">Você acertou {{ score }} de {{ total_questions }}.</p>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Suas Respostas</h5>
-                    <ul class="list-group">
-                        {% for question, answer in results.items() %}
-                            <li class="list-group-item">
-                                <strong>{{ question }}</strong>: {{ answer }}
-                            </li>
-                        {% endfor %}
-                    </ul>
+
+            {% for result in results %}
+            <div class="cardcard {% if result.is_correct %}correct-answer{% else %}wrong-answer{% endif %}">
+                <div class="containercard">
+                    <h5 class="card-title">{{ result.question }}</h5>
+                    <p class="card-text">
+                        Sua resposta: {{ result.user_answer }}<br>
+                    </p>
                 </div>
             </div>
-            <br>
-            <!-- Botões de Refazer e Avançar -->
-            <div class="mt-4 divsub">
-                <div>
-                    <a href="/mod_2_quiz" class="btn btn-dark mr-2 btn-lg">Refazer</a>
-                </div>
-                <div>
-                    <a href="/mod_3" class="btn btn-dark btn-lg">Avançar</a>
-                </div>
-            </div>
-            <br>
-            <br>
+            {% endfor %}
         </div>
-    
-        <!-- Adicione os scripts do Bootstrap no final do corpo -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!-- Botões de Refazer e Avançar -->
+        <div class="divsub">
+            <div>
+                <a href="/mod_2_quiz" class="btn btn-dark mr-2 btn-lg">Refazer</a>
+            </div>
+            <div>
+                <a href="/mod_3" class="btn btn-dark btn-lg">Avançar</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Adicione os scripts do Bootstrap no final do corpo -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 {% endblock %}
