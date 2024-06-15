@@ -1,6 +1,3 @@
-Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
-## Aprendizado por Projeto Integrado (API)
-
 <img src="/assets/img/Apresentação.jpg">
 
 # Equipe:
@@ -22,14 +19,14 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 * [Autores](#autores)
 
 # Objetivo do Projeto:
-<img src="/assets/img/Sprint 2/Objetivo.jpg">
+<img src="/assets/img/Objetivo.jpg">
 
 # Cliente:
-<img src="/assets/img/Sprint 2/Requisito.jpg">
+<img src="/assets/img/Requisito.jpg">
 
 
 # Cronograma:
-<img src="/assets/img/Sprint III/Cronograma.jpg">
+<img src="/assets/img/Sprint IV/Cronograma.jpg">
 
 ##
 
@@ -40,26 +37,16 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 
 # Sprints Backlog
 <img src="/assets/img/Sprint 1/Sprint Backlog.jpg">
-<img src="/assets/img/Sprint 2/Sprint Backlog.jpg">
+<img src="/assets/img/Sprint II/Sprint 2 Backlog.jpg">
 <img src="/assets/img/Sprint III/Sprint Backlog3.jpg">
-🔒 SPRINT 4 
+<img src="/assets/img/Sprint IV/Sprint 4 - API ADALOVE.jpg">
 
 
-## Sprints Roadmap 
-<img src="/assets/img/Sprint III/Roadmap1-2.jpg">
-<img src="/assets/img/Sprint III/Roadmap2-3.jpg">
-<img src="/assets/img/Sprint III/Roadmap3-4.jpg">
 
 
-## Sprint 3 (atual)
-- [x] Correções de possíveis bugs;
-- [x] Finalização do site.
+## Roadmap 
+<img src="/assets/img/Sprint IV/RoadmapGeral.jpg">
 
-## Sprint 4
-- [ ] Finalização - responsividade;
-- [ ] Banco de dados(formulário).
-- [ ] Debug e finalização.
-      
 ##
 
 # Protótipo Figma:
@@ -68,8 +55,6 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 ##
 
 # Tecnologias Utilizadas:
-
-
 <div style="display: inline_block"><br>
  
 <img align="center" alt="Raphs-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
@@ -97,7 +82,6 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 
 
 # Funcionalidades e registros das sprints:
-## Apresentação das funcionalidades:
 Demonstração das funcionalidades na página HTML:
 
 Link no YouTube: [https://youtu.be/rCtdOrJDuak?si=9bGleW8T524WJphA](https://youtu.be/DxzPR7kv87s)
