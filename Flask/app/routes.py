@@ -26,8 +26,18 @@ def add_task():
         nome = request.form['nome']
         nota = request.form['nota']
         opiniao = request.form['opiniao']
+        
+        # Converta os valores para inteiros
+        try:
+            func_id = int(func_id)
+            nota = int(nota)
+        except ValueError:
+            return "ID ou Nota inválidos"
+
         cur = mysql.connection.cursor()
         cur.execute("INSERT INTO formulario (func_id, nome, nota, opiniao) VALUES (%d, %s, %d, %s)", (func_id, nome, nota, opiniao))
+        
+        
         mysql.connection.commit()
         cur.close()
         return redirect(url_for('index'))
