@@ -311,7 +311,7 @@ questions_3 = [
 ]
 
 @app.route('/mod_3_quiz')
-def mod_2_quiz():
+def mod_3_quiz():
     return render_template('mod_3_quiz.html', questions=questions_3)
 
 @app.route('/submit_quiz_3', methods=['POST'])
@@ -407,23 +407,31 @@ questions_4 = [
 ]
 
 @app.route('/mod_4_quiz')
-def modulo_4_quiz():         
+def mod_4_quiz():
     return render_template('mod_4_quiz.html', questions=questions_4)
 
 @app.route('/submit_quiz_4', methods=['POST'])
 def submit_quiz_4():
-    # Lógica para processar o formulário e verificar as respostas
     score = 0
-    user_answers = {}
+    user_answers = []
     for question in questions_4:
         question_id = str(question['id'])
         user_answer = request.form.get(question_id)
         correct_answer = question['answer']
-        if user_answer == correct_answer:
+        is_correct = user_answer == correct_answer
+        if is_correct:
             score += 1
-        user_answers[question['question']] = user_answer
+        user_answers.append({
+            'question': question['question'],
+            'user_answer': user_answer,
+            'correct_answer': correct_answer,
+            'is_correct': is_correct
+        })
     total_questions = len(questions_4)
     return render_template('mod_4_results.html', score=score, total_questions=total_questions, results=user_answers)
+
+if __name__ == '__main__':
+    app.run(debug=True)
 
  # Módulo 5
 
