@@ -18,6 +18,7 @@ Este é o repositório do projeto API desenvolvido na FATEC - Prof. Jessen Vidal
 * [Protótipo - Figma](#prototipo)
 * [Tecnologias Utilizadas:](#tecnologias-utilizadas)
 * [Funcionalidades e registros (vídeos e apresentações) das sprints](#funcionalidades-e-registros-das-sprints)
+* [Manual de instalação](#manual)
 * [Autores](#autores)
 
 # Objetivo do Projeto:
