@@ -51,6 +51,10 @@ def testes():
 
 #Módulo 1
 
+@app.route('/mod_1')
+def modulo_1():
+    return render_template('mod_1.html')
+
 questions_1 = [
     {
         'id': 1,
@@ -114,14 +118,6 @@ questions_1 = [
     },
 ]
 
-@app.route('/mod_1')
-def modulo_1():
-    return render_template('mod_1.html')
-
-@app.route('/mod_1_quiz')
-def modulo_1_quiz():
-    return render_template('mod_1_quiz.html', questions=questions_1)
-
 @app.route('/mod_1_quiz')
 def mod_1_quiz():
     return render_template('mod_1_quiz.html', questions=questions_1)
@@ -149,11 +145,11 @@ def submit_quiz_1():
 if __name__ == '__main__':
     app.run(debug=True)
 
+# Módulo 2
+
 @app.route('/mod_2')
 def modulo_2():
     return render_template('mod_2.html')
-
-# Módulo 2
 
 questions_2 = [
     {
@@ -239,6 +235,10 @@ def submit_quiz_2():
 
 # Módulo 3
 
+@app.route('/mod_3')
+def modulo_3():
+    return render_template('mod_3.html')
+
 questions_3 = [
     {
         'id': 1,
@@ -302,10 +302,6 @@ questions_3 = [
     },
 ]
 
-@app.route('/mod_3')
-def modulo_3():
-    return render_template('mod_3.html')
-
 @app.route('/mod_3_quiz')
 def modulo_3_quiz():
     return render_template('mod_3_quiz.html', questions=questions_3)
@@ -326,6 +322,10 @@ def submit_quiz_3():
     return render_template('mod_3_results.html', score=score, total_questions=total_questions, results=user_answers)
 
 # Módulo 4
+
+@app.route('/mod_4')
+def modulo_4():
+    return render_template('mod_4.html')
 
 questions_4 = [
     {
@@ -390,16 +390,12 @@ questions_4 = [
     },
 ]
 
-@app.route('/mod_4')
-def modulo_4():
-    return render_template('mod_4.html')
+@app.route('/mod_4_quiz')
+def modulo_4_quiz():         
+    return render_template('mod_4_quiz.html', questions=questions_4)
 
-@app.route('/mod_4_quiz')  #altere apenas o número do seu módulo  )
-def modulo_4_quiz():   #altere apenas o número do seu módulo          
-    return render_template('mod_4_quiz.html', questions=questions_4)   #altere apenas o número do seu módulo
-
-@app.route('/submit_quiz_4', methods=['POST'])  #altere apenas o número do seu módulo
-def submit_quiz_4():  #altere apenas o número do seu módulo
+@app.route('/submit_quiz_4', methods=['POST'])
+def submit_quiz_4():
     # Lógica para processar o formulário e verificar as respostas
     score = 0
     user_answers = {}
@@ -414,6 +410,10 @@ def submit_quiz_4():  #altere apenas o número do seu módulo
     return render_template('mod_4_results.html', score=score, total_questions=total_questions, results=user_answers)
 
  # Módulo 5
+
+@app.route('/mod_5')
+def modulo_5():
+    return render_template('mod_5.html')
 
 questions_5 = [
     {
@@ -477,9 +477,6 @@ questions_5 = [
         'answer': 'd) Planejar o trabalho a ser realizado durante a próxima Sprint.'
     },
 ]
-@app.route('/mod_5')
-def modulo_5():
-    return render_template('mod_5.html')
 
 @app.route('/mod_5_quiz')
 def modulo_5_quiz():
@@ -502,7 +499,11 @@ def submit_quiz_5():
 
 #Módulo 6
 
-questions_6 = [ #question_<seu módulo>
+@app.route('/mod_6') #seu módulo normal
+def modulo_6():
+    return render_template('mod_6.html')
+
+questions_6 = [
     {
         'id': 1, #id segue padrão para todas
         'question': '1) Qual é a base da auto-organização no Scrum?', #coloque sua pergunta aqui
@@ -565,10 +566,6 @@ questions_6 = [ #question_<seu módulo>
     },
 ]
 
-@app.route('/mod_6') #seu módulo normal
-def modulo_6():
-    return render_template('mod_6.html')
-
 @app.route('/mod_6_quiz')  #altere apenas o número do seu módulo  )
 def modulo_6_quiz():   #altere apenas o número do seu módulo          
     return render_template('mod_6_quiz.html', questions=questions_6)   #altere apenas o número do seu módulo
@@ -590,6 +587,11 @@ def submit_quiz_6():  #altere apenas o número do seu módulo
 
 
 #Módulo 7
+
+@app.route('/mod_7')
+def modulo_7():
+    return render_template('mod_7.html')
+
 questions_7 = [
         {
         'id': 1,
@@ -652,10 +654,6 @@ questions_7 = [
         'answer': 'c) Facilitar o processo de estimativa e remover obstáculos.'
     },
 ]
-
-@app.route('/mod_7')
-def modulo_7():
-    return render_template('mod_7.html')
 
 @app.route('/mod_7_quiz')
 def modulo_7_quiz():
