@@ -598,25 +598,32 @@ questions_6 = [
     },
 ]
 
-@app.route('/mod_6_quiz')  #altere apenas o número do seu módulo  )
-def modulo_6_quiz():   #altere apenas o número do seu módulo          
-    return render_template('mod_6_quiz.html', questions=questions_6)   #altere apenas o número do seu módulo
+@app.route('/mod_6_quiz')
+def mod_6_quiz():
+    return render_template('mod_6_quiz.html', questions=questions_6)
 
-@app.route('/submit_quiz_6', methods=['POST'])  #altere apenas o número do seu módulo
-def submit_quiz_6():  #altere apenas o número do seu módulo
-    # Lógica para processar o formulário e verificar as respostas
+@app.route('/submit_quiz_6', methods=['POST'])
+def submit_quiz_6():
     score = 0
-    user_answers = {}
+    user_answers = []
     for question in questions_6:
         question_id = str(question['id'])
         user_answer = request.form.get(question_id)
         correct_answer = question['answer']
-        if user_answer == correct_answer:
+        is_correct = user_answer == correct_answer
+        if is_correct:
             score += 1
-        user_answers[question['question']] = user_answer
+        user_answers.append({
+            'question': question['question'],
+            'user_answer': user_answer,
+            'correct_answer': correct_answer,
+            'is_correct': is_correct
+        })
     total_questions = len(questions_6)
-    return render_template('mod_6_results.html', score=score, total_questions=total_questions, results=user_answers) #altere apenas o número do seu módulo no (mod_x_results.html)
+    return render_template('mod_6_results.html', score=score, total_questions=total_questions, results=user_answers)
 
+if __name__ == '__main__':
+    app.run(debug=True)
 
 #Módulo 7
 
