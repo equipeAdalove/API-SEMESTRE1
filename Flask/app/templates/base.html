@@ -83,5 +83,24 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      // Captura o elemento div que contém os inputs de rating
+      const ratingDiv = document.querySelector('.rating');
+  
+      // Adiciona um evento de clique para detectar quando um input é selecionado
+      ratingDiv.addEventListener('click', function(event) {
+          // Verifica se o elemento clicado é um input do tipo radio
+          if (event.target.tagName === 'INPUT' && event.target.type === 'radio') {
+              // Obtém o valor do input selecionado
+              const valorSelecionado = event.target.value;
+  
+              // Exibe o valor selecionado (apenas para verificar)
+              console.log('Valor selecionado:', valorSelecionado);
+  
+              // Aqui você pode enviar o valorSelecionado para onde precisar (por exemplo, enviar para um formulário)
+          }
+      });
+  </script>  
   </body>
 </html>
