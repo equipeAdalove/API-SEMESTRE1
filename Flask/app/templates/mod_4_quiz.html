@@ -77,20 +77,28 @@
         background-color: #e0e0e0;
     }
 
-    @media (max-width: 575.98px) {
+    .titulo{
+        margin-top: 90px;
+    }
+
+    @media (max-width: 580px) {
         .title-mod h1 {
             font-size: 40px;
         }
 
         .img {
-            width: 335px;
+            width: 290px;
             height: auto;
+        }
+
+        .titulo{
+            margin-top: 0;
         }
     }
 
-    @media (min-width: 576px) and (max-width: 767.98px) {
+    @media (min-width: 581px) and (max-width: 767.98px) {
         .img {
-            width: 350px;
+            width: px;
             height: auto;
         }
     }
@@ -114,7 +122,7 @@
 {% block content %}
 <div class="container-fluid container-custom position-relative">
     <div class="row">
-        <div class="col-lg-6 col-md-12 text-center text-lg-start mb-4 mb-lg-0">
+        <div class="col-lg-6 col-md-12 text-center text-lg-start mb-4 mb-lg-0 titulo">
             <div class="title-mod">
                 <h1>Quiz Módulo 4</h1>
                 <br>
@@ -122,7 +130,7 @@
             </div>
         </div>
         <div class="col-lg-6 col-md-12 text-center text-lg-end div-img">
-            <img src="{{ url_for('static', filename='imgs/capamod3.png') }}" class="img" alt="Imagem do módulo">
+            <img src="{{ url_for('static', filename='imgs/capamod4.png') }}" class="img" alt="Imagem do módulo">
         </div>
     </div>
 </div>
