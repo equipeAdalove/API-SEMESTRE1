@@ -88,11 +88,15 @@
     }
 
     .correct-answer {
-        background-color: #c8e6c9; /* Verde suave para respostas corretas */
+        background-color: #c8e6c9; 
     }
     
     .wrong-answer {
-        background-color: #ffcdd2; /* Vermelho suave para respostas incorretas */
+        background-color: #ffcdd2; 
+    }
+
+    .titulo{
+        margin-top: 90px;
     }
 
     @media (max-width: 575.98px) {
@@ -101,8 +105,12 @@
         }
 
         .img {
-            width: 335px;
+            width: 310px;
             height: auto;
+        }
+
+        .titulo{
+            margin-top: 0;
         }
     }
 
@@ -132,7 +140,7 @@
 {% block content %}
 <div class="container-fluid container-custom position-relative">
     <div class="row">
-        <div class="col-lg-6 col-md-12 text-center text-lg-start mb-4 mb-lg-0">
+        <div class="col-lg-6 col-md-12 text-center text-lg-start mb-4 mb-lg-0 titulo">
             <div class="title-mod">
                 <h1>Resultados</h1>
                 <br>
