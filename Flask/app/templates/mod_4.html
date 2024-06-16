@@ -120,12 +120,16 @@
         height: auto;
     }
 
+    .titulo{
+        margin-top: 90px;
+    }
+
     @media (max-width:575.98px){
         .title-mod h1{
             font-size: 40px;
         }
         .img{
-            width: 335px;
+            width: 310px;
             height: auto;
         }
         .imag{
@@ -138,6 +142,9 @@
         }
         hr{
             display: none;
+        }
+        .titulo{
+            margin-top: 0;
         }
     }
 
@@ -167,13 +174,13 @@
 {% block content %}
 <div class="container-fluid container-custom position-relative">
     <div class="row">
-        <div class="col-lg-6 col-md-12 text-center text-lg-start mb-4 mb-lg-0">
+        <div class="col-lg-6 col-md-12 text-center text-lg-start mb-4 mb-lg-0 titulo">
             <div class="title-mod">
                 <h1>4. Eventos Scrum</h1>
             </div>
         </div>
         <div class="col-lg-6 col-md-12 text-center text-lg-end div-img">
-            <img src="{{ url_for('static', filename='imgs/imgcapa1.png') }}" class="img" alt="Imagem do módulo">
+            <img src="{{ url_for('static', filename='imgs/capamod4.png') }}" class="img" alt="Imagem do módulo">
         </div>
         
     </div>
