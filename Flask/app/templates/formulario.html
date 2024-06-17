@@ -1,0 +1,184 @@
+{% extends 'base.html' %}
+
+{% block title %}Formulário{% endblock %}
+
+{% block styles %}
+<style>
+    body {
+        justify-content: space-around;
+        margin: 0%;
+        margin-bottom: 0%;
+        font-family: "Alatsi", sans-serif;
+        background-color: #c8c8c8;
+        overflow-x: hidden;
+    }
+
+    .divtext {
+        margin-top: -3pc;
+        margin-left: 100px;
+        margin-right: 100px;
+        text-align: justify;
+    }
+    .funcoes {
+        margin-top: 6pc;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 80px;
+        text-align: justify;
+    }
+    .h3 {
+        line-height: 1.5;
+        text-indent: 20px;
+    }
+    p {
+        line-height: 1.5;
+        text-indent: 50px;
+    }
+    .pp {
+        line-height: 1.5;
+        text-indent: 80px;
+    }
+    .pp2 {
+        line-height: 1.5;
+        text-indent: 100px;
+    }
+    .ppp {
+        line-height: 1.5;
+        text-indent: 120px;
+    }
+    .ppp2 {
+        line-height: 1.5;
+        text-indent: 140px;
+    }
+    .imag {
+        width: 45%;
+        height: 45%;
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+    .cardcard {
+        box-shadow: 0 4px 8px 0 #1c1e21;
+        transition: 0.3s;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .cardcard:hover {
+        box-shadow: 0 8px 16px 0 #1c1e21;
+    }
+    .containercard {
+        background-color: #32363f;
+        padding: 2px 16px;
+    }
+    .navigation-btn {
+        background-color: transparent; 
+        border: none; 
+        color: #32363f;  
+        font-size: 1.25rem; 
+    }
+    .navigation-btn:hover {
+        transition: 250ms;
+        transform: scale(1.05);
+        background-color: transparent; 
+        border: none; 
+        color: #32363f;  
+        font-size: 1.25rem; 
+    }
+    #sidebar {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    #main-content {
+        overflow-y: auto;
+        padding-left: 15px;
+    }
+
+    .divimag{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container-custom{
+        height: 50vh;
+        background-color: #32363f;
+    }
+    .title-mod{
+        margin: 30px 50px;
+        color: #D6D6D6;                
+    }
+    .title-mod h1{
+        font-size: 120px;
+    }
+
+    .img{
+        width: 500px;
+        height: auto;
+    }
+
+    .titulo{
+        margin-top: 90px;
+    }
+
+    hr {
+        border: 1px solid #000; /* Linha preta, pode ajustar a cor */
+        margin: 20px 0; /* Margem superior e inferior */
+    }
+
+    @media (max-width:575.98px){
+        .title-mod h1{
+            font-size: 40px;
+        }
+        .img{
+            width: 335px;
+            height: auto;
+        }
+        .imag{
+            width: 290px;
+            height: auto;
+        }
+        #main-content .divtext{
+            margin-right:8px;
+            margin-left: 20px;
+        }
+        hr{
+            display: none;
+        }
+        .titulo{
+            margin-top: 0
+        }
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px){
+        .img{
+            width: 350px;
+            height: auto;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px){
+        .img{
+            width: 400px;
+            height: auto;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1224.98px){
+        .img{
+            width: 400px;
+            height: auto;
+        }
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+
+
+
+{% endblock %}
+
