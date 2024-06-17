@@ -10,7 +10,7 @@ app.config['MYSQL_DB'] = 'api1ads'
 mysql = MySQL(app)
 
 #Senha 
-senha = 'metodocrum1221'
+senha = 'metodoscrum1221'
 
 # NavBar
 @app.route('/')
