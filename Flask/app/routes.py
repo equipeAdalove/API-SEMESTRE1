@@ -1,11 +1,11 @@
 from app import app
-from flask import render_template, request, redirect, url_for
+from flask import render_template, request, session, redirect, url_for
 from flask_mysqldb import MySQL
 
 # Configuração do MySQL
 app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'ap11'
-app.config['MYSQL_PASSWORD'] = 'Fatec@123'
+app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_PASSWORD'] = 'fatec'
 app.config['MYSQL_DB'] = 'api1ads'
 mysql = MySQL(app)
 
@@ -34,12 +34,22 @@ def add_task():
         cur.close()
         return redirect(url_for('index'))
     
+#formulário
+@app.route('/formulario')
+def formulario():
+    func_id = session.get("func_id")
+    cur = mysql.connection.cursor()
+    cur.execute("SELECT * FROM formulario")
+    exams = cur.fetchall()
+    cur.close()
+    return render_template('formulario.html', exams=exams)
+
 #Verifica senha
 @app.route('/validate-password', methods=['POST'])
 def validate_password():
     password = request.form.get('password')
     if password == senha:
-        return redirect('https://youtu.be/dQw4w9WgXcQ')
+        return redirect(url_for('formulario'))
     else:
         return redirect(url_for('index'))
     

@@ -178,7 +178,47 @@
 
 {% block content %}
 
-
-
+<div class="container-fluid container-custom position-relative">
+    <div class="row">
+        <div class="col-lg-6 col-md-12 text-center text-lg-start mb-4 mb-lg-0 titulo">
+            <div class="title-mod">
+                <h1>Formulário</h1>
+                <br>
+                <h2>Veja os feedbacks do usuário.</h2>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-12 text-center text-lg-end div-img">
+            <img src="{{ url_for('static', filename='imgs/imgcapa1.png') }}" class="img" alt="Imagem do módulo">
+        </div>    
+    </div>
+</div>
+        <div class="wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#32363F" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,218.7C840,213,960,171,1080,154.7C1200,139,1320,149,1380,154.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+        </div>
+<div class="container">
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID do Funcionário</th>
+                    <th>Nome</th>
+                    <th>Nota</th>
+                    <th>Opinião</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for exam in exams %}
+                <tr>
+                    <td>{{ exam[0] }}</td> <!-- func_id -->
+                    <td>{{ exam[1] }}</td> <!-- nome -->
+                    <td>{{ exam[2] }}</td> <!-- nota -->
+                    <td>{{ exam[3] }}</td> <!-- opiniao -->
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
 {% endblock %}
+
 
