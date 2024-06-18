@@ -173,6 +173,10 @@
             height: auto;
         }
     }
+    .table {
+        border-radius: 15px;
+        overflow: hidden;
+    }
 </style>
 {% endblock %}
 
@@ -197,8 +201,8 @@
         </div>
 <div class="container">
     <div class="table-responsive">
-        <table class="table table-striped">
-            <thead>
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
                 <tr>
                     <th>ID do Funcionário</th>
                     <th>Nome</th>
@@ -218,6 +222,7 @@
             </tbody>
         </table>
     </div>
+    <br>
 </div>
 {% endblock %}
 
