@@ -82,9 +82,11 @@
 
 
 # Funcionalidades e registros das sprints:
-Demonstração das funcionalidades na página HTML:
+Demonstração Sprint IV/ Versão Final
 
-Link no YouTube: [https://youtu.be/rCtdOrJDuak?si=9bGleW8T524WJphA](https://youtu.be/DxzPR7kv87s)
+Demonstração PC: [https://youtu.be/BXuAjkixi2U](https://youtu.be/7vTisQebZxs)
+
+Visualização Mobile: [https://youtu.be/n23-EapXdbE](https://youtu.be/n23-EapXdbE)
 
 
 ##
