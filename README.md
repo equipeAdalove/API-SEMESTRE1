@@ -88,6 +88,12 @@ Demonstração PC: [https://youtu.be/BXuAjkixi2U](https://youtu.be/7vTisQebZxs)
 
 Visualização Mobile: [https://youtu.be/n23-EapXdbE](https://youtu.be/n23-EapXdbE)
 
+## 
+
+# Manual de acesso ao projeto! 
+## Acesse o site:
+[Aprenda Scrum](http://aprendascrum.ddns.net:5000/)
+ou cole no navegador: http://aprendascrum.ddns.net:5000/
 
 ##
 
